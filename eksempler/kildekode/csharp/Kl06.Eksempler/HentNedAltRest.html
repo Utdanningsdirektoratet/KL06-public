@@ -35,7 +35,7 @@
     var hentSpesifikkLæreplan = function (url) {
         hent(url).then(function(læreplan) {
             console.log(_.find(læreplan.tittel, function(tittel) {
-                return tittel.spraak === 'default';
+                return tittel.noekkel == 'default';
             }).verdi);
         }, function(feil) {
             console.log(feil);

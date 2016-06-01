@@ -2,3 +2,4 @@
 **/obj/**
 *.suo
 **/packages/**
+/eksempler/kildekode/csharp/.vs/config/applicationhost.config
