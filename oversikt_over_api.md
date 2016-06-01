@@ -1,7 +1,7 @@
 # Oversikt over API
 
 <a href="" id="typer"></a>
-## Elementtyper
+## Elementtyper 
 KL06 har følgende elementtyper
 - [Læreplaner](http://psi.udir.no/ontologi/kl06/laereplan) ([/laereplaner](http://data.udir.no/kl06/laereplaner)).
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#laereplan)
