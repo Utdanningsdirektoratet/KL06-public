@@ -5,16 +5,11 @@
     "structure": {
         "readme": "main.md"
     },
-    "links": {
-        "sidebar": {
-            "Andre versjoner": "#",
-            "versjon 2016/04": "/v/201604/",
-            "versjon 2013/11": "/v/201311/",
-            "": "#"
-        }
-    },
+    "pluginsConfig": {},
+    "links": {},
     "plugins": [
+        "-versioning",
+        "versions",
         "include-codeblock"
-    ],
-    "pluginsConfig": {}
+    ]
 }

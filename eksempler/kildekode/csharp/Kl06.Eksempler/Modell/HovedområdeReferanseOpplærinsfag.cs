@@ -9,20 +9,20 @@ using System.Runtime.Serialization;
     namespace Kl06.Eksempler.Modell
     {
         [DataContract (Name = "hovedomraade")]
-        public class Hovedomrï¿½deReferanseOpplï¿½rinsfag : BaseElement
+        public class HovedområdeReferanseOpplærinsfag : BaseElement
         {
 
             /// <summary>
             /// Viser alternativ beskrivelse om tilgjengelig
             /// </summary>
             [DataMember(Order = 0, Name = "beskrivelse")]
-            [Description("Hovedomrï¿½dets beskrivelse")]
-            public List<Sprï¿½kversjonert> Beskrivelse { get; set; }
+            [Description("Hovedområdets beskrivelse")]
+            public List<Språkversjonert> Beskrivelse { get; set; }
 
 
             [DataMember(Order = 1, Name = "kompetansemaal-for-opplaeringsfag")]
-            [Description("Oversikt over tilknyttede kompetansemï¿½l")]
-            public List<Kompetansemï¿½l> Kompetansemï¿½l { get; set; }
+            [Description("Oversikt over tilknyttede kompetansemål")]
+            public List<Kompetansemål> Kompetansemål { get; set; }
 
         }
     }

@@ -4,19 +4,19 @@ using System.Runtime.Serialization;
 namespace Kl06.Eksempler.Modell
 {
     [DataContract (Name = "prograomraade-referanse-opplaeringsfag")]
-    public class Programomrï¿½deReferanseOpplï¿½ringsfag : Referanse
+    public class ProgramområdeReferanseOpplæringsfag : Referanse
     {
         //[DataMember(Order = 1, Name = "aarstimer")]
-        //public string ï¿½rstimer { get; set; }
+        //public string Årstimer { get; set; }
 
         //[DataMember(Order = 2, Name = "aarstimer-samisk")]
-        //public string ï¿½rstimerSamisk { get; set; }
+        //public string ÅrstimerSamisk { get; set; }
 
         //[DataMember(Order = 3, Name = "aarstimer-doeve-og-tunghoerte")]
-        //public string ï¿½rstimerDï¿½veOgTunghï¿½rte { get; set; }
+        //public string ÅrstimerDøveOgTunghørte { get; set; }
 
         //[DataMember(Order = 4, Name = "aarstimer-formgivningsfag")]
-        //public string ï¿½rstimerFormgivningsfag { get; set; }
+        //public string ÅrstimerFormgivningsfag { get; set; }
 
         //[DataMember(Order = 5, Name = "tilknyttede-utdanningsprogram")]
         //public List<Referanse> TilknyttedeUtdanningsprogram { get; set; }
