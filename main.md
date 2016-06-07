@@ -10,20 +10,6 @@ Versjon 2016/04 har introdusert større endringer i grunnleggende strukturer. Le
 ## Andre versjoner av dette dokumentet
 - [2013/11](/v/201311/)
 
-# Ta i bruk KL06
--  [Hvordan komme i gang](komme_i_gang.md)
--  [Oversikt over API](oversikt_over_api.md)
--  [Eksempler](eksempler.md)
-    - [Hente ned alle data fra Grep](eksempel_alle_data.md)
-    - [Hente ut endrede data etter er en viss dato](eksempel_etter_dato.md)
-    - [Mange flere]()
--  [Ofte stilte spørsmål](faq.md)
-  -  [Feilmelding med maximum message quota exceeded](faq.md#maxmessage)
-  -  [Må vi traverse hele KL06 for å hente alle data?](faq.md#traversere)
-  
-  Brukermanual for Grep Læreplanspørringer
-Ver 2016/04
-
 # Historikk {# historikk}
 
 | Revisjon | Dato | Revidert av | Kommentar |
