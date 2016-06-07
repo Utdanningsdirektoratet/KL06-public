@@ -1,11 +1,11 @@
 # Summary
 
 * [kl06](main.md)
+* [Test](test.md)
 * [Webtjenester](webtjenester/README.md)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
-* [Test](test.md)
 
