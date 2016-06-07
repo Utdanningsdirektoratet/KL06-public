@@ -9,6 +9,7 @@
     "links": {},
     "plugins": [
         "-versioning",
-        "versions"
+        "versions",
+        "include-codeblock"
     ]
 }

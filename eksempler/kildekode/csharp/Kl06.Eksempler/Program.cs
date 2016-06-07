@@ -10,8 +10,14 @@ namespace Kl06.Eksempler
     {
         static void Main(string[] args)
         {
-            new HentNedAltRest().Test().Wait();
-            new HentNedAltSoap().Test().Wait();
+            new HentNedAltRest().HentAlleLæreplanerEndretEtterDato(DateTime.Now.AddDays(-70)).Wait();
+
+            new HentNedAltRest().HentAlleLæreplaner().Wait();
+            new HentNedAltSoap().HentAlleLæreplaner().Wait();
+            // Henter ned alle læreplaner som er endret den siste uka
+            new HentNedAltSoap().HentAlleLæreplanerEndretEtterDato(DateTime.Now.AddDays(-7)).Wait();
+
+
         }
     }
 }
