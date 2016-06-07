@@ -5,9 +5,12 @@
     "structure": {
         "readme": "main.md"
     },
-    "pluginsConfig": {},
+    "plugins": [ "versions", "include-codeblock" ],
+    "pluginsConfig": {
+        "versions": {
+            "type": "branches"
+        }
+    },
     "links": {},
-    "plugins": [
-        "include-codeblock"
-    ]
+    
 }
