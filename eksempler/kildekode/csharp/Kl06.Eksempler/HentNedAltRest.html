@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Eksempel</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body>
+<h2>Se på konsollmeldinger for resultat</h2>
+<script type="text/javascript">
+
+    var hent = function(endepunkt) {
+        return $.get(endepunkt).then(
+            function(res) {
+                 return res;
+            }
+        );
+    };
+
+    var hentLæreplanliste = function() {
+        return hent('http://data.udir.no/kl06/laereplaner');
+    };
+
+    
+    var traverserLæreplaner = function () {
+        hentLæreplanliste().then(function(læreplaner) {
+            for (var i = 0; i < læreplaner.length; i++) {
+                hentSpesifikkLæreplan(læreplaner[i]['url-data']);
+            }
+        });
+    }
+
+    var hentSpesifikkLæreplan = function (url) {
+        hent(url).then(function(læreplan) {
+            console.log(_.find(læreplan.tittel, function(tittel) {
+                return tittel.noekkel == 'default';
+            }).verdi);
+        }, function(feil) {
+            console.log(feil);
+        });
+    }
+
+    var hentLæreplanlisteEndretEtterDato = function (dato) {
+        return hent("http://data.udir.no/kl06/Odata/Læreplan?$format=json&$filter=SistEndret gt datetime'" + dato + "'");
+    };
+
+
+    var traverserLæreplanerEndretEtterDato = function (dato) {
+        hentLæreplanlisteEndretEtterDato(dato).then(function (læreplaner) {
+            console.log(læreplaner.d.results.length + ' læreplaner endret etter ' + dato);
+            for (var i = 0; i < læreplaner.d.results.length; i++) {
+                hentSpesifikkLæreplan(læreplaner.d.results[i]['UrlData']);
+            }
+        });
+    }
+
+    traverserLæreplaner();
+    traverserLæreplanerEndretEtterDato('2016-01-01');
+
+</script>
+</body>
+</html>
