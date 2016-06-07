@@ -8,8 +8,6 @@
     "pluginsConfig": {},
     "links": {},
     "plugins": [
-        "-versioning",
-        "versions",
         "include-codeblock"
     ]
 }
