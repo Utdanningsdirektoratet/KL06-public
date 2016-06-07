@@ -1,6 +1,6 @@
 Brukermanual for Grep Læreplanspørringer
 
-# Historikk {#historikk}
+# Historikk  {#historikk}
 
 | Revisjon | Dato | Revidert av | Kommentar |
 | --- | --- | --- | --- |
