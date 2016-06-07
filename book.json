@@ -1,12 +1,13 @@
 {
-    
     "gitbook": "2.x.x",
     "title": "Dokumentasjon av KL06",
     "language": "no",
     "structure": {
         "readme": "main.md"
-  },
-  "links": {
-        
-    }
+    },
+    "pluginsConfig": {},
+    "links": {},
+    "plugins": [
+        "include-codeblock"
+    ]
 }
