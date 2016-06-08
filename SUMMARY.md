@@ -7,6 +7,7 @@
 * [Eksempler](eksempler.md)
    * [Uthenting av alle data](eksempel_alle_data.md)
    * [Hente alle endringer etter dato](eksempel_etter_dato.md)
+* [Oversikt over API Beta](oversikt_over_api_beta.md)
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
@@ -14,5 +15,4 @@
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
-* [Oversikt over API Beta](oversikt_over_api_beta.md)
 
