@@ -5,7 +5,7 @@
     "structure": {
         "readme": "main.md"
     },
-    "plugins": [ "versions", "ace", "include-codeblock" ],
+    "plugins": [ "versions", "include-codeblock" ],
     "pluginsConfig": {
         "versions": {
             "gitbookConfigURL": "https://kl06-doc.gitbooks.io/kl06-public/content/book.json",
@@ -18,6 +18,10 @@
                     "value": "https://kl06-doc.gitbooks.io/kl06-public/content/",
                     "text": "Versjon 2016/04",
                     "selected": true
+                },
+                {
+                    "value": "https://kl06-doc.gitbooks.io/kl06-public/content/v201604/",
+                    "text": "Versjon under arbeid (Fjern)"
                 },
                 {
                     "value": "https://kl06-doc.gitbooks.io/kl06-public/content/v/beta/",
