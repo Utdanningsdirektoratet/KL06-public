@@ -35,12 +35,12 @@ På læreplan har vi følgende felt å jobbe med:
 
 | **Felt** | **Beskrivelse** | **Eksempel** |
 | --- | --- | --- |
-| Tittel | Læreplanens tittel på fastsatt språk | [http://data.udir.no/kl06/odata/Læreplan?$filter=endswith(Tittel,'engelsk')](http://data.udir.no/kl06/odata/Læreplan?$filter=endswith(Tittel,'engelsk')) (Returnerer alle læreplaner hvis tittel slutter med “_engelsk”)_ |
-| Kode | Læreplanens kode | [http://data.udir.no/odata/kl06/Læreplan?$filter=(Kode eq 'SFS2-01')](http://data.udir.no/odata/kl06/Læreplan?$filter=(Kode%20eq%20'SFS2-01')) |
-| Psi | Læreplanens identifikator (eller PSI i Grep) | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')](http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi%20eq%20'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')) |
-| UrlData | Url til detaljert informasjon om læreplanen for maskinell behandling | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:59d5b28c-963b-40d4-bf41-eff7b333b424')&$select=Ur](http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi%20eq%20'uuid:59d5b28c-963b-40d4-bf41-eff7b333b424')&$select=UrlData&$format=json)[lData&$format=json](http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi%20eq%20'uuid:59d5b28c-963b-40d4-bf41-eff7b333b424')&$select=UrlData&$format=json) |
-|  SistEndret | Når læreplanen sist ble oppdatert | [http://data.udir.no/kl06/odata/Lærepla](http://data.udir.no/kl06/odata/Læreplan?$filter=(SistEndret%20gt%20datetime'2011-01-01'))[n?$filter=(SistEndret gt datetime'2011-01-01')](http://data.udir.no/kl06/odata/Læreplan?$filter=(SistEndret%20gt%20datetime'2011-01-01')) |
-| Status | Status til læreplanen | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Status eq 'http://psi.udir.no/ontologi/st](http://data.udir.no/kl06/odata/Læreplan?$filter=(Status%20eq%20'http://psi.udir.no/ontologi/status/utgaatt'))[atus/utgaatt')](http://data.udir.no/kl06/odata/Læreplan?$filter=(Status%20eq%20'http://psi.udir.no/ontologi/status/utgaatt')) |
+| Tittel | Læreplanens tittel på fastsatt språk | [http://data.udir.no/kl06/odata/Læreplan?$filter=endswith(Tittel,'engelsk')](http://data.udir.no/kl06/odata/Læreplan?$filter=endswith%28Tittel,'engelsk'%29) (Returnerer alle læreplaner hvis tittel slutter med “_engelsk”)_ |
+| Kode | Læreplanens kode | [	http://data.udir.no/kl06/odata/Læreplan?$filter=(Kode eq 'SFS2-01')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Kode eq 'SFS2-01'%29) |
+| Psi | Læreplanens identifikator (eller PSI i Grep) | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c'%29) |
+| UrlData | Url til detaljert informasjon om læreplanen for maskinell behandling | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')&$select=UrlData&$format=json](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c'%29&$select=UrlData&$format=json) |
+|  SistEndret | Når læreplanen sist ble oppdatert | [http://data.udir.no/kl06/odata/Læreplan?$filter=(SistEndret gt datetime'2011-01-01')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28SistEndret gt datetime'2011-01-01'%29) |
+| Status | Status til læreplanen | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Status eq 'http://psi.udir.no/ontologi/status/utgaatt')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Status eq 'http://psi.udir.no/ontologi/status/utgaatt'%29) |
 
 ## OData og programområder {#odata-og-programomr-der}
 
