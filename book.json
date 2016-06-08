@@ -12,11 +12,11 @@
             "options": [
                 {
                     "value": "https://kl06-doc.gitbooks.io/kl06-public/content/v/201311/",
-                    "text": "Version 2013/11"
+                    "text": "Versjon 2013/11"
                 },
                 {
                     "value": "https://kl06-doc.gitbooks.io/kl06-public/content/",
-                    "text": "Version 2016/04",
+                    "text": "Versjon 2016/04",
                     "selected": true
                 }
             ]
