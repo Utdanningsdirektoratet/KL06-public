@@ -14,6 +14,8 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
+[import](eksempler/kildekode/csharp/Kl06.Eksempler/App.config)
+
 ```xml
 <basicHttpBinding>
   <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
@@ -28,7 +30,7 @@ I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenest
 
 Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik (endringer er uthevet):
 
-
+```xml
 <system.serviceModel>
   <bindings>
     <basicHttpBinding>
@@ -36,7 +38,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
         <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
         <security mode="None">
           <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
-          <message clientCredentialType="UserName" algorithmSuite="Default" /&gt;
+          <message clientCredentialType="UserName" algorithmSuite="Default" />
         </security>
       </binding>
     </basicHttpBinding>
@@ -52,7 +54,6 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
     </endpointBehaviors>
   </behaviors>
 </system.serviceModel>
-```xml
 ```
 
 ### Kode {#kode}
