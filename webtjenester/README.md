@@ -26,6 +26,10 @@ Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 *   Opplærinsfag-kortinformasjon (for søk og RSS/Atom)
 *   Årstrinn
 *   Årstrinn-kortinformasjon (for søk og RSS/Atom)
+*   Språk
+*   Fagtype
+*   Status
+*   Opplæringsnivå
 
 ## Grensesnitt {#grensesnitt}
 
