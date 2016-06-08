@@ -14,5 +14,5 @@
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
-* Oversikt over API Beta
+* [Oversikt over API Beta](oversikt_over_api_beta.md)
 
