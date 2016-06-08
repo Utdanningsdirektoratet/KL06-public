@@ -4,7 +4,6 @@
    * [Endringer 2016/04](endringer_201604.md)
 * [Komme i gang](komme_i_gang.md)
 * [Oversikt over API](oversikt_over_api.md)
-* [Oversikt over API Beta](oversikt_over_api_beta.md)
 * [Eksempler](eksempler.md)
    * [Uthenting av alle data](eksempel_alle_data.md)
    * [Hente alle endringer etter dato](eksempel_etter_dato.md)
