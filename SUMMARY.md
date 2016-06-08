@@ -8,8 +8,6 @@
    * [Uthenting av alle data](eksempel_alle_data.md)
    * [Hente alle endringer etter dato](eksempel_etter_dato.md)
 * [Ofte stilte spørsmål](faq.md)
-
-* [kl06](main.md)
 * [Webtjenester](webtjenester/README.md)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)

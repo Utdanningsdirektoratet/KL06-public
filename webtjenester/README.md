@@ -26,13 +26,17 @@ Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 *   Opplærinsfag-kortinformasjon (for søk og RSS/Atom)
 *   Årstrinn
 *   Årstrinn-kortinformasjon (for søk og RSS/Atom)
+*   Språk
+*   Fagtype
+*   Status
+*   Opplæringsnivå
 
 ## Grensesnitt {#grensesnitt}
 
 For å tilby funksjonalitet til flest mulig bruksscenarier, er tjenestene tilgjengelige på forskjellige grensesnitt og formater. Følgende grensesnitt tilbys:
 
-*   Et XML/SOAP-grensesnitt for søk og detaljert oppslag på fag og læreplaner
 *   Et REST-basert grensesnitt for utlisting og detaljert oppslag på fag og læreplaner
+*   Et XML/SOAP-grensesnitt for søk og detaljert oppslag på fag og læreplaner
 *   Et OData-grensesnitt for søk på fag og læreplaner
 
 ## Definisjon av elementer {#definisjon-av-elementer}
