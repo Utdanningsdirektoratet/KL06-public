@@ -14,15 +14,8 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
-{%ace edit=true, lang='c_cpp'%}
-// This is a hello world program for C.
-#include <stdio.h>
-
-int main(){
-  printf("Hello World!");
-  return 1;
-}
-{%endace%}
+{%ace}
+{%endace}
 
 ```xml
 <basicHttpBinding>
