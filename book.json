@@ -5,9 +5,23 @@
     "structure": {
         "readme": "main.md"
     },
-    "pluginsConfig": {},
-    "links": {},
-    "plugins": [
-        "include-codeblock"
-    ]
+    "plugins": [ "versions", "include-codeblock" ],
+    "pluginsConfig": {
+        "versions": {
+            "gitbookConfigURL": "https://kl06-doc.gitbooks.io/kl06-public/content/book.json",
+            "options": [
+                {
+                    "value": "https://kl06-doc.gitbooks.io/kl06-public/content/v/201311/",
+                    "text": "Version 2013/11",
+                    "selected": true
+                },
+                {
+                    "value": "https://kl06-doc.gitbooks.io/kl06-public/content/",
+                    "text": "Version 2016/04"
+                }
+            ]
+        }
+    },
+    "links": {}
+    
 }
