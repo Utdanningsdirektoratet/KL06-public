@@ -15,5 +15,4 @@
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
 * Oversikt over API Beta
-* Oversikt over API Beta
 
