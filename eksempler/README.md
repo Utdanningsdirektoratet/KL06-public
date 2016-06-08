@@ -28,7 +28,7 @@ I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenest
 
 Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik (endringer er uthevet):
 
-```xml
+
 <system.serviceModel>
   <bindings>
     <basicHttpBinding>
@@ -52,7 +52,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
     </endpointBehaviors>
   </behaviors>
 </system.serviceModel>
-
+```xml
 ```
 
 ### Kode {#kode}
