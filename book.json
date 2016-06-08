@@ -8,7 +8,7 @@
     "plugins": [ "versions", "include-codeblock" ],
     "pluginsConfig": {
         "versions": {
-            "type": "branches"
+            "type": "tags"
         }
     },
     "links": {}
