@@ -47,7 +47,7 @@ Eks: Uthenting av MAT1-03 på engelsk, og på hovedspråk.
 
 **Eks. 1**
 
-**&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11"&gt;**
+**&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11" &gt;**
 
 **&lt;soapenv:Header/&gt;**
 
@@ -77,7 +77,7 @@ Eks: Uthenting av MAT1-03 på engelsk, og på hovedspråk.
 
 **Eks. 2**
 
-**&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11"&gt;**
+**&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11" &gt;**
 
 **&lt;soapenv:Header/&gt;**
 
