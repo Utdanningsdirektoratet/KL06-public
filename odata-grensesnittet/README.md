@@ -6,7 +6,7 @@ Grunn-URL til OData-grensesnittet er [http://data.udir.no/kl06/odata](http://dat
 
 ## OData og fagkoder {#odata-og-fagkoder}
 
-For å spørre etter fagkoder, oppgir du URLen [http://data.udir.no/kl06/odata/Fag](http://data.udir.no/kl06/odata/Fag)kode (merk: OData-grensesnittet skiller mellom store og små bokstaver). OData leverer som default en RSS-feed, men du har også mulighet til spesifikt å få returnert JSON.
+For å spørre etter fagkoder, oppgir du URLen [http://data.udir.no/kl06/odata/Fagkode](http://data.udir.no/kl06/odata/Fagkode) (merk: OData-grensesnittet skiller mellom store og små bokstaver). OData leverer som default en RSS-feed, men du har også mulighet til spesifikt å få returnert JSON.
 
 Figur 1: Fagkoder som RSS-feed
 
