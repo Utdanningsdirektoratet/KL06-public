@@ -1,6 +1,6 @@
 # REST-grensesnittet {#rest-grensesnittet}
 
-I tabellen nedenfor har vi listet opp hvilke URLer du kan bruke for å hente ut de ulike elementene. REST-grensesnittet støtter en rekke ulike formater. Om du vil bruke et annet format enn standardformatet (JSON), oppgir du dette ved å legge på {.format} på slutten av URLen. Eksempelvis for å liste ut alle fag i xml-format, oppgir du [http](http://data.udir.no/kl06/fag.xml)[://d](http://data.udir.no/kl06/fag.xml)ata.udir.no/kl06/fagkoder.xml
+I tabellen nedenfor har vi listet opp hvilke URLer du kan bruke for å hente ut de ulike elementene. REST-grensesnittet støtter en rekke ulike formater. Om du vil bruke et annet format enn standardformatet (JSON), oppgir du dette ved å legge på {.format} på slutten av URLen. Eksempelvis for å liste ut alle fag i xml-format, oppgir du [http://data.udir.no/kl06/fagkoder.xml](http://data.udir.no/kl06/fagkoder.xml).
 
 ## Versjonering {#versjonering}
 
@@ -18,7 +18,7 @@ Dersom en ikke angir noe språk vil en få ut alle tilgjengelige oversettelser f
 
 | **Url** | **Beskrivelse** | **Støttede formater** | **Eksempel** |
 | --- | --- | --- | --- |
-| [http://data.udir.no/kl06/fagkoder{.format}{?lang=XXX}](http://data.udir.no/kl06/fagkoder%7b.format%7d%7b?lang=XXX%7d) | Henter ut alle fag i Grep | RSS/Atom (.atom) | [http://data.udir.no/](http://data.udir.no/kl06/fag)[kl06/fag](http://data.udir.no/kl06/fagkoder) (gir tilbake alle fagkoder i standardformat) |
+| [http://data.udir.no/kl06/fagkoder{.format}{?lang=XXX}](http://data.udir.no/kl06/fagkoder%7b.format%7d%7b?lang=XXX%7d) | Henter ut alle fag i Grep | RSS/Atom (.atom) | [http://data.udir.no/kl06/fagkoder](http://data.udir.no/kl06/fagkoder) (gir tilbake alle fagkoder i standardformat) |
 | http://data.udir.no/kl06/laereplaner{.format}{?lang=XXX} | Henter ut alle læreplaner i Grep | RSS/Atom (.atom) | [http://data.udir.no/kl06/laereplaner](http://data.udir.no/kl06/laereplaner) (gir tilbake alle læreplaner i standardformat) |
 | http://data.udir.no/kl06/utdanningsprogram{.format}{?lang=XXX} | Henter ut alle utdanningsprogram i Grep | RSS/Atom (.atom) | http:/[/data.udir.no/kl06/utdanningsprogram](http://data.udir.no/kl06/utdanningsprogram) (gir tilbake alle utdanningsprogram i standardformat) |
 | http://data.udir.no/kl06/programomraader{.format}{?lang=XXX} | Henter ut alle programområder i Grep | RSS/Atom (.atom) | [http://data.udir.no/kl06/programomraader](http://data.udir.no/kl06/programomraader) (gir tilbake alle programområder i standardformat) |
