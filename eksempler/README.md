@@ -32,9 +32,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
 <system.serviceModel>
   <bindings>
     <basicHttpBinding>
-      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" **maxBufferSize="6553600"** maxBufferPoolSize="524288" **maxReceivedMessageSize="6553600"**
-
-messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
+      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" **maxBufferSize="6553600"** maxBufferPoolSize="524288" **maxReceivedMessageSize="6553600"** messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
 
 useDefaultWebProxy="true">
 
