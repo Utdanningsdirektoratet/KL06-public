@@ -46,7 +46,6 @@ For alle metoder er det mulig å legge inn språkvalg. Språket angis i henhold 
 Eksempel: Uthenting av MAT1-03 på engelsk, og på hovedspråk.
 
 ```xml
-
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11">
   <soapenv:Header/>
   <soapenv:Body>
@@ -61,37 +60,20 @@ Eksempel: Uthenting av MAT1-03 på engelsk, og på hovedspråk.
     </ns:HentPlanFraKode>
   </soapenv:Body>
 </soapenv:Envelope>
-
 ```
-
 ```xml
-
-**&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11" &gt;**
-
-**&lt;soapenv:Header/&gt;**
-
-**&lt;soapenv:Body&gt;**
-
-**&lt;ns:HentPlanFraKode&gt;**
-
-**<!--Optional:-->**
-
-**&lt;ns:kode&gt;**
-
-**<!--Optional:-->**
-
-**&lt;ns:Kode&gt;mat1-03&lt;/ns:Kode&gt;**
-
-**<!--Optional:-->**
-
-**<ns:valgt-spraak>default</ns:valgt-spraak>**
-
-**&lt;/ns:kode&gt;**
-
-**&lt;/ns:HentPlanFraKode&gt;**
-
-**&lt;/soapenv:Body&gt;**
-
-**&lt;/soapenv:Envelope&gt;**
-
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2013/11">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ns:HentPlanFraKode>
+      <!--Optional:-->
+      <ns:kode>
+        <!--Optional:-->
+        <ns:Kode>mat1-03</ns:Kode>
+        <!--Optional:-->
+        <ns:valgt-spraak>default</ns:valgt-spraak>
+      </ns:kode>
+    </ns:HentPlanFraKode>
+  </soapenv:Body>
+</soapenv:Envelope>
 ```
