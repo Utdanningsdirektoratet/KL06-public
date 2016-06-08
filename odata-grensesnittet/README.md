@@ -40,7 +40,7 @@ På læreplan har vi følgende felt å jobbe med:
 | Psi | Læreplanens identifikator (eller PSI i Grep) | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c'%29) |
 | UrlData | Url til detaljert informasjon om læreplanen for maskinell behandling | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c')&$select=UrlData&$format=json](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Psi eq 'uuid:3e9bd273-f1cd-4631-854e-1229e384938c'%29&$select=UrlData&$format=json) |
 |  SistEndret | Når læreplanen sist ble oppdatert | [http://data.udir.no/kl06/odata/Læreplan?$filter=(SistEndret gt datetime'2011-01-01')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28SistEndret gt datetime'2011-01-01'%29) |
-| Status | Status til læreplanen | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Status eq 'http://psi.udir.no/ontologi/st](http://data.udir.no/kl06/odata/Læreplan?$filter=(Status%20eq%20'http://psi.udir.no/ontologi/status/utgaatt'))[atus/utgaatt')](http://data.udir.no/kl06/odata/Læreplan?$filter=(Status%20eq%20'http://psi.udir.no/ontologi/status/utgaatt')) |
+| Status | Status til læreplanen | [http://data.udir.no/kl06/odata/Læreplan?$filter=(Status eq 'http://psi.udir.no/ontologi/status/utgaatt')](http://data.udir.no/kl06/odata/Læreplan?$filter=%28Status eq 'http://psi.udir.no/ontologi/status/utgaatt'%29) |
 
 ## OData og programområder {#odata-og-programomr-der}
 
