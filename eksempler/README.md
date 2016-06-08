@@ -16,37 +16,15 @@ I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenest
 
 ```xml
 
-&lt;basicHttpBinding&gt;
-
-<binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00"
-
-openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00"
-
-allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard"
-
-maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536"
-
-messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
-
-useDefaultWebProxy="true">
-
-<readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384"
-
-maxBytesPerRead="4096" maxNameTableCharCount="16384" />
-
-&lt;security mode="None"&gt;
-
-<transport clientCredentialType="None" proxyCredentialType="None"
-
-realm="" />
-
-&lt;message clientCredentialType="UserName" algorithmSuite="Default" /&gt;
-
-&lt;/security&gt;
-
-&lt;/binding&gt;
-
-&lt;/basicHttpBinding&gt;
+<basicHttpBinding>
+  <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+    <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+    <security mode="None">
+      <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+      <message clientCredentialType="UserName" algorithmSuite="Default" />
+    </security>
+  </binding>
+</basicHttpBinding>
 
 ```
 
