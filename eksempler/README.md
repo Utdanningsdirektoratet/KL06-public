@@ -13,58 +13,27 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 ### Endringer i konfigurasjon {#endringer-i-konfigurasjon}
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
+[include](kildekode/csharp/Kl06.Eksempler/App.config)
 
-&lt;basicHttpBinding&gt;
-
-<binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00"
-
-openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00"
-
-allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard"
-
-maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536"
-
-messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
-
-useDefaultWebProxy="true">
-
-<readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384"
-
-maxBytesPerRead="4096" maxNameTableCharCount="16384" />
-
-&lt;security mode="None"&gt;
-
-<transport clientCredentialType="None" proxyCredentialType="None"
-
-realm="" />
-
-&lt;message clientCredentialType="UserName" algorithmSuite="Default" /&gt;
-
-&lt;/security&gt;
-
-&lt;/binding&gt;
-
-&lt;/basicHttpBinding&gt;
+```xml
+<basicHttpBinding>
+  <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+    <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+    <security mode="None">
+      <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+      <message clientCredentialType="UserName" algorithmSuite="Default" />
+    </security>
+  </binding>
+</basicHttpBinding>
+```
 
 Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik (endringer er uthevet):
 
+```xml
 <system.serviceModel>
-
-&lt;bindings&gt;
-
-&lt;basicHttpBinding&gt;
-
-<binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00"
-
-openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00"
-
-allowCookies="false" bypassProxyOnLocal="false"
-
-hostNameComparisonMode="StrongWildcard"
-
-**maxBufferSize="6553600"** maxBufferPoolSize="524288" **maxReceivedMessageSize="6553600"**
-
-messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
+  <bindings>
+    <basicHttpBinding>
+      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" **maxBufferSize="6553600"** maxBufferPoolSize="524288" **maxReceivedMessageSize="6553600"** messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
 
 useDefaultWebProxy="true">
 
@@ -116,6 +85,8 @@ contract="Læreplanspørringer.GrepSoap" name="GrepSoapBinding_GrepSoap" />
 
 </system.serviceModel>
 
+```
+
 ### Kode {#kode}
 
 Nå har vi det vi trenger for å kunne bruke tjenestene. Det som gjenstår er litt kode for å faktisk kalle tjenesten.
@@ -125,6 +96,8 @@ I eksempelet her vil vi lage en WPF-basert applikasjon for å kunne søke opp l�
 Først definerer vi brukergrensesnittet (XAMLen).
 
 Her oppretter vi et enkelt stackpanel med en tekstboks for å skrive inn tittel, en datovelger for å velge gyldig fra, en knapp for å starte søk, et grid for å vise søkeresultat (med tittel, kode og gyldig fra som kolonner) og en web-browser for å vise html:
+
+```xml
 
 <Window x:Class="TestApplikasjon.MainWindow"
 
@@ -182,7 +155,11 @@ SelectionChanged="DgSøkeresultatSelectionChanged">
 
 &lt;/Window&gt;
 
+```
+
 Deretter definerer vi koden for å søke, og for å vise vurdering:
+
+```c#
 
 public partial class MainWindow : Window
 
@@ -324,6 +301,8 @@ Client.Close();
 
 }
 
+```
+
 ### Demonstrasjon {#demonstrasjon}
 
 Når vi kjører denne applikasjonen, kan vi filtrere på tittel og gyldig fra. Om vi oppgir “Natur” som tittel og 01.01.2008 som gyldig fra, vil vi få følgende resultat:
@@ -337,6 +316,8 @@ Figur 8: Testing av applikasjon
 Følgende html-dokument benytter JQuery og REST-grensesnittet for å liste ut en enkel html-side med lenker til alle fagkoder. Lenkene peker på URL-data – URLen, med kode og tittel som beskrivelse av lenken:
 
 Test.html:
+
+```xml
 
 <!DOCTYPE html>
 
@@ -378,6 +359,8 @@ $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-da
 
 &lt;/html&gt;
 
+```
+
 Html-side i nettleser:
 
 ### Kombinasjon av grensesnitt (REST og OData) {#kombinasjon-av-grensesnitt-rest-og-odata}
@@ -387,6 +370,8 @@ Som et eksempel på litt mer avansert bruk, demonstrerer vi her et eksempel som 
 På bildet under ser du et bilde hvor du kan skrive inn deler av kode eller tittel, og får tilbake en liste med treff. Søket går mot OData-grensesnittet, hvor du har stor frihet til å definere hva du vil hente ut, og hvordan. I dette eksempelet vil du hente tilbake kode, tittel og URL-data-feltene fra de læreplanene (maks 25) hvor læreplanens sammenslåtte kode og tittel inneholder deler av søkestrengen.
 
 Metoden for å søke ser slik ut:
+
+```xml
 
 // Søker etter læreplaner
 
@@ -420,11 +405,16 @@ success: function (msg) {
 
 }
 
+```
+
 Denne benytter standard OData-funksjonalitet for å oppgi filter og hva den vil ha tilbake. I en søke-intensiv applikasjon vil dette spare ressurser og båndbredde for klient-applikasjon og webserveren.
 
 Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og formål vises:
 
 Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse kan brukes for å hente ut detaljer om læreplanen. Vi er kun interessert i å vise formål, og vi velger å vise formål på “default”-språket, som vil tilsvare fastsatt språk på læreplanen:
+
+```xml
+
 
 // Utdrag av koden for å hente ut detaljert læreplan, og vise formål på default språk
 
@@ -452,7 +442,12 @@ return res;
 
 }
 
+```
+
 **Komplett kode til dette eksempelet (krever jquery-ui med “accordion”-widget)**
+
+```xml
+
 
 <!DOCTYPE html>
 
@@ -593,3 +588,5 @@ Søk på læreplaner: &lt;input style="width: 300px;" id="soek" name="soek" type
 &lt;/body&gt;
 
 &lt;/html&gt;
+
+```
