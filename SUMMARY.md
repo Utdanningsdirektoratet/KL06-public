@@ -9,12 +9,13 @@
    * [Hente alle endringer etter dato](eksempel_etter_dato.md)
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
-  * [Typer elementer](webtjenester/README.md#typer_elementer)
-  * [Grensesnitt](webtjenester/README.md#grensesnitt)
-  * [Definisjon av elementer](webtjenester/README.md#definisjon_av_elementer)  
+   * [Typer elementer](webtjenester/README.md#typer_elementer)
+   * [Grensesnitt](webtjenester/README.md#grensesnitt)
+   * [Definisjon av elementer](webtjenester/README.md#definisjon_av_elementer)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
+* Appendix A
 
