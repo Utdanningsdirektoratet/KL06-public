@@ -14,7 +14,7 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
-{%ace edit=false, lang='xml'%}
+{%ace edit=false, check=false, lang='xml'%}
 <basicHttpBinding>
   <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
     <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
@@ -26,17 +26,13 @@ I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenest
 </basicHttpBinding>
 {%endace%}
 
-Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik (endringer er uthevet):
+Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik:
 
-{%ace edit=false, lang='xml'%}
+{%ace edit=false, check=false, lang='xml'%}
 <system.serviceModel>
   <bindings>
     <basicHttpBinding>
-      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" 
-      **maxBufferSize="6553600"** 
-      maxBufferPoolSize="524288" 
-      **maxReceivedMessageSize="6553600"** 
-      messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="6553600" maxBufferPoolSize="524288" maxReceivedMessageSize="6553600" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
         <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
         <security mode="None">
           <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
@@ -68,7 +64,7 @@ Først definerer vi brukergrensesnittet (XAMLen).
 
 Her oppretter vi et enkelt stackpanel med en tekstboks for å skrive inn tittel, en datovelger for å velge gyldig fra, en knapp for å starte søk, et grid for å vise søkeresultat (med tittel, kode og gyldig fra som kolonner) og en web-browser for å vise html:
 
-{%ace edit=false, lang='xml'%}
+{%ace edit=false, check=false, lang='xml'%}
 <Window x:Class="TestApplikasjon.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Width="973" Closing="WindowClosing">
   <Grid>
     <StackPanel>
@@ -97,7 +93,7 @@ Her oppretter vi et enkelt stackpanel med en tekstboks for å skrive inn tittel,
 
 Deretter definerer vi koden for å søke, og for å vise vurdering:
 
-{%ace edit=false%}
+{%ace check=false, edit=false%}
 public partial class MainWindow : Window
 {
   public MainWindow()
@@ -175,7 +171,7 @@ Følgende html-dokument benytter JQuery og REST-grensesnittet for å liste ut en
 
 Test.html:
 
-{%ace edit=false, lang='xml'%}
+{%ace edit=false, check=false, lang='xml'%}
 <!DOCTYPE html>
 <html>
   <head>
@@ -208,41 +204,22 @@ På bildet under ser du et bilde hvor du kan skrive inn deler av kode eller titt
 
 Metoden for å søke ser slik ut:
 
-```xml
-
+{%ace edit=false%}
 // Søker etter læreplaner
-
 function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
-
-var url = baseurl + "odata/Læreplan?$format=json";
-
-var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "', tolower(concat(concat(Kode, ' - '),
-
-Tittel))) eq true";
-
-var maksResultatFilter = "&$top=" + maksAntallTreff;
-
-var selekterFilter = "&$select=Tittel,Kode,UrlData";
-
-$.ajax({
-
-type: "GET",
-
-url: url + filter + maksResultatFilter + selekterFilter,
-
-success: function (msg) {
-
-// behandler resultatet
-
+  var url = baseurl + "odata/Læreplan?$format=json";
+  var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "', tolower(concat(concat(Kode, ' - '), Tittel))) eq true";
+  var maksResultatFilter = "&$top=" + maksAntallTreff;
+  var selekterFilter = "&$select=Tittel,Kode,UrlData";
+  $.ajax({
+    type: "GET",
+    url: url + filter + maksResultatFilter + selekterFilter,
+    success: function (msg) {
+    // behandler resultatet
+    }
+  });
 }
-
-}
-
-);
-
-}
-
-```
+{%endace%}
 
 Denne benytter standard OData-funksjonalitet for å oppgi filter og hva den vil ha tilbake. I en søke-intensiv applikasjon vil dette spare ressurser og båndbredde for klient-applikasjon og webserveren.
 
