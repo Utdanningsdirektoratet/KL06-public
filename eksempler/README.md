@@ -14,16 +14,55 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
-{%ace edit=true, lang='xml'%}
-<basicHttpBinding>
-  <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
-    <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
-    <security mode="None">
-      <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
-      <message clientCredentialType="UserName" algorithmSuite="Default" />
-    </security>
-  </binding>
-</basicHttpBinding>
+# gitbook-plugin-ace
+
+This page is implemented using the two plugins developed by me: ```gitbook-plugin-ace```. Please check the [Github repo](https://github.com/ymcatar/gitbook-plugin-ace) for the syntax and changelog of the plugin.
+
+## Example 1
+
+Here is the "Hello World" program of C language. The code editor in this section is set to be editable.
+
+{%ace edit=true, lang='c_cpp'%}
+#include <stdio.h>
+
+int main(){
+	int i;
+
+	for(i=0; i<10; i++)
+		printf("Hello World.");
+
+	return 0;
+}
+{%endace%}
+
+## Example 2
+
+And a javascript code right here:
+
+{%ace edit=false, lang='javascript'%}
+var message = 'H e l l o W o r l d';
+var split = message.split(' ').join('');
+console.log(message);
+{%endace%}
+
+## Example 3
+
+And a piece of javascript code with wrong syntax, but with syntax validation disabled.
+
+{%ace edit=false, lang='javascript', check=false%}
+var test = [
+	somethingIsWrong: 'withThis';
+];
+{%endace%}
+
+## Example 4
+
+Custom theme support is also added.
+
+{%ace edit=false, lang='javascript', theme='monokai'%}
+var test = a => (
+    `ES6 is amazing. $${a}`
+);
 {%endace%}
 
 ```xml
