@@ -17,5 +17,5 @@
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
-* [Appendix A](appendix_a.md)
+* [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
 
