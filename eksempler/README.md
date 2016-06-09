@@ -159,7 +159,7 @@ public partial class MainWindow : Window
       Client.Close();
   }
 }
-```
+{%endace%}
 
 ### Demonstrasjon {#demonstrasjon}
 
@@ -175,49 +175,28 @@ Følgende html-dokument benytter JQuery og REST-grensesnittet for å liste ut en
 
 Test.html:
 
-```xml
-
+{%ace edit=false, lang='xml'%}
 <!DOCTYPE html>
-
-&lt;html&gt;
-
-&lt;head&gt;
-
-&lt;title&gt;Test&lt;/title&gt;
-
-<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
-
-&lt;script src="http://code.jquery.com/jquery-latest.js"&gt;
-
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;script type="text/jscript"&gt;
-
-$.getJSON("http://data.udir.no/kl06/fagkoder",
-
-{},
-
-function (data)
-
-{
-
-$.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); })
-
-});
-
-&lt;/script&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-
-```
+<html>
+  <head>
+    <title>Test</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+  </head>
+  <body>
+    <p></p>
+    <script type="text/jscript">
+    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
+      function (data)
+      {
+        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); 
+      })
+    });
+    </script>
+  </body>
+</html>
+{%endace%}
 
 Html-side i nettleser:
 
