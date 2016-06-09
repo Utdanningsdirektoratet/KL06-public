@@ -227,7 +227,7 @@ Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og for
 
 Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse kan brukes for å hente ut detaljer om læreplanen. Vi er kun interessert i å vise formål, og vi velger å vise formål på “default”-språket, som vil tilsvare fastsatt språk på læreplanen:
 
-```xml
+{%ace edit=false,  lang='xml'%}
 // Utdrag av koden for å hente ut detaljert læreplan, og vise formål på default språk
 $.getJSON(baseurl + "kl06/" + lp.Kode, function (f) {
   $('#f' + f.kode).append('&lt;p&gt;' + hentDefaultVerdi(f.formaal) + '&lt;/p&gt;');
@@ -241,11 +241,11 @@ function hentDefaultVerdi(spraakversjonert) {
   });
   return res;
 }
-```
+{%endace%}
 
 **Komplett kode til dette eksempelet (krever jquery-ui med “accordion”-widget)**
 
-```xml
+{%ace edit=false, lang='xml'%}
 <!DOCTYPE html>
 <html>
   <head>
@@ -311,4 +311,4 @@ function hentDefaultVerdi(spraakversjonert) {
     <div id="resultat"></div>
   </body>
 </html>
-```
+{%endace%}
