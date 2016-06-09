@@ -14,7 +14,7 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
-{%ace edit=true, lang='xml'%}
+{%ace edit= lang='xml'%}
 <basicHttpBinding>
   <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
     <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
@@ -26,25 +26,17 @@ I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenest
 </basicHttpBinding>
 {%endace%}
 
-```xml
-<basicHttpBinding>
-  <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
-    <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
-    <security mode="None">
-      <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
-      <message clientCredentialType="UserName" algorithmSuite="Default" />
-    </security>
-  </binding>
-</basicHttpBinding>
-```
-
 Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 tegn, i tillegg til å øke maks antall objekter i en liste. Et forslag på hvordan konfigurasjonen på denne applikasjonen kan se ut er slik (endringer er uthevet):
 
-```xml
+{%ace lang='xml'%}
 <system.serviceModel>
   <bindings>
     <basicHttpBinding>
-      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" **maxBufferSize="6553600"** maxBufferPoolSize="524288" **maxReceivedMessageSize="6553600"** messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+      <binding name="GrepSoapBinding_GrepSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" 
+      **maxBufferSize="6553600"** 
+      maxBufferPoolSize="524288" 
+      **maxReceivedMessageSize="6553600"** 
+      messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
         <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
         <security mode="None">
           <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
@@ -64,7 +56,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
     </endpointBehaviors>
   </behaviors>
 </system.serviceModel>
-```
+{%endace%}
 
 ### Kode {#kode}
 
@@ -76,65 +68,32 @@ Først definerer vi brukergrensesnittet (XAMLen).
 
 Her oppretter vi et enkelt stackpanel med en tekstboks for å skrive inn tittel, en datovelger for å velge gyldig fra, en knapp for å starte søk, et grid for å vise søkeresultat (med tittel, kode og gyldig fra som kolonner) og en web-browser for å vise html:
 
-```xml
-
-<Window x:Class="TestApplikasjon.MainWindow"
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-Title="MainWindow" Width="973" Closing="WindowClosing">
-
-&lt;Grid&gt;
-
-&lt;StackPanel&gt;
-
-&lt;Label Content="Tittel å søke på"&gt;&lt;/Label&gt;
-
-&lt;TextBox Name="txtTittel"&gt;&lt;/TextBox&gt;
-
-&lt;Label Content="Gyldig Fra å søke på"&gt;&lt;/Label&gt;
-
-&lt;DatePicker Name="dtpGyldigFra"&gt;&lt;/DatePicker&gt;
-
-&lt;Button Name="btnSøk" Content="Søk" HorizontalAlignment="Left" Width="40" Click="BtnSøkClick"&gt;&lt;/Button&gt;
-
-&lt;ScrollViewer MaxHeight="150"&gt;
-
-<DataGrid Name="dgSøkeresultat" AutoGenerateColumns="False"
-
-SelectionChanged="DgSøkeresultatSelectionChanged">
-
-<DataGrid.Columns>
-
-&lt;DataGridTextColumn Binding="{Binding tittel}" Header="Tittel"&gt;&lt;/DataGridTextColumn&gt;
-
-&lt;DataGridTextColumn Binding="{Binding kode}" Header="Kode"&gt;&lt;/DataGridTextColumn&gt;
-
-&lt;DataGridTextColumn Binding="{Binding gyldigfra}" Header="Gyldig fra"&gt;&lt;/DataGridTextColumn&gt;
-
-</DataGrid.Columns>
-
-&lt;/DataGrid&gt;
-
-&lt;/ScrollViewer&gt;
-
-&lt;Label Content="Vurdering" FontWeight="Bold"&gt;&lt;/Label&gt;
-
-&lt;ScrollViewer MaxHeight="150"&gt;
-
-&lt;WebBrowser Name="webBrowser"&gt;&lt;/WebBrowser&gt;
-
-&lt;/ScrollViewer&gt;
-
-&lt;/StackPanel&gt;
-
-&lt;/Grid&gt;
-
-&lt;/Window&gt;
-
-```
+{%ace lang='xml'%}
+<Window x:Class="TestApplikasjon.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Width="973" Closing="WindowClosing">
+  <Grid>
+    <StackPanel>
+      <Label Content="Tittel å søke på"></Label>
+      <TextBox Name="txtTittel"></TextBox>
+      <Label Content="Gyldig Fra å søke på"></Label>
+      <DatePicker Name="dtpGyldigFra"></DatePicker>
+      <Button Name="btnSøk" Content="Søk" HorizontalAlignment="Left" Width="40" Click="BtnSøkClick"></Button>
+      <ScrollViewer MaxHeight="150">
+        <DataGrid Name="dgSøkeresultat" AutoGenerateColumns="False" SelectionChanged="DgSøkeresultatSelectionChanged">
+          <DataGrid.Columns>
+            <DataGridTextColumn Binding="{Binding tittel}" Header="Tittel"></DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding kode}" Header="Kode"></DataGridTextColumn>
+            <DataGridTextColumn Binding="{Binding gyldigfra}" Header="Gyldig fra"></DataGridTextColumn>
+          </DataGrid.Columns>
+        </DataGrid>
+      </ScrollViewer>
+      <Label Content="Vurdering" FontWeight="Bold"></Label>
+      <ScrollViewer MaxHeight="150">
+        <WebBrowser Name="webBrowser"></WebBrowser>
+      </ScrollViewer>
+    </StackPanel>
+  </Grid>
+</Window>
+{%endace%}
 
 Deretter definerer vi koden for å søke, og for å vise vurdering:
 
