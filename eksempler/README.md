@@ -14,13 +14,7 @@ Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 I dette tilfellet benytter vi en WCF proxy-klasse for å få tilgang til tjenesten. Denne har en del standard innstillinger, som blant annet går på hvor mange elementer man kan laste ned, og størrelsen på “pakken” fra tjenesten. Grep-tjenesten kan i utgangspunktet gi en oversikt over alle læreplaner, og dette vil overstige standardinnstillingene. For å endre dette – gå til applikasjonens app.config. Der vil du finne noen linjer som ligner på disse:
 
-# gitbook-plugin-ace
 
-This page is implemented using the two plugins developed by me: ```gitbook-plugin-ace```. Please check the [Github repo](https://github.com/ymcatar/gitbook-plugin-ace) for the syntax and changelog of the plugin.
-
-## Example 1
-
-Here is the "Hello World" program of C language. The code editor in this section is set to be editable.
 
 {%ace edit=true, lang='c_cpp'%}
 #include <stdio.h>
@@ -35,7 +29,6 @@ int main(){
 }
 {%endace%}
 
-## Example 2
 
 And a javascript code right here:
 
