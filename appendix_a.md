@@ -1,4 +1,4 @@
-# Appendix A - Endringer i datagrunnlaget
+# Endringer i datagrunnlaget
 
 
 ## Hjelpedata
