@@ -204,7 +204,7 @@ På bildet under ser du et bilde hvor du kan skrive inn deler av kode eller titt
 
 Metoden for å søke ser slik ut:
 
-{%ace edit=false%}
+{%ace edit=false, check=false%}
 // Søker etter læreplaner
 function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
   var url = baseurl + "odata/Læreplan?$format=json";
