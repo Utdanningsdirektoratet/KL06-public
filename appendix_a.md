@@ -45,7 +45,7 @@ Det vil si at PSI-ene http://psi.udir.no/ontologi/eksamensfag_elev og  http://ps
 | http://psi.udir.no/eksamensfag/elev/5 http://psi.udir.no/eksamensfag/privatist/4 |	Obligatorisk | http://psi.udir.no/kl06/trekkordning_3 |
 	
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
-Eksamensordning/Elev og Eksamensordning/Privatist
+###Eksamensordning/Elev og Eksamensordning/Privatist
 Hjelpedatatypene Eksamensordning Elev og Eksamensordning Privatist utgår. Disse erstattes av en ny type, Eksamensordning.
 
 Det samme vil gjelde for alle hjelpedataene av disse to typene:
@@ -166,5 +166,5 @@ Det vil si at PSI-ene http://psi.udir.no/ontologi/eksamensordning_elev og  http:
 |http://psi.udir.no/eksamensordning/privatist/34	|Skriftlig og tverrfaglig muntlig-praktisk	|http://psi.udir.no/kl06/eksamensordning_25|
 
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
-Vurderingsform
+###Vurderingsform
 Vurderingsform har endret navn til Vurderingsuttrykk. Denne endringen påvirker kun nye verdier som greptype og kode for eksisterende element.
