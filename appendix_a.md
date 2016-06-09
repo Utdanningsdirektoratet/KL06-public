@@ -37,3 +37,15 @@ Det samme vil gjelde for alle hjelpedatatene av disse typene:
 * http://psi.udir.no/eksamensfag/privatist/10
 * 
 Det vil si at PSI-ene http://psi.udir.no/ontologi/eksamensfag_elev og  http://psi.udir.no/ontologi/eksamensfag_privatist erstattes av nye verdier av typen http://grep.bouvet.no/psi/ontologi/kl06/trekkordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
+
+| Gammel PSI | 1:0 | 2:0 |
+| -- | -- | -- |
+| 0:2 | 1:2 | 2:2 |
+| 0:3 | 1:3 | 2:3 |
+
+|Gammel PSI |	Tittel |	Ny PSI |
+| -- | -- | -- |
+| http://psi.udir.no/eksamensfag/elev/3 http://psi.udir.no/eksamensfag/privatist/3 | Ingen eksamen | http://psi.udir.no/kl06/trekkordning_1 |
+| http://psi.udir.no/eksamensfag/elev/7 http://psi.udir.no/eksamensfag/privatist/10	 | Trekkfag | http://psi.udir.no/kl06/trekkordning_2 | 
+| http://psi.udir.no/eksamensfag/elev/5 http://psi.udir.no/eksamensfag/privatist/4 |	Obligatorisk | http://psi.udir.no/kl06/trekkordning_3 |
+	
