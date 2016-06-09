@@ -18,5 +18,5 @@
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
 * [Eksempler](eksempler/README.md)
 * [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
-* Appendix B - Endringer i SOAP-kontrakten
+* [Appendix B - Endringer i SOAP-kontrakten](appendix_b_-_endringer_i_soap-kontrakten.md)
 
