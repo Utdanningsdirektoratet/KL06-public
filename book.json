@@ -11,7 +11,7 @@
         "ace",
         "anchors",
         "anker-enable",
-        "anker-enable2"
+        "-anker-enable2"
     ],
     "pluginsConfig": {
         "versions": {
