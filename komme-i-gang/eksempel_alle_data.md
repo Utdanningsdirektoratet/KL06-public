@@ -1,3 +1,5 @@
+##Uthenting av alle data
+
 I en del tilfeller er man interessert i å hente ut alt av data fra KL06 og plassere disse i sin egen datakilde. Man kan da traverse de elementene man er interesserte i og trekke ut relevant informasjon.  
 
 <h2>C#</h2>
