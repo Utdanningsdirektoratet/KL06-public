@@ -1,4 +1,4 @@
-## Rest-grensesnitt {#rest-grensesnitt}
+## REST-grensesnitt {#rest-grensesnitt}
 
 ### Utlisting av alle fagkoder i html-side med JQuery {#utlisting-av-alle-fagkoder-i-html-side-med-jquery}
 
