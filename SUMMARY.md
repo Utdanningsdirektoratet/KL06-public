@@ -11,7 +11,7 @@
 * [Oversikt over API](oversikt_over_api.md)
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
-   * [Typer elementer](webtjenester/README.md#typer_elementer)
+   * [Elementer](webtjenester/elementer.md)
    * Grensesnitt
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
