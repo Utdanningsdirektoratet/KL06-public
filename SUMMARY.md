@@ -4,6 +4,7 @@
    * [Historikk](historikk.md)
    * [Endringer 2016/04](endringer_201604.md)
 * [Komme i gang](komme-i-gang/README.md)
+ * [Hente data](komme-i-gang/hente-data.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Eksempler](eksempler.md)
    * [Uthenting av alle data](eksempel_alle_data.md)
