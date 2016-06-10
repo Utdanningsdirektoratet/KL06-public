@@ -21,6 +21,8 @@
  * [Språkvalg i SOAP](soap-grensesnittet/sprakvalg_i_soap.md)
 * [OData-grensesnittet](odata-grensesnittet/odata.md)
  * [Fagkoder](odata-grensesnittet/odata_og_fagkoder.md)
+ * [Læreplaner](odata-grensesnittet/odata_og_laereplaner.md)
+ *  [Resten av elementene](odata-grensesnittet/resten_av_elementene.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/sparql.md)
 * [Eksempler](eksempler/README.md)
 * [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
