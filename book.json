@@ -5,7 +5,7 @@
     "structure": {
         "readme": "main.md"
     },
-    "plugins": [ "versions", "include-codeblock" ],
+    "plugins": [ "versions", "ace", "include-codeblock" ],
     "pluginsConfig": {
         "versions": {
             "gitbookConfigURL": "https://kl06-doc.gitbooks.io/kl06-public/content/book.json",
