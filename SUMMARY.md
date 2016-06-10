@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduksjon](main.md)
-   * [Historikk](historikk.md)
-   * [Endringer 2016/04](endringer_201604.md)
+   * [Historikk](introduksjon/historikk.md)
+   * [Endringer 2016/04](introduksjon/endringer_201604.md)
 * [Komme i gang](komme-i-gang/komme-i-gang.md)
    * [Hente data](komme-i-gang/hente-data.md)
    * [Eksempler](komme-i-gang/eksempler.md)
