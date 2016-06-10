@@ -1,4 +1,4 @@
-# Typer elementer {#typer_elementer}
+# Elementer {#elementer}
 
 Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 
