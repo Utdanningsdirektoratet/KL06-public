@@ -8,9 +8,7 @@
     "plugins": [
         "versions",
         "include-codeblock",
-        "ace",
-        "anchors",
-        "anker-enable"
+        "ace"
     ],
     "pluginsConfig": {
         "versions": {

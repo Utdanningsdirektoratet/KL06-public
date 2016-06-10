@@ -9,6 +9,6 @@ Løsning på dette er å øke maks størrelse på returmeldinger. I samme slenge
 
 
 <a id="traversere" href="#"></a>
-### Må jeg traverse hele KL06 for å hente ned alle data?
+### Må jeg traversere hele KL06 for å hente ned alle data?
 Inntil videre - ja. De fleste har dog ikke behov for alle data.
 
