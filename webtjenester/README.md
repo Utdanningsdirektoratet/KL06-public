@@ -1,6 +1,8 @@
 # Webtjenester {#webtjenester}
 
-# Typer elementer {#typer_elementer}
+
+Hva som ligger i kontrakten for de ulike elementtypene kan en finne her: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl)
+## Typer elementer {#typer_elementer}
 
 Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 
@@ -39,6 +41,3 @@ For å tilby funksjonalitet til flest mulig bruksscenarier, er tjenestene tilgje
 *   Et XML/SOAP-grensesnitt for søk og detaljert oppslag på fag og læreplaner
 *   Et OData-grensesnitt for søk på fag og læreplaner
 
-## Definisjon av elementer {#definisjon-av-elementer}
-
-Hva som ligger i kontrakten for de ulike elementtypene kan en finne her: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl)
