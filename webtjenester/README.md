@@ -1,6 +1,6 @@
 # Webtjenester {#webtjenester}
 
-## Typer elementer {#typer-elementer}
+## Typer elementer {#typerelementer}
 
 Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 
