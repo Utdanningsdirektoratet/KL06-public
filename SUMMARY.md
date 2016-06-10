@@ -12,7 +12,7 @@
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
    * [Elementer](webtjenester/elementer.md)
-   * [Grensesnitt](webtjenester/grensesnitt.md)
+   * [Oversikt over grensesnitt](webtjenester/grensesnitt.md)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
