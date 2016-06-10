@@ -2,7 +2,7 @@
 
 * [Oversikt](main.md)
    * [Endringer 2016/04](endringer_201604.md)
-   * Historikk
+   * [Historikk](historikk.md)
 * [Komme i gang](komme_i_gang.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Eksempler](eksempler.md)
