@@ -1,5 +1,6 @@
 # Eksempler {#eksempler}
 
+Nå følger det to eksempler på hvordan REST- og SOAP-grensesnittet kan brukes i praksis.
 ## Rest-grensesnitt {#rest-grensesnitt}
 
 ### Utlisting av alle fagkoder i html-side med JQuery {#utlisting-av-alle-fagkoder-i-html-side-med-jquery}
