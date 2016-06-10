@@ -9,7 +9,8 @@
         "versions",
         "include-codeblock",
         "ace",
-        "anchors"
+        "anchors",
+        "anker-enable"
     ],
     "pluginsConfig": {
         "versions": {
