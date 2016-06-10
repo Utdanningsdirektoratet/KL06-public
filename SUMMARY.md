@@ -3,7 +3,7 @@
 * [Introduksjon](main.md)
    * [Historikk](historikk.md)
    * [Endringer 2016/04](endringer_201604.md)
-* [Komme i gang](komme-i-gang/README.md)
+* [Komme i gang](komme-i-gang/komme-i-gang.md)
  * [Hente data](komme-i-gang/hente-data.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Eksempler](eksempler.md)
