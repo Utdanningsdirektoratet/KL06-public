@@ -1,6 +1,6 @@
 # Summary
 
-* [Oversikt](main.md)
+* [Introduksjon](main.md)
    * [Historikk](historikk.md)
    * [Endringer 2016/04](endringer_201604.md)
 * [Komme i gang](komme_i_gang.md)
