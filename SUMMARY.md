@@ -9,7 +9,7 @@
    * [Hente alle endringer etter dato](eksempel_etter_dato.md)
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
-   * [Typer elementer](webtjenester/README.md#typerelementer)
+   * [Typer elementer](webtjenester/README.md##typer_elementer)
 * [REST-grensesnittet](rest-grensesnittet/README.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
