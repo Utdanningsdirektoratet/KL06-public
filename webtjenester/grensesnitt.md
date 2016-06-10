@@ -5,3 +5,4 @@ For å tilby funksjonalitet til flest mulig bruksscenarier, er tjenestene tilgje
 *   Et REST-basert grensesnitt for utlisting og detaljert oppslag på fag og læreplaner
 *   Et XML/SOAP-grensesnitt for søk og detaljert oppslag på fag og læreplaner
 *   Et OData-grensesnitt for søk på fag og læreplaner
+*   Et Sparql-grensesnitt for å gjøre spørringer på fag og læreplaner
