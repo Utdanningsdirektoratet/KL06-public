@@ -5,6 +5,8 @@
    * [Endringer 2016/04](endringer_201604.md)
 * [Komme i gang](komme-i-gang/komme-i-gang.md)
  * [Hente data](komme-i-gang/hente-data.md)
+ * [Eksempler](komme-i-gang/eksempler.md)
+  * [Hente data](komme-i-gang/hente-data.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Eksempler](eksempler.md)
    * [Uthenting av alle data](eksempel_alle_data.md)
