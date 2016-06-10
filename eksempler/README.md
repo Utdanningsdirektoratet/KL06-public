@@ -1,6 +1,5 @@
 # Eksempler {#eksempler}
 
-## Bruk av SOAP-grensesnitt (.Net) {#bruk-av-soap-grensesnitt-net}
 
 Her følger et enkelt eksempel på hvordan du kan ta i bruk SOAP-grensesnittet i en .Net-basert applikasjon.
 
