@@ -20,7 +20,7 @@
 * [SOAP-grensesnittet](soap-grensesnittet/soap.md)
  * [Språkvalg i SOAP](soap-grensesnittet/sprakvalg_i_soap.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
-* [Sparql-grensesnittet](sparql-grensesnittet/README.md)
+* [Sparql-grensesnittet](sparql-grensesnittet/sparql.md)
 * [Eksempler](eksempler/README.md)
 * [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
 * [Appendix B - Endringer i SOAP-kontrakten](appendix_b.md)
