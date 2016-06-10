@@ -25,3 +25,4 @@ Denne versjonen av KL06 inneholder en del omstruktureringer på læreplaner og n
 - url-psi er fjernet
 - uri er lagt til som en nøkkel for elementer og referanser. Uri peker til ontologien for elementet
 - grep-type er lagt til som nøkkel på typen til elementet eller referansene. Dette feltet er en oppslagbar uri til ontologien for typen.
+- Det har kommet en del endringer i datagrunnlaget, beskrevet i [Appendix A](../appendix_a.md).
