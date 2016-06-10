@@ -9,7 +9,7 @@
         "versions",
         "include-codeblock",
         "ace",
-        "anchors",
+        "-anchors",
         "anker-enable",
         "-anker-enable2"
     ],
