@@ -16,6 +16,7 @@
 * [REST-grensesnittet](rest-grensesnittet/rest.md)
   * [Versjonering](rest-grensesnittet/versjonering.md)
   * [Språkvalg i REST](rest-grensesnittet/sprakvalg_i_rest.md)
+  * [Spesialspørringer](rest-grensesnittet/spesialsporringer.md)
 * [SOAP-grensesnittet](soap-grensesnittet/README.md)
 * [OData-grensesnittet](odata-grensesnittet/README.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/README.md)
