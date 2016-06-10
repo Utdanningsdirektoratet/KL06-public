@@ -9,7 +9,6 @@ Versjon 2016/04 har introdusert større endringer i grunnleggende strukturer. Le
 
 ## Andre versjoner av dette dokumentet
 - [2013/11](/v/201311/)
-- [Beta](/v/beta/)
 
 # Historikk {# historikk}
 
