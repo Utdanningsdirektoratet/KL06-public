@@ -1,5 +1,7 @@
 ##Hente ut endringer etter dato
 
+Noen ganger vil man hente ut alle data fra KL06 som er endret etter en dato.
+
 <h2>C#</h2>
 
 ###SOAP
