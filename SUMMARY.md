@@ -7,7 +7,7 @@
  * [Hente data](komme-i-gang/hente-data.md)
  * [Eksempler](komme-i-gang/eksempler.md)
    * [Uthenting av alle data](komme-i-gang/eksempel_alle_data.md)
-   * [Hente alle endringer etter dato](komme-i-gang/eksempel_etter_dato.md)
+   * [Uthenting etter dato](komme-i-gang/eksempel_etter_dato.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Ofte stilte spørsmål](faq.md)
 * [Webtjenester](webtjenester/README.md)
