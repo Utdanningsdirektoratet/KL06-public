@@ -1,4 +1,4 @@
-## Språkvalg i rest {#spr-kvalg-i-rest}
+## Språkvalg i REST {#spr-kvalg-i-rest}
 
 Det er mulig å velge ut tekster på et bestemt språk ved å legge inn {?lang=xxx}. Der språket angis i henhold til ISO 639-2 standarden. http://data.udir.no/kl06/MAT1-04?lang=nno vil gi deg den gitte læreplanen med kun nynorske tekster. Dersom det ikke finnes oversettelser på dette språket vil tekstfeltene vises som tom liste.
 
