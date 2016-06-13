@@ -16,5 +16,5 @@ Dersom en ikke angir noe språk vil en få ut alle tilgjengelige oversettelser f
 |*beta-data.udir.no/kl06/fagkategorier{.format}* | Henter ut alle fagkategorier i Grep | RSS/Atom (.atom) | http://beta-data.udir.no/kl06/fagkategorier (gir tilbake alle fagkategorier i standardformat) |
 |*beta-data.udir.no/kl06/kompetansemaal{.format}{?lang=XXX}* | Henter ut alle kompetansemål i Grep | RSS/Atom (.atom) |http://beta-data.udir.no/kl06/kompetansemaal (gir tilbake alle kompetansemål i standardformat) |
 |*beta-data.udir.no/kl06/opplaeringsfag{.format}{?lang=XXX}* | Henter ut alle opplæringsfag i Grep | RSS/Atom (.atom) |http://beta-data.udir.no/kl06/opplaeringsfag (gir tilbake alle opplæringsfag i standardformat) |
-|beta-data.udir.no/kl06/aarstrinn{.format}{?lang=XXX} | Henter ut alle årstrinn i Grep | RSS/Atom (.atom) |beta-data.udir.no/kl06/aarstrinn (gir tilbake alle årstrinn i standardformat) |
-|beta-data.udir.no/kl06/{kode}{.format}{?lang=XXX} | Henter ut et element i Grep. Foreløpig kan disse elementene hentes ut: | XML (.xml) | [http://beta-data.udir.no/kl06/IDR1-01](http://beta-data.udir.no/kl06/IDR1-01) |
+|*beta-data.udir.no/kl06/aarstrinn{.format}{?lang=XXX}* | Henter ut alle årstrinn i Grep | RSS/Atom (.atom) |http://beta-data.udir.no/kl06/aarstrinn (gir tilbake alle årstrinn i standardformat) |
+|*beta-data.udir.no/kl06/{kode}{.format}{?lang=XXX}* | Henter ut et element i Grep. Foreløpig kan disse elementene hentes ut: | XML (.xml) | [http://beta-data.udir.no/kl06/IDR1-01](http://beta-data.udir.no/kl06/IDR1-01) |
