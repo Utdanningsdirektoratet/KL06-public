@@ -1,4 +1,8 @@
-Brukermanual for Grep Læreplanspørringer
+*Versjon 2013/11*
+
+# Brukermanual for KL06 (Grep)
+
+Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut oversikt over læreplaner og fagkoder fra Grep. I dette dokumentet gir vi en oppsummering av muligheter og brukseksempler for tjenestene i KL06.
 
 # Historikk {#historikk}
 
@@ -16,8 +20,4 @@ Brukermanual for Grep Læreplanspørringer
 | 0.18 | 30.06.2015 | Une Haga | Fikset lenker fra udir.data.no til data.udir.no, og soap endepunktet satt til data.udir.no/kl06/soap over alt. |
 | 0.19 | 26.08.2015 | Stian G-E | Fjernet bruk av jsonp (data-type og callback) |
 
-
-# Introduksjon {#introduksjon}
-
-Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut data fra Grep. I dette dokumentet gir vi en oppsummering av muligheter og brukseksempler for disse tjenestene.
 
