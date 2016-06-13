@@ -2,7 +2,7 @@
 
 KL06 er strukturert slik at man kan hente ned en liste av minimumsinformasjon over de ulike [elementene](/oversikt_over_api.md#typer) i Grep.
 
-Formatet på disse listene er http://beta-data.udir.no/kl06/*{element-type}* f.eks. [http://beta-data.udir.no/kl06/laereplaner](http://beta-data.udir.no/kl06/laereplaner)
+Formatet på disse listene er http://beta-data.udir.no/kl06/*{element-type}* f.eks. [http://beta-data.udir.no/kl06/laereplaner](http://beta-data.udir.no/kl06/laereplaner).
 
 Om du benytter SOAP-formatet så tilsvarer disse listene operasjonene Finn*{element-type}*, f eks [FinnPlaner](http://beta-data.udir.no/kl06/soap#FinnPlaner).
 
