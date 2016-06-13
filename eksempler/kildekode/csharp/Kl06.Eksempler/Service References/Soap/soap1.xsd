@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://psi.udir.no/kl06/2016/04" elementFormDefault="qualified" targetNamespace="http://psi.udir.no/kl06/2016/04" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://data.udir.no/kl06/soap?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://beta-data.udir.no/kl06/soap?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <xs:element name="FinnPlaner">
     <xs:complexType>
       <xs:sequence>
