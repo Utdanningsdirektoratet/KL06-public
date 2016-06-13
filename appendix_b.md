@@ -1,7 +1,8 @@
 # Appendix B - Endringer i SOAP-kontrakten
 
-Oppsummering av endringer som medfører nytt versjonsnummer
-Parametere som har blitt fjernet
+Oppsummering av endringer som medfører nytt versjonsnummer.
+
+Parametere som har blitt fjernet:
 * id i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.id
 * urlpsi i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.urlpsi
 * noekkel i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.tittel.noekkel
