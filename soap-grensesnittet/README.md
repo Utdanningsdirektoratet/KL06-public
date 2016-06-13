@@ -1,6 +1,6 @@
 # SOAP-grensesnittet {#soap-grensesnittet}
 
-Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://data.udir.no/kl06/soap](http://data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/soap?wsdl). Kontrakten inneholder tjenestekontrakten og alle relevante datatyper.
+Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://data.udir.no/kl06/soap](http://data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl). Kontrakten inneholder tjenestekontrakten og alle relevante datatyper.
 
 SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep.
 
