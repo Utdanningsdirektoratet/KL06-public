@@ -2,7 +2,7 @@
 
 Det er mulig å velge ut tekster på et bestemt språk ved å legge inn {?lang=xxx}. Der språket angis i henhold til ISO 639-2 standarden. http://data.udir.no/kl06/MAT1-04?lang=nno vil gi deg den gitte læreplanen med kun nynorske tekster. Dersom det ikke finnes oversettelser på dette språket vil tekstfeltene vises som tom liste.
 
-Dersom en ikke angir noe språk vil en få ut alle tilgjengelige oversettelser for angitt element. Eks. http://data.udir.no/kl06/MAT1-03\. Dersom en vil hente ut elementet på «hovedspråk», som i hovedsak variere mellom nynorsk og bokmål, setter en lang=default. Eks. [http://data.udir.no/kl06/MAT1-03?lang=default](http://data.udir.no/kl06/MAT1-03?lang=default) vil vise MAT1-03 på nynorsk.
+Dersom en ikke angir noe språk vil en få ut alle tilgjengelige oversettelser for angitt element. Eks. http://data.udir.no/kl06/MAT1-03. Dersom en vil hente ut elementet på «hovedspråk», som i hovedsak variere mellom nynorsk og bokmål, setter en lang=default. Eks. [http://data.udir.no/kl06/MAT1-03?lang=default](http://data.udir.no/kl06/MAT1-03?lang=default) vil vise MAT1-03 på nynorsk.
 
 | **Url** | **Beskrivelse** | **Støttede formater** | **Eksempel** |
 | --- | --- | --- | --- |
