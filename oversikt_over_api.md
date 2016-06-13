@@ -3,7 +3,7 @@
 <a href="" id="typer"></a>
 ## Elementtyper
 KL06 har følgende elementtyper
-- [Læreplaner](http://grep.bouvet.no/psi/ontologi/kl06//laereplan) ([/laereplaner](http://data.udir.no/kl06/laereplaner)).
+- [Læreplaner](http://grep.bouvet.no/psi/ontologi/kl06/laereplan) ([/laereplaner](http://data.udir.no/kl06/laereplaner)).
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#laereplan)
 - [Fagkoder](http://grep.bouvet.no/psi/ontologi/kl06//fagkode) ([/fagkoder](http://data.udir.no/kl06/fagkoder))
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#fagkode)
