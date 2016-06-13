@@ -1,4 +1,4 @@
-# Endringer 2016/04
+# Endringer Beta
 
 ## Generelt
 
