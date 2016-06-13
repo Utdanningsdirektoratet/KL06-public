@@ -22,7 +22,7 @@ For alle metoder er det mulig å legge inn språkvalg. Språket angis i henhold 
 
 *Eksempel 2: Uthenting av MAT1-03 på hovedspråk.*
 {%ace edit=false, check=false, lang='xml'%}
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/20163/04">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://psi.udir.no/kl06/2016/04">
   <soapenv:Header/>
   <soapenv:Body>
     <ns:HentPlanFraKode>

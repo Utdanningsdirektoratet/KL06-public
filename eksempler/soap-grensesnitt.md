@@ -45,7 +45,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
     </basicHttpBinding>
   </bindings>
   <client>
-    <endpoint address="http://beta-data.udir.no/soap" binding="basicHttpBinding" **behaviorConfiguration="GrepBehavior"** bindingConfiguration="GrepSoapBinding_GrepSoap" contract="Læreplanspørringer.GrepSoap" name="GrepSoapBinding_GrepSoap" />
+    <endpoint address="http://beta-data.udir.no/soap" binding="basicHttpBinding" behaviorConfiguration="GrepBehavior" bindingConfiguration="GrepSoapBinding_GrepSoap" contract="Læreplanspørringer.GrepSoap" name="GrepSoapBinding_GrepSoap" />
   </client>
   <behaviors>
     <endpointBehaviors>
