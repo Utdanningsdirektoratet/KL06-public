@@ -2,8 +2,10 @@
 
 For å spørre etter læreplaner, oppgir du URLen [http://data.udir.no/kl06/odata/Læreplan](http://data.udir.no/kl06/odata/Læreplan)
 
+![](../figurer/figur3.PNG)
 Figur 3: Læreplaner levert som RSS
 
+![](../figurer/figur4.PNG)
 Figur 4: Læreplan levert som JSON
 
 På læreplan har vi følgende felt å jobbe med:
