@@ -1,6 +1,6 @@
 # Komme i gang
 
-KL06 kan nås fra http://data.udir.no/kl06 og er tilgjengelig som et [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-api, et [SOAP](https://en.wikipedia.org/wiki/SOAP)-api og et [SPARQL](https://en.wikipedia.org/wiki/SPARQL)-endepunkt.
+KL06 kan nås fra http://beta-data.udir.no/kl06 og er tilgjengelig som et [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-api, et [SOAP](https://en.wikipedia.org/wiki/SOAP)-api og et [SPARQL](https://en.wikipedia.org/wiki/SPARQL)-endepunkt.
 
 KL06s REST-grensesnitt er løselig basert på REST-arkitekturen, og kan kanskje mer korrekt beskrives som et HTTP-api.
 
