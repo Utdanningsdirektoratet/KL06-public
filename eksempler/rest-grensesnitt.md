@@ -18,7 +18,7 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
+    $.getJSON("http://beta-data.udir.no/kl06/fagkoder", {},
       function (data)
       {
         $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); 
@@ -65,7 +65,7 @@ Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse ka
 {%ace edit=false, check=false,  lang='xml'%}
 // Utdrag av koden for å hente ut detaljert læreplan, og vise formål på default språk
 $.getJSON(baseurl + "kl06/" + lp.Kode, function (f) {
-  $('#f' + f.kode).append('&lt;p&gt;' + hentDefaultVerdi(f.formaal) + '&lt;/p&gt;');
+  $('#f' + f.kode).append('<p>' + hentDefaultVerdi(f.formaal) + '</p>');
 });
 // Henter ut den språkversjonerte verdien med nøkkelen 'default'
 function hentDefaultVerdi(spraakversjonert) {
@@ -92,7 +92,7 @@ function hentDefaultVerdi(spraakversjonert) {
   </head>
   <body>
     <script type="text/javascript">
-      var baseurl = "http://data.udir.no/";
+      var baseurl = "http://beta-data.udir.no/";
       var maksAntallTreff = 25;
       // Hekter på event på søke-input til å kalle soekEtterLaereplaner, med søkestreng og maks 25 antall treff
       $(document).ready(function () {
