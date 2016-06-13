@@ -2,9 +2,14 @@
 
 Her følger et enkelt eksempel på hvordan du kan ta i bruk SOAP-grensesnittet i en .Net-basert applikasjon.
 
+![](../figurer/figur5.PNG)
 Figur 5: Opprett en ny applikasjon
 
+![](../figurer/figur6.PNG)
+
 Figur 6: Legg til en ny tjeneste-referanse
+
+![](../figurer/figur7.PNG)
 
 Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
@@ -159,4 +164,5 @@ public partial class MainWindow : Window
 
 Når vi kjører denne applikasjonen, kan vi filtrere på tittel og gyldig fra. Om vi oppgir “Natur” som tittel og 01.01.2008 som gyldig fra, vil vi få følgende resultat:
 
+![](../figurer/figur8.png)
 Figur 8: Testing av applikasjon
