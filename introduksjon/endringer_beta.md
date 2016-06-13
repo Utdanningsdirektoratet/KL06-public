@@ -21,7 +21,7 @@ Denne versjonen av KL06 inneholder en del omstruktureringer på læreplaner og n
 
 ### Generelt
 
-- Status har endret format til beta-data.udir.no/kl06/statuskode, feks [http://beta-data.udir.no/kl06/status_publisert](http://beta-data.udir.no/kl06/status_publisert). Dette er nå en peker på status-elementet, og man kan hente mer informasjon om status (oversettelser etc)
+- Status har endret format til *beta-data.udir.no/kl06/{statuskode}*, feks [http://beta-data.udir.no/kl06/status_publisert](http://beta-data.udir.no/kl06/status_publisert). Dette er nå en peker på status-elementet, og man kan hente mer informasjon om status (oversettelser etc)
 - url-psi er fjernet
 - uri er lagt til som en nøkkel for elementer og referanser. Uri peker til ontologien for elementet
 - grep-type er lagt til som nøkkel på typen til elementet eller referansene. Dette feltet er en oppslagbar uri til ontologien for typen.
