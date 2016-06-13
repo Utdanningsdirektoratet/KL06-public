@@ -6,11 +6,11 @@ Dersom en ikke angir noe språk vil en få ut alle tilgjengelige oversettelser f
 
 | **Url** | **Beskrivelse** | **Støttede formater** | **Eksempel** |
 | --- | --- | --- | --- |
-| beta-data.udir.no/kl06/fagkoder{.format}{?lang=XXX} | Henter ut alle fag i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/fagkoder](http://beta-data.udir.no/kl06/fagkoder) (gir tilbake alle fagkoder i standardformat) |
-|beta-data.udir.no/kl06/laereplaner{.format}{?lang=XXX} | Henter ut alle læreplaner i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/laereplaner](http://beta-data.udir.no/kl06/laereplaner) (gir tilbake alle læreplaner i standardformat) |
-|beta-data.udir.no/kl06/utdanningsprogram{.format}{?lang=XXX} | Henter ut alle utdanningsprogram i Grep | RSS/Atom (.atom) | http:/[/beta-data.udir.no/kl06/utdanningsprogram](http://beta-data.udir.no/kl06/utdanningsprogram) (gir tilbake alle utdanningsprogram i standardformat) |
-|beta-data.udir.no/kl06/programomraader{.format}{?lang=XXX} | Henter ut alle programområder i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/programomraader](http://beta-data.udir.no/kl06/programomraader) (gir tilbake alle programområder i standardformat) |
-|beta-data.udir.no/kl06/merknader{.format}{?lang=XXX} | Henter ut alle merknader i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/merknader](http://beta-data.udir.no/kl06/merknader) (gir tilbake alle merknader i standardformat) |
+| *beta-data.udir.no/kl06/fagkoder{.format}{?lang=XXX}* | Henter ut alle fag i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/fagkoder](http://beta-data.udir.no/kl06/fagkoder) (gir tilbake alle fagkoder i standardformat) |
+|*beta-data.udir.no/kl06/laereplaner{.format}{?lang=XXX}* | Henter ut alle læreplaner i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/laereplaner](http://beta-data.udir.no/kl06/laereplaner) (gir tilbake alle læreplaner i standardformat) |
+|*beta-data.udir.no/kl06/utdanningsprogram{.format}{?lang=XXX}* | Henter ut alle utdanningsprogram i Grep | RSS/Atom (.atom) | http:/[/beta-data.udir.no/kl06/utdanningsprogram](http://beta-data.udir.no/kl06/utdanningsprogram) (gir tilbake alle utdanningsprogram i standardformat) |
+|*beta-data.udir.no/kl06/programomraader{.format}{?lang=XXX}* | Henter ut alle programområder i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/programomraader](http://beta-data.udir.no/kl06/programomraader) (gir tilbake alle programområder i standardformat) |
+|*beta-data.udir.no/kl06/merknader{.format}{?lang=XXX}* | Henter ut alle merknader i Grep | RSS/Atom (.atom) | [http://beta-data.udir.no/kl06/merknader](http://beta-data.udir.no/kl06/merknader) (gir tilbake alle merknader i standardformat) |
 |beta-data.udir.no/kl06/merkelapper{.format}{?lang=XXX} | Henter ut alle merkelapper i Grep | RSS/Atom (.atom) |beta-data.udir.no/kl06/merkelapper (gir tilbake alle merkelapper i standardformat) |
 |beta-data.udir.no/kl06/fagomraader{.format}{?lang=XXX} | Henter ut alle fagområder i Grep | RSS/Atom (.atom) |beta-data.udir.no/kl06/fagomraader (gir tilbake alle fagområder i standardformat) |
 |beta-data.udir.no/kl06/fagkategorier{.format} | Henter ut alle fagkategorier i Grep | RSS/Atom (.atom) |beta-data.udir.no/kl06/fagkategorier (gir tilbake alle fagkategorier i standardformat) |
