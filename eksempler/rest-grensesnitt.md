@@ -92,7 +92,7 @@ function hentDefaultVerdi(spraakversjonert) {
   </head>
   <body>
     <script type="text/javascript">
-      var baseurl = "http://beta-data.udir.no/";
+      var baseurl = "http://data.udir.no/";
       var maksAntallTreff = 25;
       // Hekter på event på søke-input til å kalle soekEtterLaereplaner, med søkestreng og maks 25 antall treff
       $(document).ready(function () {
