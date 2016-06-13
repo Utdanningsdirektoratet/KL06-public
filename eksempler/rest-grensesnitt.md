@@ -18,7 +18,7 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
+    $.getJSON("http://beta-data.udir.no/kl06/fagkoder", {},
       function (data)
       {
         $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); 
@@ -92,7 +92,7 @@ function hentDefaultVerdi(spraakversjonert) {
   </head>
   <body>
     <script type="text/javascript">
-      var baseurl = "http://data.udir.no/";
+      var baseurl = "http://beta-data.udir.no/";
       var maksAntallTreff = 25;
       // Hekter på event på søke-input til å kalle soekEtterLaereplaner, med søkestreng og maks 25 antall treff
       $(document).ready(function () {
