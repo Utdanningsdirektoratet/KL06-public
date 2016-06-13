@@ -10,11 +10,11 @@ Det samme vil gjelde for hjelpedataene av denne typen.
 * Sentral
 
 Det vil si at PSI http://beta-psi.udir.no/ontologi/oppgavesensur erstattes av
-* http://beta-data.udir.no/ontologi/kl06/oppgave i tilfellene der verdien gjelder oppgave.
+* http://beta-psi.udir.no/ontologi/kl06/oppgave i tilfellene der verdien gjelder oppgave.
   * Verdier for denne typen er:
    * http://beta-psi.udir.no/kl06/oppgave_lokal
    * http://beta-psi.udir.no/kl06/oppgave_sentral
-* http://beta-data.udir.no/ontologi/kl06/sensur i tilfelle verdien gjelder sensur
+* http://beta-psi.udir.no/ontologi/kl06/sensur i tilfelle verdien gjelder sensur
   * Verdier for denne typen er:
    * http://beta-psi.udir.no/kl06/sensur_lokal
    * http://beta-psi.udir.no/kl06/sensur_sentral
@@ -36,7 +36,7 @@ Det samme vil gjelde for alle hjelpedatatene av disse typene:
 * http://beta-psi.udir.no/eksamensfag/privatist/11
 * http://beta-psi.udir.no/eksamensfag/privatist/10
 * 
-Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensfag_elev og  http://beta-psi.udir.no/ontologi/eksamensfag_privatist erstattes av nye verdier av typen http://beta-data.udir.no/ontologi/kl06/trekkordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
+Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensfag_elev og  http://beta-psi.udir.no/ontologi/eksamensfag_privatist erstattes av nye verdier av typen http://beta-psi.udir.no/ontologi/kl06/trekkordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
 
 | Gammel PSI |	Tittel |	Ny PSI |
 | -- | -- | -- |
@@ -136,7 +136,7 @@ Det samme vil gjelde for alle hjelpedataene av disse to typene:
 * http://beta-psi.udir.no/eksamensordning/privatist/26
 * http://beta-psi.udir.no/eksamensordning/elev/skriftlig_eller_praktisk
 
-Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensordning_elev og  http://beta-psi.udir.no/ontologi/eksamensordning_privatist erstattes av nye verdier av typen http://beta-data.udir.no/ontologi/kl06/eksamensordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
+Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensordning_elev og  http://beta-psi.udir.no/ontologi/eksamensordning_privatist erstattes av nye verdier av typen http://beta-psi.udir.no/ontologi/kl06/eksamensordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
 
 | Gammel PSI |	Tittel | Ny PSI |
 | -- | -- | -- |
