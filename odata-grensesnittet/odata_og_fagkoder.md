@@ -2,9 +2,10 @@
 
 For å spørre etter fagkoder, oppgir du URLen [http://data.udir.no/kl06/odata/Fagkode](http://data.udir.no/kl06/odata/Fagkode) (merk: OData-grensesnittet skiller mellom store og små bokstaver). OData leverer som default en RSS-feed, men du har også mulighet til spesifikt å få returnert JSON.
 
-![Figur 1: Fagkoder som RSS-feed](figurer/figur1.PNG)
+![](figurer/figur1.PNG)
 Figur 1: Fagkoder som RSS-feed
 
+![](figurer/figur2.PNG)
 Figur 2: Fagkoder som JSON (merk bruk av ?$format=json i URL)
 
 På fagkoder kan du bruke følgende felter til å filtrere resultater:
