@@ -9,4 +9,4 @@ Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut ov
 
 ### Nytt i versjon 2016/04
 
-Versjon 2016/04 har introdusert større endringer i grunnleggende strukturer. Les [her](/endringer_201604.html) for mer informasjon.
+Versjon 2016/04 har introdusert større endringer i grunnleggende strukturer. Les [her](/introduksjon/endringer_201604.html) for mer informasjon.
