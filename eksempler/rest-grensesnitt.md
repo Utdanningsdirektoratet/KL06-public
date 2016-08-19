@@ -21,7 +21,7 @@ Test.html:
     $.getJSON("http://data.udir.no/kl06/fagkoder", {},
       function (data)
       {
-        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); 
+        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '</a><br>'); 
       })
     });
     </script>
@@ -63,7 +63,7 @@ Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse ka
 {%ace edit=false, check=false,  lang='xml'%}
 // Utdrag av koden for å hente ut detaljert læreplan, og vise formål på default språk
 $.getJSON(baseurl + "kl06/" + lp.Kode, function (f) {
-  $('#f' + f.kode).append('&lt;p&gt;' + hentDefaultVerdi(f.formaal) + '&lt;/p&gt;');
+  $('#f' + f.kode).append('<p>' + hentDefaultVerdi(f.formaal) + '</p>');
 });
 // Henter ut den språkversjonerte verdien med nøkkelen 'default'
 function hentDefaultVerdi(spraakversjonert) {

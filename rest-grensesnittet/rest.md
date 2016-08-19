@@ -1,3 +1,2 @@
 # REST-grensesnittet {#rest-grensesnittet}
-
 I tabellen nedenfor har vi listet opp hvilke URLer du kan bruke for å hente ut de ulike elementene. REST-grensesnittet støtter en rekke ulike formater. Om du vil bruke et annet format enn standardformatet (JSON), oppgir du dette ved å legge på {.format} på slutten av URLen. Eksempelvis for å liste ut alle fag i xml-format, oppgir du [http://data.udir.no/kl06/fagkoder.xml](http://data.udir.no/kl06/fagkoder.xml).
