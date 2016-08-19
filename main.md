@@ -8,4 +8,4 @@ Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut ov
 
 ### Nytt i versjon Beta
 
-Versjon Beta har introdusert større endringer i grunnleggende strukturer. Les [her](https://kl06-doc.gitbooks.io/kl06-public/content/introduksjon/endringer_beta.html) for mer informasjon.
+Versjon Beta har introdusert større endringer i grunnleggende strukturer. Les [her](/introduksjon/endringer_beta.html) for mer informasjon.
