@@ -1,6 +1,6 @@
 # Hente data
 
-KL06 er strukturert slik at man kan hente ned en liste av minimumsinformasjon over de ulike [elementene](../oversikt_over_api.md#typer) i Grep.
+KL06 er strukturert slik at man kan hente ned en liste av minimumsinformasjon over de ulike [elementene](../oversikt_over_api.md) i Grep.
 
 Formatet på disse listene er *data.udir.no/kl06/{element-type}* f eks http://data.udir.no/kl06/laereplaner
 
