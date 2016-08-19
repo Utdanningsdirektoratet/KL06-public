@@ -29,8 +29,6 @@ Test.html:
 </html>
 {%endace%}
 
-Html-side i nettleser:
-
 ### Kombinasjon av grensesnitt (REST og OData) {#kombinasjon-av-grensesnitt-rest-og-odata}
 
 Som et eksempel på litt mer avansert bruk, demonstrerer vi her et eksempel som tilbyr et “fritekst”-søk etter læreplaner, og mulighet for å se på detaljert informasjon om læreplanen (formålet med læreplanen). Eksempelet tar i bruk JQuery og jQuery-ui (og sannsynligvis ganske amatørmessig utført), men kan like gjerne utføres i andre teknologier.
@@ -58,7 +56,7 @@ function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
 
 Denne benytter standard OData-funksjonalitet for å oppgi filter og hva den vil ha tilbake. I en søke-intensiv applikasjon vil dette spare ressurser og båndbredde for klient-applikasjon og webserveren.
 
-Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og formål vises:
+Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og formål vises.
 
 Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse kan brukes for å hente ut detaljer om læreplanen. Vi er kun interessert i å vise formål, og vi velger å vise formål på “default”-språket, som vil tilsvare fastsatt språk på læreplanen:
 
