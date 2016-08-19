@@ -155,15 +155,15 @@ Det vil si at PSI-ene *psi.udir.no/ontologi/eksamensordning_elev* og  *psi.udir.
 |*psi.udir.no/eksamensordning/elev/7* *psi.udir.no/eksamensordning/privatist/4*|	Muntlig|	*psi.udir.no/kl06/eksamensordning_13*|
 |*psi.udir.no/eksamensordning/elev/fagproeve*	|Fagprøve|	*psi.udir.no/kl06/eksamensordning_14*|
 |*psi.udir.no/eksamensordning/elev/fagproeve_skriftlig* *psi.udir.no/eksamensordning/privatist/fagproeve_skriftlig*|	Fagprøve + skriftlig|	*psi.udir.no/kl06/eksamensordning_15*|
-|		 *psi.udir.no/eksamensordning/elev/skriftlig_muntlig	*psi.udir.no/eksamensordning/privatist/skriftlig_muntlig|Skriftlig-muntlig|	*psi.udir.no/kl06/eksamensordning_16|
-|*psi.udir.no/eksamensordning/elev/svenneproeve|	Svenneprøve|	*psi.udir.no/kl06/eksamensordning_17|
-|*psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig *psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig		|Svenneprøve + skriftlig	|*psi.udir.no/kl06/eksamensordning_18|
-|*psi.udir.no/eksamensordning/privatist/17	|Skriftlig og muntlig|	*psi.udir.no/kl06/eksamensordning_19|
-|*psi.udir.no/eksamensordning/privatist/19	|Skriftlig og muntlig-praktisk|	*psi.udir.no/kl06/eksamensordning_20|
-|*psi.udir.no/eksamensordning/privatist/2	|Hov.mål+Sid.mål sk+muntl|	*psi.udir.no/kl06/eksamensordning_21|
-|*psi.udir.no/eksamensordning/privatist/32	|Skriftlig og tverrfaglig praktisk	|*psi.udir.no/kl06/eksamensordning_23|
-|*psi.udir.no/eksamensordning/privatist/33	|Skriftlig og tverrfaglig| skriftlig	*psi.udir.no/kl06/eksamensordning_24|
-|*psi.udir.no/eksamensordning/privatist/34	|Skriftlig og tverrfaglig muntlig-praktisk	|*psi.udir.no/kl06/eksamensordning_25|
+|		 *psi.udir.no/eksamensordning/elev/skriftlig_muntlig*	*psi.udir.no/eksamensordning/privatist/skriftlig_muntlig*|Skriftlig-muntlig|	*psi.udir.no/kl06/eksamensordning_16*|
+|*psi.udir.no/eksamensordning/elev/svenneproeve*|	Svenneprøve|	*psi.udir.no/kl06/eksamensordning_17*|
+|*psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig* *psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig*		|Svenneprøve + skriftlig	|*psi.udir.no/kl06/eksamensordning_18*|
+|*psi.udir.no/eksamensordning/privatist/17*	|Skriftlig og muntlig|	*psi.udir.no/kl06/eksamensordning_19*|
+|*psi.udir.no/eksamensordning/privatist/19*	|Skriftlig og muntlig-praktisk|	*psi.udir.no/kl06/eksamensordning_20*|
+|*psi.udir.no/eksamensordning/privatist/2*	|Hov.mål+Sid.mål sk+muntl|	*psi.udir.no/kl06/eksamensordning_21*|
+|*psi.udir.no/eksamensordning/privatist/32*	|Skriftlig og tverrfaglig praktisk	|*psi.udir.no/kl06/eksamensordning_23*|
+|*psi.udir.no/eksamensordning/privatist/33*	|Skriftlig og tverrfaglig| skriftlig	*psi.udir.no/kl06/eksamensordning_24*|
+|*psi.udir.no/eksamensordning/privatist/34*	|Skriftlig og tverrfaglig muntlig-praktisk	|*psi.udir.no/kl06/eksamensordning_25*|
 
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 ###Vurderingsform
