@@ -9,40 +9,40 @@ Det samme vil gjelde for hjelpedataene av denne typen.
 * Lokal
 * Sentral
 
-Det vil si at PSI http://beta-psi.udir.no/ontologi/oppgavesensur erstattes av
-* http://beta-psi.udir.no/ontologi/kl06/oppgave i tilfellene der verdien gjelder oppgave.
+Det vil si at PSI *psi.udir.no/ontologi/oppgavesensur* erstattes av
+* *grep.bouvet.no/psi/ontologi/kl06/oppgave* i tilfellene der verdien gjelder oppgave.
   * Verdier for denne typen er:
-   * http://beta-psi.udir.no/kl06/oppgave_lokal
-   * http://beta-psi.udir.no/kl06/oppgave_sentral
-* http://beta-psi.udir.no/ontologi/kl06/sensur i tilfelle verdien gjelder sensur
+   * *psi.udir.no/kl06/oppgave_lokal*
+   * *psi.udir.no/kl06/oppgave_sentral*
+* *grep.bouvet.no/psi/ontologi/kl06/sensur* i tilfelle verdien gjelder sensur
   * Verdier for denne typen er:
-   * http://beta-psi.udir.no/kl06/sensur_lokal
-   * http://beta-psi.udir.no/kl06/sensur_sentral
+   * *psi.udir.no/kl06/sensur_lokal*
+   * *psi.udir.no/kl06/sensur_sentral*
 
 
 ### Eksamensfag/Elev og Eksamensfag/Privatist
 Eksamensfag/Elev og Eksamensfag/Privatist utgår. Disse erstattes av en ny type, Trekkordning
 Det samme vil gjelde for alle hjelpedatatene av disse typene:
-* http://beta-psi.udir.no/eksamensfag/elev/6
-* http://beta-psi.udir.no/eksamensfag/elev/4
-* http://beta-psi.udir.no/eksamensfag/elev/3
-* http://beta-psi.udir.no/eksamensfag/elev/5
-* http://beta-psi.udir.no/eksamensfag/elev/10
-* http://beta-psi.udir.no/eksamensfag/elev/7
-* http://beta-psi.udir.no/eksamensfag/privatist/9
-* http://beta-psi.udir.no/eksamensfag/privatist/3
-* http://beta-psi.udir.no/eksamensfag/privatist/4
-* http://beta-psi.udir.no/eksamensfag/privatist/5
-* http://beta-psi.udir.no/eksamensfag/privatist/11
-* http://beta-psi.udir.no/eksamensfag/privatist/10
+* *psi.udir.no/eksamensfag/elev/6*
+* *psi.udir.no/eksamensfag/elev/4*
+* *psi.udir.no/eksamensfag/elev/3*
+* *psi.udir.no/eksamensfag/elev/5*
+* *psi.udir.no/eksamensfag/elev/10*
+* *psi.udir.no/eksamensfag/elev/7*
+* *psi.udir.no/eksamensfag/privatist/9*
+* *psi.udir.no/eksamensfag/privatist/3*
+* *psi.udir.no/eksamensfag/privatist/4*
+* *psi.udir.no/eksamensfag/privatist/5*
+* *psi.udir.no/eksamensfag/privatist/11*
+* *psi.udir.no/eksamensfag/privatist/10*
 * 
-Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensfag_elev og  http://beta-psi.udir.no/ontologi/eksamensfag_privatist erstattes av nye verdier av typen http://beta-psi.udir.no/ontologi/kl06/trekkordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
+Det vil si at PSI-ene *psi.udir.no/ontologi/eksamensfag_elev* og  *psi.udir.no/ontologi/eksamensfag_privatist* erstattes av nye verdier av typen *grep.bouvet.no/psi/ontologi/kl06/trekkordning*. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
 
 | Gammel PSI |	Tittel |	Ny PSI |
 | -- | -- | -- |
-| http://beta-psi.udir.no/eksamensfag/elev/3 http://beta-psi.udir.no/eksamensfag/privatist/3 | Ingen eksamen | http://beta-psi.udir.no/kl06/trekkordning_1 |
-| http://beta-psi.udir.no/eksamensfag/elev/7 http://beta-psi.udir.no/eksamensfag/privatist/10	 | Trekkfag | http://beta-psi.udir.no/kl06/trekkordning_2 | 
-| http://beta-psi.udir.no/eksamensfag/elev/5 http://beta-psi.udir.no/eksamensfag/privatist/4 |	Obligatorisk | http://beta-psi.udir.no/kl06/trekkordning_3 |
+| *psi.udir.no/eksamensfag/elev/3* *psi.udir.no/eksamensfag/privatist/3* | Ingen eksamen | *psi.udir.no/kl06/trekkordning_1* |
+| *psi.udir.no/eksamensfag/elev/7* *psi.udir.no/eksamensfag/privatist/10*	 | Trekkfag | *psi.udir.no/kl06/trekkordning_2* | 
+| *psi.udir.no/eksamensfag/elev/5* *psi.udir.no/eksamensfag/privatist/4* |	Obligatorisk | *psi.udir.no/kl06/trekkordning_3* |
 	
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 ###Eksamensordning/Elev og Eksamensordning/Privatist
@@ -50,120 +50,120 @@ Hjelpedatatypene Eksamensordning Elev og Eksamensordning Privatist utgår. Disse
 
 Det samme vil gjelde for alle hjelpedataene av disse to typene:
 
-* http://beta-psi.udir.no/eksamensordning/elev/fagproeve
-* http://beta-psi.udir.no/eksamensordning/elev/fagproeve_skriftlig
-* http://beta-psi.udir.no/eksamensordning/elev/2
-* http://beta-psi.udir.no/eksamensordning/elev/3
-* http://beta-psi.udir.no/eksamensordning/elev/38
-* http://beta-psi.udir.no/eksamensordning/elev/4
-* http://beta-psi.udir.no/eksamensordning/elev/5
-* http://beta-psi.udir.no/eksamensordning/elev/6
-* http://beta-psi.udir.no/eksamensordning/elev/33
-* http://beta-psi.udir.no/eksamensordning/elev/7
-* http://beta-psi.udir.no/eksamensordning/elev/8
-* http://beta-psi.udir.no/eksamensordning/elev/9
-* http://beta-psi.udir.no/eksamensordning/elev/10
-* http://beta-psi.udir.no/eksamensordning/elev/36
-* http://beta-psi.udir.no/eksamensordning/elev/12
-* http://beta-psi.udir.no/eksamensordning/elev/11
-* http://beta-psi.udir.no/eksamensordning/elev/13
-* http://beta-psi.udir.no/eksamensordning/elev/14
-* http://beta-psi.udir.no/eksamensordning/elev/15
-* http://beta-psi.udir.no/eksamensordning/elev/16
-* http://beta-psi.udir.no/eksamensordning/elev/17
-* http://beta-psi.udir.no/eksamensordning/elev/18
-* http://beta-psi.udir.no/eksamensordning/elev/34
-* http://beta-psi.udir.no/eksamensordning/elev/35
-* http://beta-psi.udir.no/eksamensordning/elev/26
-* http://beta-psi.udir.no/eksamensordning/elev/28
-* http://beta-psi.udir.no/eksamensordning/elev/32
-* http://beta-psi.udir.no/eksamensordning/elev/19
-* http://beta-psi.udir.no/eksamensordning/elev/37
-* http://beta-psi.udir.no/eksamensordning/elev/20
-* http://beta-psi.udir.no/eksamensordning/elev/21
-* http://beta-psi.udir.no/eksamensordning/elev/22
-* http://beta-psi.udir.no/eksamensordning/elev/23
-* http://beta-psi.udir.no/eksamensordning/elev/24
-* http://beta-psi.udir.no/eksamensordning/elev/25
-* http://beta-psi.udir.no/eksamensordning/elev/27
-* http://beta-psi.udir.no/eksamensordning/elev/29
-* http://beta-psi.udir.no/eksamensordning/elev/30
-* http://beta-psi.udir.no/eksamensordning/elev/31
-* http://beta-psi.udir.no/eksamensordning/elev/skriftlig_muntlig
-* http://beta-psi.udir.no/eksamensordning/elev/svenneproeve
-* http://beta-psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig
-* http://beta-psi.udir.no/eksamensordning/elev/41
-* http://beta-psi.udir.no/eksamensordning/elev/39
-* http://beta-psi.udir.no/eksamensordning/elev/40
-* http://beta-psi.udir.no/eksamensordning/privatist/3
-* http://beta-psi.udir.no/eksamensordning/privatist/1
-* http://beta-psi.udir.no/eksamensordning/privatist/fagproeve
-* http://beta-psi.udir.no/eksamensordning/privatist/fagproeve_skriftlig
-* http://beta-psi.udir.no/eksamensordning/privatist/2
-* http://beta-psi.udir.no/eksamensordning/privatist/28
-* http://beta-psi.udir.no/eksamensordning/privatist/5
-* http://beta-psi.udir.no/eksamensordning/privatist/4
-* http://beta-psi.udir.no/eksamensordning/privatist/6
-* http://beta-psi.udir.no/eksamensordning/privatist/8
-* http://beta-psi.udir.no/eksamensordning/privatist/7
-* http://beta-psi.udir.no/eksamensordning/privatist/9
-* http://beta-psi.udir.no/eksamensordning/privatist/10
-* http://beta-psi.udir.no/eksamensordning/privatist/11
-* http://beta-psi.udir.no/eksamensordning/privatist/12
-* http://beta-psi.udir.no/eksamensordning/privatist/31
-* http://beta-psi.udir.no/eksamensordning/privatist/21
-* http://beta-psi.udir.no/eksamensordning/privatist/23
-* http://beta-psi.udir.no/eksamensordning/privatist/27
-* http://beta-psi.udir.no/eksamensordning/privatist/16
-* http://beta-psi.udir.no/eksamensordning/privatist/18
-* http://beta-psi.udir.no/eksamensordning/privatist/13
-* http://beta-psi.udir.no/eksamensordning/privatist/15
-* http://beta-psi.udir.no/eksamensordning/privatist/14
-* http://beta-psi.udir.no/eksamensordning/privatist/29
-* http://beta-psi.udir.no/eksamensordning/privatist/17
-* http://beta-psi.udir.no/eksamensordning/privatist/19
-* http://beta-psi.udir.no/eksamensordning/privatist/20
-* http://beta-psi.udir.no/eksamensordning/privatist/34
-* http://beta-psi.udir.no/eksamensordning/privatist/32
-* http://beta-psi.udir.no/eksamensordning/privatist/33
-* http://beta-psi.udir.no/eksamensordning/privatist/22
-* http://beta-psi.udir.no/eksamensordning/privatist/24
-* http://beta-psi.udir.no/eksamensordning/privatist/skriftlig_muntlig
-* http://beta-psi.udir.no/eksamensordning/privatist/svenneproeve
-* http://beta-psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig
-* http://beta-psi.udir.no/eksamensordning/privatist/30
-* http://beta-psi.udir.no/eksamensordning/privatist/25
-* http://beta-psi.udir.no/eksamensordning/privatist/26
-* http://beta-psi.udir.no/eksamensordning/elev/skriftlig_eller_praktisk
+* *psi.udir.no/eksamensordning/elev/fagproeve*
+* *psi.udir.no/eksamensordning/elev/fagproeve_skriftlig*
+* *psi.udir.no/eksamensordning/elev/2*
+* *psi.udir.no/eksamensordning/elev/3*
+* *psi.udir.no/eksamensordning/elev/38*
+* *psi.udir.no/eksamensordning/elev/4*
+* *psi.udir.no/eksamensordning/elev/5*
+* *psi.udir.no/eksamensordning/elev/6*
+* *psi.udir.no/eksamensordning/elev/33*
+* *psi.udir.no/eksamensordning/elev/7*
+* *psi.udir.no/eksamensordning/elev/8*
+* *psi.udir.no/eksamensordning/elev/9*
+* *psi.udir.no/eksamensordning/elev/10*
+* *psi.udir.no/eksamensordning/elev/36*
+* *psi.udir.no/eksamensordning/elev/12*
+* *psi.udir.no/eksamensordning/elev/11*
+* *psi.udir.no/eksamensordning/elev/13*
+* *psi.udir.no/eksamensordning/elev/14*
+* *psi.udir.no/eksamensordning/elev/15*
+* *psi.udir.no/eksamensordning/elev/16*
+* *psi.udir.no/eksamensordning/elev/17*
+* *psi.udir.no/eksamensordning/elev/18*
+* *psi.udir.no/eksamensordning/elev/34*
+* *psi.udir.no/eksamensordning/elev/35*
+* *psi.udir.no/eksamensordning/elev/26*
+* *psi.udir.no/eksamensordning/elev/28*
+* *psi.udir.no/eksamensordning/elev/32*
+* *psi.udir.no/eksamensordning/elev/19*
+* *psi.udir.no/eksamensordning/elev/37*
+* *psi.udir.no/eksamensordning/elev/20*
+* *psi.udir.no/eksamensordning/elev/21*
+* *psi.udir.no/eksamensordning/elev/22*
+* *psi.udir.no/eksamensordning/elev/23*
+* *psi.udir.no/eksamensordning/elev/24*
+* *psi.udir.no/eksamensordning/elev/25*
+* *psi.udir.no/eksamensordning/elev/27*
+* *psi.udir.no/eksamensordning/elev/29*
+* *psi.udir.no/eksamensordning/elev/30*
+* *psi.udir.no/eksamensordning/elev/31*
+* *psi.udir.no/eksamensordning/elev/skriftlig_muntlig*
+* *psi.udir.no/eksamensordning/elev/svenneproeve*
+* *psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig*
+* *psi.udir.no/eksamensordning/elev/41*
+* *psi.udir.no/eksamensordning/elev/39*
+* *psi.udir.no/eksamensordning/elev/40*
+* *psi.udir.no/eksamensordning/privatist/3*
+* *psi.udir.no/eksamensordning/privatist/1*
+* *psi.udir.no/eksamensordning/privatist/fagproeve*
+* *psi.udir.no/eksamensordning/privatist/fagproeve_skriftlig*
+* *psi.udir.no/eksamensordning/privatist/2*
+* *psi.udir.no/eksamensordning/privatist/28*
+* *psi.udir.no/eksamensordning/privatist/5*
+* *psi.udir.no/eksamensordning/privatist/4*
+* *psi.udir.no/eksamensordning/privatist/6*
+* *psi.udir.no/eksamensordning/privatist/8*
+* *psi.udir.no/eksamensordning/privatist/7*
+* *psi.udir.no/eksamensordning/privatist/9*
+* *psi.udir.no/eksamensordning/privatist/10*
+* *psi.udir.no/eksamensordning/privatist/11*
+* *psi.udir.no/eksamensordning/privatist/12*
+* *psi.udir.no/eksamensordning/privatist/31*
+* *psi.udir.no/eksamensordning/privatist/21*
+* *psi.udir.no/eksamensordning/privatist/23*
+* *psi.udir.no/eksamensordning/privatist/27*
+* *psi.udir.no/eksamensordning/privatist/16*
+* *psi.udir.no/eksamensordning/privatist/18*
+* *psi.udir.no/eksamensordning/privatist/13*
+* *psi.udir.no/eksamensordning/privatist/15*
+* *psi.udir.no/eksamensordning/privatist/14*
+* *psi.udir.no/eksamensordning/privatist/29*
+* *psi.udir.no/eksamensordning/privatist/17*
+* *psi.udir.no/eksamensordning/privatist/19*
+* *psi.udir.no/eksamensordning/privatist/20*
+* *psi.udir.no/eksamensordning/privatist/34*
+* *psi.udir.no/eksamensordning/privatist/32*
+* *psi.udir.no/eksamensordning/privatist/33*
+* *psi.udir.no/eksamensordning/privatist/22*
+* *psi.udir.no/eksamensordning/privatist/24*
+* *psi.udir.no/eksamensordning/privatist/skriftlig_muntlig*
+* *psi.udir.no/eksamensordning/privatist/svenneproeve*
+* *psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig*
+* *psi.udir.no/eksamensordning/privatist/30*
+* *psi.udir.no/eksamensordning/privatist/25*
+* *psi.udir.no/eksamensordning/privatist/26*
+* *psi.udir.no/eksamensordning/elev/skriftlig_eller_praktisk*
 
-Det vil si at PSI-ene http://beta-psi.udir.no/ontologi/eksamensordning_elev og  http://beta-psi.udir.no/ontologi/eksamensordning_privatist erstattes av nye verdier av typen http://beta-psi.udir.no/ontologi/kl06/eksamensordning. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
+Det vil si at PSI-ene *psi.udir.no/ontologi/eksamensordning_elev* og  *psi.udir.no/ontologi/eksamensordning_privatist* erstattes av nye verdier av typen *grep.bouvet.no/psi/ontologi/kl06/eksamensordning*. Mapping som viser hvilken ny verdi som ersatter den gamle ligger i tabellen under.
 
 | Gammel PSI |	Tittel | Ny PSI |
 | -- | -- | -- |
-|http://beta-psi.udir.no/eksamensordning/elev/4	|Ingen eksamen|	http://beta-psi.udir.no/kl06/eksamensordning_1|
-|http://beta-psi.udir.no/eksamensordning/elev/10|	Muntlig og praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_2|
-|http://beta-psi.udir.no/eksamensordning/elev/11 http://beta-psi.udir.no/eksamensordning/privatist/7|	Muntlig-praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_3|		
-|http://beta-psi.udir.no/eksamensordning/elev/13 http://beta-psi.udir.no/eksamensordning/privatist/9|	Praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_4|
-|http://beta-psi.udir.no/eksamensordning/elev/19 http://beta-psi.udir.no/eksamensordning/privatist/13		|Skriftlig|	http://beta-psi.udir.no/kl06/eksamensordning_5|
-|http://beta-psi.udir.no/eksamensordning/elev/20	|Skriftlig eller muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_6|
-|http://beta-psi.udir.no/eksamensordning/elev/21	|Skriftlig eller muntlig-praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_7|
-|http://beta-psi.udir.no/eksamensordning/elev/27	|Skriftlig og/eller muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_8|
-|http://beta-psi.udir.no/eksamensordning/elev/37	|Skriftlig + ev. muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_9|
-|http://beta-psi.udir.no/eksamensordning/elev/38	|Hovedmål + ev. sidemål + ev. muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_10|
-|http://beta-psi.udir.no/eksamensordning/elev/39|	Tverrfaglig praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_11|
-|http://beta-psi.udir.no/eksamensordning/elev/40	|Tverrfaglig skriftlig|	http://beta-psi.udir.no/kl06/eksamensordning_12|
-|http://beta-psi.udir.no/eksamensordning/elev/7 http://beta-psi.udir.no/eksamensordning/privatist/4|	Muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_13|
-|http://beta-psi.udir.no/eksamensordning/elev/fagproeve	|Fagprøve|	http://beta-psi.udir.no/kl06/eksamensordning_14|
-|http://beta-psi.udir.no/eksamensordning/elev/fagproeve_skriftlig http://beta-psi.udir.no/eksamensordning/privatist/fagproeve_skriftlig|	Fagprøve + skriftlig|	http://beta-psi.udir.no/kl06/eksamensordning_15|
-|		 http://beta-psi.udir.no/eksamensordning/elev/skriftlig_muntlig	http://beta-psi.udir.no/eksamensordning/privatist/skriftlig_muntlig|Skriftlig-muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_16|
-|http://beta-psi.udir.no/eksamensordning/elev/svenneproeve|	Svenneprøve|	http://beta-psi.udir.no/kl06/eksamensordning_17|
-|http://beta-psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig http://beta-psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig		|Svenneprøve + skriftlig	|http://beta-psi.udir.no/kl06/eksamensordning_18|
-|http://beta-psi.udir.no/eksamensordning/privatist/17	|Skriftlig og muntlig|	http://beta-psi.udir.no/kl06/eksamensordning_19|
-|http://beta-psi.udir.no/eksamensordning/privatist/19	|Skriftlig og muntlig-praktisk|	http://beta-psi.udir.no/kl06/eksamensordning_20|
-|http://beta-psi.udir.no/eksamensordning/privatist/2	|Hov.mål+Sid.mål sk+muntl|	http://beta-psi.udir.no/kl06/eksamensordning_21|
-|http://beta-psi.udir.no/eksamensordning/privatist/32	|Skriftlig og tverrfaglig praktisk	|http://beta-psi.udir.no/kl06/eksamensordning_23|
-|http://beta-psi.udir.no/eksamensordning/privatist/33	|Skriftlig og tverrfaglig| skriftlig	http://beta-psi.udir.no/kl06/eksamensordning_24|
-|http://beta-psi.udir.no/eksamensordning/privatist/34	|Skriftlig og tverrfaglig muntlig-praktisk	|http://beta-psi.udir.no/kl06/eksamensordning_25|
+|*psi.udir.no/eksamensordning/elev/4*	|Ingen eksamen|	*psi.udir.no/kl06/eksamensordning_1*|
+|*psi.udir.no/eksamensordning/elev/10*|	Muntlig og praktisk|	*psi.udir.no/kl06/eksamensordning_2*|
+|*psi.udir.no/eksamensordning/elev/11* *psi.udir.no/eksamensordning/privatist/7*|	Muntlig-praktisk|	*psi.udir.no/kl06/eksamensordning_3*|		
+|*psi.udir.no/eksamensordning/elev/13* *psi.udir.no/eksamensordning/privatist/9*|	Praktisk|	*psi.udir.no/kl06/eksamensordning_4*|
+|*psi.udir.no/eksamensordning/elev/19* *psi.udir.no/eksamensordning/privatist/13*		|Skriftlig|	*psi.udir.no/kl06/eksamensordning_5*|
+|*psi.udir.no/eksamensordning/elev/20*	|Skriftlig eller muntlig|	*psi.udir.no/kl06/eksamensordning_6*|
+|*psi.udir.no/eksamensordning/elev/21*	|Skriftlig eller muntlig-praktisk|	*psi.udir.no/kl06/eksamensordning_7*|
+|*psi.udir.no/eksamensordning/elev/27*	|Skriftlig og/eller muntlig|	*psi.udir.no/kl06/eksamensordning_8*|
+|*psi.udir.no/eksamensordning/elev/37*	|Skriftlig + ev. muntlig|	*psi.udir.no/kl06/eksamensordning_9*|
+|*psi.udir.no/eksamensordning/elev/38*	|Hovedmål + ev. sidemål + ev. muntlig|	*psi.udir.no/kl06/eksamensordning_10*|
+|*psi.udir.no/eksamensordning/elev/39*|	Tverrfaglig praktisk|	*psi.udir.no/kl06/eksamensordning_11*|
+|*psi.udir.no/eksamensordning/elev/40*	|Tverrfaglig skriftlig|	*psi.udir.no/kl06/eksamensordning_12*|
+|*psi.udir.no/eksamensordning/elev/7* *psi.udir.no/eksamensordning/privatist/4*|	Muntlig|	*psi.udir.no/kl06/eksamensordning_13*|
+|*psi.udir.no/eksamensordning/elev/fagproeve*	|Fagprøve|	*psi.udir.no/kl06/eksamensordning_14*|
+|*psi.udir.no/eksamensordning/elev/fagproeve_skriftlig* *psi.udir.no/eksamensordning/privatist/fagproeve_skriftlig*|	Fagprøve + skriftlig|	*psi.udir.no/kl06/eksamensordning_15*|
+|		 *psi.udir.no/eksamensordning/elev/skriftlig_muntlig*	*psi.udir.no/eksamensordning/privatist/skriftlig_muntlig*|Skriftlig-muntlig|	*psi.udir.no/kl06/eksamensordning_16*|
+|*psi.udir.no/eksamensordning/elev/svenneproeve*|	Svenneprøve|	*psi.udir.no/kl06/eksamensordning_17*|
+|*psi.udir.no/eksamensordning/elev/svenneproeve_skriftlig* *psi.udir.no/eksamensordning/privatist/svenneproeve_skriftlig*		|Svenneprøve + skriftlig	|*psi.udir.no/kl06/eksamensordning_18*|
+|*psi.udir.no/eksamensordning/privatist/17*	|Skriftlig og muntlig|	*psi.udir.no/kl06/eksamensordning_19*|
+|*psi.udir.no/eksamensordning/privatist/19*	|Skriftlig og muntlig-praktisk|	*psi.udir.no/kl06/eksamensordning_20*|
+|*psi.udir.no/eksamensordning/privatist/2*	|Hov.mål+Sid.mål sk+muntl|	*psi.udir.no/kl06/eksamensordning_21*|
+|*psi.udir.no/eksamensordning/privatist/32*	|Skriftlig og tverrfaglig praktisk	|*psi.udir.no/kl06/eksamensordning_23*|
+|*psi.udir.no/eksamensordning/privatist/33*	|Skriftlig og tverrfaglig| skriftlig	*psi.udir.no/kl06/eksamensordning_24*|
+|*psi.udir.no/eksamensordning/privatist/34*	|Skriftlig og tverrfaglig muntlig-praktisk	|*psi.udir.no/kl06/eksamensordning_25*|
 
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 ###Vurderingsform

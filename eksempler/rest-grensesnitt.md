@@ -18,18 +18,16 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-    $.getJSON("http://beta-data.udir.no/kl06/fagkoder", {},
+    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
       function (data)
       {
-        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '&lt;/a&gt;&lt;br&gt;'); 
+        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '</a><br>'); 
       })
     });
     </script>
   </body>
 </html>
 {%endace%}
-
-Html-side i nettleser:
 
 ### Kombinasjon av grensesnitt (REST og OData) {#kombinasjon-av-grensesnitt-rest-og-odata}
 
@@ -58,7 +56,7 @@ function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
 
 Denne benytter standard OData-funksjonalitet for å oppgi filter og hva den vil ha tilbake. I en søke-intensiv applikasjon vil dette spare ressurser og båndbredde for klient-applikasjon og webserveren.
 
-Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og formål vises:
+Ved å klikke på ett av treffene, vil den detaljerte læreplanen hentes, og formål vises.
 
 Fra søkeresultatet har vi både URL-data-feltet, og kode-feltet. Begge disse kan brukes for å hente ut detaljer om læreplanen. Vi er kun interessert i å vise formål, og vi velger å vise formål på “default”-språket, som vil tilsvare fastsatt språk på læreplanen:
 
@@ -92,7 +90,7 @@ function hentDefaultVerdi(spraakversjonert) {
   </head>
   <body>
     <script type="text/javascript">
-      var baseurl = "http://beta-data.udir.no/";
+      var baseurl = "http://data.udir.no/";
       var maksAntallTreff = 25;
       // Hekter på event på søke-input til å kalle soekEtterLaereplaner, med søkestreng og maks 25 antall treff
       $(document).ready(function () {

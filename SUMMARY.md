@@ -2,7 +2,7 @@
 
 * [Introduksjon](main.md)
    * [Historikk](introduksjon/historikk.md)
-   * [Endringer Beta](introduksjon/endringer_beta.md)
+   * [Endringer 2016/04](introduksjon/endringer_201604.md)
 * [Komme i gang](komme-i-gang/komme-i-gang.md)
    * [Hente data](komme-i-gang/hente-data.md)
    * [Eksempler](komme-i-gang/eksempler.md)

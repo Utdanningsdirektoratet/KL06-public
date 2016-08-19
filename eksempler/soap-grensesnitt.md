@@ -11,7 +11,7 @@ Figur 6: Legg til en ny tjeneste-referanse
 
 ![](../figurer/figur7.PNG)
 
-Figur 7: Oppgi URL (http://beta-data.udir.no/KL06/soap), trykk "GO" og OK
+Figur 7: Oppgi URL (http://data.udir.no/KL06/soap), trykk "GO" og OK
 
 ### Endringer i konfigurasjon {#endringer-i-konfigurasjon}
 
@@ -45,7 +45,7 @@ Her må/bør du endre maxBufferSize og maxReceivedMessageSize til mer enn 65536 
     </basicHttpBinding>
   </bindings>
   <client>
-    <endpoint address="http://beta-data.udir.no/soap" binding="basicHttpBinding" behaviorConfiguration="GrepBehavior" bindingConfiguration="GrepSoapBinding_GrepSoap" contract="Læreplanspørringer.GrepSoap" name="GrepSoapBinding_GrepSoap" />
+    <endpoint address="http://data.udir.no/soap" binding="basicHttpBinding" behaviorConfiguration="GrepBehavior" bindingConfiguration="GrepSoapBinding_GrepSoap" contract="Læreplanspørringer.GrepSoap" name="GrepSoapBinding_GrepSoap" />
   </client>
   <behaviors>
     <endpointBehaviors>
