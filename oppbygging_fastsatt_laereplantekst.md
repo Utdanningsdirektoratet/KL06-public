@@ -20,7 +20,11 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * Fritekst: http://beta-data.udir.no/kl06/NAT1-03.pdf
 
 **Eksempelkode:**
+{%ace edit=false, check=false%}
 
+
+
+{%endace%}
 
 
 ## Versjon 2013/11
