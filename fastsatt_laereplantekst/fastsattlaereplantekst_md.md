@@ -1,2 +1,0 @@
-# Oppbygging av "Fastsatt læreplantekst"
-
