@@ -14,10 +14,13 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * Fritesktfeltet skal benyttes i de tilfellene dette er tilgjengelig
 * Om det ikke finnes fritekst, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
 
-Eksempler fra KL06:
+**Eksempler fra KL06:**
 * Variant 1: http://beta-data.udir.no/kl06/mat1-04.pdf
 * Variant 2: http://beta-data.udir.no/kl06/rle1-02.pdf
 * Fritekst: http://beta-data.udir.no/kl06/NAT1-03.pdf
+
+**Eksempelkode:**
+
 
 
 ## Versjon 2013/11
