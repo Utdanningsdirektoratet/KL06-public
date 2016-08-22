@@ -63,8 +63,41 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * Variant 3: http://beta-data.udir.no/kl06/pos1-02.pdf
 * Variant 4: http://beta-data.udir.no/kl06/bat1-01.pdf
 
-Eksempelkode som dekker begge variantene: 
+**Eksempelkode som dekker begge variantene: **
 
+{%ace edit=false, check=false%}
 
+@if (Model.ProgramfagKapittel != null && Model.ProgramfagKapittel.Programfag.Any() == true)
+        {
+            <h2>
+                @if (string.IsNullOrEmpty(Model.ProgramfagKapittel.ProgramfagOverskrift))
+                {
+                    @Html.Raw(oversettelsermangler)
+                }
+                else
+                {
+                    @Html.Raw(Model.ProgramfagKapittel.ProgramfagOverskrift)
+                }
+            </h2>
+
+            foreach (var programfag in Model.ProgramfagKapittel.Programfag)
+            {
+                <h3>
+                    @Html.Raw(programfag.Tittel)
+                </h3>
+
+                    @Html.Raw(@programfag.Beskrivelse)
+
+                foreach (var hovedområde in programfag.UnderliggendeHovedområder)
+                {
+                    <h4>
+                        @Html.Raw(hovedområde.Tittel)
+                    </h4>
+
+                    @Html.Raw(@hovedområde.Beskrivelse)
+                }
+            }
+        }
+{%endace%}
 
 ## Versjon 2013/11
