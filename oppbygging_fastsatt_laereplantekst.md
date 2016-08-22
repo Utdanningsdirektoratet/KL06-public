@@ -20,8 +20,37 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * Fritekst: http://beta-data.udir.no/kl06/NAT1-03.pdf
 
 **Eksempelkode:**
-{%ace edit=false, check=false%}
 
+{%ace edit=false, check=false%}
+@if (Model.HovedområdeKapittel != null && (string.IsNullOrEmpty(Model.HovedområdeKapittel.HovedområdeFritekst) == false || Model.HovedområdeKapittel.Hovedområder.Any() == true))
+        {
+            <h2>
+                @if (string.IsNullOrEmpty(Model.HovedområdeKapittel.HovedområdeOverskrift))
+                {
+                    @Html.Raw(oversettelsermangler)
+                }
+                else
+                {
+                    @Html.Raw(Model.HovedområdeKapittel.HovedområdeOverskrift)
+                }
+            </h2>
+
+            if (string.IsNullOrEmpty(Model.HovedområdeKapittel.HovedområdeFritekst) == false)
+            {
+                 @Html.Raw(Model.HovedområdeKapittel.HovedområdeFritekst)
+            }
+            else {
+                foreach (var hovedområde in Model.HovedområdeKapittel.Hovedområder)
+                {
+                    <h4>
+                        @Html.Raw(hovedområde.Tittel)
+                    </h4>
+
+                    @Html.Raw(@hovedområde.Beskrivelse)
+                }
+            }
+
+        }
 
 
 {%endace%}
