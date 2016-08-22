@@ -1,0 +1,2 @@
+# Fastsatt læreplantekst
+
