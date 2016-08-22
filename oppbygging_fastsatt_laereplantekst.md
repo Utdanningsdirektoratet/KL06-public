@@ -22,6 +22,7 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 **Eksempelkode:**
 
 {%ace edit=false, check=false%}
+
 @if (Model.HovedområdeKapittel != null && (string.IsNullOrEmpty(Model.HovedområdeKapittel.HovedområdeFritekst) == false || Model.HovedområdeKapittel.Hovedområder.Any() == true))
         {
             <h2>
@@ -49,7 +50,6 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
                     @Html.Raw(@hovedområde.Beskrivelse)
                 }
             }
-
         }
 {%endace%}
 
