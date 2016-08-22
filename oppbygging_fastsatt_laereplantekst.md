@@ -12,7 +12,7 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 
 * Riktig overskrift ligger alltid inne basert på læreplanvariant
 * Fritesktfeltet skal benyttes i de tilfellene dette er tilgjengelig
-* Om det ikke finnes fristekt, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
+* Om det ikke finnes fritekst, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
 
 Eksempler fra KL06:
 * Variant 1: http://beta-data.udir.no/kl06/mat1-04.pdf
