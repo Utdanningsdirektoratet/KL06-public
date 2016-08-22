@@ -27,7 +27,7 @@
 * [Eksempler](eksempler/eksempler.md)
    * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
    * [SOAP-grensesnittet](eksempler/soap-grensesnitt.md)
+* [Fastsatt læreplantekst](fastsatt_laereplantekst/fastsatt_laereplantekst.md)
 * [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
 * [Appendix B - Endringer i SOAP-kontrakten](appendix_b.md)
-* [Fastsatt læreplantekst](fastsatt_laereplantekst/fastsatt_laereplantekst.md)
 
