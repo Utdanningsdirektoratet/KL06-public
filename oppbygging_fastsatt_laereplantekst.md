@@ -51,8 +51,6 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
             }
 
         }
-
-
 {%endace%}
 
 
