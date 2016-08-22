@@ -53,5 +53,12 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
         }
 {%endace%}
 
+### For læreplanvariant 3 og 4 ligger all tilhørende info i programfag-kapittel i KL06
+
+* Riktig overskrift ligger alltid inne basert på læreplanvariant
+* I tilfeller der det kun ligger inne  programfag, uten underliggendeHovedområder, listes programfagene med tittel og beskrivelse
+* I tilfeller der det finnes underliggendeHovedområder skal disse listes ut under aktuelt programfag
+
+
 
 ## Versjon 2013/11
