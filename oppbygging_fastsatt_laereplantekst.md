@@ -59,6 +59,12 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * I tilfeller der det kun ligger inne  programfag, uten underliggendeHovedområder, listes programfagene med tittel og beskrivelse
 * I tilfeller der det finnes underliggendeHovedområder skal disse listes ut under aktuelt programfag
 
+**Eksempler fra KL06:**
+* Variant 3: http://beta-data.udir.no/kl06/pos1-02.pdf
+* Variant 4: http://beta-data.udir.no/kl06/bat1-01.pdf
+
+Eksempelkode som dekker begge variantene: 
+
 
 
 ## Versjon 2013/11
