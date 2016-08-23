@@ -1,4 +1,4 @@
-# Oppbygging av hovedområde- og programfag-kaptlene slik de er fastsatt
+# Oppbygging av hovedområde- og programfag-kapitlene slik de er fastsatt
 Læreplanene blir fastsatt som papirdokumenter uten veldig streng mal for oppsett. Følgelig finnes det mange varianter av hvordan disse dokumentene er strukturert. I Grep-databasen er det laget felter og strukturer som skal fange disse ulikhetene og gjøre det mulig å behandle innholdselementene likt på tvers av læreplanene, samtidig som det skal kunne være mulig å gjenskape teksten i hver enkelt læreplan slik som den ble fastsatt. Noe av det mest komplekse er hovedområde- og beskrivelse av programfag-kapitlene, som vi fra 2016/04 kan gjenskape uten å måtte ty til "fritekstfelt" (preformaterte kapitler). Vi vil her beskrive hvordan du kan gjenskape disse kapitlene slik de ble fastsatt.
 
 ## Versjon 2016/04
