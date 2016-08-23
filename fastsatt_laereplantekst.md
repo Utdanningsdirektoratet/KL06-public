@@ -101,3 +101,24 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 {%endace%}
 
 ## Versjon 2013/11
+
+Det er i denne versjonen lagt inn støtte for tre ulike læreplanvarianter
+1.	Læreplan med hovedområder
+2.	Læreplan med programfag
+3.	Læreplan med hovedområder under programfag
+
+### For å dekke alle læreplanvarianter må en hente info fra hovedomraade-overskrift, hovedomraader, hovedomraade-fritekst og kompetansemaalsett i KL06
+
+* Riktig overskrift ligger alltid under hovedomraade-overskrift basert på læreplanvariant
+* HovedområdeFritekst skal benyttes i de tilfellene dette er tilgjengelig
+* Om det ikke finnes fritekst
+ * Hovedområder listes ut med tittel og beskrivelse for variant 1
+ * For variant 2 ligger programfagene inne som hovedområder. Det vil si at denne varianten håndteres tilsvarende variant 1. (Men innhold i overskrit er forskjellig)
+ * SorterHovedråderUnderProgramfag angri variant 3
+   * Her ligger underliggende hovedområder inne som hovedområder, mens programfag-tittel hentes fra kompetansemålsett-tittel.
+   * Verdiene som hentes ut er:
+    * Kompetansemålsett tittel
+    * Tittel og beskrivelse for alle hovedområder under kompetansemålsettet
+
+
+
