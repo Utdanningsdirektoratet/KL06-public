@@ -114,7 +114,7 @@ Det er i denne versjonen lagt inn støtte for tre ulike læreplanvarianter
 * Om det ikke finnes fritekst har vi 3 varianter
 
 
-
+ 1. Hovedområder listes ut med tittel og beskrivelse for variant 1
  * For variant 2 ligger programfagene inne som hovedområder. Det vil si at denne varianten håndteres tilsvarende variant 1. (Men innhold i overskrit er forskjellig)
  * SorterHovedråderUnderProgramfag angir variant 3
   * Her ligger underliggende hovedområder inne som hovedområder, mens programfag-tittel hentes fra kompetansemålsett-tittel.
