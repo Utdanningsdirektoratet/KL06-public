@@ -1,4 +1,4 @@
-# Oppbygging av "Fastsatt læreplantekst"
+# Oppbygging av fastsatt læreplantekst
 
 ## Versjon 2016/04
 
