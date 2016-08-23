@@ -15,9 +15,9 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * Om det ikke finnes fritekst, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
 
 **Eksempler fra KL06:**
-* Variant 1: http://beta-data.udir.no/kl06/mat1-04.pdf
-* Variant 2: http://beta-data.udir.no/kl06/rle1-02.pdf
-* Fritekst: http://beta-data.udir.no/kl06/NAT1-03.pdf
+* Variant 1: http://data.udir.no/kl06/mat1-04.pdf
+* Variant 2: http://data.udir.no/kl06/rle1-02.pdf
+* Fritekst: http://data.udir.no/kl06/NAT1-03.pdf
 
 **Eksempelkode:**
 
@@ -60,8 +60,8 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 * I tilfeller der det finnes underliggendeHovedområder skal disse listes ut under aktuelt programfag
 
 **Eksempler fra KL06:**
-* Variant 3: http://beta-data.udir.no/kl06/pos1-02.pdf
-* Variant 4: http://beta-data.udir.no/kl06/bat1-01.pdf
+* Variant 3: http://data.udir.no/kl06/pos1-02.pdf
+* Variant 4: http://data.udir.no/kl06/bat1-01.pdf
 
 **Eksempelkode som dekker begge variantene: **
 
