@@ -128,3 +128,60 @@ Det er i denne versjonen lagt inn støtte for tre ulike læreplanvarianter
 * Variant 3: http:// data.udir.no/kl06/pos1-02.pdf
 * Fritekst: http:// data.udir.no/kl06/NAT1-03.pdf
 
+**Eksempelkode:**
+
+{%ace edit=false, check=false%}
+
+<h2>
+            @if (string.IsNullOrEmpty(Model.HovedområdeOverskrift))
+            {
+                @Html.Raw(oversettelsermangler)
+            }
+            else
+            {
+                @Html.Raw(Model.HovedområdeOverskrift)
+            }
+        </h2>
+    
+        @Html.Raw(Model.HovedområdeInnledning)    
+
+			
+        @if (string.IsNullOrEmpty(Model.HovedområdeFritekst))
+        {
+
+            if (Model.SorterHovedråderUnderProgramfag)
+            {
+                foreach (var kmstest in Model.Kompetansemålsett)
+                {
+                    <h3>Html.Raw(@kmstest.Tittel)</h3>
+
+                    foreach (var hovedområde in kmstest.Hovedområder)
+                    {
+       
+                        <h4>
+                            Html.Raw(@hovedområde.Tittel)
+                        </h4>
+    
+                        @Html.Raw(hovedområde.Beskrivelse)   
+                    }
+
+                }
+            }
+            else
+            {
+                foreach (var hovedområde in Model.Hovedområder)
+                {
+       
+                    <h4>
+                        @Html.Raw(hovedområde.Tittel)
+                    </h4>
+    
+                    @Html.Raw(hovedområde.Beskrivelse)   
+                }
+            }
+        }
+        else
+        {
+            @Html.Raw(Model.HovedområdeFritekst)
+        }
+{%endace%}
