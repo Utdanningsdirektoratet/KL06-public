@@ -1,17 +1,18 @@
-# Oppbygging av fastsatt læreplantekst
+# Oppbygging av hovedområde- og programfag-kaptlene slik de er fastsatt
+Læreplanene blir fastsatt som papirdokumenter uten veldig streng mal for oppsett. Følgelig finnes det mange varianter av hvordan disse dokumentene er strukturert. I Grep-databasen er det laget felter og strukturer som skal fange disse ulikhetene og gjøre det mulig å behandle innholdselementene likt på tvers av læreplanene, samtidig som det skal kunne være mulig å gjenskape teksten i hver enkelt læreplan slik som den ble fastsatt. Noe av det mest komplekse er hovedområde- og beskrivelse av programfag-kapitlene, som vi fra 2016/04 kan gjenskape uten å måtte ty til "fritekstfelt" (preformaterte kapitler). Vi vil her beskrive hvordan du kan gjenskape disse kapitlene slik de ble fastsatt.
 
 ## Versjon 2016/04
 
-Det er i dag lagt inn støtte for fire ulike læreplanvarianter
+Det er i dag støtte for fire ulike varianter
 1.	Læreplan med hovedområder
 2.	Læreplan med hovedområder i hierarki
 3.	Læreplan med hovedområder under programfag
 4.	Læreplan med programfag
 
-### For læreplanvariant 1 og 2 ligger all tilhørende info i hovedomraade-kapittel i KL06
+### For læreplanvariant 1 og 2 ligger all tilhørende info i *hovedomraade-kapittel* i KL06
 
 * Riktig overskrift ligger alltid inne basert på læreplanvariant
-* Fritesktfeltet skal benyttes i de tilfellene dette er tilgjengelig
+* Fritekstfeltet skal benyttes i de tilfellene dette er tilgjengelig
 * Om det ikke finnes fritekst, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
 
 **Eksempler fra KL06:**
@@ -53,11 +54,11 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
         }
 {%endace%}
 
-### For læreplanvariant 3 og 4 ligger all tilhørende info i programfag-kapittel i KL06
+### For læreplanvariant 3 og 4 ligger all tilhørende info i *programfag-kapittel* i KL06
 
 * Riktig overskrift ligger alltid inne basert på læreplanvariant
-* I tilfeller der det kun ligger inne  programfag, uten underliggendeHovedområder, listes programfagene med tittel og beskrivelse
-* I tilfeller der det finnes underliggendeHovedområder skal disse listes ut under aktuelt programfag
+* I tilfeller der det kun ligger inne  programfag, uten underliggende hovedområder, listes programfagene med tittel og beskrivelse
+* I tilfeller der det finnes underliggende hovedområder skal disse listes ut under aktuelt programfag
 
 **Eksempler fra KL06:**
 * Variant 3: http://data.udir.no/kl06/POS1-02.pdf
@@ -102,21 +103,21 @@ Det er i dag lagt inn støtte for fire ulike læreplanvarianter
 
 ## Versjon 2013/11
 
-Det er i denne versjonen lagt inn støtte for tre ulike læreplanvarianter
+Det er i denne versjonen støtte for tre ulike varianter
 1.	Læreplan med hovedområder
 2.	Læreplan med programfag
 3.	Læreplan med hovedområder under programfag
 
-### For å dekke alle læreplanvarianter må en hente info fra hovedomraade-overskrift, hovedomraader, hovedomraade-fritekst og kompetansemaalsett i KL06
+### For å dekke alle læreplanvarianter må en hente info fra *hovedomraade-overskrift*, *hovedomraader*, *hovedomraade-fritekst* og *kompetansemaalsett* i KL06
 
-* Riktig overskrift ligger alltid under hovedomraade-overskrift basert på læreplanvariant
-* HovedområdeFritekst skal benyttes i de tilfellene dette er tilgjengelig
+* Riktig overskrift ligger alltid under *hovedomraade-overskrift* basert på læreplanvariant
+* *HovedområdeFritekst* skal benyttes i de tilfellene dette er tilgjengelig
 * Om det ikke finnes fritekst har vi 3 varianter
 
 
  1. Hovedområder listes ut med tittel og beskrivelse for variant 1
  * For variant 2 ligger programfagene inne som hovedområder. Det vil si at denne varianten håndteres tilsvarende variant 1. (Men innhold i overskrit er forskjellig)
- * SorterHovedråderUnderProgramfag angir variant 3
+ * *SorterHovedråderUnderProgramfag* angir variant 3
   * Her ligger underliggende hovedområder inne som hovedområder, mens programfag-tittel hentes fra kompetansemålsett-tittel.
   * Verdiene som hentes ut er:
     * Kompetansemålsett tittel
