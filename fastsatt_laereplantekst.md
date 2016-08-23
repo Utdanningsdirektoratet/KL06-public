@@ -111,18 +111,16 @@ Det er i denne versjonen lagt inn støtte for tre ulike læreplanvarianter
 
 * Riktig overskrift ligger alltid under hovedomraade-overskrift basert på læreplanvariant
 * HovedområdeFritekst skal benyttes i de tilfellene dette er tilgjengelig
-* Om det ikke finnes fritekst:
- * Hovedområder listes ut med tittel og beskrivelse for variant 1
+* Om det ikke finnes fritekst har vi 3 varianter
+
+
+
  * For variant 2 ligger programfagene inne som hovedområder. Det vil si at denne varianten håndteres tilsvarende variant 1. (Men innhold i overskrit er forskjellig)
-  * SorterHovedråderUnderProgramfag angir variant 3
-
-
-
-SorterHovedråderUnderProgramfag:
- * Her ligger underliggende hovedområder inne som hovedområder, mens programfag-tittel hentes fra kompetansemålsett-tittel.
- * Verdiene som hentes ut er:
-   * Kompetansemålsett tittel
-   * Tittel og beskrivelse for alle hovedområder under kompetansemålsettet
+ * SorterHovedråderUnderProgramfag angir variant 3
+  * Her ligger underliggende hovedområder inne som hovedområder, mens programfag-tittel hentes fra kompetansemålsett-tittel.
+  * Verdiene som hentes ut er:
+    * Kompetansemålsett tittel
+    * Tittel og beskrivelse for alle hovedområder under kompetansemålsettet
 
 
 
