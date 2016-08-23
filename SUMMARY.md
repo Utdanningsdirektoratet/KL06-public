@@ -10,7 +10,7 @@
        * [Uthenting etter dato](komme-i-gang/eksempel_etter_dato.md)
 * [Oversikt over API](oversikt_over_api.md)
 * [Ofte stilte spørsmål](faq.md)
-* [Oppbygging av fastsatt læreplantekst](oppbygging_fastsatt_laereplantekst.md)
+* [Oppbygging av fastsatt læreplantekst](fastsatt_laereplantekst.md)
 * [Webtjenester](webtjenester/README.md)
    * [Elementer](webtjenester/elementer.md)
    * [Oversikt over grensesnitt](webtjenester/grensesnitt.md)
