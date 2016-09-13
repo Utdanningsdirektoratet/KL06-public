@@ -46,7 +46,11 @@ For å spørre etter årstrinn, oppgir du URL’en http://data.udir.no/kl06/odat
 
 Filtreringsmulighetene er de samme som for fagkoder.
 
+## OData og hjelpedata {#odata-og-hjelpedata}
 
+For å spørre etter hjelpedata, oppgir du URL’en http://data.udir.no/kl06/odata/Hjelpedata.
+
+Filtreringsmulighetene er de samme som for fagkoder.
 ## OData og kompetansemålsett {#odata-og-kompetansemålsett}
 
 For å spørre etter kompetansemålsett, oppgir du URL’en http://data.udir.no/kl06/odata/Kompetansemålsett.
