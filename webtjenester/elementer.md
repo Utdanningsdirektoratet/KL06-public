@@ -28,3 +28,6 @@ Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 *   Fagtype
 *   Status
 *   Opplæringsnivå
+* Kompetansemålsett
+* Programfag
+* Hovedområde
