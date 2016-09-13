@@ -27,3 +27,8 @@ Denne versjonen av KL06 inneholder en del omstruktureringer på læreplaner og n
 - uri er lagt til som en nøkkel for elementer og referanser. Uri peker til ontologien for elementet
 - grep-type er lagt til som nøkkel på typen til elementet eller referansene. Dette feltet er en oppslagbar uri til ontologien for typen.
 - Det har kommet en del endringer i datagrunnlaget, beskrevet i [Appendix A](../appendix_a.html).
+
+### Utvidelse av KL06 13.09.2016
+KL06 har blitt utvidet med direkteoppslag på kompetansemålsett, hovedområder og programfag. Læreplanen vil fremdeles inneholde denne informasjonen, med får i tillegg lenker til direkteoppslagene.
+
+Litt om RDF...
