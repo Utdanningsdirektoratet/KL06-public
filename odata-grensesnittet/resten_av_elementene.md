@@ -75,3 +75,15 @@ Filtreringsmulighetene er de samme som for fagkoder.
 For å spørre etter kompetansemålsett, oppgir du URL’en http://data.udir.no/kl06/odata/Kompetansemålsett.
 
 Filtreringsmulighetene er de samme som for fagkoder.
+
+## OData og programfag {#odata-og-programfag}
+
+For å spørre etter programfag, oppgir du URL’en http://data.udir.no/kl06/odata/Programfag.
+
+Filtreringsmulighetene er de samme som for fagkoder.
+
+## OData og hovedområder {#odata-og-hovedomraader}
+
+For å spørre etter hovedområde, oppgir du URL’en http://data.udir.no/kl06/odata/Hovedområder.
+
+Filtreringsmulighetene er de samme som for fagkoder.
