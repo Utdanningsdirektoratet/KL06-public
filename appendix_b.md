@@ -804,7 +804,7 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.uri
 * spraak av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.tittel.spraak
 
-
+________________________________________
 Endringer i soap (v. 2016/04) 14. september:
 
 Metoder som har blitt lagt til 
