@@ -72,6 +72,6 @@ Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og kompetansemålsett {#odata-og-kompetansemålsett}
 
-For å spørre etter opplæringsnivå, oppgir du URL’en http://data.udir.no/kl06/odata/Opplæringsnivå.
+For å spørre etter kompetansemålsett, oppgir du URL’en http://data.udir.no/kl06/odata/Kompetansemålsett.
 
 Filtreringsmulighetene er de samme som for fagkoder.
