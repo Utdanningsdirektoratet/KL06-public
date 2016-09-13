@@ -803,7 +803,7 @@ Parametere som har blitt lagt til
 * greptype av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.greptype
 * uri av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.uri
 * spraak av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.tittel.spraak
-
+________________________________________
 Endringer i soap (v. 2016/04) 14. september:
 
 Metoder som har blitt lagt til 
@@ -817,4 +817,5 @@ Metoder som har blitt lagt til
 Parametere som har blitt lagt til
 
 * rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraKode: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge
-* rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraPsi: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge 
+* rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraPsi: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge
+________________________________________
