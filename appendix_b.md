@@ -805,3 +805,17 @@ Parametere som har blitt lagt til
 * spraak av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.tittel.spraak
 
 
+Endringer i soap (v. 2016/04) 14. september:
+
+Metoder som har blitt lagt til 
+* FinnKompetansemaalsett
+* HentKompetansemaalsettFraKode 
+* FinnHovedomraade
+* HentHovedomraadeFraKode
+* FinnProgramfag
+* HentProgramfagFraKode
+
+Parametere som har blitt lagt til
+
+* rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraKode: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraPsi: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge 
