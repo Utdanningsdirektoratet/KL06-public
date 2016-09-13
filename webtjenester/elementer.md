@@ -30,4 +30,4 @@ Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 *   Opplæringsnivå
 * Kompetansemålsett
 * Programfag
-* Hovedområde
+* Hovedområder
