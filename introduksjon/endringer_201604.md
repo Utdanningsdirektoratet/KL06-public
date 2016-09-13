@@ -34,4 +34,3 @@ Grep-APIene er utvidet med funksjonalitet vi har forespeilet tidligere, hovedsak
 -	PSI-server. Alle uri- og grep-type-felt har psi.udir.no-lenker, som nå kan slås opp for mer informasjon om element eller definisjon av type.
 -	SparQL-endpoint. Brukere kan nå benytte vårt SparQL-endpoint på http://data.udir.no/kl06/sparql
 - Ontologi for Grep (maskinlesbar datamodell), slik den er implementert for SparQL. Se http://psi.udir.no/ontologi/kl06 
-- 
