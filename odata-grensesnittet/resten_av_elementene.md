@@ -68,4 +68,3 @@ Filtreringsmulighetene er de samme som for fagkoder.
 For å spørre etter hovedområde, oppgir du URL’en http://data.udir.no/kl06/odata/Hovedområde.
 
 Filtreringsmulighetene er de samme som for fagkoder.
--
