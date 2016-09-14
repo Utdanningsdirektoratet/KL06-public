@@ -45,3 +45,26 @@ Filtreringsmulighetene er de samme som for fagkoder
 For å spørre etter fagområde, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Årstrinn
 
 Filtreringsmulighetene er de samme som for fagkoder, med unntak av kode.
+
+## OData og hjelpedata {#odata-og-hjelpedata}
+
+For å spørre etter hjelpedata, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Hjelpedata.
+
+Filtreringsmulighetene er de samme som for fagkoder.
+## OData og kompetansemålsett {#odata-og-kompetansemålsett}
+
+For å spørre etter kompetansemålsett, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Kompetansemålsett.
+
+Filtreringsmulighetene er de samme som for fagkoder.
+
+## OData og programfag {#odata-og-programfag}
+
+For å spørre etter programfag, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Programfag.
+
+Filtreringsmulighetene er de samme som for fagkoder.
+
+## OData og hovedområde {#odata-og-hovedomraade}
+
+For å spørre etter hovedområde, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Hovedområde.
+
+Filtreringsmulighetene er de samme som for fagkoder.

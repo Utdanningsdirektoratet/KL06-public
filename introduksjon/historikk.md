@@ -14,3 +14,4 @@
 | 0.18 | 30.06.2015 | Une Haga | Fikset lenker fra udir.data.no til data.udir.no, og soap endepunktet satt til data.udir.no/kl06/soap over alt. |
 | 0.19 | 26.08.2015 | Stian G-E | Fjernet bruk av jsonp (data-type og callback) |
 | 0.20 | 21.04.2016 | Stian G-E | Ny versjon |
+| 0.21 | 14.09.2016 | Une Haga | Direkteoppslag på underelementer av læreplan: kompetansemålsett (KMS), hovedområde(HO) og programfag(PF), PSI-server, SparQL-endepunkt og Ontologi for grep |

@@ -38,4 +38,12 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentOpplaeringsfagFraPsi | Returnerer et opplæringsfag basert på opplæringsfagets psi | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | HentOpplaeringsfagFraKode | Returnerer et opplæringsfag basert på opplæringsfagets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | HentAarstrinmFraPsi | Returnerer et årstrinn basert på årstrinnets psi | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentStatusFraKode | Returnerer en status basert på statusens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentSpraakFraKode | Returnerer et språk basert på språkets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentFagtypeFraKode | Returnerer en fagtype basert på fagtypens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentOpplaeringsnivaaFraKode | Returnerer et opplæringsnivå basert på opplæringsnivåets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentKompetansemaalsettFraKode | Returnerer et kompetansemålsett basert på kompetansemålsettets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+|HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+|HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+
 
