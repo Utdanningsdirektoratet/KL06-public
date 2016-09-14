@@ -17,6 +17,13 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | FinnKompetansemaal | Finner kompetansemål basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnOpplaeringsfag | Finner opplæringsfag basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnAarstrinn | Finner årstrinn basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnStatus | Finner status basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnSpraak | Finner språk basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnFagtype | Finner fagtype basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnOpplaeringsnivaa | Finner opplæringsnivå basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnKompetansemaalsett | Finner kompetansemålsett basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnProgramfag | Finner programfag basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnHovedomraade | Finner hovedområde basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentPlanFraKode | Returnerer en læreplan basert på læreplanens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentPlanFraPsi | Returnerer en læreplan basert på læreplanens PSI (id) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentFagkodeFraKode | Returnerer en fagkode basert på fagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
@@ -38,4 +45,13 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentOpplaeringsfagFraPsi | Returnerer et opplæringsfag basert på opplæringsfagets psi | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentOpplaeringsfagFraKode | Returnerer et opplæringsfag basert på opplæringsfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentAarstrinmFraPsi | Returnerer et årstrinn basert på årstrinnets psi | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentStatusFraKode | Returnerer en status basert på statusens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentSpraakFraKode | Returnerer et språk basert på språkets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentFagtypeFraKode | Returnerer en fagtype basert på fagtypens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentOpplaeringsnivaaFraKode | Returnerer et opplæringsnivå basert på opplæringsnivåets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentKompetansemaalsettFraKode | Returnerer et kompetansemålsett basert på kompetansemålsettets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+|HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+|HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+
+
 

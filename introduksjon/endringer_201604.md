@@ -27,3 +27,10 @@ Denne versjonen av KL06 inneholder en del omstruktureringer på læreplaner og n
 - uri er lagt til som en nøkkel for elementer og referanser. Uri peker til ontologien for elementet
 - grep-type er lagt til som nøkkel på typen til elementet eller referansene. Dette feltet er en oppslagbar uri til ontologien for typen.
 - Det har kommet en del endringer i datagrunnlaget, beskrevet i [Appendix A](../appendix_a.html).
+
+### Endringer i KL06 (v. 2016/04) 14. september
+Grep-APIene er utvidet med funksjonalitet vi har forespeilet tidligere, hovedsakelig for å støtte opprettelsen av et nytt endpoint (RDF/SparQL).
+-	Direkteoppslag på underelementer av læreplan: kompetansemålsett (KMS), hovedområde(HO) og programfag(PF). Disse elementene har nå url-data-lenker som kan slås opp.
+-	PSI-server. Alle uri- og grep-type-felt har psi.udir.no-lenker, som nå kan slås opp for mer informasjon om element eller definisjon av type.
+-	SparQL-endpoint. Brukere kan nå benytte vårt SparQL-endpoint på http://data.udir.no/kl06/sparql
+- Ontologi for Grep (maskinlesbar datamodell), slik den er implementert for SparQL. Se http://psi.udir.no/ontologi/kl06 
