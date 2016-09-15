@@ -17,7 +17,7 @@
 * [REST-grensesnittet](rest-grensesnittet/rest.md)
    * [Versjonering](rest-grensesnittet/versjonering.md)
    * [Språkvalg i REST](rest-grensesnittet/sprakvalg_i_rest.md)
-       * Filter på tidspunkt
+   * Filter på tidspunkt
    * [Spesialspørringer](rest-grensesnittet/spesialsporringer.md)
 * [SOAP-grensesnittet](soap-grensesnittet/soap.md)
    * [Språkvalg i SOAP](soap-grensesnittet/sprakvalg_i_soap.md)
