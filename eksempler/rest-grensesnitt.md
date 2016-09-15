@@ -29,6 +29,43 @@ Test.html:
 </html>
 {%endace%}
 
+### Visning av et kompetansemål i html-side med JQuery {#Visning-av-et-kompetansemål-i-html-side-med-JQuery}
+
+Følgende html-dokument benytter JQuery og REST-grensesnittet for å vise tittel på et spesifikt kompetansemål på en html side.
+
+{%ace edit=false, check=false, lang='xml'%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+  </head>
+  <body>
+    <p></p>
+    <script type="text/jscript">
+    // Henter data for et kompetansemål
+    var kode = "K12825"
+    $.getJSON("https://data.udir.no/kl06/" + kode, {},
+      function (data){
+      $("p").append(hentDefaultVerdi(data.tittel));
+    });
+
+    // Henter ut den språkversjonerte verdien med nøkkelen 'default'
+    function hentDefaultVerdi(tittel) {
+      var res = "";
+      $.each(tittel, function (i, s) {
+        if (s.spraak = "default")
+        res = s.verdi;
+      });
+      return res;
+    }
+    </script>
+  </body>
+</html>
+{%endace%}
+
 ### Kombinasjon av grensesnitt (REST og OData) {#kombinasjon-av-grensesnitt-rest-og-odata}
 
 Som et eksempel på litt mer avansert bruk, demonstrerer vi her et eksempel som tilbyr et “fritekst”-søk etter læreplaner, og mulighet for å se på detaljert informasjon om læreplanen (formålet med læreplanen). Eksempelet tar i bruk JQuery og jQuery-ui (og sannsynligvis ganske amatørmessig utført), men kan like gjerne utføres i andre teknologier.
