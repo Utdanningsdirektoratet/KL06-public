@@ -1,6 +1,6 @@
 # Filter på tidspunkt {#filter-på-tidspunt}
 
-Når en henter ut et element generelt vil alle relasjoner for dette elemetnet vises. Det vil si at utgåtte, aktive og koblinger for fremtidene er med i listene. Dersom en ønsker å hente ut gyldig informasjon for et bestemt tidpunkt kan en benytte filteret ?tidspunkt = "angitt tidspunt".
+Når en henter ut et element genereltvil alle relasjoner for dette elemetnet vises. Det vil si at utgåtte, aktive og koblinger for fremtidene er med i listene. Dersom en ønsker å hente ut gyldig informasjon for et bestemt tidpunkt kan en benytte filteret ?tidspunkt = "angitt tidspunt".
 
 Eksempel:
 data.udir.no/kl06/NOR0214?tidspunkt=2016-06-01T00:00:00
