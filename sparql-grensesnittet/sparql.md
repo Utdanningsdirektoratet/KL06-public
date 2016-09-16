@@ -60,9 +60,28 @@ Ontologien beskriver datamodellen, mens oppslag på URI-verdien til de enkelte d
 - **Referanse til ulike data-format elementet kan hentes:** Alltid JSON og XML, men for læreplan kan elementene i tillegg hentes som .pdf (i praksis kan disse også hentes som .doc, .docx, .rtf og "ren" .html)
 
 
-[*illustrasjon: oppslag på [http://psi.udir.no/kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05)*]
+[*Illustrasjon: oppslag på [http://psi.udir.no/kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05)*]
+
+
+## URL-syntaks for ontologien og psi-oppslag
+Siden det meste av kodeverket til Grep er URL-basert, kan det være nyttig å kjenne til hvordan vi har lagt opp syntaksen for disse.
+###URL-syntaks for ontologien:
+Vi har valgt å legge ontologien for Grep (kl06) på følgende URL, og med følgende syntaks:
+http://psi-udir.no/ontologi/kl06/#[en_gitt_kode_for_enten_type_eller_egenskap]
+Forklaring på hvert ledd:
+- **psi**: (published subject identifier) for å skille det fra data-elementer (som ligger under data.udir.no) og på den måten markere at det har med modellen å gjøre
+- **.udir.no/ontologi/**: Teoretisk kan udir.no ha sin egen, overordnede ontologi i fremtiden, men her snakker vi om 
+- **kl06/**: som er Greps ontologi (i teorien kan andre prosjekter i Udir-domenet opprette sine egne ontologier etter formen http://psi.udir.no/ontologi/[navn_på_spesifikk_ontologi_i_udir-domenet]
+
+###URL-syntaks for PSI-oppslag:
+Syntaksen over, er for typer og egenskaper i datamodellen, mens syntaksen for det vi kaller PSI-oppslag, fjerner vi ontologi-leddet for å uttrykke at vi her ser på et data-element.
+URL-syntaksen blir da etter formen http://psi.udir.no/kl06/[kode], altså likt som for data-oppslag (http://data.udir.no/kl06/[kode]), med den forskjellen at "data" er erstattet med "psi". Disse URLene brukes typisk som publiserte, unike, identifikatorer - men ved å slå dem opp, finner du også referanse til både data-oppslag ("hva har jeg") og til ontologien ("hvilken type er jeg"). På den måten blir PSI-oppslag broen mellom datamodellen og selve dataene i Grep.
+
+## SPARQL-endepunkt
+...Anvendelse av ontologi- og psi-referanser kan gjøres via SPARQL-spørringer
+
+...Vi tanker Grep-data til en egen database (Virtuoso) for RDF og SPARQL-bruk.
 
 
 
-
-
+...Noen ord om bruken av psi-adresser VS data-adresser i SPARQL-spørringer
