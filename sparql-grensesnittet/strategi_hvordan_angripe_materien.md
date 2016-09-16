@@ -24,23 +24,23 @@ WHERE {
 {%endace%}
 
 Denne spørringen gir følgende resultat:
-| 0:**type** |
+| **type** |
 | -- |
-| 0:http://psi.udir.no/ontologi/kl06/fagkode |
-| 0:http://psi.udir.no/ontologi/kl06/status |
-| 0:http://psi.udir.no/ontologi/kl06/laereplan |
-| 0:http://psi.udir.no/ontologi/kl06/fagkategori |
-| 0:6 |
-| 0:7 |
-| 0:8 |
-| 0:9 |
-| 0:10 |
-| 0:11 |
-| 0:12 |
-| 0:13 |
-| 0:14 |
-| 0:15 |
-| 0:16 |
-| 0:17 |
-| 0:18 |
-| 0:19 |
+| http://psi.udir.no/ontologi/kl06/fagkode |
+| http://psi.udir.no/ontologi/kl06/status |
+| http://psi.udir.no/ontologi/kl06/laereplan |
+| http://psi.udir.no/ontologi/kl06/fagkategori |
+| http://psi.udir.no/ontologi/kl06/fagomraade |
+| http://psi.udir.no/ontologi/kl06/opplaeringsfag |
+| http://psi.udir.no/ontologi/kl06/utdanningsprogram |
+| http://psi.udir.no/ontologi/kl06/programomraade |
+| http://psi.udir.no/ontologi/kl06/merknad |
+| http://psi.udir.no/ontologi/kl06/opplaeringsnivaa |
+| http://psi.udir.no/ontologi/kl06/aarstrinn |
+| http://psi.udir.no/ontologi/kl06/spraak |
+| http://psi.udir.no/ontologi/kl06/fagtype |
+| http://psi.udir.no/ontologi/kl06/merkelapp |
+| http://psi.udir.no/ontologi/kl06/kompetansemaal |
+| http://psi.udir.no/ontologi/kl06/hovedomraade |
+| http://psi.udir.no/ontologi/kl06/kompetansemaalsett |
+| http://psi.udir.no/ontologi/kl06/programfag |
