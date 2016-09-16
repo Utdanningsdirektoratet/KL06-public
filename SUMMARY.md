@@ -24,7 +24,7 @@
    * [Fagkoder](odata-grensesnittet/odata_og_fagkoder.md)
    * [Læreplaner](odata-grensesnittet/odata_og_laereplaner.md)
    * [Resten av elementene](odata-grensesnittet/resten_av_elementene.md)
-* [Sparql-grensesnittet](sparql-grensesnittet/sparql.md)
+* [RDF/Sparql-grensesnitt og ontologi](sparql-grensesnittet/sparql.md)
    * [Ontologi/maskinlesbar datamodell og OWL](sparql-grensesnittet/ontologi.md)
 * [Eksempler](eksempler/eksempler.md)
    * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
