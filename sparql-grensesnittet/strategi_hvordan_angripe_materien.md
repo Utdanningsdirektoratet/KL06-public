@@ -3,7 +3,7 @@ I dette avsnittet vil vi gi noen tips til hvordan du kan skaffe deg oversikt ove
 Vi anbefaler følgende strategi:
 
 1. Skaff deg oversikt med "utforskende SPARQL-spørringer"
-2. Bruke det hu har lært i pkt. 1 til å grave dypere (og bruke dem videre til programmering)
+2. Bruke det du har lært i pkt. 1 til å grave dypere (og bruke dem videre til programmering)
 
 
 ## 1: Skaff deg oversikt med "utforskende SPARQL-spørringer"
@@ -22,3 +22,25 @@ WHERE {
 ?s ontologi:grep-type ?type 
 }
 {%endace%}
+
+Denne spørringen gir følgende resultat:
+| 0:**type** |
+| -- |
+| 0:http://psi.udir.no/ontologi/kl06/fagkode |
+| 0:http://psi.udir.no/ontologi/kl06/status |
+| 0:http://psi.udir.no/ontologi/kl06/laereplan |
+| 0:http://psi.udir.no/ontologi/kl06/fagkategori |
+| 0:6 |
+| 0:7 |
+| 0:8 |
+| 0:9 |
+| 0:10 |
+| 0:11 |
+| 0:12 |
+| 0:13 |
+| 0:14 |
+| 0:15 |
+| 0:16 |
+| 0:17 |
+| 0:18 |
+| 0:19 |
