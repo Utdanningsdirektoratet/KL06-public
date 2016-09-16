@@ -28,13 +28,3 @@ Man kan navigere opp og ned i dette dokumentet mellom typer og egenskaper og på
 Den har også en "Superclass" utenfor vårt eget domene, siden vi her refererer til http://www.w3.org/2002/07/owl#Thing. Det er en RDF-måte å uttrykke at subklassene (laereplan, fagkoder osv.) er vårt domenes hoved-typer.*[TODO: kanskje også skrive noe om hvordan vi på denne måten kan koble oss til skjemaer på internett og på den måten koble oss til, ikke bare internett som nettverk av dokumenter, men også nettverk av data?]*
 
 En mer avansert måte å gjøre seg kjent med typer og egenskaper og hvordan disse henger sammen, kan gjøres med SPRARQL-spørringer. Her kan brukeren skaffe seg ytterligere oversikt over muligheter for koblinger mellom elementene. Mer om det i kapittelet om SPARQL.
-
-## Oppslag på URI (psi-adresser) for data-elementer:
-Ontologien beskriver datamodellen, mens oppslag på URI-verdien til de enkelte dataelementene (som består av psi-adresser), gir følgende informasjon:
-- **URI:** etter formen http://beta-psi.udir.no/kl06/[kode], for eksempel http://beta-psi.udir.no/kl06/NOR1-05
-- **Type:** Angir hvilken type det oppslåtte elementet er (hvilken plass det har i ontologien)
-- **Referanse til ulike data-format elementet kan hentes:** Alltid JSON og XML, men for læreplan kan elementene i tillegg hentes som .pdf (i praksis kan disse også hentes som .doc, .docx, .rtf og "ren" .html)
-
-
-[*Illustrasjon: oppslag på [http://psi.udir.no/kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05)*]
-
