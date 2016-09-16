@@ -9,4 +9,4 @@ Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/]
 ![SPARQL-endepunktet](sparql-endepunktet.png)
 *Forsiden til SPARQL-endepunkt med ferdig utfylt spørring: "Vis meg hvilke konsepter du har" (velg hvilket format du ønsker resultatet i, og klikk "Run Query")*
 
-I neste kapittel vil vi gi noen tips til hvordan du kan skaffe deg oversikt over materien, og hvordan du kan bruke dette videre i programmering.
+Neste del gir noen tips til hvordan du kan skaffe deg oversikt over materien, og hvordan du kan bruke dette videre i programmering.
