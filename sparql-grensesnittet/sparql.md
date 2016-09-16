@@ -22,7 +22,7 @@ Ved for eksempel å lese .json-representasjonen av
 
 
 
-### Ontologi/maskinlesbar datamodell og .owl {###Ontologi/maskinlesbar datamodell og .owl}
+## Ontologi/maskinlesbar datamodell og .owl {##Ontologi/maskinlesbar datamodell og .owl}
 Alle typer og egenskaper (classes and properties) i datamodellen til Grep er URL-baserte, og er derfor unike identifikatorer som kan brukes i API-sammenheng og i spørringer. Disse er systematisert i en ontologi som det kan navigeres i for den som ønsker å skaffe seg en oversikt over hvordan typene og egenskapene i datamodellen henger sammen (se også illustrasjonen i innledningen til dette kapittelet). 
 
 
