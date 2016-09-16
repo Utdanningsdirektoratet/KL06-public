@@ -9,14 +9,14 @@ Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.ud
 Denne siden er delt i tre deler,
 * Først en kort introduksjon og informasjon om lisens og våre vilkår for bruk
 * så en liste over typer/"classes"
-* * der hver type er gitt en definisjon
-* * hvilken url-baserte kode den har i Grep
-* * og videre, klikkbare referanser til "superclass" (typen hierarkisk over den gjeldende typen)
+ * der hver type er gitt en definisjon
+ * hvilken url-baserte kode den har i Grep
+  * og videre, klikkbare referanser til "superclass" (typen hierarkisk over den gjeldende typen)
 * og til slutt en liste over egenskaper/"properties" som finnes i modellen,
-* * der hver egenskap er gitt en definisjon/forklaring
-* * hvilken url-baserte kode den har i Grep
-* * "Domain"; url-referanse til typen(e) den er egenskap for
-* * og til slutt "Range"; hvilke(n) type eller egenskap som opptrer som axiom/postulat i sammenhengen (se illustrasjonen med eksempel nedenfor)
+ * der hver egenskap er gitt en definisjon/forklaring
+ * hvilken url-baserte kode den har i Grep
+ * "Domain"; url-referanse til typen(e) den er egenskap for
+ * "Range"; hvilke(n) type eller egenskap som opptrer som axiom/postulat i sammenhengen (se illustrasjonen med eksempel nedenfor)
 
 ![Eksempel på property i ontologien](eksempel_paa_property_i_ontologien.png)
 *Eksempel: Typen "fagkode" har en egenskap, "naar-kan-man-ta-eksamen-foerste-semester", som angir en forekomst av typen "semester"*
