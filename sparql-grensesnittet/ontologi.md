@@ -8,6 +8,7 @@ Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.ud
 
 Denne siden er delt i tre deler,
 * Først en kort introduksjon og informasjon om lisens og våre vilkår for bruk
+ * og lenke til den maskinlesbare [.owl-fila](http://psi.udir.no/Ontologi/kl06.owl) (enten fra teksten eller høyreklikk på "Sist oppdatert" øverst på siden)
 * så en liste over typer/"classes"
  * der hver type er gitt en definisjon
  * hvilken url-baserte kode den har i Grep
