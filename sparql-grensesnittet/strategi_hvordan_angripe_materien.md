@@ -25,6 +25,8 @@ WHERE {
 }
 {%endace%}
 
+*Legg merke til linje 1:* ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>```*. Denne er med, for at vi skal slippe å skrive hele URLen i f.eks linje 4, men heller skrive* ```ontologi:grep-type```*. Med andre ord - på linje 4 står det egentlig: *```?s <http://psi.udir.no/ontologi/kl06/grep-type> ?type```
+
 Denne spørringen gir følgende resultat (ved valg av HTML som resultat-format):
 
 | **type** |
