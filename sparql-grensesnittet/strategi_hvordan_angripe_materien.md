@@ -25,7 +25,7 @@ WHERE {
 }
 {%endace%}
 
-Denne spørringen gir følgende resultat:
+Denne spørringen gir følgende resultat (ved valg av HTML som resultat-format):
 
 | **type** |
 | -- |
