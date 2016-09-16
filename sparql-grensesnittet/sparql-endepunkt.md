@@ -32,5 +32,5 @@ WHERE {
 }
 {%endace%}
 
-**[tenke tenke... jeg må starte fra en annen vinkel...
+**[tenke tenke... her ble det mye vranglære, og jeg må starte fra en annen vinkel...
 Jeg jobber med saken]**
