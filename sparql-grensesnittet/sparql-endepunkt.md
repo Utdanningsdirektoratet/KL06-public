@@ -13,7 +13,8 @@ Resultatet av denne "standard-spørringen" lister opp alle "konsepter" som er ti
 
 Du kan også spørre eksplisitt om typene i Grep ved å kjøre følgende spørring:
 
-```SELECT * WHERE {
+{%ace edit=false, check=false, lang='sql'%}
+SELECT * WHERE {
 ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o
 }
-```
+{%endace%}
