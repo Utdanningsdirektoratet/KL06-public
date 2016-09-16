@@ -11,28 +11,4 @@ Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/]
 
 Resultatet av denne "standard-spørringen" lister opp alle "konsepter" som er tilgjengelige via Greps SPARQL-grensesnitt. Her vil eksterne skjemaer (som f.eks. http://www.openlinksw.com/schemas) eller ontologier (f. eks. http://www.w3.org/2002/07/owl#Ontology) listes opp sammen med Greps egne Typer.
 
-Neste del handler om hvordan du kan 
-
-~~Du kan også spørre eksplisitt om typene i Grep ved å kjøre følgende spørring:
-
-~~{%ace edit=false, check=false, lang='sql'%}
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT DISTINCT ?type
-WHERE { 
-?s rdf:type ?type 
-}
-{%endace%}
-Denne returnerer alle elementer i Grep som er definert som RDF-"type" i følge skjemaet til W3C
-
-~~Det samme resultatet får du ved å spørre om det samme, men i følge Greps egen ontologi:
-
-~~{%ace edit=false, check=false, lang='sql'%}~~
-~~PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>~~
-~~SELECT DISTINCT ?type
-WHERE {~~
-~~?s ontologi:grep-type ?type 
-}
-{%endace%}~~
-~~~~~~
-**[tenke tenke... her ble det mye vranglære, og jeg må starte fra en annen vinkel...
-Jeg jobber med saken]**
+Neste del gir tips til hvordan du kan ta i bruk SPARQL-endepunktet.
