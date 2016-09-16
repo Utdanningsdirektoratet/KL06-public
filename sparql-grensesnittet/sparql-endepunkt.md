@@ -14,8 +14,10 @@ Resultatet av denne "standard-spørringen" lister opp alle "konsepter" som er ti
 Du kan også spørre eksplisitt om typene i Grep ved å kjøre følgende spørring:
 
 {%ace edit=false, check=false, lang='sql'%}
-SELECT * WHERE {
-?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?type
+WHERE { 
+?s rdf:type ?type 
 }
 {%endace%}
 Denne returnerer alle elementer i Grep som er definert som RDF-"type" i følge skjemaet til W3C.
