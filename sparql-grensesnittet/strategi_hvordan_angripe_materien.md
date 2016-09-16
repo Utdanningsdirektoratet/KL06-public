@@ -26,6 +26,7 @@ WHERE {
 {%endace%}
 
 Denne spørringen gir følgende resultat:
+
 | **type** |
 | -- |
 | http://psi.udir.no/ontologi/kl06/fagkode |
