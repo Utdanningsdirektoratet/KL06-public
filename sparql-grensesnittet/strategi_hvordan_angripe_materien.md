@@ -44,3 +44,4 @@ Denne spørringen gir følgende resultat:
 | http://psi.udir.no/ontologi/kl06/hovedomraade |
 | http://psi.udir.no/ontologi/kl06/kompetansemaalsett |
 | http://psi.udir.no/ontologi/kl06/programfag |
+
