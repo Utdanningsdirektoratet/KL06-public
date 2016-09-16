@@ -7,5 +7,5 @@ Grudigere dokumentasjon om SPARQL generelt, kan du finne på [W3C](https://www.w
 
 Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/](http://data.udir.no/kl06/sparql/).
 ![SPARQL-endepunktet](sparql-endepunktet.png)
-*Forsiden til SPARQL-endepunkt med ferdig utfylt spørring: "Vis meg hvilke konsepter du har" (resultatet kan du få i ulike format, i våre eksempler har vi valgt HTML)*
+*Forsiden til SPARQL-endepunkt med ferdig utfylt spørring: "Vis meg hvilke konsepter du har" (resultatet kan du få i ulike format, og i våre eksempler har vi valgt HTML)*
 
