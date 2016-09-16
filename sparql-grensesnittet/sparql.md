@@ -18,6 +18,7 @@ Ved for eksempel å lese .json-representasjonen av
 ["Læreplan i Norsk", NOR1-05](http://data.udir.no/kl06/NOR1-05), kjenner vi igjen URLene som nevnes i oversiktene over. Se illustransjonen nedenfor:
 
 ![](illustrasjon_nor1-05_json.png)
+
 *Ontologi og URI-oppslag/PSI-adresser i kl06 kan nå brukes til å skaffe seg oversikt (for mennesker) eller brukes som API (for maskiner)*
 
 
