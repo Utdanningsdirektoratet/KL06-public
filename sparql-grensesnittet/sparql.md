@@ -1,12 +1,12 @@
 # RDF/SPARQL-grensesnitt og ontologi {#sparql-grensesnitt og ontologi}
-Grep tilbyr også et RDF/SPARQL-grensesnitt som består av følgende komponenter:
+Grep tilbyr et RDF/SPARQL-grensesnitt som består av følgende komponenter:
 * **Ontologi/maskinlesbar datamodell:** http://psi-udir.no/ontologi/kl06/
-* * **Oppslag på type:** http://psi.udir.no/ontologi/kl06/[navn_på_type],
+ * **Oppslag på type:** http://psi.udir.no/ontologi/kl06/[navn_på_type],
 eksempel:
 http://psi.udir.no/ontologi/kl06/laereplan 
 eller: http://psi.udir.no/ontologi/kl06#laereplan
 Denne inneholder definisjon av typer og egenskaper, samt modell-referanser
-* * **Ontologien som nedlastbar owl-fil til maskinell behandling:** http://psi.udir.no/Ontologi/kl06.owl
+ * **Ontologien som nedlastbar owl-fil til maskinell behandling:** http://psi.udir.no/Ontologi/kl06.owl
 * **Oppslag på PSI-adresser for data-elementer:** (http://psi.udir.no/kl06/[navn_på_element], eksempel:
 http://psi.udir.no/kl06/NOR1-05)
 * **SPARQL-endepunkt:**
