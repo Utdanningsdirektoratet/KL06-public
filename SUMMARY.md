@@ -25,7 +25,7 @@
    * [Læreplaner](odata-grensesnittet/odata_og_laereplaner.md)
    * [Resten av elementene](odata-grensesnittet/resten_av_elementene.md)
 * [Sparql-grensesnittet](sparql-grensesnittet/sparql.md)
-   * test
+   * [test](sparql-grensesnittet/ontologi.md)
 * [Eksempler](eksempler/eksempler.md)
    * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
    * [SOAP-grensesnittet](eksempler/soap-grensesnitt.md)
