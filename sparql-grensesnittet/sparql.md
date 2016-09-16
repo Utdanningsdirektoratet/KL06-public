@@ -21,3 +21,12 @@ Ved for eksempel å lese .json-representasjonen av
 *Ontologi og URI-oppslag/PSI-adresser i kl06 kan nå brukes til å skaffe seg oversikt (for mennesker) eller brukes som API (for maskiner)*
 
 
+## Ontologi/maskinlesbar datamodell og OWL
+{##Ontologi/maskinlesbar datamodell og OWL}
+
+Alle typer og egenskaper (classes and properties) i datamodellen til Grep er URL-baserte, og er derfor unike identifikatorer som kan brukes i API-sammenheng og i spørringer. Disse er systematisert i en ontologi som det kan navigeres i for den som ønsker å skaffe seg en oversikt over hvordan typene og egenskapene i datamodellen henger sammen (se også illustrasjonen i innledningen til dette kapittelet). 
+
+
+### Ontologi, startside:
+Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.udir.no/ontologi/kl06/). Dette er den "menneskelesbare" delen av ontologien.
+![Ontologi, startside](ontologi_startside.png)
