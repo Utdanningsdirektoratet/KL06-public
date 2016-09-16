@@ -19,6 +19,6 @@ Kjør følgende spørring i SPARQL-grensesnittet i Grep (kopier spørringen nede
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 SELECT DISTINCT ?type
 WHERE {
-?s rdf:grep-type ?type 
+?s ontologi:grep-type ?type 
 }
 {%endace%}
