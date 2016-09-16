@@ -25,8 +25,10 @@ Denne returnerer alle elementer i Grep som er definert som RDF-"type" i følge s
 Det samme resultatet får du ved å spørre om det samme, men i følge Greps egen ontologi:
 
 {%ace edit=false, check=false, lang='sql'%}
-SELECT * WHERE {
-?s <http://psi.udir.no/ontologi/#type> ?o
+PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
+SELECT DISTINCT ?type
+WHERE {
+?s ontologi:grep-type ?type 
 }
 {%endace%}
 
