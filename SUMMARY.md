@@ -26,7 +26,7 @@
    * [Resten av elementene](odata-grensesnittet/resten_av_elementene.md)
 * [RDF/Sparql-grensesnitt og ontologi](sparql-grensesnittet/sparql.md)
    * [Ontologi/maskinlesbar datamodell og OWL](sparql-grensesnittet/ontologi.md)
-   * URL-syntaks for ontologien og PSI-oppslag
+   * [URL-syntaks for ontologien og PSI-oppslag](sparql-grensesnittet/url-syntaks_for_ontologien_og_psi-oppslag.md)
 * [Eksempler](eksempler/eksempler.md)
    * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
    * [SOAP-grensesnittet](eksempler/soap-grensesnitt.md)
