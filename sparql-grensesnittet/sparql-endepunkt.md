@@ -15,6 +15,13 @@ Du kan også spørre eksplisitt om typene i Grep ved å kjøre følgende spørri
 
 {%ace edit=false, check=false, lang='sql'%}
 SELECT * WHERE {
-  ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o
+?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o
+}
+```
+Denne returnerer alle elementer i Grep som er definert som RDF-"type" i følge skjemaet til W3C.
+
+Det samme resultatet får du ved å spørre om det samme, men i følge Greps egen ontologi:
+```SELECT * WHERE {
+?s <http://psi.udir.no/ontologi/#type> ?o
 }
 {%endace%}
