@@ -15,7 +15,7 @@ I dette punktet vil vi vise hvordan du kan skaffe deg oversikt over
 ### Hvilke typer finnes i datagrunnlaget?
 Kjør følgende spørring i SPARQL-grensesnittet i Grep (kopier spørringen nedenfor og lim inn i "spørre-feltet" til [endepunktet](http://data.udir.no/kl06/sparql)).
 
-{%ace edit=false, check=false, lang='xml'%}
+{%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://test-psi.udir.no/ontologi/kl06/>
 SELECT DISTINCT ?type
 WHERE {
