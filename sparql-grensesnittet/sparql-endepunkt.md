@@ -21,8 +21,10 @@ SELECT * WHERE {
 Denne returnerer alle elementer i Grep som er definert som RDF-"type" i følge skjemaet til W3C.
 
 Det samme resultatet får du ved å spørre om det samme, men i følge Greps egen ontologi:
+
 {%ace edit=false, check=false, lang='sql'%}
 SELECT * WHERE {
 ?s <http://psi.udir.no/ontologi/#type> ?o
 }
 {%endace%}
+
