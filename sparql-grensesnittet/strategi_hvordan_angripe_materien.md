@@ -148,5 +148,11 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 | 23 | FILTER (lang(?lptittel) = '') . | ...og det bare på "default"-språket |
 | 24 | } | slutt på spørringen |
 
+... og her er resultatet:
 
+| **fagkodetittel** | **zkode** | **ztittel** | **kms** | **lp** | **lptittel** |
+|  -- | -- | -- | -- | -- | -- |
+| Norsk hovedmål 10. årstrinn, skriftlig | http://psi.udir.no/kl06/NOR1Z56 | Norsk 10. årstrinn | http://psi.udir.no/kl06/KMS946 | http://psi.udir.no/kl06/NOR1-05 | Læreplan i norsk | 
+
+strhgsrt
 
