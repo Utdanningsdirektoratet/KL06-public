@@ -132,21 +132,21 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 |  7 | ```FILTER (lang(?fagkodetittel) = '') .``` | "list kun opp resultater der ```?fagkodetittel``` har tom språkstreng" (Alle språkversjonerte elementer i Grep har også en versjon der språket ikke er fylt ut, det er dette som er "default"-verdien, innholdet er på det språket elementet er "fastsatt" på). Hvis du for eksempel ønsker å filtrere på bokmål, skriver du ```FILTER (lang(?fagkodetittel) = '@nob') .``` |
 |  8 |  | ekstra linje for oversiktens skyld |
 |  9 | ```?kms ontologi:har-etter-fag ?zkode .``` | Her setter vi en ny variabel opp som subjekt i uttrykket: ```?kms``` - "kompetansemålsett". Her er vi ute etter kompetansemålsettene som har hvilke opplæringsfag (```?zkode```) via predikatet ```ontologi:har-etter-fag``` |
-| 10 | ?zkode ontologi:tittel ?ztittel . | Vi får også med oss opplæringsfagets tittel... |
-| 11 | FILTER (lang(?ztittel) = '') . | og filtrerer på opplærongsfagets default-verdi (se forklaring i linje 7) |
+| 10 | ```?zkode ontologi:tittel ?ztittel .``` | Vi får også med oss opplæringsfagets tittel... |
+| 11 | ```FILTER (lang(?ztittel) = '') .``` | og filtrerer på opplærongsfagets default-verdi (se forklaring i linje 7) |
 | 12 |  | ekstra linje for oversiktens skyld |
-| 13 | ?zkode ontologi:status ?zstatus | Vi vil bare ha publiserte opplæringsfag (ikke utgåtte eller ugyldige, så vi henter fram opplæringsfagets status-verdi... |
-| 14 | FILTER regex(?zstatus, "publisert") . | og bruker regex-funksjonen til å filtrere på ordet "publisert" |
+| 13 | ```?zkode ontologi:status ?zstatus``` | Vi vil bare ha publiserte opplæringsfag (ikke utgåtte eller ugyldige, så vi henter fram opplæringsfagets status-verdi... |
+| 14 | ```FILTER regex(?zstatus, "publisert") .``` | og bruker regex-funksjonen til å filtrere på ordet "publisert" |
 | 15 | | ekstra linje for oversiktens skyld |
-| 16 | ?kmslp ontologi:har-kompetansemaalsett ?kms ; | Vi driller videre med utgangspunkt i ?kms: "Gi meg den læreplanen det kompetansemålsettet vi har funnet via ?kms i linje 9. (vi kan kalle denne "?kmslp" for å minne oss om at vi fant læreplanen (lp) via kompetansemålsettet (kms), |
-| 17 | ontologi:status ?status | ...og vi vil kun ha læreplaner... |
-| 18 | FILTER regex(?status, "publisert") . |  ...som er publisert. |
+| 16 | ```?kmslp ontologi:har-kompetansemaalsett ?kms ;``` | Vi driller videre med utgangspunkt i ?kms: "Gi meg den læreplanen det kompetansemålsettet vi har funnet via ?kms i linje 9. (vi kan kalle denne "?kmslp" for å minne oss om at vi fant læreplanen (lp) via kompetansemålsettet (kms), |
+| 17 | ```ontologi:status ?status``` | ...og vi vil kun ha læreplaner... |
+| 18 | ```FILTER regex(?status, "publisert") .``` |  ...som er publisert. |
 | 19 |  | ekstra linje for oversiktens skyld |
-| 20 | ?lp ontologi:uri ?kmslp . | Her er vi ute etter uri-verdien til den aktuelle læreplanen (som vi heretter kaller ?lp, |
+| 20 | ```?lp ontologi:uri ?kmslp .``` | Her er vi ute etter uri-verdien til den aktuelle læreplanen (som vi heretter kaller ?lp, |
 | 21 |  | ekstra linje for oversiktens skyld |
-| 22 | ?lp ontologi:tittel ?lptittel | ...for videre å få fram tittelen |
-| 23 | FILTER (lang(?lptittel) = '') . | ...og det bare på "default"-språket |
-| 24 | } | slutt på spørringen |
+| 22 | ```?lp ontologi:tittel ?lptittel``` | ...for videre å få fram tittelen |
+| 23 | ```FILTER (lang(?lptittel) = '') .``` | ...og det bare på "default"-språket |
+| 24 | ```}``` | slutt på spørringen |
 
 ... og her er resultatet:
 
