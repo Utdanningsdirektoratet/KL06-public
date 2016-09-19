@@ -94,19 +94,18 @@ For eksempel kan det være en utfordring å "finne veien" til læreplanen, fra e
 Denne spørringen gir svaret:
 
 {%ace edit=false, check=false, lang='sql'%}
-PREFIX grep: <http://psi.udir.no/kl06/>
+PREFIX data: <http://psi.udir.no/kl06/>
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
-PREFIX kode: <http://data.udir.no/kl06/>
 SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?laereplantittel  WHERE {
-grep:NOR0214 ontologi:tittel ?fagkodetittel ;
+data:NOR0214 ontologi:tittel ?fagkodetittel ;
 ontologi:har-opplaeringsfag ?zkode ;
 ontologi:status ?status
 FILTER regex(?status, "publisert")
-FILTER (lang(?fagkodetittel) = '').
+FILTER (lang(?fagkodetittel) = '') .
 
 ?kms ontologi:har-etter-fag ?zkode .
 ?zkode ontologi:tittel ?ztittel.
-FILTER (lang(?ztittel) = '')  .
+FILTER (lang(?ztittel) = '') .
 
 ?zkode ontologi:status ?zstatus
 FILTER regex(?zstatus, "publisert") .
@@ -118,12 +117,40 @@ FILTER regex(?status, "publisert") .
 ?lp ontologi:uri ?kmslp .
 
 ?lp ontologi:tittel ?laereplantittel
-FILTER (lang(?laereplantittel) = '')  .
+FILTER (lang(?laereplantittel) = '') .
 }
 {%endace%}
 
-Her er en gjengivelse av spørringen, denne gangen med kommentarer og forklaringer:
+Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentarer og forklaringer:
+
+| **lnr.** | **spørring** | **kommentar** |
+|  -- | -- | -- |
+|  1 | PREFIX data: <<http://psi.udir.no/kl06/>> | for at vi skal kunne skrive "data:NOR0214" i stedet for <<http://psi.udir.no/kl06/NOR0214>> i linje 5 |
+|  2 | PREFIX ontologi: <<http://psi.udir.no/ontologi/kl06/>> | for at vi f.eks skal kunne skrive "data:NOR0214" i stedet for <<http://psi.udir.no/ontologi/har-opplaeringsfag>> i linje 6 |
+|  3 | SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?laereplantittel  WHERE { | SELECT: [Se w3.org](https://www.w3.org/TR/sparql11-query/#select); ?[variabelnavn]: "zkode" - koder med "Z" = opplæringsfag (eksempel "NOR1Z56" |
+|  4 | | <span title="I am hovering over the text">This is the text I want to have a mousover</span> ekstra linje for oversiktens skyld |
+|  5 | data:NOR0214 ontologi:tittel ?fagkodetittel ; | |
+|  6 | ontologi:har-opplaeringsfag ?zkode ; | |
+|  7 | ontologi:status ?status | |
+|  8 | FILTER regex(?status, "publisert") | |
+|  9 | FILTER (lang(?fagkodetittel) = '') . | |
+| 10 |  | ekstra linje for oversiktens skyld |
+| 11 | ?kms ontologi:har-etter-fag ?zkode . | |
+| 12 | ?zkode ontologi:tittel ?ztittel . | |
+| 13 | FILTER (lang(?ztittel) = '') . | |
+| 14 |  | ekstra linje for oversiktens skyld |
+| 15 | ?zkode ontologi:status ?zstatus | |
+| 16 | FILTER regex(?zstatus, "publisert") . | |
+| 17 | | ekstra linje for oversiktens skyld |
+| 18 | ?kmslp ontologi:har-kompetansemaalsett ?kms ; | |
+| 19 | ontologi:status ?status | |
+| 20 | FILTER regex(?status, "publisert") . | |
+| 21 |  | ekstra linje for oversiktens skyld |
+| 22 | ?lp ontologi:uri ?kmslp . | |
+| 23 |  | ekstra linje for oversiktens skyld |
+| 24 | ?lp ontologi:tittel ?laereplantittel | |
+| 25 | FILTER (lang(?laereplantittel) = '') . | |
+| 26 | } | slutt på spørringen |
 
 
-...osv osv, eller skal dette inn i eksempel-kapittelet?
 
