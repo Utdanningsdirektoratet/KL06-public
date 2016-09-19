@@ -98,9 +98,7 @@ PREFIX data: <http://psi.udir.no/kl06/>
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lptittel  WHERE {
 data:NOR0214 ontologi:tittel ?fagkodetittel ;
-ontologi:har-opplaeringsfag ?zkode ;
-ontologi:status ?status
-FILTER regex(?status, "publisert")
+ontologi:har-opplaeringsfag ?zkode 
 FILTER (lang(?fagkodetittel) = '') .
 
 ?kms ontologi:har-etter-fag ?zkode .
@@ -129,28 +127,26 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 |  2 | ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>``` | for at vi f.eks skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/ontologi/har-opplaeringsfag>``` i linje 6 |
 |  3 | ```SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lpittel WHERE { ``` | SELECT: [Se w3.org](https://www.w3.org/TR/sparql11-query/#select); ?[variabelnavn]: Noen av variablene trenger en forklaring: ?zkode; opplæringsfag har koder med "Z", f.eks "NOR1Z56"; ?kms: kompetansemålsett (kode som begynner med "KMS"); ?lp: læreplan; ?lptittel: læreplantittel |  
 |  4 | | ekstra linje for oversiktens skyld |
-|  5 | data:NOR0214 ontologi:tittel ?fagkodetittel ; | "finn verdien *tittel* for (fagkoden) NOR0214, og gi det navnet *fagkodetittel* i denne spørringen" |
-|  6 | ontologi:har-opplaeringsfag ?zkode ; |  |
-|  7 | ontologi:status ?status | |
-|  8 | FILTER regex(?status, "publisert") | |
-|  9 | FILTER (lang(?fagkodetittel) = '') . | |
-| 10 |  | ekstra linje for oversiktens skyld |
-| 11 | ?kms ontologi:har-etter-fag ?zkode . | |
-| 12 | ?zkode ontologi:tittel ?ztittel . | |
-| 13 | FILTER (lang(?ztittel) = '') . | |
-| 14 |  | ekstra linje for oversiktens skyld |
-| 15 | ?zkode ontologi:status ?zstatus | |
-| 16 | FILTER regex(?zstatus, "publisert") . | |
-| 17 | | ekstra linje for oversiktens skyld |
-| 18 | ?kmslp ontologi:har-kompetansemaalsett ?kms ; | |
-| 19 | ontologi:status ?status | |
-| 20 | FILTER regex(?status, "publisert") . | |
+|  5 | ```data:NOR0214 ontologi:tittel ?fagkodetittel ;``` | "finn verdien *tittel* for (fagkoden) NOR0214, og kall den ```?fagkodetittel``` i denne spørringen" |
+|  6 | ```ontologi:har-opplaeringsfag ?zkode``` | "fortsatt for NOR0214 - slå opp verdien for *har-opplaeringsfag"* og kall denne ```?zkode``` heretter |
+|  7 | ```FILTER (lang(?fagkodetittel) = '') .``` | "list kun opp resultater der ```?fagkodetittel``` har tom språkstreng" (Alle språkversjonerte elementer i Grep har også en versjon der språket ikke er fylt ut, det er dette som er "default"-verdien, innholdet er på det språket elementet er "fastsatt" på). Hvis du for eksempel ønsker å filtrere på bokmål, skriver du ```FILTER (lang(?fagkodetittel) = '@nob') .``` |
+|  8 |  | ekstra linje for oversiktens skyld |
+|  9 | ```?kms ontologi:har-etter-fag ?zkode .``` | Her setter vi en ny variabel opp som subjekt i uttrykket: ```?kms``` - "kompetansemålsett". Her er vi ute etter kompetansemålsettene som har hvilke opplæringsfag (```?zkode```) via predikatet ```ontologi:har-etter-fag``` |
+| 10 | ?zkode ontologi:tittel ?ztittel . | Vi får også med oss opplæringsfagets tittel... |
+| 11 | FILTER (lang(?ztittel) = '') . | og filtrerer på opplærongsfagets default-verdi (se forklaring i linje 7) |
+| 12 |  | ekstra linje for oversiktens skyld |
+| 13 | ?zkode ontologi:status ?zstatus | Vi vil bare ha publiserte opplæringsfag (ikke utgåtte eller ugyldige, så vi henter fram opplæringsfagets status-verdi... |
+| 14 | FILTER regex(?zstatus, "publisert") . | og bruker regex-funksjonen til å filtrere på ordet "publisert" |
+| 15 | | ekstra linje for oversiktens skyld |
+| 16 | ?kmslp ontologi:har-kompetansemaalsett ?kms ; | Vi driller videre med utgangspunkt i ?kms: "Gi meg den læreplanen det kompetansemålsettet vi har funnet via ?kms i linje 9. (vi kan kalle denne "?kmslp" for å minne oss om at vi fant læreplanen (lp) via kompetansemålsettet (kms), |
+| 17 | ontologi:status ?status | ...og vi vil kun ha læreplaner... |
+| 18 | FILTER regex(?status, "publisert") . |  ...som er publisert. |
+| 19 |  | ekstra linje for oversiktens skyld |
+| 20 | ?lp ontologi:uri ?kmslp . | Her er vi ute etter uri-verdien til den aktuelle læreplanen (som vi heretter kaller ?lp, |
 | 21 |  | ekstra linje for oversiktens skyld |
-| 22 | ?lp ontologi:uri ?kmslp . | |
-| 23 |  | ekstra linje for oversiktens skyld |
-| 24 | ?lp ontologi:tittel ?lptittel | |
-| 25 | FILTER (lang(?lptittel) = '') . | |
-| 26 | } | slutt på spørringen |
+| 22 | ?lp ontologi:tittel ?lptittel | ...for videre å få fram tittelen |
+| 23 | FILTER (lang(?lptittel) = '') . | ...og det bare på "default"-språket |
+| 24 | } | slutt på spørringen |
 
 
 
