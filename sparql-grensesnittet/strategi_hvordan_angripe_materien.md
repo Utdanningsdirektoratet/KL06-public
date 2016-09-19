@@ -154,5 +154,5 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 |  -- | -- | -- | -- | -- | -- |
 | Norsk hovedmål 10. årstrinn, skriftlig | http://psi.udir.no/kl06/NOR1Z56 | Norsk 10. årstrinn | http://psi.udir.no/kl06/KMS946 | http://psi.udir.no/kl06/NOR1-05 | Læreplan i norsk | 
 
-
+ 
 
