@@ -125,9 +125,9 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 
 | **lnr.** | **spørring** | **kommentar** |
 |  -- | -- | -- |
-|  1 | PREFIX data: <<http://psi.udir.no/kl06/>> | for at vi skal kunne skrive "data:NOR0214" i stedet for <<http://psi.udir.no/kl06/NOR0214>> i linje 5 |
-|  2 | PREFIX ontologi: <<http://psi.udir.no/ontologi/kl06/>> | for at vi f.eks skal kunne skrive "data:NOR0214" i stedet for <<http://psi.udir.no/ontologi/har-opplaeringsfag>> i linje 6 |
-|  3 | SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lpittel  WHERE { | SELECT: [Se w3.org](https://www.w3.org/TR/sparql11-query/#select); ?[variabelnavn]: Noen av variablene trenger en forklaring: ?zkode; opplæringsfag har koder med "Z", f.eks "NOR1Z56"; ?kms: kompetansemålsett (kode som begynner med "KMS"); ?lp: læreplan; ?lptittel: læreplantittel |
+|  1 | ```PREFIX data: <http://psi.udir.no/kl06/>``` | for at vi skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/kl06/NOR0214>``` i linje 5 |
+|  2 | ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>``` | for at vi f.eks skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/ontologi/har-opplaeringsfag>``` i linje 6 |
+|  3 | ```SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lpittel WHERE { ``` | SELECT: [Se w3.org](https://www.w3.org/TR/sparql11-query/#select); ?[variabelnavn]: Noen av variablene trenger en forklaring: ?zkode; opplæringsfag har koder med "Z", f.eks "NOR1Z56"; ?kms: kompetansemålsett (kode som begynner med "KMS"); ?lp: læreplan; ?lptittel: læreplantittel |  
 |  4 | | ekstra linje for oversiktens skyld |
 |  5 | data:NOR0214 ontologi:tittel ?fagkodetittel ; | "finn verdien *tittel* for (fagkoden) NOR0214, og gi det navnet *fagkodetittel* i denne spørringen" |
 |  6 | ontologi:har-opplaeringsfag ?zkode ; |  |
