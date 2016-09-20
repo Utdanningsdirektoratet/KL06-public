@@ -12,7 +12,7 @@ http://psi.udir.no/kl06/NOR1-05)
 * **SPARQL-endepunkt:**
 http://data.udir.no/kl06/sparql
 
-```NB: SPARQL-endepunktet kan ha noe nedetid mellom kl. 19:00 og 20:30 i forbindelse med tanking av data til Virduoso-databasen```
+```NB: SPARQL-endepunktet kan ha noe nedetid eller mangle data mellom kl. 19:00 og 20:30 i forbindelse med tanking av data til Virduoso-databasen```
 
 Disse komponentene er nærmere beskrevet nedenfor, men først noen ord om hvordan disse er tilknyttet de øvrige grensesnittene for Grep.
 
