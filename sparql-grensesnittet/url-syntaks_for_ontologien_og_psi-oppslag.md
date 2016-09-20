@@ -16,4 +16,6 @@ Ontologien beskriver datamodellen, mens oppslag på URI-verdien til de enkelte d
 - **Referanse til ulike data-format elementet kan hentes:** Alltid JSON og XML, men for læreplan kan elementene i tillegg hentes som .pdf (i praksis kan disse også hentes som .doc, .docx, .rtf og "ren" .html)
 
 ![Oppslag på URI](oppslag_paa_uri.png)
-oppslag på [http://psi.udir.no/kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05)*
+
+*oppslag på [http://psi.udir.no/kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05)*
+*
