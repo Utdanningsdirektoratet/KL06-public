@@ -12,4 +12,4 @@ Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/]
 
 Neste del gir noen tips til hvordan du kan skaffe deg oversikt over materien.
 
-```NB: SPARQL-endepunktet kan ha noe nedetid eller mangle data mellom kl. 19:00 og 20:30 i forbindelse med tanking av data til Virduoso-databasen```
+```NB: SPARQL-endepunktet kan ha nedetid eller mangle data mellom kl. 19:00 og 20:30 i forbindelse med tanking av data til Virduoso-databasen```
