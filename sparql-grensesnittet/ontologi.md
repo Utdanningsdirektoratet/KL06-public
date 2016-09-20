@@ -4,7 +4,8 @@ Alle typer og egenskaper (classes and properties) i datamodellen til Grep er URL
 
 ## Ontologi, startside:
 Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.udir.no/ontologi/kl06/). Dette er den "menneskelesbare" delen av ontologien.
-![Ontologi, startside](ontologi_startside.png)
+
+![ontologi forside](ontologi_forside.png)
 
 Denne siden er delt i tre deler,
 * Først en kort introduksjon og informasjon om lisens og våre vilkår for bruk
