@@ -28,7 +28,10 @@ WHERE {
 *Legg merke til linje 1:* ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>```*. Denne er med, for at vi skal slippe å skrive hele URLen i f.eks linje 4, men heller skrive* ```ontologi:grep-type```*. Med andre ord - på linje 4 står det egentlig: *```?s <http://psi.udir.no/ontologi/kl06/grep-type> ?type```.
 *Oversatt til menneskespråk: "Gi meg subjekt (kalt "?s") der predikatet er "grep-type", og gi det navnet "type" i tebellen/resultatet".* 
 
-Denne spørringen gir følgende resultat (ved valg av HTML som resultat-format):
+Legg også merke til semantikken i RDF og SPARQL-spørringer. Et statement, en graf eller en spørring består av tripler med følgende syntaks:
+Subjekt, Predikat, Objekt (?s ?p ?o).
+
+Spørringen over gir følgende resultat (ved valg av HTML som resultat-format):
 
 | **type** |
 | -- |
@@ -91,7 +94,7 @@ Legg spesielt merke til den siste egenskapen i tabellen over. Her har vi en URL 
 Videre kan en gå fra kompetansemålsett til hovedområde (typen "hovedomraade"), og videre il læreplan ("laereplan"), osv. På den måten kan en bygge opp spørringer for å hente ut informasjon fra databasen.
 
 For eksempel kan det være en utfordring å "finne veien" til læreplanen, fra en gitt fagkode direkte.
-Denne spørringen gir svaret:
+Denne spørringen gir svaret (vi må gå via opplæringsfag og kompetansemålsett):
 
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX data: <http://psi.udir.no/kl06/>
