@@ -163,3 +163,4 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 
 
 
+
