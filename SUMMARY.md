@@ -28,9 +28,11 @@
    * [Ontologi/maskinlesbar datamodell og OWL](sparql-grensesnittet/ontologi.md)
    * [URL-syntaks for ontologien og PSI-oppslag](sparql-grensesnittet/url-syntaks_for_ontologien_og_psi-oppslag.md)
    * [SPARQL-endepunkt](sparql-grensesnittet/sparql-endepunkt.md)
+       * [Strategi: Hvordan angripe materien](sparql-grensesnittet/strategi_hvordan_angripe_materien.md)
 * [Eksempler](eksempler/eksempler.md)
    * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
    * [SOAP-grensesnittet](eksempler/soap-grensesnitt.md)
+   * [SPARQL-grensesnittet](eksempler/sparql-grensesnittet.md)
 * [Appendix A - Endringer i datagrunnlaget](appendix_a.md)
 * [Appendix B - Endringer i SOAP-kontrakten](appendix_b.md)
 
