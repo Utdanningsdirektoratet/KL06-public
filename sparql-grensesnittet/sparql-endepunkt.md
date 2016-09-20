@@ -7,6 +7,7 @@ Vi viser også til dokumentasjonen om SPARQL på [W3C](https://www.w3.org/TR/spa
 
 Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/](http://data.udir.no/kl06/sparql/):
 ![SPARQL-endepunktet](sparql-endepunktet.png)
+
 *Forsiden til SPARQL-endepunkt med ferdig utfylt spørring: "Vis meg hvilke konsepter du har" (velg hvilket format du ønsker resultatet i, og klikk "Run Query")*
 
 Neste del gir noen tips til hvordan du kan skaffe deg oversikt over materien, og hvordan du kan bruke dette videre i programmering.
