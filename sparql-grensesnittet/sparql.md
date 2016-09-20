@@ -19,7 +19,7 @@ Ved for eksempel å lese .json-representasjonen av
 
 ![](illustrasjon_nor1-05_json.png)
 
-*Ontologi og URI-oppslag/PSI-adresser i kl06 kan nå brukes til å skaffe seg oversikt (for mennesker) eller brukes som API (for maskiner)*
+*Ontologi og URI-oppslag/PSI-adresser i kl06 kan nå brukes til å skaffe seg oversikt (for mennesker) eller brukes som API (for maskiner)*.
 
 
 
