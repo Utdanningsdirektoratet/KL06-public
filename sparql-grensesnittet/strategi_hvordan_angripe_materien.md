@@ -87,7 +87,7 @@ som gir følgende resultat:
 
 Legg spesielt merke til den siste egenskapen i tabellen over. Her har vi en URL som avviker fra ontologien ved å tilføye "/reversert". Denne peker tilbake til en type som har en egenskap som heter "har-kompetansemaal". Hvis vi i ontologien slår opp http://psi.udir.no/ontologi/Kl06/har-kompetansemaal (uten "/reversert"), ser vi at det dreier seg om typen "kompetansemaalsett". Kompetansemålsett består altså av kompetansemål. Vi har lagt på /reversert-koblingen for at det skal være mulig å gå bakover fra kompetansemål til kompetansemålsett der det ikke eksplisitt er med i modellen. 
 
-## Bruke det du har lært i pkt. 1 til å grave dypere (og bruke det videre til programmering)
+## 2: Bruke det du har lært i pkt. 1 til å grave dypere (og bruke det videre til programmering)
 Videre kan en gå fra kompetansemålsett til hovedområde (typen "hovedomraade"), og videre il læreplan ("laereplan"), osv. På den måten kan en bygge opp spørringer for å hente ut informasjon fra databasen.
 
 For eksempel kan det være en utfordring å "finne veien" til læreplanen, fra en gitt fagkode direkte.
