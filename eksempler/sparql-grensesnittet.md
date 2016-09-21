@@ -164,3 +164,8 @@ ontologi:tittel ?navn
 FILTER (lang(?navn) = '')
 } ORDER BY str(?kode)
 {%endace%}
+
+Ytterligere eksempler mottas med takk, og kan sendes til data@udir.no.
+
+
+
