@@ -1,8 +1,8 @@
 # SPARQL-grensesnittet
 
-Her er en samling praktiske eksempler på SPARQL-spørringer mot SPARQL-endepunktet  http://data.udir.no/kl06/sparql.
+Her er en samling eksempler på spørringer mot SPARQL-endepunktet  http://data.udir.no/kl06/sparql.
 
-I eksemplene nedenfor har vi valgt å legge til følgende prefixer, selv om ikke alle blir brukt i hver spørring:
+Vi har valgt å legge til følgende prefixer, selv om ikke alle nødvendigvis blir brukt i hver spørring:
 
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
@@ -26,10 +26,9 @@ FILTER (lang(?tittel) = "")
 } ORDER BY str(?
 {%endace%}
 
-Her er ```SELECT REDUCED``` brukt i stedet for ```SELECT DISTINCT```. Denne kan brukes hvis man opplever at DISTINCT blir en for "dyr" spørring, siden den innebærer at hele resultatsettet må lastes inn før duplikatene 
-fjernes: se f.eks. http://stackoverflow.com/questions/2990343/sparqldistinct-vs-reduced.
+Her er ```SELECT REDUCED``` brukt i stedet for ```SELECT DISTINCT```. Denne kan brukes hvis man opplever at ```DISTINCT``` blir for "dyrt" i spørringen. Den er noe tyngre siden den innebærer at hele resultatsettet må lastes inn før duplikatene fjernes: Se f.eks. http://stackoverflow.com/questions/2990343/sparqldistinct-vs-reduced.
 
-Vær også obs på språkfilteret nederst i spørringen. Her har vi valgt å skrive ```FILTER (lang(?tittel) = "")``` i stedet for f.eks. ```FILTER (lang(?tittel) = "nob")```. Årsaken er at det eneste språket du kan være sikker på å få ut, er hovedspråket ("default-språket") - det språket læreplanen er fastsatt på, og det er enten er bokmål (nob) eller nynorsk (nno). Hovedspråket er imidlertid alltid med, og det er den språkvarianten som er uten språkangivels. Dette kan illusteres med neste spørring:
+**Vær også obs på språkfilteret** nederst i spørringen. Her har vi valgt å skrive ```FILTER (lang(?tittel) = "")``` i stedet for f.eks. ```FILTER (lang(?tittel) = "nob")```. Årsaken er at læreplanene stort sett foreligger på enten bokmål eller nynorsk, i tillegg til eventuelle oversettelser på andre språk. I stedet for å spørre eksplisitt etter en av de to målformene (bokmål/nynorsk), er det bedre å spørre etter hovedspråket ("default-språket"). Hovedspråket er alltid med, og det er den språkvarianten som er uten språkangivelse, og kan dermed filtreres med tom streng i ```FILTER (lang(?tittel) = "")```. Dette kan illusteres ved å kjøre neste spørring:
 
 ### List alle læreplaner med egne kolonner for default-språk, bokmål og nynorsk
 
