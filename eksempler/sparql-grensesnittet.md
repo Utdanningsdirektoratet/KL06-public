@@ -28,7 +28,7 @@ FILTER (lang(?tittel) = "")
 
 Her er ```SELECT REDUCED``` brukt i stedet for ```SELECT DISTINCT```. Denne kan brukes hvis man opplever at ```DISTINCT``` blir for "dyrt" i spørringen. Den er noe tyngre siden den innebærer at hele resultatsettet må lastes inn før duplikatene fjernes. Se f.eks. http://stackoverflow.com/questions/2990343/sparqldistinct-vs-reduced.
 
-**Vær også obs på språkfilteret** nederst i spørringen. Her har vi valgt å skrive ```FILTER (lang(?tittel) = "")``` i stedet for f.eks. ```FILTER (lang(?tittel) = "nob")```. Årsaken er at læreplanene stort sett foreligger på enten bokmål eller nynorsk, i tillegg til eventuelle oversettelser til andre språk. I stedet for å spørre eksplisitt etter en av de to målformene (bokmål/nynorsk), er det bedre å bruke hovedspråket ("default-språket"). Hovedspråket er alltid med, og det er den språkvarianten som er uten språkangivelse, og kan dermed filtreres med tom streng i ```FILTER (lang(?tittel) = "")```. Dette kan illusteres ved å kjøre neste spørring:
+**Vær også obs på språkfilteret** nederst i spørringen. Her har vi valgt å skrive ```FILTER (lang(?tittel) = "")``` i stedet for f.eks. ```FILTER (lang(?tittel) = "nob")```. Årsaken er at læreplanene stort sett foreligger på enten bokmål eller nynorsk i tillegg til eventuelle oversettelser til andre språk. I stedet for å spørre eksplisitt etter en av de to målformene (bokmål/nynorsk), er det bedre å bruke hovedspråket ("default-språket"). Hovedspråket er alltid med, og det er den språkvarianten som er uten språkangivelse, og kan dermed filtreres med tom streng i ```FILTER (lang(?tittel) = "")```. Dette kan illusteres ved å kjøre neste spørring:
 
 ### List alle læreplaner med egne kolonner for default-språk, bokmål og nynorsk
 
