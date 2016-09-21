@@ -70,7 +70,7 @@ FILTER (lang(?tittel) = "")
 } ORDER BY str(?tittel)
 {%endace%}
 
-Hvis du ønsker å få ut en liste over alle fagområder kan du gjøre det ved å erstatte "ontologi:laereplan" med "ontologi:fagomraade" i spørringen "Hent alle læreplaner" øverst på denne siden.
+Hvis du ønsker å få ut en liste over alle fagområder kan du gjøre det ved å erstatte ```ontologi:laereplan``` med ```ontologi:fagomraade``` i spørringen "Hent alle læreplaner" øverst på denne siden.
 
 ### Kompetansemålsett fra læreplan
 {%ace edit=false, check=false, lang='sql'%}
