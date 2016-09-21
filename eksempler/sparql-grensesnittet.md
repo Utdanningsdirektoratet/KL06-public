@@ -36,13 +36,13 @@ FILTER (lang(?bokmaal) = "nob") .
 
 Her vil du se at det i noen få tilfeller er snakk om både bokmål og nynorsk (gjelder altså noen få læreplaner som er oversatt fra nynorsk til bokmål), men hovedregelen er at de kun foreligger i den ene målformen. Derfor er det tryggest å spørre etter hovedspråket med ```FILTER (lang(?tittel) = "")```
 
-
 Vær også oppmerksom på at typen laereplan har egenskapen http://psi.udir.no/ontologi/kl06/har-fastsettelsesinformasjon-fastsatt-spraak som angir det aktuelle språket (f.eks. http://psi.udir.no/kl06/nno)
 
 Videre vil egenskapen (fortsatt for laereplan) http://psi.udir.no/ontologi/kl06/har-tilgjengelige-spraak, liste de språkene som er tilgjengelig for den aktuelle læreplanen (etter samme form som over).
 
 
-### Finn læreplan fra fagområde (i dette eksempelet FOMR404). Her må vi gå via kompetansemålsett (KMS).
+### Finn læreplan fra fagområde (i dette eksempelet FOMR404). 
+Her må vi gå via kompetansemålsett (KMS):
 
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
@@ -69,14 +69,9 @@ FILTER (lang(?tittel) = "")
 } ORDER BY str(?tittel)
 {%endace%}
 
-Hvis du ønsker å få ut en liste over alle fagområder du kan gjøre 
-
-denne "øvelsen" ved å erstatte "ontologi:laereplan" med 
-
-"ontologi:fagomraade" i spørringen "Hent alle læreplaner" øverst på denne siden.
+Hvis du ønsker å få ut en liste over alle fagområder kan du gjøre det ved å erstatte "ontologi:laereplan" med "ontologi:fagomraade" i spørringen "Hent alle læreplaner" øverst på denne siden.
 
 ### Kompetansemålsett fra læreplan
-
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
@@ -92,7 +87,6 @@ FILTER (lang(?navn) = "") .
 {%endace%}
 
 ### Opplæringsfag fra kompetansemålsett
-
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
@@ -108,7 +102,6 @@ FILTER (lang(?navn) = '') .
 {%endace%}
 
 ### Kompetansemålene i et kompetansemålsett
-
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
@@ -125,7 +118,6 @@ FILTER (lang(?name) = '') .
 {%endace%}
 
 ### Hovedområder fra læreplan
-
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
@@ -140,7 +132,6 @@ FILTER (lang(?navn) = '') .
 {%endace%}
 
 ### Hente alle trinn
-
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
 PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
