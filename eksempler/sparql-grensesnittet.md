@@ -23,7 +23,7 @@ ontologi:tittel ?tittel ;
 ontologi:kode ?kode ;
 ontologi:status data:status_publisert
 FILTER (lang(?tittel) = "")
-} ORDER BY str(?
+} ORDER BY (?kode)
 {%endace%}
 
 Her er ```SELECT REDUCED``` brukt i stedet for ```SELECT DISTINCT```. Denne kan brukes hvis man opplever at ```DISTINCT``` blir for "dyrt" i spørringen. Den er noe tyngre siden den innebærer at hele resultatsettet må lastes inn før duplikatene fjernes. Se f.eks. http://stackoverflow.com/questions/2990343/sparqldistinct-vs-reduced.
