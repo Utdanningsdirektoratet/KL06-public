@@ -10,6 +10,26 @@ PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
 PREFIX data: <http://data.udir.no/kl06/>
 {%endace%}
 
+### Hent alle læreplaner
+
+{%ace edit=false, check=false, lang='sql'%}
+PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
+PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
+PREFIX data: <http://data.udir.no/kl06/>
+SELECT REDUCED ?uri ?tittel ?kode 
+WHERE {
+?uri rdf:type ontologi:laereplan ;
+ontologi:tittel ?tittel ;
+ontologi:kode ?kode ;
+ontologi:status data:status_publisert
+FILTER (lang(?tittel) = "")
+} ORDER BY str(?
+{%endace%}
+
+Her er ```SELECT REDUCED``` brukt i stedet for ```SELECT DISTINCT```. Denne kan brukes hvis man opplever at DISTINCT blir en for "dyr" spørring, siden den innebærer at hele resultatsettet må lastes inn før duplikatene 
+fjernes: se f.eks. http://stackoverflow.com/questions/2990343/sparqldistinct-vs-reduced.
+
+Vær også obs på språkfilteret nederst i spørringen. Her har vi valgt å skrive ```FILTER (lang(?tittel) = "")``` i stedet for f.eks. ```FILTER (lang(?tittel) = "nob")```. Årsaken er at det eneste språket du kan være sikker på å få ut, er hovedspråket ("default-språket") - det språket læreplanen er fastsatt på, og det er enten er bokmål (nob) eller nynorsk (nno). Hovedspråket er imidlertid alltid med, og det er den språkvarianten som er uten språkangivels. Dette kan illusteres med neste spørring:
 
 ### List alle læreplaner med egne kolonner for default-språk, bokmål og nynorsk
 
