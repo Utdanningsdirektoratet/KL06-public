@@ -10,6 +10,7 @@ PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
 PREFIX data: <http://data.udir.no/kl06/>
 {%endace%}
 
+
 ### List alle læreplaner med egne kolonner for default-språk, bokmål og nynorsk
 
 {%ace edit=false, check=false, lang='sql'%}
