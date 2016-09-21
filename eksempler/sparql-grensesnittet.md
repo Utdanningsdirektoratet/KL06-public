@@ -10,9 +10,7 @@ PREFIX ontologi-rev: <http://psi.udir.no/ontologi/kl06/reversert/>
 PREFIX data: <http://data.udir.no/kl06/>
 {%endace%}
 
-### List alle læreplaner med egne kolonner for deault-språk, bokmål og 
-
-nynorsk
+### List alle læreplaner med egne kolonner for default-språk, bokmål og nynorsk
 
 {%ace edit=false, check=false, lang='sql'%}
 PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
@@ -36,32 +34,12 @@ FILTER (lang(?bokmaal) = "nob") .
 } ORDER BY str(?kode)
 {%endace%}
 
-Her vil du se at det i noen få tilfeller er snakk om både bokmål og 
-
-nynorsk (gjelder altså noen få læreplaner som er oversatt fra nynorsk 
-
-til bokmål), men hovedregelen er at de kun foreligger i den ene 
-
-målformen. Derfor er det tryggest å spørre etter hovedspråket med FILTER 
-
-(lang(?tittel) = "")
+Her vil du se at det i noen få tilfeller er snakk om både bokmål og nynorsk (gjelder altså noen få læreplaner som er oversatt fra nynorsk til bokmål), men hovedregelen er at de kun foreligger i den ene målformen. Derfor er det tryggest å spørre etter hovedspråket med ```FILTER (lang(?tittel) = "")```
 
 
-Vær også oppmerksom på at typen laereplan har egenskapen 
+Vær også oppmerksom på at typen laereplan har egenskapen http://psi.udir.no/ontologi/kl06/har-fastsettelsesinformasjon-fastsatt-spraak som angir det aktuelle språket (f.eks. http://psi.udir.no/kl06/nno)
 
-http://psi.udir.no/ontologi/kl06/har-fastsettelsesinformasjon-fastsatt-
-
-spraak som angir det aktuelle språket (f.eks. 
-
-http://psi.udir.no/kl06/nno)
-
-Videre vil egenskapen (fortsatt for laereplan) 
-
-http://psi.udir.no/ontologi/kl06/har-tilgjengelige-spraak, liste de 
-
-språkene som er tilgjengelig for den aktuelle læreplanen (etter samme 
-
-form som over).
+Videre vil egenskapen (fortsatt for laereplan) http://psi.udir.no/ontologi/kl06/har-tilgjengelige-spraak, liste de språkene som er tilgjengelig for den aktuelle læreplanen (etter samme form som over).
 
 
 ### Finn læreplan fra fagområde (i dette eksempelet FOMR404). Her må vi gå via kompetansemålsett (KMS).
