@@ -165,7 +165,7 @@ FILTER (lang(?navn) = '')
 } ORDER BY str(?kode)
 {%endace%}
 
-Ytterligere eksempler kan du finne på http://grepwiki.udir.no/index.php?title=SPARQL-spørringer.
+Flere eksempler kan du finne på http://grepwiki.udir.no/index.php?title=SPARQL-spørringer.
 
 
 
