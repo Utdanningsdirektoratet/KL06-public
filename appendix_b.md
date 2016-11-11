@@ -828,9 +828,8 @@ Parametere som har blitt lagt til
 * benyttespaaaarstrinn av typen basereferanse[] i metoden Respons fra metode HentPlanFraPsi: laereplan.kompetansemaalkapittel.kompetansemaalsett.benyttespaaaarstrinn
 * foraarstrinn av typen basereferanse[] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.foraarstrinn
 * foraarstrinn av typen basereferanse[] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.foraarstrinn
-* rekkefoelge av typen Nullable`1 i metoden Respons fra metode FinnAarstrinn: finnaarstrinnrespons.treff.rekkefoelge
-* rekkefoelge av typen Nullable`1 i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.rekkefoelge
-* rekkefoelge av typen Nullable`1 i metoden Respons fra metode HentAarstrinnFraKode: aarstrinn.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnAarstrinn: finnaarstrinnrespons.treff.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode HentAarstrinnFraKode: aarstrinn.rekkefoelge
 * benyttespaaaarstrinn av typen basereferanse[] i metoden Respons fra metode HentKompetansemaalsettFraKode: kompetansemaalsettdirekteoppslag.benyttespaaaarstrinn
-
 ________________________________________
