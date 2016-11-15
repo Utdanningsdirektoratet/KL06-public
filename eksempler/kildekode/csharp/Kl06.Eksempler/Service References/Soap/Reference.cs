@@ -15,7 +15,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class laereplansoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -140,7 +140,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class laereplansoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -185,7 +185,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class laereplansoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
         
@@ -224,25 +224,27 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="soekeresultat-hjelpedata", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelappsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hjelpedatasoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.soekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkodesoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfagsoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogramsoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraadesoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknadsoekeresultat))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelappsoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraadersoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategorisoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsettsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadesoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfagsoekeresultat))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplansoekeresultat))]
-    public partial class soekeresultat : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class soekeresultathjelpedata : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
@@ -251,16 +253,16 @@ namespace Kl06.Eksempler.Soap {
         private System.Nullable<System.DateTime> sistendretField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string statusField;
+        private Kl06.Eksempler.Soap.spraakversjonert[] tittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] tittelField;
+        private string uriField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string urldataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string urlpsiField;
+        private string greptypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -269,19 +271,6 @@ namespace Kl06.Eksempler.Soap {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.idField, value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
             }
         }
         
@@ -312,19 +301,6 @@ namespace Kl06.Eksempler.Soap {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string status {
-            get {
-                return this.statusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.statusField, value) != true)) {
-                    this.statusField = value;
-                    this.RaisePropertyChanged("status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public Kl06.Eksempler.Soap.spraakversjonert[] tittel {
             get {
                 return this.tittelField;
@@ -333,6 +309,19 @@ namespace Kl06.Eksempler.Soap {
                 if ((object.ReferenceEquals(this.tittelField, value) != true)) {
                     this.tittelField = value;
                     this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string uri {
+            get {
+                return this.uriField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.uriField, value) != true)) {
+                    this.uriField = value;
+                    this.RaisePropertyChanged("uri");
                 }
             }
         }
@@ -350,15 +339,15 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="url-psi")]
-        public string urlpsi {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="grep-type", Order=5)]
+        public string greptype {
             get {
-                return this.urlpsiField;
+                return this.greptypeField;
             }
             set {
-                if ((object.ReferenceEquals(this.urlpsiField, value) != true)) {
-                    this.urlpsiField = value;
-                    this.RaisePropertyChanged("urlpsi");
+                if ((object.ReferenceEquals(this.greptypeField, value) != true)) {
+                    this.greptypeField = value;
+                    this.RaisePropertyChanged("greptype");
                 }
             }
         }
@@ -375,35 +364,116 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class merkelappsoekeresultat : Kl06.Eksempler.Soap.soekeresultathjelpedata {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedata-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hjelpedatasoekeresultat : Kl06.Eksempler.Soap.soekeresultathjelpedata {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkodesoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfagsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogramsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraadesoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknadsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraadersoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategorisoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsettsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadesoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfagsoekeresultat))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplansoekeresultat))]
+    public partial class soekeresultat : Kl06.Eksempler.Soap.soekeresultathjelpedata {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string statusField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string status {
+            get {
+                return this.statusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.statusField, value) != true)) {
+                    this.statusField = value;
+                    this.RaisePropertyChanged("status");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkodesoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class opplaeringsfagsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class utdanningsprogramsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class programomraadesoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merknad-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merknad-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class merknadsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
         
@@ -442,35 +512,49 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class merkelappsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class kompetansemaalsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagomraadersoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soekeresultat", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkategorisoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="spraakversjonert", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalsettsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadesoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag-soekeresultat", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfagsoekeresultat : Kl06.Eksempler.Soap.soekeresultat {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="spraakversjonert", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class spraakversjonert : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -478,7 +562,7 @@ namespace Kl06.Eksempler.Soap {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string noekkelField;
+        private string spraakField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string verdiField;
@@ -494,14 +578,14 @@ namespace Kl06.Eksempler.Soap {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string noekkel {
+        public string spraak {
             get {
-                return this.noekkelField;
+                return this.spraakField;
             }
             set {
-                if ((object.ReferenceEquals(this.noekkelField, value) != true)) {
-                    this.noekkelField = value;
-                    this.RaisePropertyChanged("noekkel");
+                if ((object.ReferenceEquals(this.spraakField, value) != true)) {
+                    this.spraakField = value;
+                    this.RaisePropertyChanged("spraak");
                 }
             }
         }
@@ -531,7 +615,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-laereplan-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-laereplan-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentlaereplanfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -540,6 +624,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string KodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -563,6 +650,19 @@ namespace Kl06.Eksempler.Soap {
                 if ((object.ReferenceEquals(this.KodeField, value) != true)) {
                     this.KodeField = value;
                     this.RaisePropertyChanged("Kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
                 }
             }
         }
@@ -592,15 +692,26 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="base", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="base", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.basereferanse))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referanse))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalreferanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplanreferanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalreferanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.basereferansemedrekkefølge))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadeikontekstavkompetansemaalsett))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.baseelement))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfag))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsett))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadeikompetansemaalsett))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hjelpedata))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadedirekteoppslag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfagdirekteoppslag))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedelement))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fag))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
@@ -608,19 +719,14 @@ namespace Kl06.Eksempler.Soap {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogram))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraade))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknad))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaal))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraade))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategori))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplan))]
     public partial class @base : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
@@ -629,7 +735,7 @@ namespace Kl06.Eksempler.Soap {
         private string urldataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string urlpsiField;
+        private string uriField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -638,19 +744,6 @@ namespace Kl06.Eksempler.Soap {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.idField, value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
             }
         }
         
@@ -680,15 +773,15 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="url-psi")]
-        public string urlpsi {
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public string uri {
             get {
-                return this.urlpsiField;
+                return this.uriField;
             }
             set {
-                if ((object.ReferenceEquals(this.urlpsiField, value) != true)) {
-                    this.urlpsiField = value;
-                    this.RaisePropertyChanged("urlpsi");
+                if ((object.ReferenceEquals(this.uriField, value) != true)) {
+                    this.uriField = value;
+                    this.RaisePropertyChanged("uri");
                 }
             }
         }
@@ -705,17 +798,18 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="referanse", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="base-referanse", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalreferanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplanreferanse))]
-    public partial class referanse : Kl06.Eksempler.Soap.@base {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalreferanse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.basereferansemedrekkefølge))]
+    public partial class basereferanse : Kl06.Eksempler.Soap.@base {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string tittelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string statusField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string tittel {
@@ -729,8 +823,21 @@ namespace Kl06.Eksempler.Soap {
                 }
             }
         }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="referanse", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplanreferanse))]
+    public partial class referanse : Kl06.Eksempler.Soap.basereferanse {
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string statusField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string status {
             get {
                 return this.statusField;
@@ -746,22 +853,23 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-referanse", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="referanse-med-gyldighet", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    public partial class kompetansemaalreferanse : Kl06.Eksempler.Soap.referanse {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype))]
+    public partial class referansemedgyldighet : Kl06.Eksempler.Soap.referanse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int rekkefoelgeField;
+        private Kl06.Eksempler.Soap.gyldighetsperiodeforreferanse gyldighetField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int rekkefoelge {
+        public Kl06.Eksempler.Soap.gyldighetsperiodeforreferanse gyldighet {
             get {
-                return this.rekkefoelgeField;
+                return this.gyldighetField;
             }
             set {
-                if ((this.rekkefoelgeField.Equals(value) != true)) {
-                    this.rekkefoelgeField = value;
-                    this.RaisePropertyChanged("rekkefoelge");
+                if ((object.ReferenceEquals(this.gyldighetField, value) != true)) {
+                    this.gyldighetField = value;
+                    this.RaisePropertyChanged("gyldighet");
                 }
             }
         }
@@ -769,15 +877,38 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-referanse", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="referanse-med-gyldighetsperiode-og-loepstype", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class referansemedgyldighetsperiodeogloepstype : Kl06.Eksempler.Soap.referansemedgyldighet {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi loepstypeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.hjelpedataverdi loepstype {
+            get {
+                return this.loepstypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.loepstypeField, value) != true)) {
+                    this.loepstypeField = value;
+                    this.RaisePropertyChanged("loepstype");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan-referanse", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class laereplanreferanse : Kl06.Eksempler.Soap.referanse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string[] tilhoerendekompetansemaalsettField;
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] tilhoerendekompetansemaalsettField;
         
         [System.Runtime.Serialization.DataMemberAttribute(Name="tilhoerende-kompetansemaalsett")]
-        public string[] tilhoerendekompetansemaalsett {
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] tilhoerendekompetansemaalsett {
             get {
                 return this.tilhoerendekompetansemaalsettField;
             }
@@ -792,99 +923,15 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="baseelement", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-referanse", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraade))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsett))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadeikompetansemaalsett))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedelement))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fag))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogram))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraade))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknad))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaal))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraade))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategori))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplan))]
-    public partial class baseelement : Kl06.Eksempler.Soap.@base {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] tittelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi statusField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] tittel {
-            get {
-                return this.tittelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
-                    this.tittelField = value;
-                    this.RaisePropertyChanged("tittel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi status {
-            get {
-                return this.statusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.statusField, value) != true)) {
-                    this.statusField = value;
-                    this.RaisePropertyChanged("status");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class hovedomraade : Kl06.Eksempler.Soap.baseelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
-            get {
-                return this.beskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
-                    this.beskrivelseField = value;
-                    this.RaisePropertyChanged("beskrivelse");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class kompetansemaalsett : Kl06.Eksempler.Soap.baseelement {
+    public partial class kompetansemaalreferanse : Kl06.Eksempler.Soap.basereferanse {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int rekkefoelgeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] etterfagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] etteraarstrinnField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hovedomraadeikompetansemaalsett[] hovedomraaderField;
+        private Kl06.Eksempler.Soap.@base tilhoererhovedomraadeField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public int rekkefoelge {
@@ -899,8 +946,341 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-fag", Order=1)]
-        public Kl06.Eksempler.Soap.referanse[] etterfag {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="tilhoerer-hovedomraade")]
+        public Kl06.Eksempler.Soap.@base tilhoererhovedomraade {
+            get {
+                return this.tilhoererhovedomraadeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tilhoererhovedomraadeField, value) != true)) {
+                    this.tilhoererhovedomraadeField = value;
+                    this.RaisePropertyChanged("tilhoererhovedomraade");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="base-referanse-med-rekkefølge", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class basereferansemedrekkefølge : Kl06.Eksempler.Soap.basereferanse {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> rekkefoelgeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> rekkefoelge {
+            get {
+                return this.rekkefoelgeField;
+            }
+            set {
+                if ((this.rekkefoelgeField.Equals(value) != true)) {
+                    this.rekkefoelgeField = value;
+                    this.RaisePropertyChanged("rekkefoelge");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-i-kontekst-av-kompetansemaalsett", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadeikontekstavkompetansemaalsett : Kl06.Eksempler.Soap.@base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int rekkefoelgeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.tittelogbeskrivelse hovedomraadeverdierunderkompetansemaalsettField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int rekkefoelge {
+            get {
+                return this.rekkefoelgeField;
+            }
+            set {
+                if ((this.rekkefoelgeField.Equals(value) != true)) {
+                    this.rekkefoelgeField = value;
+                    this.RaisePropertyChanged("rekkefoelge");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraadeverdier-under-kompetansemaalsett", Order=1)]
+        public Kl06.Eksempler.Soap.tittelogbeskrivelse hovedomraadeverdierunderkompetansemaalsett {
+            get {
+                return this.hovedomraadeverdierunderkompetansemaalsettField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.hovedomraadeverdierunderkompetansemaalsettField, value) != true)) {
+                    this.hovedomraadeverdierunderkompetansemaalsettField = value;
+                    this.RaisePropertyChanged("hovedomraadeverdierunderkompetansemaalsett");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="baseelement", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsett))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hjelpedata))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedomraadedirekteoppslag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programfagdirekteoppslag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.hovedelement))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogram))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknad))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaal))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategori))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplan))]
+    public partial class baseelement : Kl06.Eksempler.Soap.@base {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string greptypeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="grep-type", Order=1)]
+        public string greptype {
+            get {
+                return this.greptypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.greptypeField, value) != true)) {
+                    this.greptypeField = value;
+                    this.RaisePropertyChanged("greptype");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraade : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int rekkefoelgeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraade[] underliggendehovedomraaderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int rekkefoelge {
+            get {
+                return this.rekkefoelgeField;
+            }
+            set {
+                if ((this.rekkefoelgeField.Equals(value) != true)) {
+                    this.rekkefoelgeField = value;
+                    this.RaisePropertyChanged("rekkefoelge");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="underliggende-hovedomraader")]
+        public Kl06.Eksempler.Soap.hovedomraade[] underliggendehovedomraader {
+            get {
+                return this.underliggendehovedomraaderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.underliggendehovedomraaderField, value) != true)) {
+                    this.underliggendehovedomraaderField = value;
+                    this.RaisePropertyChanged("underliggendehovedomraader");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfag : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int rekkefoelgeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraade[] underliggendehovedomraaderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int rekkefoelge {
+            get {
+                return this.rekkefoelgeField;
+            }
+            set {
+                if ((this.rekkefoelgeField.Equals(value) != true)) {
+                    this.rekkefoelgeField = value;
+                    this.RaisePropertyChanged("rekkefoelge");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="underliggende-hovedomraader")]
+        public Kl06.Eksempler.Soap.hovedomraade[] underliggendehovedomraader {
+            get {
+                return this.underliggendehovedomraaderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.underliggendehovedomraaderField, value) != true)) {
+                    this.underliggendehovedomraaderField = value;
+                    this.RaisePropertyChanged("underliggendehovedomraader");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalsett : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int rekkefoelgeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] etterfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.kompetansemaalreferanse[] kompetansemaalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse[] etteraarstrinnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraadeikontekstavkompetansemaalsett[] hovedomraaderikontekstavkompetansemaalsettField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.@base programfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskriftField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int rekkefoelge {
+            get {
+                return this.rekkefoelgeField;
+            }
+            set {
+                if ((this.rekkefoelgeField.Equals(value) != true)) {
+                    this.rekkefoelgeField = value;
+                    this.RaisePropertyChanged("rekkefoelge");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-fag", Order=2)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] etterfag {
             get {
                 return this.etterfagField;
             }
@@ -912,59 +1292,7 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-aarstrinn", Order=2)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] etteraarstrinn {
-            get {
-                return this.etteraarstrinnField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.etteraarstrinnField, value) != true)) {
-                    this.etteraarstrinnField = value;
-                    this.RaisePropertyChanged("etteraarstrinn");
-                }
-            }
-        }
-        
         [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
-        public Kl06.Eksempler.Soap.hovedomraadeikompetansemaalsett[] hovedomraader {
-            get {
-                return this.hovedomraaderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.hovedomraaderField, value) != true)) {
-                    this.hovedomraaderField = value;
-                    this.RaisePropertyChanged("hovedomraader");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-i-kompetansemaalsett", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class hovedomraadeikompetansemaalsett : Kl06.Eksempler.Soap.baseelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.kompetansemaalreferanse[] kompetansemaalField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
-            get {
-                return this.beskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
-                    this.beskrivelseField = value;
-                    this.RaisePropertyChanged("beskrivelse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public Kl06.Eksempler.Soap.kompetansemaalreferanse[] kompetansemaal {
             get {
                 return this.kompetansemaalField;
@@ -976,1250 +1304,55 @@ namespace Kl06.Eksempler.Soap {
                 }
             }
         }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hovedelement", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fag))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogram))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraade))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknad))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaal))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraade))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategori))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplan))]
-    public partial class hovedelement : Kl06.Eksempler.Soap.baseelement {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> sistendretField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="sist-endret")]
-        public System.Nullable<System.DateTime> sistendret {
-            get {
-                return this.sistendretField;
-            }
-            set {
-                if ((this.sistendretField.Equals(value) != true)) {
-                    this.sistendretField = value;
-                    this.RaisePropertyChanged("sistendret");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fag", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
-    public partial class fag : Kl06.Eksempler.Soap.hovedelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstatterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstattesavField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
-            get {
-                return this.kortformField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
-                    this.kortformField = value;
-                    this.RaisePropertyChanged("kortform");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public Kl06.Eksempler.Soap.referanse[] erstatter {
-            get {
-                return this.erstatterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstatterField, value) != true)) {
-                    this.erstatterField = value;
-                    this.RaisePropertyChanged("erstatter");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=2)]
-        public Kl06.Eksempler.Soap.referanse[] erstattesav {
-            get {
-                return this.erstattesavField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstattesavField, value) != true)) {
-                    this.erstattesavField = value;
-                    this.RaisePropertyChanged("erstattesav");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class fagkode : Kl06.Eksempler.Soap.fag {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstatter1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi fagtypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstattesav1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi opplaeringsnivaaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string omfangtotaltField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string omfangvitnemaalField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string omfangbruttoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string omfangkompetansemaalsettField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] opplaeringsfagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.eksamensgyldighet naarkanmantaeksamenField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.semesterperiode naargisdetundervisningField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.vurdering vurderingprivatistField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.vurdering vurderingelevlaerlingField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi sensurField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi oppgaveField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] merknaderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] tilknyttedeprogramomraaderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] byggerpaafagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] merkelapperField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter")]
-        public Kl06.Eksempler.Soap.referanse[] erstatter1 {
-            get {
-                return this.erstatter1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstatter1Field, value) != true)) {
-                    this.erstatter1Field = value;
-                    this.RaisePropertyChanged("erstatter1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.hjelpedataverdi fagtype {
-            get {
-                return this.fagtypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.fagtypeField, value) != true)) {
-                    this.fagtypeField = value;
-                    this.RaisePropertyChanged("fagtype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=2)]
-        public Kl06.Eksempler.Soap.referanse[] erstattesav1 {
-            get {
-                return this.erstattesav1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstattesav1Field, value) != true)) {
-                    this.erstattesav1Field = value;
-                    this.RaisePropertyChanged("erstattesav1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi opplaeringsnivaa {
-            get {
-                return this.opplaeringsnivaaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
-                    this.opplaeringsnivaaField = value;
-                    this.RaisePropertyChanged("opplaeringsnivaa");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-totalt", Order=4)]
-        public string omfangtotalt {
-            get {
-                return this.omfangtotaltField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.omfangtotaltField, value) != true)) {
-                    this.omfangtotaltField = value;
-                    this.RaisePropertyChanged("omfangtotalt");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-vitnemaal", Order=5)]
-        public string omfangvitnemaal {
-            get {
-                return this.omfangvitnemaalField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.omfangvitnemaalField, value) != true)) {
-                    this.omfangvitnemaalField = value;
-                    this.RaisePropertyChanged("omfangvitnemaal");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-brutto", Order=6)]
-        public string omfangbrutto {
-            get {
-                return this.omfangbruttoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.omfangbruttoField, value) != true)) {
-                    this.omfangbruttoField = value;
-                    this.RaisePropertyChanged("omfangbrutto");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-kompetansemaalsett", Order=7)]
-        public string omfangkompetansemaalsett {
-            get {
-                return this.omfangkompetansemaalsettField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.omfangkompetansemaalsettField, value) != true)) {
-                    this.omfangkompetansemaalsettField = value;
-                    this.RaisePropertyChanged("omfangkompetansemaalsett");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=8)]
-        public Kl06.Eksempler.Soap.referanse[] opplaeringsfag {
-            get {
-                return this.opplaeringsfagField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.opplaeringsfagField, value) != true)) {
-                    this.opplaeringsfagField = value;
-                    this.RaisePropertyChanged("opplaeringsfag");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="naar-kan-man-ta-eksamen", Order=9)]
-        public Kl06.Eksempler.Soap.eksamensgyldighet naarkanmantaeksamen {
-            get {
-                return this.naarkanmantaeksamenField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.naarkanmantaeksamenField, value) != true)) {
-                    this.naarkanmantaeksamenField = value;
-                    this.RaisePropertyChanged("naarkanmantaeksamen");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="naar-gis-det-undervisning", Order=10)]
-        public Kl06.Eksempler.Soap.semesterperiode naargisdetundervisning {
-            get {
-                return this.naargisdetundervisningField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.naargisdetundervisningField, value) != true)) {
-                    this.naargisdetundervisningField = value;
-                    this.RaisePropertyChanged("naargisdetundervisning");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="vurdering-privatist", Order=11)]
-        public Kl06.Eksempler.Soap.vurdering vurderingprivatist {
-            get {
-                return this.vurderingprivatistField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.vurderingprivatistField, value) != true)) {
-                    this.vurderingprivatistField = value;
-                    this.RaisePropertyChanged("vurderingprivatist");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="vurdering-elev-laerling", Order=12)]
-        public Kl06.Eksempler.Soap.vurdering vurderingelevlaerling {
-            get {
-                return this.vurderingelevlaerlingField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.vurderingelevlaerlingField, value) != true)) {
-                    this.vurderingelevlaerlingField = value;
-                    this.RaisePropertyChanged("vurderingelevlaerling");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=13)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi sensur {
-            get {
-                return this.sensurField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.sensurField, value) != true)) {
-                    this.sensurField = value;
-                    this.RaisePropertyChanged("sensur");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=14)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi oppgave {
-            get {
-                return this.oppgaveField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.oppgaveField, value) != true)) {
-                    this.oppgaveField = value;
-                    this.RaisePropertyChanged("oppgave");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=15)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] merknader {
-            get {
-                return this.merknaderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merknaderField, value) != true)) {
-                    this.merknaderField = value;
-                    this.RaisePropertyChanged("merknader");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="tilknyttede-programomraader", Order=16)]
-        public Kl06.Eksempler.Soap.referanse[] tilknyttedeprogramomraader {
-            get {
-                return this.tilknyttedeprogramomraaderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tilknyttedeprogramomraaderField, value) != true)) {
-                    this.tilknyttedeprogramomraaderField = value;
-                    this.RaisePropertyChanged("tilknyttedeprogramomraader");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-fag", Order=17)]
-        public Kl06.Eksempler.Soap.referanse[] byggerpaafag {
-            get {
-                return this.byggerpaafagField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.byggerpaafagField, value) != true)) {
-                    this.byggerpaafagField = value;
-                    this.RaisePropertyChanged("byggerpaafag");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=18)]
-        public Kl06.Eksempler.Soap.referanse[] merkelapper {
-            get {
-                return this.merkelapperField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
-                    this.merkelapperField = value;
-                    this.RaisePropertyChanged("merkelapper");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class opplaeringsfag : Kl06.Eksempler.Soap.fag {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi fagtypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi opplaeringsnivaaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] merknaderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] programoraaderreferanseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.laereplanreferanse[] laereplanreferanseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] merkelapperField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] byggerpaafagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] fagkodereferanserField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] fagomraadereferanserField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kortform1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstatter1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstattesav1Field;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.hjelpedataverdi fagtype {
-            get {
-                return this.fagtypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.fagtypeField, value) != true)) {
-                    this.fagtypeField = value;
-                    this.RaisePropertyChanged("fagtype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.hjelpedataverdi opplaeringsnivaa {
-            get {
-                return this.opplaeringsnivaaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
-                    this.opplaeringsnivaaField = value;
-                    this.RaisePropertyChanged("opplaeringsnivaa");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] merknader {
-            get {
-                return this.merknaderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merknaderField, value) != true)) {
-                    this.merknaderField = value;
-                    this.RaisePropertyChanged("merknader");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="programoraader-referanse", Order=3)]
-        public Kl06.Eksempler.Soap.referanse[] programoraaderreferanse {
-            get {
-                return this.programoraaderreferanseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.programoraaderreferanseField, value) != true)) {
-                    this.programoraaderreferanseField = value;
-                    this.RaisePropertyChanged("programoraaderreferanse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="laereplan-referanse", Order=4)]
-        public Kl06.Eksempler.Soap.laereplanreferanse[] laereplanreferanse {
-            get {
-                return this.laereplanreferanseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.laereplanreferanseField, value) != true)) {
-                    this.laereplanreferanseField = value;
-                    this.RaisePropertyChanged("laereplanreferanse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
-        public Kl06.Eksempler.Soap.referanse[] merkelapper {
-            get {
-                return this.merkelapperField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
-                    this.merkelapperField = value;
-                    this.RaisePropertyChanged("merkelapper");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-fag", Order=6)]
-        public Kl06.Eksempler.Soap.referanse[] byggerpaafag {
-            get {
-                return this.byggerpaafagField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.byggerpaafagField, value) != true)) {
-                    this.byggerpaafagField = value;
-                    this.RaisePropertyChanged("byggerpaafag");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="fagkode-referanser", Order=7)]
-        public Kl06.Eksempler.Soap.referanse[] fagkodereferanser {
-            get {
-                return this.fagkodereferanserField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.fagkodereferanserField, value) != true)) {
-                    this.fagkodereferanserField = value;
-                    this.RaisePropertyChanged("fagkodereferanser");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="fagomraade-referanser", Order=8)]
-        public Kl06.Eksempler.Soap.referanse[] fagomraadereferanser {
-            get {
-                return this.fagomraadereferanserField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.fagomraadereferanserField, value) != true)) {
-                    this.fagomraadereferanserField = value;
-                    this.RaisePropertyChanged("fagomraadereferanser");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="kortform", Order=9)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kortform1 {
-            get {
-                return this.kortform1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kortform1Field, value) != true)) {
-                    this.kortform1Field = value;
-                    this.RaisePropertyChanged("kortform1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter", Order=10)]
-        public Kl06.Eksempler.Soap.referanse[] erstatter1 {
-            get {
-                return this.erstatter1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstatter1Field, value) != true)) {
-                    this.erstatter1Field = value;
-                    this.RaisePropertyChanged("erstatter1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=11)]
-        public Kl06.Eksempler.Soap.referanse[] erstattesav1 {
-            get {
-                return this.erstattesav1Field;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstattesav1Field, value) != true)) {
-                    this.erstattesav1Field = value;
-                    this.RaisePropertyChanged("erstattesav1");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class utdanningsprogram : Kl06.Eksempler.Soap.hovedelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi typeutdanningsprogramField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstatterutdanningsprogramField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi foerstesemesterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi sistesemesterField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
-            get {
-                return this.kortformField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
-                    this.kortformField = value;
-                    this.RaisePropertyChanged("kortform");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="type-utdanningsprogram")]
-        public Kl06.Eksempler.Soap.hjelpedataverdi typeutdanningsprogram {
-            get {
-                return this.typeutdanningsprogramField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.typeutdanningsprogramField, value) != true)) {
-                    this.typeutdanningsprogramField = value;
-                    this.RaisePropertyChanged("typeutdanningsprogram");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
-            get {
-                return this.beskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
-                    this.beskrivelseField = value;
-                    this.RaisePropertyChanged("beskrivelse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter-utdanningsprogram", Order=3)]
-        public Kl06.Eksempler.Soap.referanse[] erstatterutdanningsprogram {
-            get {
-                return this.erstatterutdanningsprogramField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstatterutdanningsprogramField, value) != true)) {
-                    this.erstatterutdanningsprogramField = value;
-                    this.RaisePropertyChanged("erstatterutdanningsprogram");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="foerste-semester", Order=4)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi foerstesemester {
-            get {
-                return this.foerstesemesterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.foerstesemesterField, value) != true)) {
-                    this.foerstesemesterField = value;
-                    this.RaisePropertyChanged("foerstesemester");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-semester", Order=5)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi sistesemester {
-            get {
-                return this.sistesemesterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.sistesemesterField, value) != true)) {
-                    this.sistesemesterField = value;
-                    this.RaisePropertyChanged("sistesemester");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class programomraade : Kl06.Eksempler.Soap.hovedelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nasjonalvariantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool landslinjeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool landsdekkendelinjeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string programomraadetypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string aarstimerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string aarstimersamiskField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string aarstimerdoeveogtunghoerteField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string aarstimerformgivningsfagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] merkelapperField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi foerstesemesterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi sistesemesterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi aarstrinnField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] byggerpaaprogramomraadeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstatterprogramomraadeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] tilknyttedeutdanningsprogramField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] tilknyttedelaereplanerField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] yrkestittelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsstedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] sluttkompetanseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string opplaeringstidField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string verdiskapingstidField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
-            get {
-                return this.kortformField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
-                    this.kortformField = value;
-                    this.RaisePropertyChanged("kortform");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="nasjonal-variant")]
-        public string nasjonalvariant {
-            get {
-                return this.nasjonalvariantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nasjonalvariantField, value) != true)) {
-                    this.nasjonalvariantField = value;
-                    this.RaisePropertyChanged("nasjonalvariant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
-        public bool landslinje {
-            get {
-                return this.landslinjeField;
-            }
-            set {
-                if ((this.landslinjeField.Equals(value) != true)) {
-                    this.landslinjeField = value;
-                    this.RaisePropertyChanged("landslinje");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="landsdekkende-linje", Order=3)]
-        public bool landsdekkendelinje {
-            get {
-                return this.landsdekkendelinjeField;
-            }
-            set {
-                if ((this.landsdekkendelinjeField.Equals(value) != true)) {
-                    this.landsdekkendelinjeField = value;
-                    this.RaisePropertyChanged("landsdekkendelinje");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="programomraade-type", Order=4)]
-        public string programomraadetype {
-            get {
-                return this.programomraadetypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.programomraadetypeField, value) != true)) {
-                    this.programomraadetypeField = value;
-                    this.RaisePropertyChanged("programomraadetype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
-        public string aarstimer {
-            get {
-                return this.aarstimerField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.aarstimerField, value) != true)) {
-                    this.aarstimerField = value;
-                    this.RaisePropertyChanged("aarstimer");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-samisk", Order=6)]
-        public string aarstimersamisk {
-            get {
-                return this.aarstimersamiskField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.aarstimersamiskField, value) != true)) {
-                    this.aarstimersamiskField = value;
-                    this.RaisePropertyChanged("aarstimersamisk");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-doeve-og-tunghoerte", Order=7)]
-        public string aarstimerdoeveogtunghoerte {
-            get {
-                return this.aarstimerdoeveogtunghoerteField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.aarstimerdoeveogtunghoerteField, value) != true)) {
-                    this.aarstimerdoeveogtunghoerteField = value;
-                    this.RaisePropertyChanged("aarstimerdoeveogtunghoerte");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-formgivningsfag", Order=8)]
-        public string aarstimerformgivningsfag {
-            get {
-                return this.aarstimerformgivningsfagField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.aarstimerformgivningsfagField, value) != true)) {
-                    this.aarstimerformgivningsfagField = value;
-                    this.RaisePropertyChanged("aarstimerformgivningsfag");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=9)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
-            get {
-                return this.beskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
-                    this.beskrivelseField = value;
-                    this.RaisePropertyChanged("beskrivelse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=10)]
-        public Kl06.Eksempler.Soap.referanse[] merkelapper {
-            get {
-                return this.merkelapperField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
-                    this.merkelapperField = value;
-                    this.RaisePropertyChanged("merkelapper");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="foerste-semester", Order=11)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi foerstesemester {
-            get {
-                return this.foerstesemesterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.foerstesemesterField, value) != true)) {
-                    this.foerstesemesterField = value;
-                    this.RaisePropertyChanged("foerstesemester");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-semester", Order=12)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi sistesemester {
-            get {
-                return this.sistesemesterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.sistesemesterField, value) != true)) {
-                    this.sistesemesterField = value;
-                    this.RaisePropertyChanged("sistesemester");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=13)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi aarstrinn {
-            get {
-                return this.aarstrinnField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.aarstrinnField, value) != true)) {
-                    this.aarstrinnField = value;
-                    this.RaisePropertyChanged("aarstrinn");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-programomraade", Order=14)]
-        public Kl06.Eksempler.Soap.referanse[] byggerpaaprogramomraade {
-            get {
-                return this.byggerpaaprogramomraadeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.byggerpaaprogramomraadeField, value) != true)) {
-                    this.byggerpaaprogramomraadeField = value;
-                    this.RaisePropertyChanged("byggerpaaprogramomraade");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter-programomraade", Order=15)]
-        public Kl06.Eksempler.Soap.referanse[] erstatterprogramomraade {
-            get {
-                return this.erstatterprogramomraadeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.erstatterprogramomraadeField, value) != true)) {
-                    this.erstatterprogramomraadeField = value;
-                    this.RaisePropertyChanged("erstatterprogramomraade");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="tilknyttede-utdanningsprogram", Order=16)]
-        public Kl06.Eksempler.Soap.referanse[] tilknyttedeutdanningsprogram {
-            get {
-                return this.tilknyttedeutdanningsprogramField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tilknyttedeutdanningsprogramField, value) != true)) {
-                    this.tilknyttedeutdanningsprogramField = value;
-                    this.RaisePropertyChanged("tilknyttedeutdanningsprogram");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="tilknyttede-laereplaner", Order=17)]
-        public Kl06.Eksempler.Soap.referanse[] tilknyttedelaereplaner {
-            get {
-                return this.tilknyttedelaereplanerField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tilknyttedelaereplanerField, value) != true)) {
-                    this.tilknyttedelaereplanerField = value;
-                    this.RaisePropertyChanged("tilknyttedelaereplaner");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=18)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] yrkestittel {
-            get {
-                return this.yrkestittelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.yrkestittelField, value) != true)) {
-                    this.yrkestittelField = value;
-                    this.RaisePropertyChanged("yrkestittel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=19)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringssted {
-            get {
-                return this.opplaeringsstedField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.opplaeringsstedField, value) != true)) {
-                    this.opplaeringsstedField = value;
-                    this.RaisePropertyChanged("opplaeringssted");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=20)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] sluttkompetanse {
-            get {
-                return this.sluttkompetanseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.sluttkompetanseField, value) != true)) {
-                    this.sluttkompetanseField = value;
-                    this.RaisePropertyChanged("sluttkompetanse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=21)]
-        public string opplaeringstid {
-            get {
-                return this.opplaeringstidField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.opplaeringstidField, value) != true)) {
-                    this.opplaeringstidField = value;
-                    this.RaisePropertyChanged("opplaeringstid");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=22)]
-        public string verdiskapingstid {
-            get {
-                return this.verdiskapingstidField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.verdiskapingstidField, value) != true)) {
-                    this.verdiskapingstidField = value;
-                    this.RaisePropertyChanged("verdiskapingstid");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merknad", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class merknad : Kl06.Eksempler.Soap.hovedelement {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi merknadstypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] gyldigfraoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> gyldigfraField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] gyldigtiloverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> gyldigtilField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] dokumenttypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] relatertefagField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] relaterteaarstrinnField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
-            get {
-                return this.kortformField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
-                    this.kortformField = value;
-                    this.RaisePropertyChanged("kortform");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="merknads-type")]
-        public Kl06.Eksempler.Soap.hjelpedataverdi merknadstype {
-            get {
-                return this.merknadstypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.merknadstypeField, value) != true)) {
-                    this.merknadstypeField = value;
-                    this.RaisePropertyChanged("merknadstype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra-overskrift", Order=2)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] gyldigfraoverskrift {
-            get {
-                return this.gyldigfraoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.gyldigfraoverskriftField, value) != true)) {
-                    this.gyldigfraoverskriftField = value;
-                    this.RaisePropertyChanged("gyldigfraoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra", Order=3)]
-        public System.Nullable<System.DateTime> gyldigfra {
-            get {
-                return this.gyldigfraField;
-            }
-            set {
-                if ((this.gyldigfraField.Equals(value) != true)) {
-                    this.gyldigfraField = value;
-                    this.RaisePropertyChanged("gyldigfra");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til-overskrift", Order=4)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] gyldigtiloverskrift {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-aarstrinn", Order=4)]
+        public Kl06.Eksempler.Soap.basereferanse[] etteraarstrinn {
             get {
-                return this.gyldigtiloverskriftField;
+                return this.etteraarstrinnField;
             }
             set {
-                if ((object.ReferenceEquals(this.gyldigtiloverskriftField, value) != true)) {
-                    this.gyldigtiloverskriftField = value;
-                    this.RaisePropertyChanged("gyldigtiloverskrift");
+                if ((object.ReferenceEquals(this.etteraarstrinnField, value) != true)) {
+                    this.etteraarstrinnField = value;
+                    this.RaisePropertyChanged("etteraarstrinn");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til", Order=5)]
-        public System.Nullable<System.DateTime> gyldigtil {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraader-i-kontekst-av-kompetansemaalsett", Order=5)]
+        public Kl06.Eksempler.Soap.hovedomraadeikontekstavkompetansemaalsett[] hovedomraaderikontekstavkompetansemaalsett {
             get {
-                return this.gyldigtilField;
+                return this.hovedomraaderikontekstavkompetansemaalsettField;
             }
             set {
-                if ((this.gyldigtilField.Equals(value) != true)) {
-                    this.gyldigtilField = value;
-                    this.RaisePropertyChanged("gyldigtil");
+                if ((object.ReferenceEquals(this.hovedomraaderikontekstavkompetansemaalsettField, value) != true)) {
+                    this.hovedomraaderikontekstavkompetansemaalsettField = value;
+                    this.RaisePropertyChanged("hovedomraaderikontekstavkompetansemaalsett");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=6)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaa {
+        public Kl06.Eksempler.Soap.@base programfag {
             get {
-                return this.opplaeringsnivaaField;
+                return this.programfagField;
             }
             set {
-                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
-                    this.opplaeringsnivaaField = value;
-                    this.RaisePropertyChanged("opplaeringsnivaa");
+                if ((object.ReferenceEquals(this.programfagField, value) != true)) {
+                    this.programfagField = value;
+                    this.RaisePropertyChanged("programfag");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=7)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] dokumenttype {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="maal-for-kompetansemaalene-overskrift", Order=7)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskrift {
             get {
-                return this.dokumenttypeField;
+                return this.maalforkompetansemaaleneoverskriftField;
             }
             set {
-                if ((object.ReferenceEquals(this.dokumenttypeField, value) != true)) {
-                    this.dokumenttypeField = value;
-                    this.RaisePropertyChanged("dokumenttype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="relaterte-fag", Order=8)]
-        public Kl06.Eksempler.Soap.referanse[] relatertefag {
-            get {
-                return this.relatertefagField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.relatertefagField, value) != true)) {
-                    this.relatertefagField = value;
-                    this.RaisePropertyChanged("relatertefag");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="relaterte-aarstrinn", Order=9)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] relaterteaarstrinn {
-            get {
-                return this.relaterteaarstrinnField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.relaterteaarstrinnField, value) != true)) {
-                    this.relaterteaarstrinnField = value;
-                    this.RaisePropertyChanged("relaterteaarstrinn");
+                if ((object.ReferenceEquals(this.maalforkompetansemaaleneoverskriftField, value) != true)) {
+                    this.maalforkompetansemaaleneoverskriftField = value;
+                    this.RaisePropertyChanged("maalforkompetansemaaleneoverskrift");
                 }
             }
         }
@@ -2227,9 +1360,21 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedata", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    public partial class merkelapp : Kl06.Eksempler.Soap.hovedelement {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merkelapp))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.aarstrinn))]
+    public partial class hjelpedata : Kl06.Eksempler.Soap.baseelement {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class merkelapp : Kl06.Eksempler.Soap.hjelpedata {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<bool> kanknyttestilfagField;
@@ -2248,6 +1393,19 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.referanse[] tilknyttedeprogramomraaderField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute(Name="kan-knyttes-til-fag")]
         public System.Nullable<bool> kanknyttestilfag {
@@ -2330,7 +1488,1520 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="aarstrinn", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class aarstrinn : Kl06.Eksempler.Soap.hjelpedata {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett-direkteoppslag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalsettdirekteoppslag : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] etterfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.kompetansemaalreferanse[] kompetansemaalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse[] etteraarstrinnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraadeikontekstavkompetansemaalsett[] hovedomraaderikontekstavkompetansemaalsettField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse programfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskriftField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-fag", Order=1)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] etterfag {
+            get {
+                return this.etterfagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.etterfagField, value) != true)) {
+                    this.etterfagField = value;
+                    this.RaisePropertyChanged("etterfag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.kompetansemaalreferanse[] kompetansemaal {
+            get {
+                return this.kompetansemaalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kompetansemaalField, value) != true)) {
+                    this.kompetansemaalField = value;
+                    this.RaisePropertyChanged("kompetansemaal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="etter-aarstrinn", Order=3)]
+        public Kl06.Eksempler.Soap.basereferanse[] etteraarstrinn {
+            get {
+                return this.etteraarstrinnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.etteraarstrinnField, value) != true)) {
+                    this.etteraarstrinnField = value;
+                    this.RaisePropertyChanged("etteraarstrinn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraader-i-kontekst-av-kompetansemaalsett", Order=4)]
+        public Kl06.Eksempler.Soap.hovedomraadeikontekstavkompetansemaalsett[] hovedomraaderikontekstavkompetansemaalsett {
+            get {
+                return this.hovedomraaderikontekstavkompetansemaalsettField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.hovedomraaderikontekstavkompetansemaalsettField, value) != true)) {
+                    this.hovedomraaderikontekstavkompetansemaalsettField = value;
+                    this.RaisePropertyChanged("hovedomraaderikontekstavkompetansemaalsett");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public Kl06.Eksempler.Soap.basereferanse programfag {
+            get {
+                return this.programfagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.programfagField, value) != true)) {
+                    this.programfagField = value;
+                    this.RaisePropertyChanged("programfag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="maal-for-kompetansemaalene-overskrift", Order=6)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskrift {
+            get {
+                return this.maalforkompetansemaaleneoverskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.maalforkompetansemaaleneoverskriftField, value) != true)) {
+                    this.maalforkompetansemaaleneoverskriftField = value;
+                    this.RaisePropertyChanged("maalforkompetansemaaleneoverskrift");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-direkteoppslag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadedirekteoppslag : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferansemedrekkefølge[] underliggendehovedomraaderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="underliggende-hovedomraader")]
+        public Kl06.Eksempler.Soap.basereferansemedrekkefølge[] underliggendehovedomraader {
+            get {
+                return this.underliggendehovedomraaderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.underliggendehovedomraaderField, value) != true)) {
+                    this.underliggendehovedomraaderField = value;
+                    this.RaisePropertyChanged("underliggendehovedomraader");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag-direkteoppslag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfagdirekteoppslag : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferansemedrekkefølge[] underliggendehovedomraaderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="underliggende-hovedomraader")]
+        public Kl06.Eksempler.Soap.basereferansemedrekkefølge[] underliggendehovedomraader {
+            get {
+                return this.underliggendehovedomraaderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.underliggendehovedomraaderField, value) != true)) {
+                    this.underliggendehovedomraaderField = value;
+                    this.RaisePropertyChanged("underliggendehovedomraader");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedelement", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.utdanningsprogram))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.programomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.merknad))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.kompetansemaal))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagomraade))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkategori))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.laereplan))]
+    public partial class hovedelement : Kl06.Eksempler.Soap.baseelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> sistendretField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string statusField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.idField, value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="sist-endret")]
+        public System.Nullable<System.DateTime> sistendret {
+            get {
+                return this.sistendretField;
+            }
+            set {
+                if ((this.sistendretField.Equals(value) != true)) {
+                    this.sistendretField = value;
+                    this.RaisePropertyChanged("sistendret");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string status {
+            get {
+                return this.statusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.statusField, value) != true)) {
+                    this.statusField = value;
+                    this.RaisePropertyChanged("status");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.fagkode))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Kl06.Eksempler.Soap.opplaeringsfag))]
+    public partial class fag : Kl06.Eksempler.Soap.hovedelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstatterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstattesavField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
+            get {
+                return this.kortformField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
+                    this.kortformField = value;
+                    this.RaisePropertyChanged("kortform");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public Kl06.Eksempler.Soap.referanse[] erstatter {
+            get {
+                return this.erstatterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstatterField, value) != true)) {
+                    this.erstatterField = value;
+                    this.RaisePropertyChanged("erstatter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=2)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav {
+            get {
+                return this.erstattesavField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstattesavField, value) != true)) {
+                    this.erstattesavField = value;
+                    this.RaisePropertyChanged("erstattesav");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class fagkode : Kl06.Eksempler.Soap.fag {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstatter1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse fagtypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> gyldigfraField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstattesav1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> gyldigtilField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse opplaeringsnivaaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string omfangtotaltField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string omfangvitnemaalField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string omfangtilnaaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] opplaeringsfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.eksamensgyldighet naarkanmantaeksamenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.semesterperiode naargisdetundervisningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.vurderingsordning[] vurderingsordningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi sensurField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi oppgaveField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysningerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] benyttessammenmedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] byggerpaafagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse[] merkelapperField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter")]
+        public Kl06.Eksempler.Soap.referanse[] erstatter1 {
+            get {
+                return this.erstatter1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstatter1Field, value) != true)) {
+                    this.erstatter1Field = value;
+                    this.RaisePropertyChanged("erstatter1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.basereferanse fagtype {
+            get {
+                return this.fagtypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fagtypeField, value) != true)) {
+                    this.fagtypeField = value;
+                    this.RaisePropertyChanged("fagtype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra")]
+        public System.Nullable<System.DateTime> gyldigfra {
+            get {
+                return this.gyldigfraField;
+            }
+            set {
+                if ((this.gyldigfraField.Equals(value) != true)) {
+                    this.gyldigfraField = value;
+                    this.RaisePropertyChanged("gyldigfra");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=3)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav1 {
+            get {
+                return this.erstattesav1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstattesav1Field, value) != true)) {
+                    this.erstattesav1Field = value;
+                    this.RaisePropertyChanged("erstattesav1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til", Order=4)]
+        public System.Nullable<System.DateTime> gyldigtil {
+            get {
+                return this.gyldigtilField;
+            }
+            set {
+                if ((this.gyldigtilField.Equals(value) != true)) {
+                    this.gyldigtilField = value;
+                    this.RaisePropertyChanged("gyldigtil");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public Kl06.Eksempler.Soap.basereferanse opplaeringsnivaa {
+            get {
+                return this.opplaeringsnivaaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
+                    this.opplaeringsnivaaField = value;
+                    this.RaisePropertyChanged("opplaeringsnivaa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-totalt", Order=6)]
+        public string omfangtotalt {
+            get {
+                return this.omfangtotaltField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.omfangtotaltField, value) != true)) {
+                    this.omfangtotaltField = value;
+                    this.RaisePropertyChanged("omfangtotalt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-vitnemaal", Order=7)]
+        public string omfangvitnemaal {
+            get {
+                return this.omfangvitnemaalField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.omfangvitnemaalField, value) != true)) {
+                    this.omfangvitnemaalField = value;
+                    this.RaisePropertyChanged("omfangvitnemaal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="omfang-til-naa", Order=8)]
+        public string omfangtilnaa {
+            get {
+                return this.omfangtilnaaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.omfangtilnaaField, value) != true)) {
+                    this.omfangtilnaaField = value;
+                    this.RaisePropertyChanged("omfangtilnaa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=9)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] opplaeringsfag {
+            get {
+                return this.opplaeringsfagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringsfagField, value) != true)) {
+                    this.opplaeringsfagField = value;
+                    this.RaisePropertyChanged("opplaeringsfag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="naar-kan-man-ta-eksamen", Order=10)]
+        public Kl06.Eksempler.Soap.eksamensgyldighet naarkanmantaeksamen {
+            get {
+                return this.naarkanmantaeksamenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.naarkanmantaeksamenField, value) != true)) {
+                    this.naarkanmantaeksamenField = value;
+                    this.RaisePropertyChanged("naarkanmantaeksamen");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="naar-gis-det-undervisning", Order=11)]
+        public Kl06.Eksempler.Soap.semesterperiode naargisdetundervisning {
+            get {
+                return this.naargisdetundervisningField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.naargisdetundervisningField, value) != true)) {
+                    this.naargisdetundervisningField = value;
+                    this.RaisePropertyChanged("naargisdetundervisning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=12)]
+        public Kl06.Eksempler.Soap.vurderingsordning[] vurderingsordning {
+            get {
+                return this.vurderingsordningField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.vurderingsordningField, value) != true)) {
+                    this.vurderingsordningField = value;
+                    this.RaisePropertyChanged("vurderingsordning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=13)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi sensur {
+            get {
+                return this.sensurField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sensurField, value) != true)) {
+                    this.sensurField = value;
+                    this.RaisePropertyChanged("sensur");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=14)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi oppgave {
+            get {
+                return this.oppgaveField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.oppgaveField, value) != true)) {
+                    this.oppgaveField = value;
+                    this.RaisePropertyChanged("oppgave");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=15)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysninger {
+            get {
+                return this.tilleggsopplysningerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tilleggsopplysningerField, value) != true)) {
+                    this.tilleggsopplysningerField = value;
+                    this.RaisePropertyChanged("tilleggsopplysninger");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="benyttes-sammen-med", Order=16)]
+        public Kl06.Eksempler.Soap.referanse[] benyttessammenmed {
+            get {
+                return this.benyttessammenmedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.benyttessammenmedField, value) != true)) {
+                    this.benyttessammenmedField = value;
+                    this.RaisePropertyChanged("benyttessammenmed");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-fag", Order=17)]
+        public Kl06.Eksempler.Soap.referanse[] byggerpaafag {
+            get {
+                return this.byggerpaafagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.byggerpaafagField, value) != true)) {
+                    this.byggerpaafagField = value;
+                    this.RaisePropertyChanged("byggerpaafag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=18)]
+        public Kl06.Eksempler.Soap.basereferanse[] merkelapper {
+            get {
+                return this.merkelapperField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
+                    this.merkelapperField = value;
+                    this.RaisePropertyChanged("merkelapper");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class opplaeringsfag : Kl06.Eksempler.Soap.fag {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse fagtypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse opplaeringsnivaaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysningerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] programomraaderreferanseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.laereplanreferanse[] laereplanreferanseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse[] merkelapperField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] byggerpaafagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] fagkodereferanserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] fagomraadereferanserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] fortsetteropplaeringisammekompetansemaalsettsomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] kortform1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstatter1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstattesav1Field;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.basereferanse fagtype {
+            get {
+                return this.fagtypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fagtypeField, value) != true)) {
+                    this.fagtypeField = value;
+                    this.RaisePropertyChanged("fagtype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.basereferanse opplaeringsnivaa {
+            get {
+                return this.opplaeringsnivaaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
+                    this.opplaeringsnivaaField = value;
+                    this.RaisePropertyChanged("opplaeringsnivaa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysninger {
+            get {
+                return this.tilleggsopplysningerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tilleggsopplysningerField, value) != true)) {
+                    this.tilleggsopplysningerField = value;
+                    this.RaisePropertyChanged("tilleggsopplysninger");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="programomraader-referanse", Order=3)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] programomraaderreferanse {
+            get {
+                return this.programomraaderreferanseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.programomraaderreferanseField, value) != true)) {
+                    this.programomraaderreferanseField = value;
+                    this.RaisePropertyChanged("programomraaderreferanse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="laereplan-referanse", Order=4)]
+        public Kl06.Eksempler.Soap.laereplanreferanse[] laereplanreferanse {
+            get {
+                return this.laereplanreferanseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.laereplanreferanseField, value) != true)) {
+                    this.laereplanreferanseField = value;
+                    this.RaisePropertyChanged("laereplanreferanse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public Kl06.Eksempler.Soap.basereferanse[] merkelapper {
+            get {
+                return this.merkelapperField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
+                    this.merkelapperField = value;
+                    this.RaisePropertyChanged("merkelapper");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-fag", Order=6)]
+        public Kl06.Eksempler.Soap.referanse[] byggerpaafag {
+            get {
+                return this.byggerpaafagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.byggerpaafagField, value) != true)) {
+                    this.byggerpaafagField = value;
+                    this.RaisePropertyChanged("byggerpaafag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="fagkode-referanser", Order=7)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] fagkodereferanser {
+            get {
+                return this.fagkodereferanserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fagkodereferanserField, value) != true)) {
+                    this.fagkodereferanserField = value;
+                    this.RaisePropertyChanged("fagkodereferanser");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="fagomraade-referanser", Order=8)]
+        public Kl06.Eksempler.Soap.referanse[] fagomraadereferanser {
+            get {
+                return this.fagomraadereferanserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fagomraadereferanserField, value) != true)) {
+                    this.fagomraadereferanserField = value;
+                    this.RaisePropertyChanged("fagomraadereferanser");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="fortsetter-opplaering-i-samme-kompetansemaalsett-som", Order=9)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] fortsetteropplaeringisammekompetansemaalsettsom {
+            get {
+                return this.fortsetteropplaeringisammekompetansemaalsettsomField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fortsetteropplaeringisammekompetansemaalsettsomField, value) != true)) {
+                    this.fortsetteropplaeringisammekompetansemaalsettsomField = value;
+                    this.RaisePropertyChanged("fortsetteropplaeringisammekompetansemaalsettsom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="kortform", Order=10)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] kortform1 {
+            get {
+                return this.kortform1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kortform1Field, value) != true)) {
+                    this.kortform1Field = value;
+                    this.RaisePropertyChanged("kortform1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstatter", Order=11)]
+        public Kl06.Eksempler.Soap.referanse[] erstatter1 {
+            get {
+                return this.erstatter1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstatter1Field, value) != true)) {
+                    this.erstatter1Field = value;
+                    this.RaisePropertyChanged("erstatter1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=12)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav1 {
+            get {
+                return this.erstattesav1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstattesav1Field, value) != true)) {
+                    this.erstattesav1Field = value;
+                    this.RaisePropertyChanged("erstattesav1");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class utdanningsprogram : Kl06.Eksempler.Soap.hovedelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi typeutdanningsprogramField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysningerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstatterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi foerstesemesterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi sistesemesterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstattesavField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
+            get {
+                return this.kortformField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
+                    this.kortformField = value;
+                    this.RaisePropertyChanged("kortform");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="type-utdanningsprogram")]
+        public Kl06.Eksempler.Soap.hjelpedataverdi typeutdanningsprogram {
+            get {
+                return this.typeutdanningsprogramField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.typeutdanningsprogramField, value) != true)) {
+                    this.typeutdanningsprogramField = value;
+                    this.RaisePropertyChanged("typeutdanningsprogram");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysninger {
+            get {
+                return this.tilleggsopplysningerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tilleggsopplysningerField, value) != true)) {
+                    this.tilleggsopplysningerField = value;
+                    this.RaisePropertyChanged("tilleggsopplysninger");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public Kl06.Eksempler.Soap.referanse[] erstatter {
+            get {
+                return this.erstatterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstatterField, value) != true)) {
+                    this.erstatterField = value;
+                    this.RaisePropertyChanged("erstatter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="foerste-semester", Order=4)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi foerstesemester {
+            get {
+                return this.foerstesemesterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.foerstesemesterField, value) != true)) {
+                    this.foerstesemesterField = value;
+                    this.RaisePropertyChanged("foerstesemester");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-semester", Order=5)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi sistesemester {
+            get {
+                return this.sistesemesterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sistesemesterField, value) != true)) {
+                    this.sistesemesterField = value;
+                    this.RaisePropertyChanged("sistesemester");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=6)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav {
+            get {
+                return this.erstattesavField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstattesavField, value) != true)) {
+                    this.erstattesavField = value;
+                    this.RaisePropertyChanged("erstattesav");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programomraade : Kl06.Eksempler.Soap.hovedelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nasjonalvariantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool landslinjeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool landsdekkendelinjeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi programomraadetypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string aarstimerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string aarstimersamiskField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string aarstimerdoeveogtunghoerteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string aarstimerformgivningsfagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysningerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse[] merkelapperField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi foerstesemesterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi sistesemesterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.basereferanse aarstrinnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype[] byggerpaaprogramomraadeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstatterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] erstattesavField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] utdanningsprogramreferanseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] yrkestittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsstedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi[] sluttkompetanseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string opplaeringstidField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string verdiskapingstidField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
+            get {
+                return this.kortformField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
+                    this.kortformField = value;
+                    this.RaisePropertyChanged("kortform");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="nasjonal-variant")]
+        public string nasjonalvariant {
+            get {
+                return this.nasjonalvariantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nasjonalvariantField, value) != true)) {
+                    this.nasjonalvariantField = value;
+                    this.RaisePropertyChanged("nasjonalvariant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public bool landslinje {
+            get {
+                return this.landslinjeField;
+            }
+            set {
+                if ((this.landslinjeField.Equals(value) != true)) {
+                    this.landslinjeField = value;
+                    this.RaisePropertyChanged("landslinje");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="landsdekkende-linje", Order=3)]
+        public bool landsdekkendelinje {
+            get {
+                return this.landsdekkendelinjeField;
+            }
+            set {
+                if ((this.landsdekkendelinjeField.Equals(value) != true)) {
+                    this.landsdekkendelinjeField = value;
+                    this.RaisePropertyChanged("landsdekkendelinje");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="programomraade-type", Order=4)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi programomraadetype {
+            get {
+                return this.programomraadetypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.programomraadetypeField, value) != true)) {
+                    this.programomraadetypeField = value;
+                    this.RaisePropertyChanged("programomraadetype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public string aarstimer {
+            get {
+                return this.aarstimerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.aarstimerField, value) != true)) {
+                    this.aarstimerField = value;
+                    this.RaisePropertyChanged("aarstimer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-samisk", Order=6)]
+        public string aarstimersamisk {
+            get {
+                return this.aarstimersamiskField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.aarstimersamiskField, value) != true)) {
+                    this.aarstimersamiskField = value;
+                    this.RaisePropertyChanged("aarstimersamisk");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-doeve-og-tunghoerte", Order=7)]
+        public string aarstimerdoeveogtunghoerte {
+            get {
+                return this.aarstimerdoeveogtunghoerteField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.aarstimerdoeveogtunghoerteField, value) != true)) {
+                    this.aarstimerdoeveogtunghoerteField = value;
+                    this.RaisePropertyChanged("aarstimerdoeveogtunghoerte");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="aarstimer-formgivningsfag", Order=8)]
+        public string aarstimerformgivningsfag {
+            get {
+                return this.aarstimerformgivningsfagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.aarstimerformgivningsfagField, value) != true)) {
+                    this.aarstimerformgivningsfagField = value;
+                    this.RaisePropertyChanged("aarstimerformgivningsfag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=9)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tilleggsopplysninger {
+            get {
+                return this.tilleggsopplysningerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tilleggsopplysningerField, value) != true)) {
+                    this.tilleggsopplysningerField = value;
+                    this.RaisePropertyChanged("tilleggsopplysninger");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=10)]
+        public Kl06.Eksempler.Soap.basereferanse[] merkelapper {
+            get {
+                return this.merkelapperField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.merkelapperField, value) != true)) {
+                    this.merkelapperField = value;
+                    this.RaisePropertyChanged("merkelapper");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="foerste-semester", Order=11)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi foerstesemester {
+            get {
+                return this.foerstesemesterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.foerstesemesterField, value) != true)) {
+                    this.foerstesemesterField = value;
+                    this.RaisePropertyChanged("foerstesemester");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-semester", Order=12)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi sistesemester {
+            get {
+                return this.sistesemesterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sistesemesterField, value) != true)) {
+                    this.sistesemesterField = value;
+                    this.RaisePropertyChanged("sistesemester");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=13)]
+        public Kl06.Eksempler.Soap.basereferanse aarstrinn {
+            get {
+                return this.aarstrinnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.aarstrinnField, value) != true)) {
+                    this.aarstrinnField = value;
+                    this.RaisePropertyChanged("aarstrinn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="bygger-paa-programomraade", Order=14)]
+        public Kl06.Eksempler.Soap.referansemedgyldighetsperiodeogloepstype[] byggerpaaprogramomraade {
+            get {
+                return this.byggerpaaprogramomraadeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.byggerpaaprogramomraadeField, value) != true)) {
+                    this.byggerpaaprogramomraadeField = value;
+                    this.RaisePropertyChanged("byggerpaaprogramomraade");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=15)]
+        public Kl06.Eksempler.Soap.referanse[] erstatter {
+            get {
+                return this.erstatterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstatterField, value) != true)) {
+                    this.erstatterField = value;
+                    this.RaisePropertyChanged("erstatter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=16)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav {
+            get {
+                return this.erstattesavField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.erstattesavField, value) != true)) {
+                    this.erstattesavField = value;
+                    this.RaisePropertyChanged("erstattesav");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="utdanningsprogram-referanse", Order=17)]
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] utdanningsprogramreferanse {
+            get {
+                return this.utdanningsprogramreferanseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.utdanningsprogramreferanseField, value) != true)) {
+                    this.utdanningsprogramreferanseField = value;
+                    this.RaisePropertyChanged("utdanningsprogramreferanse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=18)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] yrkestittel {
+            get {
+                return this.yrkestittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.yrkestittelField, value) != true)) {
+                    this.yrkestittelField = value;
+                    this.RaisePropertyChanged("yrkestittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=19)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringssted {
+            get {
+                return this.opplaeringsstedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringsstedField, value) != true)) {
+                    this.opplaeringsstedField = value;
+                    this.RaisePropertyChanged("opplaeringssted");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=20)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi[] sluttkompetanse {
+            get {
+                return this.sluttkompetanseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.sluttkompetanseField, value) != true)) {
+                    this.sluttkompetanseField = value;
+                    this.RaisePropertyChanged("sluttkompetanse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=21)]
+        public string opplaeringstid {
+            get {
+                return this.opplaeringstidField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringstidField, value) != true)) {
+                    this.opplaeringstidField = value;
+                    this.RaisePropertyChanged("opplaeringstid");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=22)]
+        public string verdiskapingstid {
+            get {
+                return this.verdiskapingstidField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.verdiskapingstidField, value) != true)) {
+                    this.verdiskapingstidField = value;
+                    this.RaisePropertyChanged("verdiskapingstid");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merknad", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class merknad : Kl06.Eksempler.Soap.hovedelement {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] kortformField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi merknadstypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.gyldighetsperiode gyldighetsperiodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi[] dokumenttypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.referanse[] relatertefagField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedataverdi[] relaterteaarstrinnField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] kortform {
+            get {
+                return this.kortformField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kortformField, value) != true)) {
+                    this.kortformField = value;
+                    this.RaisePropertyChanged("kortform");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="merknads-type")]
+        public Kl06.Eksempler.Soap.hjelpedataverdi merknadstype {
+            get {
+                return this.merknadstypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.merknadstypeField, value) != true)) {
+                    this.merknadstypeField = value;
+                    this.RaisePropertyChanged("merknadstype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.gyldighetsperiode gyldighetsperiode {
+            get {
+                return this.gyldighetsperiodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.gyldighetsperiodeField, value) != true)) {
+                    this.gyldighetsperiodeField = value;
+                    this.RaisePropertyChanged("gyldighetsperiode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaa {
+            get {
+                return this.opplaeringsnivaaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.opplaeringsnivaaField, value) != true)) {
+                    this.opplaeringsnivaaField = value;
+                    this.RaisePropertyChanged("opplaeringsnivaa");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi[] dokumenttype {
+            get {
+                return this.dokumenttypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.dokumenttypeField, value) != true)) {
+                    this.dokumenttypeField = value;
+                    this.RaisePropertyChanged("dokumenttype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="relaterte-fag", Order=5)]
+        public Kl06.Eksempler.Soap.referanse[] relatertefag {
+            get {
+                return this.relatertefagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.relatertefagField, value) != true)) {
+                    this.relatertefagField = value;
+                    this.RaisePropertyChanged("relatertefag");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="relaterte-aarstrinn", Order=6)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi[] relaterteaarstrinn {
+            get {
+                return this.relaterteaarstrinnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.relaterteaarstrinnField, value) != true)) {
+                    this.relaterteaarstrinnField = value;
+                    this.RaisePropertyChanged("relaterteaarstrinn");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class kompetansemaal : Kl06.Eksempler.Soap.hovedelement {
         
@@ -2353,15 +3024,15 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraade", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraade", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagomraade : Kl06.Eksempler.Soap.hovedelement {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse fagkategoriField;
+        private Kl06.Eksempler.Soap.referansemedgyldighet[] fagkategoriField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.referanse fagkategori {
+        public Kl06.Eksempler.Soap.referansemedgyldighet[] fagkategori {
             get {
                 return this.fagkategoriField;
             }
@@ -2376,143 +3047,64 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkategori : Kl06.Eksempler.Soap.hovedelement {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="aarstrinn", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class aarstrinn : Kl06.Eksempler.Soap.hovedelement {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="laereplan", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class laereplan : Kl06.Eksempler.Soap.hovedelement {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi fagtypeField;
+        private Kl06.Eksempler.Soap.basereferanse fagtypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.fastsettelsesinformasjon fastsettelsesinformasjonField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] gyldigfraoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> gyldigfraField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] gyldigtiloverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> gyldigtilField;
+        private Kl06.Eksempler.Soap.gyldighetsperiode gyldighetsperiodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.referanse[] erstatterField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] erstattetavField;
+        private Kl06.Eksempler.Soap.referanse[] erstattesavField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] tilgjengeligespraakField;
+        private Kl06.Eksempler.Soap.basereferanse[] tilgjengeligespraakField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] formaaloverskriftField;
+        private Kl06.Eksempler.Soap.overskriftogtekst formaalkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] formaalField;
+        private Kl06.Eksempler.Soap.overskriftogtekst timetallkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] timetalloverskriftField;
+        private Kl06.Eksempler.Soap.grunnleggendeferdigheter grunnleggendeferdigheterkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] timetallField;
+        private Kl06.Eksempler.Soap.hovedomraadekapittel hovedomraadekapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] strukturoverskriftField;
+        private Kl06.Eksempler.Soap.programfagkapittel programfagkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] strukturField;
+        private Kl06.Eksempler.Soap.overskriftogtekst strukturkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheteroverskriftField;
+        private Kl06.Eksempler.Soap.kompetansemaalkapittel kompetansemaalkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterbeskrivelseField;
+        private Kl06.Eksempler.Soap.overskriftogtekst vurderingkapittelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdighetermuntligoverskriftField;
+        private Kl06.Eksempler.Soap.basereferanse[] merkelapperField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdighetermuntligField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterskriftligoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterskriftligField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterleseoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterleseField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterregneoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterregneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterdigitaleverktoeyoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterdigitaleverktoeyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterfritekstField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadeoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadeinnledningField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hovedomraade[] hovedomraaderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadefritekstField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kompetansemaaloverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] kompetansemaalinnledningField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.kompetansemaalsett[] kompetansemaalsettField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] vurderingoverskriftField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] vurderingField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.referanse[] merkelapperField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaaField;
+        private Kl06.Eksempler.Soap.basereferanse[] opplaeringsnivaaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> sisteeksamenField;
@@ -2521,10 +3113,10 @@ namespace Kl06.Eksempler.Soap {
         private string soekehjelpnavnmotsattmaalformField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<bool> sorterhovedomraaderunderprogramfagField;
+        private string tilleggsopplysningerField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.hjelpedataverdi fagtype {
+        public Kl06.Eksempler.Soap.basereferanse fagtype {
             get {
                 return this.fagtypeField;
             }
@@ -2549,59 +3141,20 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra-overskrift")]
-        public Kl06.Eksempler.Soap.spraakversjonert[] gyldigfraoverskrift {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.gyldighetsperiode gyldighetsperiode {
             get {
-                return this.gyldigfraoverskriftField;
+                return this.gyldighetsperiodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.gyldigfraoverskriftField, value) != true)) {
-                    this.gyldigfraoverskriftField = value;
-                    this.RaisePropertyChanged("gyldigfraoverskrift");
+                if ((object.ReferenceEquals(this.gyldighetsperiodeField, value) != true)) {
+                    this.gyldighetsperiodeField = value;
+                    this.RaisePropertyChanged("gyldighetsperiode");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra", Order=3)]
-        public System.Nullable<System.DateTime> gyldigfra {
-            get {
-                return this.gyldigfraField;
-            }
-            set {
-                if ((this.gyldigfraField.Equals(value) != true)) {
-                    this.gyldigfraField = value;
-                    this.RaisePropertyChanged("gyldigfra");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til-overskrift", Order=4)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] gyldigtiloverskrift {
-            get {
-                return this.gyldigtiloverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.gyldigtiloverskriftField, value) != true)) {
-                    this.gyldigtiloverskriftField = value;
-                    this.RaisePropertyChanged("gyldigtiloverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til", Order=5)]
-        public System.Nullable<System.DateTime> gyldigtil {
-            get {
-                return this.gyldigtilField;
-            }
-            set {
-                if ((this.gyldigtilField.Equals(value) != true)) {
-                    this.gyldigtilField = value;
-                    this.RaisePropertyChanged("gyldigtil");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=6)]
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
         public Kl06.Eksempler.Soap.referanse[] erstatter {
             get {
                 return this.erstatterField;
@@ -2614,21 +3167,21 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattet-av", Order=7)]
-        public Kl06.Eksempler.Soap.referanse[] erstattetav {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="erstattes-av", Order=4)]
+        public Kl06.Eksempler.Soap.referanse[] erstattesav {
             get {
-                return this.erstattetavField;
+                return this.erstattesavField;
             }
             set {
-                if ((object.ReferenceEquals(this.erstattetavField, value) != true)) {
-                    this.erstattetavField = value;
-                    this.RaisePropertyChanged("erstattetav");
+                if ((object.ReferenceEquals(this.erstattesavField, value) != true)) {
+                    this.erstattesavField = value;
+                    this.RaisePropertyChanged("erstattesav");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="tilgjengelige-spraak", Order=8)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] tilgjengeligespraak {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="tilgjengelige-spraak", Order=5)]
+        public Kl06.Eksempler.Soap.basereferanse[] tilgjengeligespraak {
             get {
                 return this.tilgjengeligespraakField;
             }
@@ -2640,385 +3193,112 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="formaal-overskrift", Order=9)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] formaaloverskrift {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="formaal-kapittel", Order=6)]
+        public Kl06.Eksempler.Soap.overskriftogtekst formaalkapittel {
             get {
-                return this.formaaloverskriftField;
+                return this.formaalkapittelField;
             }
             set {
-                if ((object.ReferenceEquals(this.formaaloverskriftField, value) != true)) {
-                    this.formaaloverskriftField = value;
-                    this.RaisePropertyChanged("formaaloverskrift");
+                if ((object.ReferenceEquals(this.formaalkapittelField, value) != true)) {
+                    this.formaalkapittelField = value;
+                    this.RaisePropertyChanged("formaalkapittel");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=10)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] formaal {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="timetall-kapittel", Order=7)]
+        public Kl06.Eksempler.Soap.overskriftogtekst timetallkapittel {
             get {
-                return this.formaalField;
+                return this.timetallkapittelField;
             }
             set {
-                if ((object.ReferenceEquals(this.formaalField, value) != true)) {
-                    this.formaalField = value;
-                    this.RaisePropertyChanged("formaal");
+                if ((object.ReferenceEquals(this.timetallkapittelField, value) != true)) {
+                    this.timetallkapittelField = value;
+                    this.RaisePropertyChanged("timetallkapittel");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="timetall-overskrift", Order=11)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] timetalloverskrift {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-kapittel", Order=8)]
+        public Kl06.Eksempler.Soap.grunnleggendeferdigheter grunnleggendeferdigheterkapittel {
             get {
-                return this.timetalloverskriftField;
+                return this.grunnleggendeferdigheterkapittelField;
             }
             set {
-                if ((object.ReferenceEquals(this.timetalloverskriftField, value) != true)) {
-                    this.timetalloverskriftField = value;
-                    this.RaisePropertyChanged("timetalloverskrift");
+                if ((object.ReferenceEquals(this.grunnleggendeferdigheterkapittelField, value) != true)) {
+                    this.grunnleggendeferdigheterkapittelField = value;
+                    this.RaisePropertyChanged("grunnleggendeferdigheterkapittel");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=12)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] timetall {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraade-kapittel", Order=9)]
+        public Kl06.Eksempler.Soap.hovedomraadekapittel hovedomraadekapittel {
             get {
-                return this.timetallField;
+                return this.hovedomraadekapittelField;
             }
             set {
-                if ((object.ReferenceEquals(this.timetallField, value) != true)) {
-                    this.timetallField = value;
-                    this.RaisePropertyChanged("timetall");
+                if ((object.ReferenceEquals(this.hovedomraadekapittelField, value) != true)) {
+                    this.hovedomraadekapittelField = value;
+                    this.RaisePropertyChanged("hovedomraadekapittel");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="struktur-overskrift", Order=13)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] strukturoverskrift {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="programfag-kapittel", Order=10)]
+        public Kl06.Eksempler.Soap.programfagkapittel programfagkapittel {
             get {
-                return this.strukturoverskriftField;
+                return this.programfagkapittelField;
             }
             set {
-                if ((object.ReferenceEquals(this.strukturoverskriftField, value) != true)) {
-                    this.strukturoverskriftField = value;
-                    this.RaisePropertyChanged("strukturoverskrift");
+                if ((object.ReferenceEquals(this.programfagkapittelField, value) != true)) {
+                    this.programfagkapittelField = value;
+                    this.RaisePropertyChanged("programfagkapittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="struktur-kapittel", Order=11)]
+        public Kl06.Eksempler.Soap.overskriftogtekst strukturkapittel {
+            get {
+                return this.strukturkapittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.strukturkapittelField, value) != true)) {
+                    this.strukturkapittelField = value;
+                    this.RaisePropertyChanged("strukturkapittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="kompetansemaal-kapittel", Order=12)]
+        public Kl06.Eksempler.Soap.kompetansemaalkapittel kompetansemaalkapittel {
+            get {
+                return this.kompetansemaalkapittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kompetansemaalkapittelField, value) != true)) {
+                    this.kompetansemaalkapittelField = value;
+                    this.RaisePropertyChanged("kompetansemaalkapittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="vurdering-kapittel", Order=13)]
+        public Kl06.Eksempler.Soap.overskriftogtekst vurderingkapittel {
+            get {
+                return this.vurderingkapittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.vurderingkapittelField, value) != true)) {
+                    this.vurderingkapittelField = value;
+                    this.RaisePropertyChanged("vurderingkapittel");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=14)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] struktur {
-            get {
-                return this.strukturField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.strukturField, value) != true)) {
-                    this.strukturField = value;
-                    this.RaisePropertyChanged("struktur");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-overskrift", Order=15)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheteroverskrift {
-            get {
-                return this.grunnleggendeferdigheteroverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheteroverskriftField, value) != true)) {
-                    this.grunnleggendeferdigheteroverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheteroverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-beskrivelse", Order=16)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterbeskrivelse {
-            get {
-                return this.grunnleggendeferdigheterbeskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterbeskrivelseField, value) != true)) {
-                    this.grunnleggendeferdigheterbeskrivelseField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterbeskrivelse");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-muntlig-overskrift", Order=17)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdighetermuntligoverskrift {
-            get {
-                return this.grunnleggendeferdighetermuntligoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdighetermuntligoverskriftField, value) != true)) {
-                    this.grunnleggendeferdighetermuntligoverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdighetermuntligoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-muntlig", Order=18)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdighetermuntlig {
-            get {
-                return this.grunnleggendeferdighetermuntligField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdighetermuntligField, value) != true)) {
-                    this.grunnleggendeferdighetermuntligField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdighetermuntlig");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-skriftlig-overskrift", Order=19)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterskriftligoverskrift {
-            get {
-                return this.grunnleggendeferdigheterskriftligoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterskriftligoverskriftField, value) != true)) {
-                    this.grunnleggendeferdigheterskriftligoverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterskriftligoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-skriftlig", Order=20)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterskriftlig {
-            get {
-                return this.grunnleggendeferdigheterskriftligField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterskriftligField, value) != true)) {
-                    this.grunnleggendeferdigheterskriftligField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterskriftlig");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-lese-overskrift", Order=21)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterleseoverskrift {
-            get {
-                return this.grunnleggendeferdigheterleseoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterleseoverskriftField, value) != true)) {
-                    this.grunnleggendeferdigheterleseoverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterleseoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-lese", Order=22)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterlese {
-            get {
-                return this.grunnleggendeferdigheterleseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterleseField, value) != true)) {
-                    this.grunnleggendeferdigheterleseField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterlese");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-regne-overskrift", Order=23)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterregneoverskrift {
-            get {
-                return this.grunnleggendeferdigheterregneoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterregneoverskriftField, value) != true)) {
-                    this.grunnleggendeferdigheterregneoverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterregneoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-regne", Order=24)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterregne {
-            get {
-                return this.grunnleggendeferdigheterregneField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterregneField, value) != true)) {
-                    this.grunnleggendeferdigheterregneField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterregne");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-digitale-verktoey-overskrift", Order=25)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterdigitaleverktoeyoverskrift {
-            get {
-                return this.grunnleggendeferdigheterdigitaleverktoeyoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterdigitaleverktoeyoverskriftField, value) != true)) {
-                    this.grunnleggendeferdigheterdigitaleverktoeyoverskriftField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterdigitaleverktoeyoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-digitale-verktoey", Order=26)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterdigitaleverktoey {
-            get {
-                return this.grunnleggendeferdigheterdigitaleverktoeyField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterdigitaleverktoeyField, value) != true)) {
-                    this.grunnleggendeferdigheterdigitaleverktoeyField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterdigitaleverktoey");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="grunnleggende-ferdigheter-fritekst", Order=27)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] grunnleggendeferdigheterfritekst {
-            get {
-                return this.grunnleggendeferdigheterfritekstField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.grunnleggendeferdigheterfritekstField, value) != true)) {
-                    this.grunnleggendeferdigheterfritekstField = value;
-                    this.RaisePropertyChanged("grunnleggendeferdigheterfritekst");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraade-overskrift", Order=28)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadeoverskrift {
-            get {
-                return this.hovedomraadeoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.hovedomraadeoverskriftField, value) != true)) {
-                    this.hovedomraadeoverskriftField = value;
-                    this.RaisePropertyChanged("hovedomraadeoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraade-innledning", Order=29)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadeinnledning {
-            get {
-                return this.hovedomraadeinnledningField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.hovedomraadeinnledningField, value) != true)) {
-                    this.hovedomraadeinnledningField = value;
-                    this.RaisePropertyChanged("hovedomraadeinnledning");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=30)]
-        public Kl06.Eksempler.Soap.hovedomraade[] hovedomraader {
-            get {
-                return this.hovedomraaderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.hovedomraaderField, value) != true)) {
-                    this.hovedomraaderField = value;
-                    this.RaisePropertyChanged("hovedomraader");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="hovedomraade-fritekst", Order=31)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] hovedomraadefritekst {
-            get {
-                return this.hovedomraadefritekstField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.hovedomraadefritekstField, value) != true)) {
-                    this.hovedomraadefritekstField = value;
-                    this.RaisePropertyChanged("hovedomraadefritekst");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="kompetansemaal-overskrift", Order=32)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kompetansemaaloverskrift {
-            get {
-                return this.kompetansemaaloverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kompetansemaaloverskriftField, value) != true)) {
-                    this.kompetansemaaloverskriftField = value;
-                    this.RaisePropertyChanged("kompetansemaaloverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="kompetansemaal-innledning", Order=33)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] kompetansemaalinnledning {
-            get {
-                return this.kompetansemaalinnledningField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kompetansemaalinnledningField, value) != true)) {
-                    this.kompetansemaalinnledningField = value;
-                    this.RaisePropertyChanged("kompetansemaalinnledning");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="maal-for-kompetansemaalene-overskrift", Order=34)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] maalforkompetansemaaleneoverskrift {
-            get {
-                return this.maalforkompetansemaaleneoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.maalforkompetansemaaleneoverskriftField, value) != true)) {
-                    this.maalforkompetansemaaleneoverskriftField = value;
-                    this.RaisePropertyChanged("maalforkompetansemaaleneoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=35)]
-        public Kl06.Eksempler.Soap.kompetansemaalsett[] kompetansemaalsett {
-            get {
-                return this.kompetansemaalsettField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.kompetansemaalsettField, value) != true)) {
-                    this.kompetansemaalsettField = value;
-                    this.RaisePropertyChanged("kompetansemaalsett");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Name="vurdering-overskrift", Order=36)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] vurderingoverskrift {
-            get {
-                return this.vurderingoverskriftField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.vurderingoverskriftField, value) != true)) {
-                    this.vurderingoverskriftField = value;
-                    this.RaisePropertyChanged("vurderingoverskrift");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=37)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] vurdering {
-            get {
-                return this.vurderingField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.vurderingField, value) != true)) {
-                    this.vurderingField = value;
-                    this.RaisePropertyChanged("vurdering");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=38)]
-        public Kl06.Eksempler.Soap.referanse[] merkelapper {
+        public Kl06.Eksempler.Soap.basereferanse[] merkelapper {
             get {
                 return this.merkelapperField;
             }
@@ -3030,8 +3310,8 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=39)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] opplaeringsnivaa {
+        [System.Runtime.Serialization.DataMemberAttribute(Order=15)]
+        public Kl06.Eksempler.Soap.basereferanse[] opplaeringsnivaa {
             get {
                 return this.opplaeringsnivaaField;
             }
@@ -3043,7 +3323,7 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-eksamen", Order=40)]
+        [System.Runtime.Serialization.DataMemberAttribute(Name="siste-eksamen", Order=16)]
         public System.Nullable<System.DateTime> sisteeksamen {
             get {
                 return this.sisteeksamenField;
@@ -3056,7 +3336,7 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="soekehjelp-navn-motsatt-maalform", Order=41)]
+        [System.Runtime.Serialization.DataMemberAttribute(Name="soekehjelp-navn-motsatt-maalform", Order=17)]
         public string soekehjelpnavnmotsattmaalform {
             get {
                 return this.soekehjelpnavnmotsattmaalformField;
@@ -3069,15 +3349,15 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="sorter-hovedomraader-under-programfag", Order=42)]
-        public System.Nullable<bool> sorterhovedomraaderunderprogramfag {
+        [System.Runtime.Serialization.DataMemberAttribute(Order=18)]
+        public string tilleggsopplysninger {
             get {
-                return this.sorterhovedomraaderunderprogramfagField;
+                return this.tilleggsopplysningerField;
             }
             set {
-                if ((this.sorterhovedomraaderunderprogramfagField.Equals(value) != true)) {
-                    this.sorterhovedomraaderunderprogramfagField = value;
-                    this.RaisePropertyChanged("sorterhovedomraaderunderprogramfag");
+                if ((object.ReferenceEquals(this.tilleggsopplysningerField, value) != true)) {
+                    this.tilleggsopplysningerField = value;
+                    this.RaisePropertyChanged("tilleggsopplysninger");
                 }
             }
         }
@@ -3085,68 +3365,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedataverdi", Namespace="http://psi.udir.no/kl06/2013/11")]
-    [System.SerializableAttribute()]
-    public partial class hjelpedataverdi : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string noekkelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string noekkel {
-            get {
-                return this.noekkelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.noekkelField, value) != true)) {
-                    this.noekkelField = value;
-                    this.RaisePropertyChanged("noekkel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
-            get {
-                return this.beskrivelseField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
-                    this.beskrivelseField = value;
-                    this.RaisePropertyChanged("beskrivelse");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fastsettelsesinformasjon", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fastsettelsesinformasjon", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fastsettelsesinformasjon : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3160,7 +3379,7 @@ namespace Kl06.Eksempler.Soap {
         private Kl06.Eksempler.Soap.spraakversjonert[] fastsettelsestekstField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi fastsattspraakField;
+        private Kl06.Eksempler.Soap.basereferanse fastsattspraakField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.spraakversjonert[] fastsattdatooverskriftField;
@@ -3202,7 +3421,7 @@ namespace Kl06.Eksempler.Soap {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(Name="fastsatt-spraak", Order=2)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi fastsattspraak {
+        public Kl06.Eksempler.Soap.basereferanse fastsattspraak {
             get {
                 return this.fastsattspraakField;
             }
@@ -3239,7 +3458,716 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="eksamensgyldighet", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="gyldighetsperiode", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class gyldighetsperiode : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogdato gyldigfraField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogdato gyldigtilField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra")]
+        public Kl06.Eksempler.Soap.overskriftogdato gyldigfra {
+            get {
+                return this.gyldigfraField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.gyldigfraField, value) != true)) {
+                    this.gyldigfraField = value;
+                    this.RaisePropertyChanged("gyldigfra");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til")]
+        public Kl06.Eksempler.Soap.overskriftogdato gyldigtil {
+            get {
+                return this.gyldigtilField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.gyldigtilField, value) != true)) {
+                    this.gyldigtilField = value;
+                    this.RaisePropertyChanged("gyldigtil");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="overskrift-og-tekst", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class overskriftogtekst : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tekstField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tekst {
+            get {
+                return this.tekstField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tekstField, value) != true)) {
+                    this.tekstField = value;
+                    this.RaisePropertyChanged("tekst");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="grunnleggende-ferdigheter", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class grunnleggendeferdigheter : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] innledningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogtekst muntligField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogtekst skriftligField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogtekst leseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogtekst regneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.overskriftogtekst digitaleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] fritekstField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] innledning {
+            get {
+                return this.innledningField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.innledningField, value) != true)) {
+                    this.innledningField = value;
+                    this.RaisePropertyChanged("innledning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.overskriftogtekst muntlig {
+            get {
+                return this.muntligField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.muntligField, value) != true)) {
+                    this.muntligField = value;
+                    this.RaisePropertyChanged("muntlig");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public Kl06.Eksempler.Soap.overskriftogtekst skriftlig {
+            get {
+                return this.skriftligField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.skriftligField, value) != true)) {
+                    this.skriftligField = value;
+                    this.RaisePropertyChanged("skriftlig");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public Kl06.Eksempler.Soap.overskriftogtekst lese {
+            get {
+                return this.leseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.leseField, value) != true)) {
+                    this.leseField = value;
+                    this.RaisePropertyChanged("lese");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public Kl06.Eksempler.Soap.overskriftogtekst regne {
+            get {
+                return this.regneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.regneField, value) != true)) {
+                    this.regneField = value;
+                    this.RaisePropertyChanged("regne");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=6)]
+        public Kl06.Eksempler.Soap.overskriftogtekst digitale {
+            get {
+                return this.digitaleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.digitaleField, value) != true)) {
+                    this.digitaleField = value;
+                    this.RaisePropertyChanged("digitale");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=7)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] fritekst {
+            get {
+                return this.fritekstField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fritekstField, value) != true)) {
+                    this.fritekstField = value;
+                    this.RaisePropertyChanged("fritekst");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-kapittel", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadekapittel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] innledningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraade[] hovedomraaderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] fritekstField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] innledning {
+            get {
+                return this.innledningField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.innledningField, value) != true)) {
+                    this.innledningField = value;
+                    this.RaisePropertyChanged("innledning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.hovedomraade[] hovedomraader {
+            get {
+                return this.hovedomraaderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.hovedomraaderField, value) != true)) {
+                    this.hovedomraaderField = value;
+                    this.RaisePropertyChanged("hovedomraader");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] fritekst {
+            get {
+                return this.fritekstField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.fritekstField, value) != true)) {
+                    this.fritekstField = value;
+                    this.RaisePropertyChanged("fritekst");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag-kapittel", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfagkapittel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.programfag[] programfagField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.programfag[] programfag {
+            get {
+                return this.programfagField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.programfagField, value) != true)) {
+                    this.programfagField = value;
+                    this.RaisePropertyChanged("programfag");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-kapittel", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalkapittel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] innledningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.kompetansemaalsett[] kompetansemaalsettField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] innledning {
+            get {
+                return this.innledningField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.innledningField, value) != true)) {
+                    this.innledningField = value;
+                    this.RaisePropertyChanged("innledning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public Kl06.Eksempler.Soap.kompetansemaalsett[] kompetansemaalsett {
+            get {
+                return this.kompetansemaalsettField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kompetansemaalsettField, value) != true)) {
+                    this.kompetansemaalsettField = value;
+                    this.RaisePropertyChanged("kompetansemaalsett");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="gyldighetsperiode-for-referanse", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class gyldighetsperiodeforreferanse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> gyldigfraField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> gyldigtilField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-fra")]
+        public System.Nullable<System.DateTime> gyldigfra {
+            get {
+                return this.gyldigfraField;
+            }
+            set {
+                if ((this.gyldigfraField.Equals(value) != true)) {
+                    this.gyldigfraField = value;
+                    this.RaisePropertyChanged("gyldigfra");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="gyldig-til")]
+        public System.Nullable<System.DateTime> gyldigtil {
+            get {
+                return this.gyldigtilField;
+            }
+            set {
+                if ((this.gyldigtilField.Equals(value) != true)) {
+                    this.gyldigtilField = value;
+                    this.RaisePropertyChanged("gyldigtil");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedataverdi", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hjelpedataverdi : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string uriField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string greptypeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string uri {
+            get {
+                return this.uriField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.uriField, value) != true)) {
+                    this.uriField = value;
+                    this.RaisePropertyChanged("uri");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="grep-type", Order=2)]
+        public string greptype {
+            get {
+                return this.greptypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.greptypeField, value) != true)) {
+                    this.greptypeField = value;
+                    this.RaisePropertyChanged("greptype");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="tittel-og-beskrivelse", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class tittelogbeskrivelse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] beskrivelseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] tittelField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] beskrivelse {
+            get {
+                return this.beskrivelseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.beskrivelseField, value) != true)) {
+                    this.beskrivelseField = value;
+                    this.RaisePropertyChanged("beskrivelse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="eksamensgyldighet", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class eksamensgyldighet : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3251,9 +4179,6 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.hjelpedataverdi sistesemesterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi[] semesteruteneksamenField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -3291,19 +4216,6 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="semester-uten-eksamen", Order=2)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi[] semesteruteneksamen {
-            get {
-                return this.semesteruteneksamenField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.semesteruteneksamenField, value) != true)) {
-                    this.semesteruteneksamenField = value;
-                    this.RaisePropertyChanged("semesteruteneksamen");
-                }
-            }
-        }
-        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -3316,7 +4228,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="semesterperiode", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="semesterperiode", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class semesterperiode : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3377,9 +4289,9 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="vurdering", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="vurderingsordning", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    public partial class vurdering : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class vurderingsordning : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3388,16 +4300,19 @@ namespace Kl06.Eksempler.Soap {
         private Kl06.Eksempler.Soap.hjelpedataverdi eksamensformpaavitnemaaletField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string elevtypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool standpunktvurderingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi vurderingsformField;
+        private Kl06.Eksempler.Soap.hjelpedataverdi vurderingsuttrykkField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool hoeyestenivaaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Kl06.Eksempler.Soap.hjelpedataverdi typeeksamensfagField;
+        private Kl06.Eksempler.Soap.hjelpedataverdi trekkordningField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Kl06.Eksempler.Soap.hjelpedataverdi typeeksamensordningField;
@@ -3426,6 +4341,19 @@ namespace Kl06.Eksempler.Soap {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string elevtype {
+            get {
+                return this.elevtypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.elevtypeField, value) != true)) {
+                    this.elevtypeField = value;
+                    this.RaisePropertyChanged("elevtype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public bool standpunktvurdering {
             get {
                 return this.standpunktvurderingField;
@@ -3439,19 +4367,19 @@ namespace Kl06.Eksempler.Soap {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Kl06.Eksempler.Soap.hjelpedataverdi vurderingsform {
+        public Kl06.Eksempler.Soap.hjelpedataverdi vurderingsuttrykk {
             get {
-                return this.vurderingsformField;
+                return this.vurderingsuttrykkField;
             }
             set {
-                if ((object.ReferenceEquals(this.vurderingsformField, value) != true)) {
-                    this.vurderingsformField = value;
-                    this.RaisePropertyChanged("vurderingsform");
+                if ((object.ReferenceEquals(this.vurderingsuttrykkField, value) != true)) {
+                    this.vurderingsuttrykkField = value;
+                    this.RaisePropertyChanged("vurderingsuttrykk");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="hoeyeste-nivaa", Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(Name="hoeyeste-nivaa", Order=4)]
         public bool hoeyestenivaa {
             get {
                 return this.hoeyestenivaaField;
@@ -3464,20 +4392,20 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="type-eksamensfag", Order=4)]
-        public Kl06.Eksempler.Soap.hjelpedataverdi typeeksamensfag {
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public Kl06.Eksempler.Soap.hjelpedataverdi trekkordning {
             get {
-                return this.typeeksamensfagField;
+                return this.trekkordningField;
             }
             set {
-                if ((object.ReferenceEquals(this.typeeksamensfagField, value) != true)) {
-                    this.typeeksamensfagField = value;
-                    this.RaisePropertyChanged("typeeksamensfag");
+                if ((object.ReferenceEquals(this.trekkordningField, value) != true)) {
+                    this.trekkordningField = value;
+                    this.RaisePropertyChanged("trekkordning");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="type-eksamensordning", Order=5)]
+        [System.Runtime.Serialization.DataMemberAttribute(Name="type-eksamensordning", Order=6)]
         public Kl06.Eksempler.Soap.hjelpedataverdi typeeksamensordning {
             get {
                 return this.typeeksamensordningField;
@@ -3502,7 +4430,68 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-laereplan-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="overskrift-og-dato", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class overskriftogdato : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.spraakversjonert[] overskriftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> datoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.spraakversjonert[] overskrift {
+            get {
+                return this.overskriftField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.overskriftField, value) != true)) {
+                    this.overskriftField = value;
+                    this.RaisePropertyChanged("overskrift");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public System.Nullable<System.DateTime> dato {
+            get {
+                return this.datoField;
+            }
+            set {
+                if ((this.datoField.Equals(value) != true)) {
+                    this.datoField = value;
+                    this.RaisePropertyChanged("dato");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-laereplan-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentlaereplanfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3511,6 +4500,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -3534,6 +4526,19 @@ namespace Kl06.Eksempler.Soap {
                 if ((object.ReferenceEquals(this.psiField, value) != true)) {
                     this.psiField = value;
                     this.RaisePropertyChanged("psi");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
                 }
             }
         }
@@ -3563,7 +4568,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkodesoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3656,7 +4661,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkode-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkodesoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3701,7 +4706,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkode-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkode-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagkodefrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3710,6 +4715,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -3733,6 +4741,19 @@ namespace Kl06.Eksempler.Soap {
                 if ((object.ReferenceEquals(this.kodeField, value) != true)) {
                     this.kodeField = value;
                     this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
                 }
             }
         }
@@ -3762,7 +4783,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkode-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkode-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagkodefrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3807,7 +4828,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class opplaeringsfagsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3900,7 +4921,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="opplaeringsfag-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class opplaeringsfagsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3945,7 +4966,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-opplaeringsfag-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-opplaeringsfag-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentopplaeringsfagfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3954,6 +4975,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -3981,6 +5005,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4006,7 +5043,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-opplaeringsfag-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-opplaeringsfag-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentopplaeringsfagfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4015,6 +5052,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4042,6 +5082,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4067,7 +5120,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class utdanningsprogramsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4160,7 +5213,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="utdanningsprogram-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class utdanningsprogramsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4205,7 +5258,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-utdanningsprogram-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-utdanningsprogram-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentutdanningsprogramfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4214,6 +5267,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4241,6 +5297,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4266,7 +5335,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-utdanningsprogram-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-utdanningsprogram-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentutdanningsprogramfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4275,6 +5344,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4302,6 +5374,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4327,7 +5412,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class programomraadesoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4420,7 +5505,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programomraade-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class programomraadesoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4465,7 +5550,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-programomraade-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-programomraade-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentprogramomraadefrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4474,6 +5559,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4501,6 +5589,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4526,7 +5627,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-programomraade-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-programomraade-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentprogramomraadefrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4535,6 +5636,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4562,6 +5666,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4587,7 +5704,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merknader-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merknader-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class merknadersoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4680,7 +5797,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merknad-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merknad-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class merknadsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4725,7 +5842,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merknad-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merknad-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentmerknadfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4734,6 +5851,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4761,6 +5881,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4786,7 +5919,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merknad-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merknad-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentmerknadfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4795,6 +5928,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -4822,6 +5958,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -4847,7 +5996,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class merkelappsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4940,7 +6089,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="merkelapp-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class merkelappsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4985,7 +6134,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merkelapp-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merkelapp-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentmerkelappfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -4994,6 +6143,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5021,6 +6173,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5046,7 +6211,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merkelapp-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-merkelapp-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentmerkelappfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5055,6 +6220,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5082,6 +6250,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5107,7 +6288,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class kompetansemaalsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5184,7 +6365,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaal-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class kompetansemaalsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5229,7 +6410,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-kompetansemaal-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-kompetansemaal-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentkompetansemaalfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5238,6 +6419,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5265,6 +6449,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5290,7 +6487,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-kompetansemaal-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-kompetansemaal-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentkompetansemaalfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5299,6 +6496,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5326,6 +6526,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5351,7 +6564,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagomraadersoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5444,7 +6657,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagomraader-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagomraadersoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5489,7 +6702,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagomraader-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagomraader-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagomraaderfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5498,6 +6711,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5525,6 +6741,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5550,7 +6779,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagomraader-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagomraader-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagomraaderfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5559,6 +6788,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5586,6 +6818,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5611,7 +6856,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soek-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkategorisoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5704,7 +6949,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soek-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="fagkategori-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class fagkategorisoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5749,7 +6994,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkategori-fra-kode-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkategori-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagkategorifrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5758,6 +7003,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5785,6 +7033,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5810,7 +7071,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkategori-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-fagkategori-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class hentfagkategorifrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5819,6 +7080,9 @@ namespace Kl06.Eksempler.Soap {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5846,6 +7110,19 @@ namespace Kl06.Eksempler.Soap {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
         public string valgtspraak {
             get {
@@ -5871,7 +7148,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="finn-aarstrinn-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="finn-aarstrinn-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class finnaarstrinnrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5916,7 +7193,7 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="finn-aarstrinn-respons", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="finn-aarstrinn-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
     public partial class finnaarstrinnrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -5961,15 +7238,18 @@ namespace Kl06.Eksempler.Soap {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="finn-årstrinn-fra-psi-request", Namespace="http://psi.udir.no/kl06/2013/11")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="finn-aarstrinn-fra-psi-request", Namespace="http://psi.udir.no/kl06/2016/04")]
     [System.SerializableAttribute()]
-    public partial class finnårstrinnfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class finnaarstrinnfrapsirequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string psiField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string valgtspraakField;
@@ -5993,6 +7273,924 @@ namespace Kl06.Eksempler.Soap {
                 if ((object.ReferenceEquals(this.psiField, value) != true)) {
                     this.psiField = value;
                     this.RaisePropertyChanged("psi");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-aarstrinn-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hentaarstrinnfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedata-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hjelpedatasoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string greptypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> sistendretField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="grep-type")]
+        public string greptype {
+            get {
+                return this.greptypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.greptypeField, value) != true)) {
+                    this.greptypeField = value;
+                    this.RaisePropertyChanged("greptype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="sist-endret")]
+        public System.Nullable<System.DateTime> sistendret {
+            get {
+                return this.sistendretField;
+            }
+            set {
+                if ((this.sistendretField.Equals(value) != true)) {
+                    this.sistendretField = value;
+                    this.RaisePropertyChanged("sistendret");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hjelpedata-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hjelpedatasoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hjelpedatasoekeresultat[] treffField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.hjelpedatasoekeresultat[] treff {
+            get {
+                return this.treffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.treffField, value) != true)) {
+                    this.treffField = value;
+                    this.RaisePropertyChanged("treff");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-hjelpedata-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class henthjelpedatafrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalsettsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="kompetansemaalsett-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class kompetansemaalsettsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.kompetansemaalsettsoekeresultat[] treffField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.kompetansemaalsettsoekeresultat[] treff {
+            get {
+                return this.treffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.treffField, value) != true)) {
+                    this.treffField = value;
+                    this.RaisePropertyChanged("treff");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-kompetansemaalsett-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hentkompetansemaalsettfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadesoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hovedomraade-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hovedomraadesoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.hovedomraadesoekeresultat[] treffField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.hovedomraadesoekeresultat[] treff {
+            get {
+                return this.treffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.treffField, value) != true)) {
+                    this.treffField = value;
+                    this.RaisePropertyChanged("treff");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-hovedomraade-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class henthovedomraadefrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag-soek-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfagsoekrequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string tittelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string tittel {
+            get {
+                return this.tittelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.tittelField, value) != true)) {
+                    this.tittelField = value;
+                    this.RaisePropertyChanged("tittel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="valgt-spraak")]
+        public string valgtspraak {
+            get {
+                return this.valgtspraakField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.valgtspraakField, value) != true)) {
+                    this.valgtspraakField = value;
+                    this.RaisePropertyChanged("valgtspraak");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="programfag-soek-respons", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class programfagsoekrespons : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Kl06.Eksempler.Soap.programfagsoekeresultat[] treffField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Kl06.Eksempler.Soap.programfagsoekeresultat[] treff {
+            get {
+                return this.treffField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.treffField, value) != true)) {
+                    this.treffField = value;
+                    this.RaisePropertyChanged("treff");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="hent-programfag-fra-kode-request", Namespace="http://psi.udir.no/kl06/2016/04")]
+    [System.SerializableAttribute()]
+    public partial class hentprogramfagfrakoderequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string kodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> tidspunktField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string valgtspraakField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string kode {
+            get {
+                return this.kodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.kodeField, value) != true)) {
+                    this.kodeField = value;
+                    this.RaisePropertyChanged("kode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> tidspunkt {
+            get {
+                return this.tidspunktField;
+            }
+            set {
+                if ((this.tidspunktField.Equals(value) != true)) {
+                    this.tidspunktField = value;
+                    this.RaisePropertyChanged("tidspunkt");
                 }
             }
         }
@@ -6021,200 +8219,290 @@ namespace Kl06.Eksempler.Soap {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://psi.udir.no/kl06/2013/11", ConfigurationName="Soap.GrepSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://psi.udir.no/kl06/2016/04", ConfigurationName="Soap.GrepSoap")]
     public interface GrepSoap {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnPlaner", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnPlanerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnPlaner", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnPlanerResponse")]
         Kl06.Eksempler.Soap.laereplansoekrespons FinnPlaner(Kl06.Eksempler.Soap.laereplansoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnPlaner", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnPlanerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnPlaner", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnPlanerResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.laereplansoekrespons> FinnPlanerAsync(Kl06.Eksempler.Soap.laereplansoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraKodeResponse")]
         Kl06.Eksempler.Soap.laereplan HentPlanFraKode(Kl06.Eksempler.Soap.hentlaereplanfrakoderequest kode);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.laereplan> HentPlanFraKodeAsync(Kl06.Eksempler.Soap.hentlaereplanfrakoderequest kode);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraPsiResponse")]
         Kl06.Eksempler.Soap.laereplan HentPlanFraPsi(Kl06.Eksempler.Soap.hentlaereplanfrapsirequest psi);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentPlanFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.laereplan> HentPlanFraPsiAsync(Kl06.Eksempler.Soap.hentlaereplanfrapsirequest psi);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkoder", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkoderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkoder", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkoderResponse")]
         Kl06.Eksempler.Soap.fagkodesoekrespons FinnFagkoder(Kl06.Eksempler.Soap.fagkodesoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkoder", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkoderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkoder", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkoderResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkodesoekrespons> FinnFagkoderAsync(Kl06.Eksempler.Soap.fagkodesoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraKodeResponse")]
         Kl06.Eksempler.Soap.fagkode HentFagkodeFraKode(Kl06.Eksempler.Soap.hentfagkodefrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkode> HentFagkodeFraKodeAsync(Kl06.Eksempler.Soap.hentfagkodefrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraPsiResponse")]
         Kl06.Eksempler.Soap.fagkode HentFagkodeFraPsi(Kl06.Eksempler.Soap.hentfagkodefrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkodeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkode> HentFagkodeFraPsiAsync(Kl06.Eksempler.Soap.hentfagkodefrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnOpplaeringsfag", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnOpplaeringsfagResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsfag", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsfagResponse")]
         Kl06.Eksempler.Soap.opplaeringsfagsoekrespons FinnOpplaeringsfag(Kl06.Eksempler.Soap.opplaeringsfagsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnOpplaeringsfag", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnOpplaeringsfagResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsfag", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsfagResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.opplaeringsfagsoekrespons> FinnOpplaeringsfagAsync(Kl06.Eksempler.Soap.opplaeringsfagsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraKodeResponse")]
         Kl06.Eksempler.Soap.opplaeringsfag HentOpplaeringsfagFraKode(Kl06.Eksempler.Soap.hentopplaeringsfagfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.opplaeringsfag> HentOpplaeringsfagFraKodeAsync(Kl06.Eksempler.Soap.hentopplaeringsfagfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraPsiResponse")]
         Kl06.Eksempler.Soap.opplaeringsfag HentOpplaeringsfagFraPsi(Kl06.Eksempler.Soap.hentopplaeringsfagfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentOpplaeringsfagFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.opplaeringsfag> HentOpplaeringsfagFraPsiAsync(Kl06.Eksempler.Soap.hentopplaeringsfagfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnUtdanningsprogram", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnUtdanningsprogramResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnUtdanningsprogram", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnUtdanningsprogramResponse")]
         Kl06.Eksempler.Soap.utdanningsprogramsoekrespons FinnUtdanningsprogram(Kl06.Eksempler.Soap.utdanningsprogramsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnUtdanningsprogram", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnUtdanningsprogramResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnUtdanningsprogram", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnUtdanningsprogramResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.utdanningsprogramsoekrespons> FinnUtdanningsprogramAsync(Kl06.Eksempler.Soap.utdanningsprogramsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraKodeResponse")]
         Kl06.Eksempler.Soap.utdanningsprogram HentUtdanningsprogramFraKode(Kl06.Eksempler.Soap.hentutdanningsprogramfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.utdanningsprogram> HentUtdanningsprogramFraKodeAsync(Kl06.Eksempler.Soap.hentutdanningsprogramfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraPsiResponse")]
         Kl06.Eksempler.Soap.utdanningsprogram HentUtdanningsprogramFraPsi(Kl06.Eksempler.Soap.hentutdanningsprogramfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentUtdanningsprogramFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.utdanningsprogram> HentUtdanningsprogramFraPsiAsync(Kl06.Eksempler.Soap.hentutdanningsprogramfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnProgramomraader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnProgramomraaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramomraader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramomraaderResponse")]
         Kl06.Eksempler.Soap.programomraadesoekrespons FinnProgramomraader(Kl06.Eksempler.Soap.programomraadesoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnProgramomraader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnProgramomraaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramomraader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramomraaderResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programomraadesoekrespons> FinnProgramomraaderAsync(Kl06.Eksempler.Soap.programomraadesoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraKodeResponse")]
         Kl06.Eksempler.Soap.programomraade HentProgramomraadeFraKode(Kl06.Eksempler.Soap.hentprogramomraadefrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programomraade> HentProgramomraadeFraKodeAsync(Kl06.Eksempler.Soap.hentprogramomraadefrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraPsiResponse")]
         Kl06.Eksempler.Soap.programomraade HentProgramomraadeFraPsi(Kl06.Eksempler.Soap.hentprogramomraadefrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentProgramomraadeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programomraade> HentProgramomraadeFraPsiAsync(Kl06.Eksempler.Soap.hentprogramomraadefrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerknader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerknaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerknader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerknaderResponse")]
         Kl06.Eksempler.Soap.merknadsoekrespons FinnMerknader(Kl06.Eksempler.Soap.merknadersoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerknader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerknaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerknader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerknaderResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merknadsoekrespons> FinnMerknaderAsync(Kl06.Eksempler.Soap.merknadersoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraKodeResponse")]
         Kl06.Eksempler.Soap.merknad HentMerknadFraKode(Kl06.Eksempler.Soap.hentmerknadfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merknad> HentMerknadFraKodeAsync(Kl06.Eksempler.Soap.hentmerknadfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraPsiResponse")]
         Kl06.Eksempler.Soap.merknad HentMerknadFraPsi(Kl06.Eksempler.Soap.hentmerknadfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerknadFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merknad> HentMerknadFraPsiAsync(Kl06.Eksempler.Soap.hentmerknadfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerkelapper", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerkelapperResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerkelapper", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerkelapperResponse")]
         Kl06.Eksempler.Soap.merkelappsoekrespons FinnMerkelapper(Kl06.Eksempler.Soap.merkelappsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerkelapper", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnMerkelapperResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerkelapper", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerkelapperResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merkelappsoekrespons> FinnMerkelapperAsync(Kl06.Eksempler.Soap.merkelappsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraKodeResponse")]
         Kl06.Eksempler.Soap.merkelapp HentMerkelappFraKode(Kl06.Eksempler.Soap.hentmerkelappfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merkelapp> HentMerkelappFraKodeAsync(Kl06.Eksempler.Soap.hentmerkelappfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraPsiResponse")]
         Kl06.Eksempler.Soap.merkelapp HentMerkelappFraPsi(Kl06.Eksempler.Soap.hentmerkelappfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentMerkelappFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.merkelapp> HentMerkelappFraPsiAsync(Kl06.Eksempler.Soap.hentmerkelappfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnKompetansemaal", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnKompetansemaalResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaal", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalResponse")]
         Kl06.Eksempler.Soap.kompetansemaalsoekrespons FinnKompetansemaal(Kl06.Eksempler.Soap.kompetansemaalsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnKompetansemaal", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnKompetansemaalResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaal", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaalsoekrespons> FinnKompetansemaalAsync(Kl06.Eksempler.Soap.kompetansemaalsoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraKodeResponse")]
         Kl06.Eksempler.Soap.kompetansemaal HentKompetansemaalFraKode(Kl06.Eksempler.Soap.hentkompetansemaalfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaal> HentKompetansemaalFraKodeAsync(Kl06.Eksempler.Soap.hentkompetansemaalfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraPsiResponse")]
         Kl06.Eksempler.Soap.kompetansemaal HentKompetansemaalFraPsi(Kl06.Eksempler.Soap.hentkompetansemaalfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentKompetansemaalFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaal> HentKompetansemaalFraPsiAsync(Kl06.Eksempler.Soap.hentkompetansemaalfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagomraader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagomraaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagomraader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagomraaderResponse")]
         Kl06.Eksempler.Soap.fagomraadersoekrespons FinnFagomraader(Kl06.Eksempler.Soap.fagomraadersoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagomraader", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagomraaderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagomraader", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagomraaderResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagomraadersoekrespons> FinnFagomraaderAsync(Kl06.Eksempler.Soap.fagomraadersoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraKodeResponse")]
         Kl06.Eksempler.Soap.fagomraade HentFagomraadeFraKode(Kl06.Eksempler.Soap.hentfagomraaderfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagomraade> HentFagomraadeFraKodeAsync(Kl06.Eksempler.Soap.hentfagomraaderfrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraPsiResponse")]
         Kl06.Eksempler.Soap.fagomraade HentFagomraadeFraPsi(Kl06.Eksempler.Soap.hentfagomraaderfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagomraadeFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagomraade> HentFagomraadeFraPsiAsync(Kl06.Eksempler.Soap.hentfagomraaderfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkategorier", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkategorierResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkategorier", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkategorierResponse")]
         Kl06.Eksempler.Soap.fagkategorisoekrespons FinnFagkategorier(Kl06.Eksempler.Soap.fagkategorisoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkategorier", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnFagkategorierResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkategorier", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkategorierResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkategorisoekrespons> FinnFagkategorierAsync(Kl06.Eksempler.Soap.fagkategorisoekrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraKodeResponse")]
         Kl06.Eksempler.Soap.fagkategori HentFagkategoriFraKode(Kl06.Eksempler.Soap.hentfagkategorifrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraKode", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraKodeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraKodeResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkategori> HentFagkategoriFraKodeAsync(Kl06.Eksempler.Soap.hentfagkategorifrakoderequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraPsiResponse")]
         Kl06.Eksempler.Soap.fagkategori HentFagkategoriFraPsi(Kl06.Eksempler.Soap.hentfagkategorifrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentFagkategoriFraPsiResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraPsiResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.fagkategori> HentFagkategoriFraPsiAsync(Kl06.Eksempler.Soap.hentfagkategorifrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnAarstrinn", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnAarstrinnResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnAarstrinn", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnAarstrinnResponse")]
         Kl06.Eksempler.Soap.finnaarstrinnrespons FinnAarstrinn(Kl06.Eksempler.Soap.finnaarstrinnrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnAarstrinn", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/FinnAarstrinnResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnAarstrinn", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnAarstrinnResponse")]
         System.Threading.Tasks.Task<Kl06.Eksempler.Soap.finnaarstrinnrespons> FinnAarstrinnAsync(Kl06.Eksempler.Soap.finnaarstrinnrequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentAarstrinnFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentAarstrinnFraPsiResponse")]
-        Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraPsi(Kl06.Eksempler.Soap.finnårstrinnfrapsirequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraPsiResponse")]
+        Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraPsi(Kl06.Eksempler.Soap.finnaarstrinnfrapsirequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2013/11/GrepSoap/HentAarstrinnFraPsi", ReplyAction="http://psi.udir.no/kl06/2013/11/GrepSoap/HentAarstrinnFraPsiResponse")]
-        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraPsiAsync(Kl06.Eksempler.Soap.finnårstrinnfrapsirequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraPsi", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraPsiResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraPsiAsync(Kl06.Eksempler.Soap.finnaarstrinnfrapsirequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraKodeResponse")]
+        Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraKode(Kl06.Eksempler.Soap.hentaarstrinnfrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraKodeAsync(Kl06.Eksempler.Soap.hentaarstrinnfrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnSpraak", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnSpraakResponse")]
+        Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnSpraak(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnSpraak", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnSpraakResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnSpraakAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentSpraakFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentSpraakFraKodeResponse")]
+        Kl06.Eksempler.Soap.hjelpedata HentSpraakFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentSpraakFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentSpraakFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentSpraakFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnStatus", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnStatusResponse")]
+        Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnStatus(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnStatus", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnStatusResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnStatusAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentStatusFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentStatusFraKodeResponse")]
+        Kl06.Eksempler.Soap.hjelpedata HentStatusFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentStatusFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentStatusFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentStatusFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsnivaa", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsnivaaResponse")]
+        Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnOpplaeringsnivaa(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsnivaa", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsnivaaResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnOpplaeringsnivaaAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsnivaaFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsnivaaFraKodeResponse")]
+        Kl06.Eksempler.Soap.hjelpedata HentOpplaeringsnivaaFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsnivaaFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsnivaaFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentOpplaeringsnivaaFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagtype", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagtypeResponse")]
+        Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnFagtype(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagtype", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagtypeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnFagtypeAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKodeResponse")]
+        Kl06.Eksempler.Soap.hjelpedata HentFagtypeFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentFagtypeFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalsett", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalsettResponse")]
+        Kl06.Eksempler.Soap.kompetansemaalsettsoekrespons FinnKompetansemaalsett(Kl06.Eksempler.Soap.kompetansemaalsettsoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalsett", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalsettResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaalsettsoekrespons> FinnKompetansemaalsettAsync(Kl06.Eksempler.Soap.kompetansemaalsettsoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalsettFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalsettFraKodeResponse")]
+        Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag HentKompetansemaalsettFraKode(Kl06.Eksempler.Soap.hentkompetansemaalsettfrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalsettFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalsettFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag> HentKompetansemaalsettFraKodeAsync(Kl06.Eksempler.Soap.hentkompetansemaalsettfrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnHovedomraade", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnHovedomraadeResponse")]
+        Kl06.Eksempler.Soap.hovedomraadesoekrespons FinnHovedomraade(Kl06.Eksempler.Soap.hovedomraadesoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnHovedomraade", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnHovedomraadeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hovedomraadesoekrespons> FinnHovedomraadeAsync(Kl06.Eksempler.Soap.hovedomraadesoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentHovedomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentHovedomraadeFraKodeResponse")]
+        Kl06.Eksempler.Soap.hovedomraadedirekteoppslag HentHovedomraadeFraKode(Kl06.Eksempler.Soap.henthovedomraadefrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentHovedomraadeFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentHovedomraadeFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hovedomraadedirekteoppslag> HentHovedomraadeFraKodeAsync(Kl06.Eksempler.Soap.henthovedomraadefrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramfag", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramfagResponse")]
+        Kl06.Eksempler.Soap.programfagsoekrespons FinnProgramfag(Kl06.Eksempler.Soap.programfagsoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramfag", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramfagResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programfagsoekrespons> FinnProgramfagAsync(Kl06.Eksempler.Soap.programfagsoekrequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramfagFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramfagFraKodeResponse")]
+        Kl06.Eksempler.Soap.programfagdirekteoppslag HentProgramfagFraKode(Kl06.Eksempler.Soap.hentprogramfagfrakoderequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramfagFraKode", ReplyAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramfagFraKodeResponse")]
+        System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programfagdirekteoppslag> HentProgramfagFraKodeAsync(Kl06.Eksempler.Soap.hentprogramfagfrakoderequest request);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -6492,12 +8780,132 @@ namespace Kl06.Eksempler.Soap {
             return base.Channel.FinnAarstrinnAsync(request);
         }
         
-        public Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraPsi(Kl06.Eksempler.Soap.finnårstrinnfrapsirequest request) {
+        public Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraPsi(Kl06.Eksempler.Soap.finnaarstrinnfrapsirequest request) {
             return base.Channel.HentAarstrinnFraPsi(request);
         }
         
-        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraPsiAsync(Kl06.Eksempler.Soap.finnårstrinnfrapsirequest request) {
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraPsiAsync(Kl06.Eksempler.Soap.finnaarstrinnfrapsirequest request) {
             return base.Channel.HentAarstrinnFraPsiAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.aarstrinn HentAarstrinnFraKode(Kl06.Eksempler.Soap.hentaarstrinnfrakoderequest request) {
+            return base.Channel.HentAarstrinnFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.aarstrinn> HentAarstrinnFraKodeAsync(Kl06.Eksempler.Soap.hentaarstrinnfrakoderequest request) {
+            return base.Channel.HentAarstrinnFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnSpraak(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnSpraak(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnSpraakAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnSpraakAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedata HentSpraakFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentSpraakFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentSpraakFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentSpraakFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnStatus(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnStatus(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnStatusAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnStatusAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedata HentStatusFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentStatusFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentStatusFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentStatusFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnOpplaeringsnivaa(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnOpplaeringsnivaa(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnOpplaeringsnivaaAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnOpplaeringsnivaaAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedata HentOpplaeringsnivaaFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentOpplaeringsnivaaFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentOpplaeringsnivaaFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentOpplaeringsnivaaFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedatasoekrespons FinnFagtype(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnFagtype(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedatasoekrespons> FinnFagtypeAsync(Kl06.Eksempler.Soap.hjelpedatasoekrequest request) {
+            return base.Channel.FinnFagtypeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hjelpedata HentFagtypeFraKode(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentFagtypeFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hjelpedata> HentFagtypeFraKodeAsync(Kl06.Eksempler.Soap.henthjelpedatafrakoderequest request) {
+            return base.Channel.HentFagtypeFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.kompetansemaalsettsoekrespons FinnKompetansemaalsett(Kl06.Eksempler.Soap.kompetansemaalsettsoekrequest request) {
+            return base.Channel.FinnKompetansemaalsett(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaalsettsoekrespons> FinnKompetansemaalsettAsync(Kl06.Eksempler.Soap.kompetansemaalsettsoekrequest request) {
+            return base.Channel.FinnKompetansemaalsettAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag HentKompetansemaalsettFraKode(Kl06.Eksempler.Soap.hentkompetansemaalsettfrakoderequest request) {
+            return base.Channel.HentKompetansemaalsettFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag> HentKompetansemaalsettFraKodeAsync(Kl06.Eksempler.Soap.hentkompetansemaalsettfrakoderequest request) {
+            return base.Channel.HentKompetansemaalsettFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hovedomraadesoekrespons FinnHovedomraade(Kl06.Eksempler.Soap.hovedomraadesoekrequest request) {
+            return base.Channel.FinnHovedomraade(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hovedomraadesoekrespons> FinnHovedomraadeAsync(Kl06.Eksempler.Soap.hovedomraadesoekrequest request) {
+            return base.Channel.FinnHovedomraadeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.hovedomraadedirekteoppslag HentHovedomraadeFraKode(Kl06.Eksempler.Soap.henthovedomraadefrakoderequest request) {
+            return base.Channel.HentHovedomraadeFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.hovedomraadedirekteoppslag> HentHovedomraadeFraKodeAsync(Kl06.Eksempler.Soap.henthovedomraadefrakoderequest request) {
+            return base.Channel.HentHovedomraadeFraKodeAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.programfagsoekrespons FinnProgramfag(Kl06.Eksempler.Soap.programfagsoekrequest request) {
+            return base.Channel.FinnProgramfag(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programfagsoekrespons> FinnProgramfagAsync(Kl06.Eksempler.Soap.programfagsoekrequest request) {
+            return base.Channel.FinnProgramfagAsync(request);
+        }
+        
+        public Kl06.Eksempler.Soap.programfagdirekteoppslag HentProgramfagFraKode(Kl06.Eksempler.Soap.hentprogramfagfrakoderequest request) {
+            return base.Channel.HentProgramfagFraKode(request);
+        }
+        
+        public System.Threading.Tasks.Task<Kl06.Eksempler.Soap.programfagdirekteoppslag> HentProgramfagFraKodeAsync(Kl06.Eksempler.Soap.hentprogramfagfrakoderequest request) {
+            return base.Channel.HentProgramfagFraKodeAsync(request);
         }
     }
 }
