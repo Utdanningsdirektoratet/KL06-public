@@ -182,6 +182,5 @@ public partial class MainWindow : Window
 ### Demonstrasjon {#demonstrasjon}
 
 Når vi kjører denne applikasjonen, kan vi filtrere på tittel. Om vi oppgir “Natur” som tittel vil vi få følgende resultat:
-
 ![](../figurer/figur8.png)
 Figur 8: Testing av applikasjon
