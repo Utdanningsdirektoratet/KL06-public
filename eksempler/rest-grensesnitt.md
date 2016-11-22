@@ -18,12 +18,22 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
-      function (data)
-      {
-        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '</a><br>'); 
-      })
-    });
+      $.getJSON("https://data.udir.no/kl06/fagkoder", {},
+        function (data)
+        {
+          $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' +
+          fagkoder.kode + ' - ' + hentDefaultVerdi(fagkoder.tittel) + '</a><br>'); 
+        })
+        // Henter ut den språkversjonerte verdien med nøkkelen 'default'
+        function hentDefaultVerdi(spraakversjonert) {
+          var res = "";
+          $.each(spraakversjonert, function (i, s) {
+            if (s.noekkel = "default")
+            res = s.verdi;
+          });
+          return res;
+        }
+      });
     </script>
   </body>
 </html>
