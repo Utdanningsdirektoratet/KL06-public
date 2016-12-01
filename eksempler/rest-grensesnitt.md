@@ -18,12 +18,22 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
-      function (data)
-      {
-        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '</a><br>'); 
-      })
-    });
+      $.getJSON("https://data.udir.no/kl06/fagkoder", {},
+        function (data)
+        {
+          $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' +
+          fagkoder.kode + ' - ' + hentDefaultVerdi(fagkoder.tittel) + '</a><br>'); 
+        })
+        // Henter ut den språkversjonerte verdien med nøkkelen 'default'
+        function hentDefaultVerdi(spraakversjonert) {
+          var res = "";
+          $.each(spraakversjonert, function (i, s) {
+            if (s.noekkel = "default")
+            res = s.verdi;
+          });
+          return res;
+        }
+      });
     </script>
   </body>
 </html>
@@ -127,55 +137,76 @@ function hentDefaultVerdi(spraakversjonert) {
   </head>
   <body>
     <script type="text/javascript">
-      var baseurl = "http://data.udir.no/";
+      var baseurl = "https://data.udir.no/";
       var maksAntallTreff = 25;
-      // Hekter på event på søke-input til å kalle soekEtterLaereplaner, med søkestreng og maks 25 antall treff
+      // Hekter på event på søke-input til å kalle soekEtterLaereplaner,
+      // med søkestreng og maks 25 antall treff
       $(document).ready(function () {
-        $('input[name=soek]').keyup(function () { soekEtterLaereplaner($('input[name=soek]').val(), maksAntallTreff); }
+        $('input[name=soek]').keyup(function () { soekEtterLaereplaner($('input[name=soek]').val(),
+        maksAntallTreff); }
         );
       });
       // Søker etter læreplaner, kaller lastInnResultater
       function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
-        var url = baseurl + "odata/Læreplan?$format=json";
-        var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "', tolower(concat(concat(Kode, ' - '), Tittel))) eq true";
+        var url = baseurl + "KL06/odata/Læreplan?$format=json";
+        var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "',
+        tolower(concat(concat(Kode, ' - '), Tittel))) eq true";
         var maksResultatFilter = "&$top=" + maksAntallTreff;
-        var selekterFilter = "&$select=Tittel,Kode,UrlData";
+        var selekterFilter = "&$select=Kode";
         $.ajax({
           type: "GET",
           url: url + filter + maksResultatFilter + selekterFilter,
           success: function (msg) {
-            $("#resultat").accordion('destroy');
             $("#resultat").text('');
             lastInnResultater(msg.d.results);
-            $("#resultat").accordion({ header: "h3", autoHeight: false, collapsible: true, active: false, height: 180 });
           }
         });
       }
-      // Lister ut resultatene, og hekter på et event som gjør at formål hentes fra detaljert informasjon om læreplan når resultatet åpnes
+      // Lister ut resultatene, og hekter på et event som gjør at formål hentes fra detaljert
+      // informasjon om læreplan når resultatet åpnes
       function lastInnResultater(results) {
         $.each(results, function (i, lp) {
-          $('#resultat').append("<div id=" + lp.Kode + '><h3><a href="#">' + lp.Kode + " - " + lp.Tittel + '</a></h3><div style="height:300px" id=f' + lp.Kode + '><b>Formål</b></div></div>');
-          $("#" + lp.Kode).live("click", 
-          function () {
-            $.getJSON(baseurl + "kl06/" + lp.Kode,
-            function (f) {
-              $('#f' + f.kode).append('<p>' + hentDefaultVerdi(f.formaal) + '</p>');
-              });
-          });
+          $('#resultat').append("<div id=" + lp.Kode + '><div style="height:600px" id=f' + lp.Kode + '>
+          </div></div>');
+          HentFormaalFraKode(lp.Kode);
         });
       }
-      // Henter ut den språkversjonerte verdien med nøkkelen 'default'
+
+      // Henter ut delatjvisning fra json'
+      function HentFormaalFraKode(kode) {
+        $.getJSON(baseurl + "kl06/" + kode,
+          function (f) {
+            $('#f' + f.kode).append('<h3><a href="#">'  + f.kode + "-" + hentDefaultVerdi(f.tittel)
+            +'</a></h3>');
+            $('#f' + f.kode).append('<b>Formål</b><p>' + hentDefaultVerdi(f["formaal-kapittel"].tekst)+
+            '</p>');
+          });
+        }
+
+      // Henter ut delatjvisning fra json'
+      function HentTittelFraKode(kode) {
+        $.getJSON(baseurl + "kl06/" + kode,
+        function (f) {
+          $('#f' + f.kode).append(hentDefaultVerdi(f.tittel));
+        });
+        return f,tittel;
+      }
+
+
+      // Henter ut den språkversjonerte verdien med språk 'default'
       function hentDefaultVerdi(spraakversjonert) {
         var res = "";
         $.each(spraakversjonert, function (i, s) {
-          if (s.noekkel = "default")
-          res = s.verdi;
-        });
-        return res;
+          if (s.spraak= "default")
+            res = s.verdi;
+          });
+         return res;
       }
+      
     </script>
-    <p style="font-family: Arial, Sans-Serif; font-size: 15px; margin-bottom: 5px; display: block; padding: 4px; border: solid 1px #85b1de; background-color: #EDF2F7;">
-    Søk på læreplaner: 
+    <p style="font-family: Arial, Sans-Serif; font-size: 15px; margin-bottom: 5px; display: block;
+      padding: 4px; border: solid 1px #85b1de; background-color: #EDF2F7;">
+      Søk på læreplaner: 
       <input style="width: 300px;" id="soek" name="soek" type="text"/>
     </p>
     <div id="resultat"></div>
