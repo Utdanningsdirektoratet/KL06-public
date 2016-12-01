@@ -24,6 +24,7 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | FinnKompetansemaalsett | Finner kompetansemålsett basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnProgramfag | Finner programfag basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnHovedomraade | Finner hovedområde basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnKarakterer | Finner karakterer basert på søkeriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http:\\data.udir.no\kl06\soap) |
 | HentPlanFraKode | Returnerer en læreplan basert på læreplanens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentPlanFraPsi | Returnerer en læreplan basert på læreplanens PSI \(id\) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentFagkodeFraKode | Returnerer en fagkode basert på fagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
@@ -52,6 +53,7 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentKompetansemaalsettFraKode | Returnerer et kompetansemålsett basert på kompetansemålsettets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentKarakterFraKode | Returnerer en klarakter basert på karakterens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 
 
 
