@@ -25,13 +25,13 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | FinnProgramfag | Finner programfag basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnHovedomraade | Finner hovedområde basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentPlanFraKode | Returnerer en læreplan basert på læreplanens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-| HentPlanFraPsi | Returnerer en læreplan basert på læreplanens PSI (id) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentPlanFraPsi | Returnerer en læreplan basert på læreplanens PSI \(id\) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentFagkodeFraKode | Returnerer en fagkode basert på fagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-| HentFagkodeFraPsi | Returnerer en fagkode basert på fagets PSI (id) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentFagkodeFraPsi | Returnerer en fagkode basert på fagets PSI \(id\) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentProgramomraadeFraKode | Returnerer et programområde basert på programområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentProgramomraadeFraPsi | Returnerer et programområde basert på programområdets psi | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentUtdanningsprogramFraKode | Returnerer et utdanningsprogram basert på utdanningsprogrammets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-| HentUtdanningsprogramFraPsi | Returnerer et utdanningsprogram basert på PSI (id) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentUtdanningsprogramFraPsi | Returnerer et utdanningsprogram basert på PSI \(id\) | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentMerknadFraPsi | Returnerer en merknad basert på merknadens psi | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentMerknadFraKode | Returnerer en merknad basert på merknadens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentMerkelapperFraPsi | Returnerer en merkelapp basert på merkelappens psi | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
@@ -50,8 +50,8 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentFagtypeFraKode | Returnerer en fagtype basert på fagtypens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentOpplaeringsnivaaFraKode | Returnerer et opplæringsnivå basert på opplæringsnivåets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentKompetansemaalsettFraKode | Returnerer et kompetansemålsett basert på kompetansemålsettets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-|HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-|HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 
 
 
