@@ -882,5 +882,14 @@ Parametere som har blitt lagt til
 
 ---
 
+Endringer i soap \(v. 2016/04\) 2. februar 2017:
 
+Parametere som har blitt lagt til
 
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnMerkelapper: merkelappsoekrespons.treff.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnSpraak: hjelpedatasoekrespons.treff.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnStatus: hjelpedatasoekrespons.treff.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnOpplaeringsnivaa: hjelpedatasoekrespons.treff.rekkefoelge
+* rekkefoelge av typen Int32 i metoden Respons fra metode FinnFagtype: hjelpedatasoekrespons.treff.rekkefoelge
+
+---
