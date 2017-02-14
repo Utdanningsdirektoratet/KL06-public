@@ -18,59 +18,12 @@ Test.html:
   <body>
     <p></p>
     <script type="text/jscript">
-      $.getJSON("https://data.udir.no/kl06/fagkoder", {},
-        function (data)
-        {
-          $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' +
-          fagkoder.kode + ' - ' + hentDefaultVerdi(fagkoder.tittel) + '</a><br>'); 
-        })
-        // Henter ut den språkversjonerte verdien med nøkkelen 'default'
-        function hentDefaultVerdi(spraakversjonert) {
-          var res = "";
-          $.each(spraakversjonert, function (i, s) {
-            if (s.noekkel = "default")
-            res = s.verdi;
-          });
-          return res;
-        }
-      });
-    </script>
-  </body>
-</html>
-{%endace%}
-
-### Visning av et kompetansemål i html-side med JQuery {#Visning-av-et-kompetansemål-i-html-side-med-JQuery}
-
-Følgende html-dokument benytter JQuery og REST-grensesnittet for å vise tittel på et spesifikt kompetansemål på en html side.
-
-{%ace edit=false, check=false, lang='xml'%}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Test</title>
-    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
-    <script src="http://code.jquery.com/jquery-latest.js">
-    </script>
-  </head>
-  <body>
-    <p></p>
-    <script type="text/jscript">
-    // Henter data for et kompetansemål
-    var kode = "K12825"
-    $.getJSON("https://data.udir.no/kl06/" + kode, {},
-      function (data){
-      $("p").append(hentDefaultVerdi(data.tittel));
+    $.getJSON("http://data.udir.no/kl06/fagkoder", {},
+      function (data)
+      {
+        $.each(data, function (i, fagkoder) {$('p').append('<a href=' + fagkoder["url-data"] + '>' + fagkoder.kode + ' - ' + fagkoder.tittel + '</a><br>'); 
+      })
     });
-
-    // Henter ut den språkversjonerte verdien med nøkkelen 'default'
-    function hentDefaultVerdi(tittel) {
-      var res = "";
-      $.each(tittel, function (i, s) {
-        if (s.spraak = "default")
-        res = s.verdi;
-      });
-      return res;
-    }
     </script>
   </body>
 </html>
@@ -149,8 +102,7 @@ function hentDefaultVerdi(spraakversjonert) {
       // Søker etter læreplaner, kaller lastInnResultater
       function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
         var url = baseurl + "KL06/odata/Læreplan?$format=json";
-        var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "',
-        tolower(concat(concat(Kode, ' - '), Tittel))) eq true";
+        var filter = "&$filter=substringof('" + soekestreng.toLowerCase() + "',tolower(concat(concat(Kode, ' - '), Tittel))) eq true";
         var maksResultatFilter = "&$top=" + maksAntallTreff;
         var selekterFilter = "&$select=Kode";
         $.ajax({
@@ -166,8 +118,7 @@ function hentDefaultVerdi(spraakversjonert) {
       // informasjon om læreplan når resultatet åpnes
       function lastInnResultater(results) {
         $.each(results, function (i, lp) {
-          $('#resultat').append("<div id=" + lp.Kode + '><div style="height:600px" id=f' + lp.Kode + '>
-          </div></div>');
+          $('#resultat').append("<div id=" + lp.Kode + '><div style="height:600px" id=f' + lp.Kode + '></div></div>');
           HentFormaalFraKode(lp.Kode);
         });
       }
@@ -183,16 +134,6 @@ function hentDefaultVerdi(spraakversjonert) {
           });
         }
 
-      // Henter ut delatjvisning fra json'
-      function HentTittelFraKode(kode) {
-        $.getJSON(baseurl + "kl06/" + kode,
-        function (f) {
-          $('#f' + f.kode).append(hentDefaultVerdi(f.tittel));
-        });
-        return f,tittel;
-      }
-
-
       // Henter ut den språkversjonerte verdien med språk 'default'
       function hentDefaultVerdi(spraakversjonert) {
         var res = "";
@@ -204,9 +145,8 @@ function hentDefaultVerdi(spraakversjonert) {
       }
       
     </script>
-    <p style="font-family: Arial, Sans-Serif; font-size: 15px; margin-bottom: 5px; display: block;
-      padding: 4px; border: solid 1px #85b1de; background-color: #EDF2F7;">
-      Søk på læreplaner: 
+    <p style="font-family: Arial, Sans-Serif; font-size: 15px; margin-bottom: 5px; display: block; padding: 4px; border: solid 1px #85b1de; background-color: #EDF2F7;">
+    Søk på læreplaner: 
       <input style="width: 300px;" id="soek" name="soek" type="text"/>
     </p>
     <div id="resultat"></div>
