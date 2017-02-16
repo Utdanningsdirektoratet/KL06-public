@@ -22,10 +22,10 @@
     <MetadataSource Address="http://data.udir.no/kl06/soap" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="soap.xsd" MetadataType="Schema" ID="0e32f65e-b332-48fd-a1f5-001cb6902cc4" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?xsd=xsd2" />
+    <MetadataFile FileName="soap1.xsd" MetadataType="Schema" ID="23550ccf-e27f-4490-8133-675a9a73be3a" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?xsd=xsd0" />
     <MetadataFile FileName="LaereplanSpoerringSoap.wsdl" MetadataType="Wsdl" ID="d3cd7352-19d4-4c57-9cde-fdce1e0ab33e" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?wsdl" />
     <MetadataFile FileName="soap.disco" MetadataType="Disco" ID="fab99e74-8368-4cab-aeda-6caa0bd492e3" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?disco" />
-    <MetadataFile FileName="soap1.xsd" MetadataType="Schema" ID="23550ccf-e27f-4490-8133-675a9a73be3a" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?xsd=xsd0" />
+    <MetadataFile FileName="soap.wsdl" MetadataType="Wsdl" ID="64f087f1-5bb1-4bbc-b6e9-7055e8ec5868" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?wsdl=wsdl0" />
     <MetadataFile FileName="soap2.xsd" MetadataType="Schema" ID="aceef998-2dcf-49f3-a293-51e416da36de" SourceId="1" SourceUrl="http://data.udir.no/kl06/soap?xsd=xsd1" />
   </Metadata>
   <Extensions>

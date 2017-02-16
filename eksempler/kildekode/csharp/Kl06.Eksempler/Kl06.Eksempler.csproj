@@ -139,7 +139,25 @@
     <None Include="Service References\Soap\Kl06.Eksempler.Soap.finnaarstrinnrespons.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.hjelpedata.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.hjelpedatasoekrespons.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.hovedomraadedirekteoppslag.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.hovedomraadesoekrespons.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\Soap\Kl06.Eksempler.Soap.kompetansemaal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.kompetansemaalsettdirekteoppslag.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.kompetansemaalsettsoekrespons.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\Soap\Kl06.Eksempler.Soap.kompetansemaalsoekrespons.datasource">
@@ -169,6 +187,12 @@
     <None Include="Service References\Soap\Kl06.Eksempler.Soap.opplaeringsfagsoekrespons.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.programfagdirekteoppslag.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Soap\Kl06.Eksempler.Soap.programfagsoekrespons.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\Soap\Kl06.Eksempler.Soap.programomraade.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -182,9 +206,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\Soap\LaereplanSpoerringSoap.wsdl" />
-    <None Include="Service References\Soap\soap.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Service References\Soap\soap.wsdl" />
     <None Include="Service References\Soap\soap1.xsd">
       <SubType>Designer</SubType>
     </None>

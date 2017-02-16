@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://psi.udir.no/kl06/2013/11" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://psi.udir.no/kl06/2016/04" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://psi.udir.no/kl06/2013/11" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://psi.udir.no/kl06/2016/04" location="http://data.udir.no/kl06/soap?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="GrepSoapBinding_GrepSoap" type="i0:GrepSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FinnPlaner">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnPlaner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentPlanFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentPlanFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentPlanFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnFagkoder">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkoder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagkodeFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagkodeFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkodeFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnOpplaeringsfag">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsfag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentOpplaeringsfagFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentOpplaeringsfagFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsfagFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnUtdanningsprogram">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnUtdanningsprogram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentUtdanningsprogramFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentUtdanningsprogramFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentUtdanningsprogramFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnProgramomraader">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramomraader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentProgramomraadeFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentProgramomraadeFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramomraadeFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnMerknader">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerknader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentMerknadFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentMerknadFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerknadFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnMerkelapper">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnMerkelapper" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentMerkelappFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentMerkelappFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentMerkelappFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnKompetansemaal">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentKompetansemaalFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentKompetansemaalFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnFagomraader">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagomraader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagomraadeFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagomraadeFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagomraadeFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnFagkategorier">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagkategorier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagkategoriFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagkategoriFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagkategoriFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnAarstrinn">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnAarstrinn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentAarstrinnFraPsi">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraPsi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentAarstrinnFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentAarstrinnFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnSpraak">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnSpraak" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentSpraakFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentSpraakFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnStatus">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentStatusFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentStatusFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnOpplaeringsnivaa">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnOpplaeringsnivaa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentOpplaeringsnivaaFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentOpplaeringsnivaaFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnFagtype">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnFagtype" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentFagtypeFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnKompetansemaalsett">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnKompetansemaalsett" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentKompetansemaalsettFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentKompetansemaalsettFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnHovedomraade">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnHovedomraade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentHovedomraadeFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentHovedomraadeFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinnProgramfag">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/FinnProgramfag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HentProgramfagFraKode">
+      <soap:operation soapAction="http://psi.udir.no/kl06/2016/04/GrepSoap/HentProgramfagFraKode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

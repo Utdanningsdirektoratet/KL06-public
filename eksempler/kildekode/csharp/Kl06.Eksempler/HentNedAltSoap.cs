@@ -16,7 +16,7 @@ namespace Kl06.Eksempler
             {
                 var læreplan =
                     client.HentPlanFraKode(new hentlaereplanfrakoderequest {Kode = laereplansoekeresultat.kode});
-                Debug.WriteLine(læreplan.kode + " " + læreplan.tittel.First(t => t.noekkel == "default").verdi);
+                Debug.WriteLine(læreplan.kode + " " + læreplan.tittel.First(t => t.spraak == "default").verdi);
             }
         }
 
@@ -35,7 +35,7 @@ namespace Kl06.Eksempler
             {
                 var læreplan =
                     client.HentPlanFraKode(new hentlaereplanfrakoderequest { Kode = laereplansoekeresultat.kode });
-                Debug.WriteLine(læreplan.kode + " " + læreplan.tittel.First(t => t.noekkel == "default").verdi);
+                Debug.WriteLine(læreplan.kode + " " + læreplan.tittel.First(t => t.spraak == "default").verdi);
             }
         }
 
