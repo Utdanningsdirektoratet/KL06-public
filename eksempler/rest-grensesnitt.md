@@ -98,8 +98,7 @@ function hentDefaultVerdi(spraakversjonert) {
         $('input[name=soek]').keyup(function () { soekEtterLaereplaner($('input[name=soek]').val(),
         maksAntallTreff); }
         );
-      })
-      
+      });
       // Søker etter læreplaner, kaller lastInnResultater
       function soekEtterLaereplaner(soekestreng, maksAntallTreff) {
         var url = baseurl + "KL06/odata/Læreplan?$format=json";
@@ -115,7 +114,6 @@ function hentDefaultVerdi(spraakversjonert) {
           }
         });
       }
-      
       // Lister ut resultatene, og hekter på et event som gjør at formål hentes fra detaljert
       // informasjon om læreplan når resultatet åpnes
       function lastInnResultater(results) {
@@ -145,6 +143,7 @@ function hentDefaultVerdi(spraakversjonert) {
           });
          return res;
       }
+      
     </script>
     <p style="font-family: Arial, Sans-Serif; font-size: 15px; margin-bottom: 5px; display: block; padding: 4px; border: solid 1px #85b1de; background-color: #EDF2F7;">
     Søk på læreplaner: 
