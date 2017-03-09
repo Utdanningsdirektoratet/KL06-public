@@ -24,7 +24,7 @@ KL06 har følgende elementtyper
 - Merkelapper ([/merkelapper](http://data.udir.no/kl06/merkelapper))
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#merkelapp)
 - Årstrinn ([/aarstrinn](http://data.udir.no/kl06/aarstrinn))
-  - [Tilgjengelige felter](http://data.udir.no/kl06/soap#aarstrinn)
+  - [Tilgjengelige felter](http://data.udir.no/kl06/soap#hjelpedata)
 - Språk ([/spraak](http://data.udir.no/kl06/spraak))
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#hjelpedata)
 - Status ([/status](http://data.udir.no/kl06/status))
