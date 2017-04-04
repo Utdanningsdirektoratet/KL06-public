@@ -39,3 +39,5 @@ KL06 har følgende elementtyper
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#programfag-direkteoppslag)
 - Hovedområder ([/hovedomraader](http://data.udir.no/kl06/hovedomraader))
   - [Tilgjengelige felter](http://data.udir.no/kl06/soap#hovedomraade-direkteoppslag)
+- Karakterer ([/karakterer](http://data.udir.no/kl06/karakterer))
+  - [Tilgjengelige felter](http://data.udir.no/kl06/soap#karakter-direkteoppslag)
