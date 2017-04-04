@@ -893,3 +893,13 @@ Parametere som har blitt lagt til
 * rekkefoelge av typen Int32 i metoden Respons fra metode FinnFagtype: hjelpedatasoekrespons.treff.rekkefoelge
 
 ---
+
+Endringer i soap \(v. 2016/04\) 14. mars:
+
+Metoder som har blitt lagt til
+
+* FinnKarakterer
+* HentKarakterFraKode
+
+
+
