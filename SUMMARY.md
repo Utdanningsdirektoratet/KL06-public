@@ -12,7 +12,6 @@
 * [Oppbygging av hovedområde- og programfag-kapitler](fastsatt_laereplantekst.md)
 * [Webtjenester](webtjenester/README.md)
   * [Oversikt over API](oversikt_over_api.md)
-  * [Elementer](webtjenester/elementer.md)
   * [Oversikt over grensesnitt](webtjenester/grensesnitt.md)
 * [REST-grensesnittet](rest-grensesnittet/rest.md)
   * [Versjonering](rest-grensesnittet/versjonering.md)
