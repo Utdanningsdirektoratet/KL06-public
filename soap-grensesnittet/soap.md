@@ -54,8 +54,6 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | HentKarakterFraKode | Returnerer en klarakter basert på karakterens kode | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
-|  |  |  |
-|  |  |  |
 
 
 
