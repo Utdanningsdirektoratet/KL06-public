@@ -901,5 +901,7 @@ Metoder som har blitt lagt til
 * FinnKarakterer
 * HentKarakterFraKode
 
+---
+
 
 
