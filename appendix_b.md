@@ -903,5 +903,12 @@ Metoder som har blitt lagt til
 
 ---
 
+Endringer i soap \(v. 2016/04\) 23. juni 2017:
+
+**Parametere som har blitt lagt til**
+
+* iso6392kode av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.iso6392kode
+* iso6392kode av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.iso6392kode
+
 
 
