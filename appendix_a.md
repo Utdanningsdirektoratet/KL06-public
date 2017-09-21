@@ -180,11 +180,11 @@ Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 | psi.udir.no/eksamensform/vitnemaal/ingen | Ingen eksamen | _psi.udir.no/kl06/eksamensform\_1_ |
 | psi.udir.no/eksamensform/vitnemaal/skriftlig | Skriftlig | psi.udir.no/kl06/eksamensform\_2 |
 | psi.udir.no/eksamensform/vitnemaal/muntlig | Muntlig | psi.udir.no/kl06/eksamensform\_3 |
-| [http://psi.udir.no/eksamensform/vitnemaal/praktisk](http://psi.udir.no/eksamensform/vitnemaal/praktisk) | Praktisk | psi.udir.no/kl06/eksamensform\_4 |
-| [http://psi.udir.no/eksamensform/vitnemaal/muntlig\_praktisk](http://psi.udir.no/eksamensform/vitnemaal/muntlig_praktisk) | Muntlig-praktisk | psi.udir.no/kl06/eksamensform\_5 |
-| [http://psi.udir.no/eksamensform/vitnemaal/fagproeve](http://psi.udir.no/eksamensform/vitnemaal/fagproeve) | Fagprøve | psi.udir.no/kl06/eksamensform\_6 |
-| [http://psi.udir.no/eksamensform/vitnemaal/svenneproeve](http://psi.udir.no/eksamensform/vitnemaal/svenneproeve) | Svenneprøve | psi.udir.no/kl06/eksamensform\_7 |
-| [http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_muntlig](http://psi.udir.no/eksamensform/vitnemaal/skriftlig_muntlig) | Skriftlig-muntlig | psi.udir.no/kl06/eksamensform\_8 |
+| [psi.udir.no/eksamensform/vitnemaal/praktisk](http://psi.udir.no/eksamensform/vitnemaal/praktisk) | Praktisk | psi.udir.no/kl06/eksamensform\_4 |
+| [psi.udir.no/eksamensform/vitnemaal/muntlig\_praktisk](http://psi.udir.no/eksamensform/vitnemaal/muntlig_praktisk) | Muntlig-praktisk | psi.udir.no/kl06/eksamensform\_5 |
+| [psi.udir.no/eksamensform/vitnemaal/fagproeve](http://psi.udir.no/eksamensform/vitnemaal/fagproeve) | Fagprøve | psi.udir.no/kl06/eksamensform\_6 |
+| [psi.udir.no/eksamensform/vitnemaal/svenneproeve](http://psi.udir.no/eksamensform/vitnemaal/svenneproeve) | Svenneprøve | psi.udir.no/kl06/eksamensform\_7 |
+| [psi.udir.no/eksamensform/vitnemaal/skriftlig\_muntlig](http://psi.udir.no/eksamensform/vitnemaal/skriftlig_muntlig) | Skriftlig-muntlig | psi.udir.no/kl06/eksamensform\_8 |
 
 Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 
