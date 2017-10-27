@@ -175,6 +175,8 @@ Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 
 ### Eksamensform
 
+Hjelpedata av denne typen **som videreføres med ny PSI** er vist i tabellen under.
+
 | Gammel PSI | Tittel | Ny PSI |
 | --- | --- | --- |
 | psi.udir.no/eksamensform/vitnemaal/ingen | Ingen eksamen | _psi.udir.no/kl06/eksamensform\_1_ |
@@ -186,7 +188,47 @@ Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
 | [psi.udir.no/eksamensform/vitnemaal/svenneproeve](http://psi.udir.no/eksamensform/vitnemaal/svenneproeve) | Svenneprøve | psi.udir.no/kl06/eksamensform\_7 |
 | [psi.udir.no/eksamensform/vitnemaal/skriftlig\_muntlig](http://psi.udir.no/eksamensform/vitnemaal/skriftlig_muntlig) | Skriftlig-muntlig | psi.udir.no/kl06/eksamensform\_8 |
 
-Hjelpedata av denne typen som ikke er med i mappingen er ikke lenger i bruk.
+
+
+Hjelpedata av denne typen **som ikke lenger benyttes** er vist i tabellen under.
+
+| Gammel PSI | Tittel |
+| :--- | :--- |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_eller\_muntlig\_og\_praktisk | Muntlig eller muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_eller\_praktisk | Muntlig eller praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_og\_praktisk | Muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_muntlig | Skriftlig eller muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_muntlig\_og\_praktisk | Skriftlig eller muntlig-praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_skriftlig\_og\_praktisk | Skriftlig eller skriftlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_tegnspraaklig | Skriftlig eller tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_muntlig | Skriftlig og muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_muntlig\_eller\_muntlig | Skriftlig og muntlig eller muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_muntlig\_praktisk | Skriftlig og muntlig-praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_praktisk | Skriftlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_praktisk\_eller\_muntlig\_og\_praktisk | Skriftlig og praktisk eller muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_tegnspraaklig | Skriftlig og tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/tegnspraaklig | Tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/teoretisk\_og\_praktisk | Teoretisk og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_muntlig\_praktisk | Tverrfaglig muntlig-praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_praktisk | Tverrfaglig praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_skriftlig | Tverrfaglig skriftlig |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_eller\_muntlig\_og\_praktisk | Muntlig eller muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_eller\_praktisk | Muntlig eller praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/muntlig\_og\_praktisk | Muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_muntlig | Skriftlig eller muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_muntlig\_og\_praktisk | Skriftlig eller muntlig-praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_skriftlig\_og\_praktisk | Skriftlig eller skriftlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_eller\_tegnspraaklig | Skriftlig eller tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_muntlig | Skriftlig og muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_muntlig\_eller\_muntlig | Skriftlig og muntlig eller muntlig |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_praktisk | Skriftlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_praktisk\_eller\_muntlig\_og\_praktisk | Skriftlig og praktisk eller muntlig og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/skriftlig\_og\_tegnspraaklig | Skriftlig og tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/tegnspraaklig | Tegnspråklig |
+| http://psi.udir.no/eksamensform/vitnemaal/teoretisk\_og\_praktisk | Teoretisk og praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_muntlig\_praktisk | Tverrfaglig muntlig-praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_praktisk | Tverrfaglig praktisk |
+| http://psi.udir.no/eksamensform/vitnemaal/tverrfaglig\_skriftlig | Tverrfaglig skriftlig |
 
 ### Vurderingsform
 
