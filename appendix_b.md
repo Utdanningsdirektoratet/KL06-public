@@ -910,5 +910,19 @@ Endringer i soap \(v. 2016/04\) 23. juni 2017:
 * iso6392kode av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.iso6392kode
 * iso6392kode av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.iso6392kode
 
+---
+
+Endringer i soap \(v. 2016/04\) ??. novermber 2017:
+
+**Parametere som har blitt lagt til**
+
+* halvaarsvurdering2benyttesvedinntaktilhoeyeretrinnVIGO av typen Boolean i metoden Respons fra metode HentFagkodeFraKode: fagkode.vurderingsordning.halvaarsvurdering2benyttesvedinntaktilhoeyeretrinnVIGO
+
+* halvaarsvurdering2benyttesvedinntaktilhoeyeretrinnVIGO av typen Boolean i metoden Respons fra metode HentFagkodeFraPsi: fagkode.vurderingsordning.halvaarsvurdering2benyttesvedinntaktilhoeyeretrinnVIGO
+
+* merknadbruksomraade av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.merknadbruksomraade
+
+* merknadbruksomraade av typen String i metoden Respons fra metode HentMerknadFraPsi: merknad.merknadbruksomraade
+
 
 
