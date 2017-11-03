@@ -190,7 +190,7 @@ Eksamensformer **som videreføres med ny PSI** er vist i tabellen under.
 | [psi.udir.no/eksamensform/vitnemaal/svenneproeve](http://psi.udir.no/eksamensform/vitnemaal/svenneproeve) | Svenneprøve | psi.udir.no/kl06/eksamensform\_7 |
 | [psi.udir.no/eksamensform/vitnemaal/skriftlig\_muntlig](http://psi.udir.no/eksamensform/vitnemaal/skriftlig_muntlig) | Skriftlig-muntlig | psi.udir.no/kl06/eksamensform\_8 |
 
-Eksamensformer fra tidligere reformer **som ikke lenger benyttes** er vist i tabellen under. Disse eksamensformene kan ikke benyttes for fag i Kunnskapsløftet.
+Eksamensformer fra tidligere reformer **som ikke lenger benyttes** er vist i tabellen under. Disse eksamensformene kan ikke benyttes på dokumentasjon av fag i Kunnskapsløftet.
 
 | Gammel PSI | Tittel |
 | :--- | :--- |
