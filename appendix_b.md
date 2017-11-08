@@ -912,7 +912,7 @@ Endringer i soap \(v. 2016/04\) 23. juni 2017:
 
 ---
 
-Endringer i soap \(v. 2016/04\) 8. novermber 2017:
+Endringer i soap \(v. 2016/04\) 8. november 2017:
 
 **Parametere som har blitt lagt til**
 
