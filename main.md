@@ -6,7 +6,6 @@ Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut ov
 
 ### Andre versjoner av dette dokumentet
 
-* [2013/11](https://kl06-doc.gitbooks.io/kl06-public/content/v/201311/) \(utgått\)
 * [2016/04](https://kl06-doc.gitbooks.io/kl06-public/content/v/201604/)
 
 ### Nytt i versjon 2018/02
