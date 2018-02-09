@@ -78,29 +78,25 @@ Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og eksamensform {#odata-og-hovedomraade}
 
-For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Karakter](http://data.udir.no/kl06/odata/Karakter).
+For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Eksamensform](http://data.udir.no/kl06/odata/Karakter).
 
 Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og eksamensordning {#odata-og-hovedomraade}
 
-For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Karakter](http://data.udir.no/kl06/odata/Karakter).
+For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Ekasmensordning](http://data.udir.no/kl06/odata/Karakter).
 
 Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og trekkordning {#odata-og-hovedomraade}
 
-For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Karakter](http://data.udir.no/kl06/odata/Karakter).
+For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/](http://data.udir.no/kl06/odata/Karakter)Trekkordning.
 
 Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og vurderingsuttrykk {#odata-og-hovedomraade}
 
-For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Karakter](http://data.udir.no/kl06/odata/Karakter).
+For å spørre etter karakterer, oppgir du URL’en [http://data.udir.no/kl06/odata/Vurderingsuttrykk](http://beta-data.udir.no/kl06/odata/Vurderingsuttrykk).
 
 Filtreringsmulighetene er de samme som for fagkoder.
-
-
-
-
 
