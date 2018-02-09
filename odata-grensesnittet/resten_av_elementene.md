@@ -1,24 +1,24 @@
 ## OData og programområder {#odata-og-programomr-der}
 
-For å spørre etter programområder, oppgir du URL’en [http://data.udir.no/kl06/odata/Programområde](http://data.udir.no/kl06/odata/Programområde)
+For å spørre etter programområder, oppgir du URL’en [http://beta-data.udir.no/kl06/odata/Programområde](http://beta-data.udir.no/kl06/odata/Programområde).
 
 Filtreringsmulighetene er de samme som for fagkoder
 
 ## OData og utdanningsprogram {#odata-og-utdanningsprogram}
 
-For å spørre etter utdanningsprogram, oppgir du URL’en [http://data.udir.no/kl06/odata/Utdanningsprogram](http://data.udir.no/kl06/odata/Utdanningsprogram)
+For å spørre etter utdanningsprogram, oppgir du URL’en [http://beta-data.udir.no/kl06/odata/Utdanningsprogram](http://beta-data.udir.no/kl06/odata/Utdanningsprogram).
 
 Filtreringsmulighetene er de samme som for fagkoder
 
 ## OData og merknader {#odata-og-merknader}
 
-For å spørre etter merknader, oppgir du URL’en [http://data.udir.no/kl06/odata/Merknad](http://data.udir.no/kl06/odata/Merknad)
+For å spørre etter merknader, oppgir du URL’en [http://beta-data.udir.no/kl06/odata/Merknad](http://beta-data.udir.no/kl06/odata/Merknad).
 
 Filtreringsmulighetene er de samme som for fagkoder
 
 ## OData og merkelapper {#odata-og-merkelapper}
 
-For å spørre etter merkelapper, oppgir du URL’en [http://data.udir.no/kl06/odata/Merkelapp](http://data.udir.no/kl06/odata/Merkelapp)
+For å spørre etter merkelapper, oppgir du URL’en [http://beta-data.udir.no/kl06/odata/Merkelapp](http://beta-data.udir.no/kl06/odata/Merkelapp).
 
 Filtreringsmulighetene er de samme som for fagkoder
 
@@ -90,7 +90,7 @@ Filtreringsmulighetene er de samme som for fagkoder.
 
 ## OData og trekkordning {#odata-og-hovedomraade}
 
-For å spørre etter karakterer, oppgir du URL’en http://beta-data.udir.no/kl06/odata/Trekkordning.
+For å spørre etter karakterer, oppgir du URL’en [http://beta-data.udir.no/kl06/odata/Trekkordning](http://beta-data.udir.no/kl06/odata/Trekkordning).
 
 Filtreringsmulighetene er de samme som for fagkoder.
 
