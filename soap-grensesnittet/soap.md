@@ -1,11 +1,13 @@
 # SOAP-grensesnittet {#soap-grensesnittet}
 
-Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://data.udir.no/kl06/soap](http://data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl) og [http://](http://data.udir.no/kl06/soap?wsdl)data.udir.no/kl06/soap?wsdl&version=201802. Kontrakten inneholder tjenestekontrakten og alle relevante datatyper.
+Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://data.udir.no/kl06/soap](http://data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://data.udir.no/kl06/soap?wsdl&version=v201604](http://data.udir.no/kl06/soap?wsdl&version=v201604) og [http://data.udir.no/kl06/soap?wsdl&version=v201802](http://data.udir.no/kl06/soap?wsdl&version=v201802). Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
 
 Tilgjengelige versjoner:
 
-* [201604](http://data.udir.no/kl06/soap?wsdl)
+* [201604](http://data.udir.no/kl06/soap?wsdl&version=v201604)
 * [201802](http://data.udir.no/kl06/soap?wsdl&version=201802)
+
+[http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl) peker på versjon 201604. Og det er mulig å adressere de to versjonene ved å legge inn versjon i url. Henholdsvis [http://data.udir.no/kl06/v201604/soap?wsdl](http://data.udir.no/kl06/v201604/soap?wsdl) og [http://data.udir.no/kl06/v201802/soap?wsdl](http://data.udir.no/kl06/v201802/soap?wsdl).
 
 SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep.
 
