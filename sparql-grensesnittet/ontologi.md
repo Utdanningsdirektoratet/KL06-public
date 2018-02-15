@@ -6,7 +6,7 @@ Alle typer og egenskaper \(classes and properties\) i datamodellen til Grep er U
 
 Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.udir.no/ontologi/kl06/). Dette er den "menneskelesbare" delen av ontologien. Engelsk versjon er tilgjengelig på [http://psi.udir.no/ontologi/kl06?culture=en](http://psi.udir.no/ontologi/kl06?culture=en).
 
-![](/assets/Capture.PNG)
+![](/sparql-grensesnittet/86f9c49f-4ea8-47a4-b555-b9502892b114.png)
 
 Denne siden er delt i tre deler,
 
@@ -22,7 +22,7 @@ Denne siden er delt i tre deler,
   * "Domain"; url-referanse til typen\(e\) den er egenskap for
   * "Range"; hvilke\(n\) type eller egenskap som opptrer som axiom/postulat i sammenhengen \(se illustrasjonen med eksempel nedenfor\)
 
-![Eksempel på property i ontologien](eksempel_paa_property_i_ontologien.png)  
+![](/sparql-grensesnittet/f884ea1a-7771-4c57-9ef1-4151f5e2340d.png)  
 _Eksempel: Typen "fagkode" har en egenskap, "naar-kan-man-ta-eksamen-foerste-semester", som angir en forekomst av typen "semester"_  
 _\[alternativ bildetekst: Det er forekomster av typen "semester" som listes opp for å angi egenskapen "naar-kan-man-ta-eksamen-foerste-semester" for en forekomst av typen "fagkode".\]_  
 \*
