@@ -3,6 +3,7 @@
 Oppsummering av endringer som medfører nytt versjonsnummer.
 
 Parametere som har blitt fjernet:
+
 * id i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.id
 * urlpsi i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.urlpsi
 * noekkel i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.tittel.noekkel
@@ -352,23 +353,29 @@ Parametere som har blitt fjernet:
 * status i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.status
 * urlpsi i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.urlpsi
 * noekkel i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.tittel.noekkel
-Parametere som har endret type
-Parameter fagtype har endret type fra hjelpedataverdi til basereferanse
-Dette gjelder på følgende steder
+  Parametere som har endret type
+  Parameter fagtype har endret type fra hjelpedataverdi til basereferanse
+  Dette gjelder på følgende steder
 * Respons fra metode HentPlanFraKode: laereplan
 * Respons fra metode HentPlanFraPsi: laereplan
 * Respons fra metode HentFagkodeFraKode: fagkode
 * Respons fra metode HentFagkodeFraPsi: fagkode
 * Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag
 * Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag
-________________________________________
-Parameter tilgjengeligespraak har endret type fra hjelpedataverdi[] til basereferanse[]
+
+---
+
+Parameter tilgjengeligespraak har endret type fra hjelpedataverdi\[\] til basereferanse\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentPlanFraKode: laereplan
 * Respons fra metode HentPlanFraPsi: laereplan
-________________________________________
-Parameter merkelapper har endret type fra referanse[] til basereferanse[]
+
+---
+
+Parameter merkelapper har endret type fra referanse\[\] til basereferanse\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentPlanFraKode: laereplan
 * Respons fra metode HentPlanFraPsi: laereplan
 * Respons fra metode HentFagkodeFraKode: fagkode
@@ -377,14 +384,20 @@ Dette gjelder på følgende steder
 * Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag
 * Respons fra metode HentProgramomraadeFraKode: programomraade
 * Respons fra metode HentProgramomraadeFraPsi: programomraade
-________________________________________
-Parameter opplaeringsnivaa har endret type fra hjelpedataverdi[] til basereferanse[]
+
+---
+
+Parameter opplaeringsnivaa har endret type fra hjelpedataverdi\[\] til basereferanse\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentPlanFraKode: laereplan
 * Respons fra metode HentPlanFraPsi: laereplan
-________________________________________
-Parameter status har endret type fra hjelpedataverdi til String
+
+---
+
+Parameter status har endret type fra hjelpedataverdi til String  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentPlanFraKode: laereplan
 * Respons fra metode HentPlanFraPsi: laereplan
 * Respons fra metode HentFagkodeFraKode: fagkode
@@ -403,58 +416,88 @@ Dette gjelder på følgende steder
 * Respons fra metode HentFagomraadeFraPsi: fagomraade
 * Respons fra metode HentFagkategoriFraKode: fagkategori
 * Respons fra metode HentFagkategoriFraPsi: fagkategori
-________________________________________
-Parameter fastsattspraak har endret type fra hjelpedataverdi til basereferanse
+
+---
+
+Parameter fastsattspraak har endret type fra hjelpedataverdi til basereferanse  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentPlanFraKode: laereplan.fastsettelsesinformasjon
 * Respons fra metode HentPlanFraPsi: laereplan.fastsettelsesinformasjon
-________________________________________
-Parameter opplaeringsnivaa har endret type fra hjelpedataverdi til basereferanse
+
+---
+
+Parameter opplaeringsnivaa har endret type fra hjelpedataverdi til basereferanse  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentFagkodeFraKode: fagkode
 * Respons fra metode HentFagkodeFraPsi: fagkode
 * Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag
 * Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag
-________________________________________
-Parameter opplaeringsfag har endret type fra referanse[] til referansemedgyldighet[]
+
+---
+
+Parameter opplaeringsfag har endret type fra referanse\[\] til referansemedgyldighet\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentFagkodeFraKode: fagkode
 * Respons fra metode HentFagkodeFraPsi: fagkode
-________________________________________
-Parameter fagkodereferanser har endret type fra referanse[] til referansemedgyldighet[]
+
+---
+
+Parameter fagkodereferanser har endret type fra referanse\[\] til referansemedgyldighet\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag
 * Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag
-________________________________________
-Parameter tilhoerendekompetansemaalsett har endret type fra String[] til referansemedgyldighet[]
+
+---
+
+Parameter tilhoerendekompetansemaalsett har endret type fra String\[\] til referansemedgyldighet\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.laereplanreferanse
 * Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.laereplanreferanse
 * Respons fra metode HentKompetansemaalFraKode: kompetansemaal.laereplanreferanser
 * Respons fra metode HentKompetansemaalFraPsi: kompetansemaal.laereplanreferanser
-________________________________________
-Parameter programomraadetype har endret type fra String til hjelpedataverdi
+
+---
+
+Parameter programomraadetype har endret type fra String til hjelpedataverdi  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentProgramomraadeFraKode: programomraade
 * Respons fra metode HentProgramomraadeFraPsi: programomraade
-________________________________________
-Parameter aarstrinn har endret type fra hjelpedataverdi til basereferanse
+
+---
+
+Parameter aarstrinn har endret type fra hjelpedataverdi til basereferanse  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentProgramomraadeFraKode: programomraade
 * Respons fra metode HentProgramomraadeFraPsi: programomraade
-________________________________________
-Parameter byggerpaaprogramomraade har endret type fra referanse[] til referansemedgyldighetsperiodeogloepstype[]
+
+---
+
+Parameter byggerpaaprogramomraade har endret type fra referanse\[\] til referansemedgyldighetsperiodeogloepstype\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentProgramomraadeFraKode: programomraade
 * Respons fra metode HentProgramomraadeFraPsi: programomraade
-________________________________________
-Parameter fagkategori har endret type fra referanse til referansemedgyldighet[]
+
+---
+
+Parameter fagkategori har endret type fra referanse til referansemedgyldighet\[\]  
 Dette gjelder på følgende steder
+
 * Respons fra metode HentFagomraadeFraKode: fagomraade
 * Respons fra metode HentFagomraadeFraPsi: fagomraade
-________________________________________
-Oppsummering av endringer som ikke bryter kontrakten
+
+---
+
+Oppsummering av endringer som ikke bryter kontrakten  
 Metoder som har blitt lagt til
+
 * HentAarstrinnFraKode
 * FinnSpraak
 * HentSpraakFraKode
@@ -464,14 +507,14 @@ Metoder som har blitt lagt til
 * HentOpplaeringsnivaaFraKode
 * FinnFagtype
 * HentFagtypeFraKode
-Parametere som har blitt lagt til
+  Parametere som har blitt lagt til
 * psi av typen String i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.psi
 * uri av typen String i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnPlaner: laereplansoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentPlanFraKode input: hentlaereplanfrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentPlanFraKode input: hentlaereplanfrakoderequest.tidspunkt
 * gyldighetsperiode av typen gyldighetsperiode i metoden Respons fra metode HentPlanFraKode: laereplan.gyldighetsperiode
-* erstattesav av typen referanse[] i metoden Respons fra metode HentPlanFraKode: laereplan.erstattesav
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentPlanFraKode: laereplan.erstattesav
 * formaalkapittel av typen overskriftogtekst i metoden Respons fra metode HentPlanFraKode: laereplan.formaalkapittel
 * timetallkapittel av typen overskriftogtekst i metoden Respons fra metode HentPlanFraKode: laereplan.timetallkapittel
 * grunnleggendeferdigheterkapittel av typen grunnleggendeferdigheter i metoden Respons fra metode HentPlanFraKode: laereplan.grunnleggendeferdigheterkapittel
@@ -487,9 +530,9 @@ Parametere som har blitt lagt til
 * spraak av typen String i metoden Respons fra metode HentPlanFraKode: laereplan.fastsettelsesinformasjon.fastsattdatooverskrift.spraak
 * uri av typen String i metoden Respons fra metode HentPlanFraKode: laereplan.erstatter.uri
 * spraak av typen String i metoden Respons fra metode HentPlanFraKode: laereplan.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentPlanFraPsi input: hentlaereplanfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentPlanFraPsi input: hentlaereplanfrapsirequest.tidspunkt
 * gyldighetsperiode av typen gyldighetsperiode i metoden Respons fra metode HentPlanFraPsi: laereplan.gyldighetsperiode
-* erstattesav av typen referanse[] i metoden Respons fra metode HentPlanFraPsi: laereplan.erstattesav
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentPlanFraPsi: laereplan.erstattesav
 * formaalkapittel av typen overskriftogtekst i metoden Respons fra metode HentPlanFraPsi: laereplan.formaalkapittel
 * timetallkapittel av typen overskriftogtekst i metoden Respons fra metode HentPlanFraPsi: laereplan.timetallkapittel
 * grunnleggendeferdigheterkapittel av typen grunnleggendeferdigheter i metoden Respons fra metode HentPlanFraPsi: laereplan.grunnleggendeferdigheterkapittel
@@ -509,13 +552,13 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnFagkoder: fagkodesoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnFagkoder: fagkodesoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnFagkoder: fagkodesoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentFagkodeFraKode input: hentfagkodefrakoderequest.tidspunkt
-* gyldigfra av typen Nullable`1 i metoden Respons fra metode HentFagkodeFraKode: fagkode.gyldigfra
-* gyldigtil av typen Nullable`1 i metoden Respons fra metode HentFagkodeFraKode: fagkode.gyldigtil
+* tidspunkt av typen Nullable\`1 i metoden HentFagkodeFraKode input: hentfagkodefrakoderequest.tidspunkt
+* gyldigfra av typen Nullable\`1 i metoden Respons fra metode HentFagkodeFraKode: fagkode.gyldigfra
+* gyldigtil av typen Nullable\`1 i metoden Respons fra metode HentFagkodeFraKode: fagkode.gyldigtil
 * omfangtilnaa av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.omfangtilnaa
-* vurderingsordning av typen vurderingsordning[] i metoden Respons fra metode HentFagkodeFraKode: fagkode.vurderingsordning
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentFagkodeFraKode: fagkode.tilleggsopplysninger
-* benyttessammenmed av typen referanse[] i metoden Respons fra metode HentFagkodeFraKode: fagkode.benyttessammenmed
+* vurderingsordning av typen vurderingsordning\[\] i metoden Respons fra metode HentFagkodeFraKode: fagkode.vurderingsordning
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentFagkodeFraKode: fagkode.tilleggsopplysninger
+* benyttessammenmed av typen referanse\[\] i metoden Respons fra metode HentFagkodeFraKode: fagkode.benyttessammenmed
 * greptype av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.greptype
 * uri av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.uri
 * uri av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.erstatter1.uri
@@ -543,12 +586,12 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.erstatter.uri
 * uri av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.erstattesav.uri
 * spraak av typen String i metoden Respons fra metode HentFagkodeFraKode: fagkode.tittel.spraak
-* gyldigfra av typen Nullable`1 i metoden Respons fra metode HentFagkodeFraPsi: fagkode.gyldigfra
-* gyldigtil av typen Nullable`1 i metoden Respons fra metode HentFagkodeFraPsi: fagkode.gyldigtil
+* gyldigfra av typen Nullable\`1 i metoden Respons fra metode HentFagkodeFraPsi: fagkode.gyldigfra
+* gyldigtil av typen Nullable\`1 i metoden Respons fra metode HentFagkodeFraPsi: fagkode.gyldigtil
 * omfangtilnaa av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.omfangtilnaa
-* vurderingsordning av typen vurderingsordning[] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.vurderingsordning
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.tilleggsopplysninger
-* benyttessammenmed av typen referanse[] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.benyttessammenmed
+* vurderingsordning av typen vurderingsordning\[\] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.vurderingsordning
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.tilleggsopplysninger
+* benyttessammenmed av typen referanse\[\] i metoden Respons fra metode HentFagkodeFraPsi: fagkode.benyttessammenmed
 * greptype av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.greptype
 * uri av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.uri
 * uri av typen String i metoden Respons fra metode HentFagkodeFraPsi: fagkode.erstatter1.uri
@@ -580,10 +623,10 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnOpplaeringsfag: opplaeringsfagsoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnOpplaeringsfag: opplaeringsfagsoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnOpplaeringsfag: opplaeringsfagsoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentOpplaeringsfagFraKode input: hentopplaeringsfagfrakoderequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.tilleggsopplysninger
-* programomraaderreferanse av typen referansemedgyldighet[] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.programomraaderreferanse
-* fortsetteropplaeringisammekompetansemaalsettsom av typen referansemedgyldighet[] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.fortsetteropplaeringisammekompetansemaalsettsom
+* tidspunkt av typen Nullable\`1 i metoden HentOpplaeringsfagFraKode input: hentopplaeringsfagfrakoderequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.tilleggsopplysninger
+* programomraaderreferanse av typen referansemedgyldighet\[\] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.programomraaderreferanse
+* fortsetteropplaeringisammekompetansemaalsettsom av typen referansemedgyldighet\[\] i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.fortsetteropplaeringisammekompetansemaalsettsom
 * greptype av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.greptype
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.uri
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.laereplanreferanse.uri
@@ -596,10 +639,10 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.erstatter.uri
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.erstattesav.uri
 * spraak av typen String i metoden Respons fra metode HentOpplaeringsfagFraKode: opplaeringsfag.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentOpplaeringsfagFraPsi input: hentopplaeringsfagfrapsirequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.tilleggsopplysninger
-* programomraaderreferanse av typen referansemedgyldighet[] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.programomraaderreferanse
-* fortsetteropplaeringisammekompetansemaalsettsom av typen referansemedgyldighet[] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.fortsetteropplaeringisammekompetansemaalsettsom
+* tidspunkt av typen Nullable\`1 i metoden HentOpplaeringsfagFraPsi input: hentopplaeringsfagfrapsirequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.tilleggsopplysninger
+* programomraaderreferanse av typen referansemedgyldighet\[\] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.programomraaderreferanse
+* fortsetteropplaeringisammekompetansemaalsettsom av typen referansemedgyldighet\[\] i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.fortsetteropplaeringisammekompetansemaalsettsom
 * greptype av typen String i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.greptype
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.uri
 * uri av typen String i metoden Respons fra metode HentOpplaeringsfagFraPsi: opplaeringsfag.laereplanreferanse.uri
@@ -616,10 +659,10 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnUtdanningsprogram: utdanningsprogramsoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnUtdanningsprogram: utdanningsprogramsoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnUtdanningsprogram: utdanningsprogramsoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentUtdanningsprogramFraKode input: hentutdanningsprogramfrakoderequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.tilleggsopplysninger
-* erstatter av typen referanse[] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.erstatter
-* erstattesav av typen referanse[] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.erstattesav
+* tidspunkt av typen Nullable\`1 i metoden HentUtdanningsprogramFraKode input: hentutdanningsprogramfrakoderequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.tilleggsopplysninger
+* erstatter av typen referanse\[\] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.erstatter
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.erstattesav
 * greptype av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.greptype
 * uri av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.uri
 * spraak av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.kortform.spraak
@@ -633,10 +676,10 @@ Parametere som har blitt lagt til
 * greptype av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.sistesemester.greptype
 * spraak av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.sistesemester.beskrivelse.spraak
 * spraak av typen String i metoden Respons fra metode HentUtdanningsprogramFraKode: utdanningsprogram.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentUtdanningsprogramFraPsi input: hentutdanningsprogramfrapsirequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.tilleggsopplysninger
-* erstatter av typen referanse[] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.erstatter
-* erstattesav av typen referanse[] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.erstattesav
+* tidspunkt av typen Nullable\`1 i metoden HentUtdanningsprogramFraPsi input: hentutdanningsprogramfrapsirequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.tilleggsopplysninger
+* erstatter av typen referanse\[\] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.erstatter
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.erstattesav
 * greptype av typen String i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.greptype
 * uri av typen String i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.uri
 * spraak av typen String i metoden Respons fra metode HentUtdanningsprogramFraPsi: utdanningsprogram.kortform.spraak
@@ -654,11 +697,11 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnProgramomraader: programomraadesoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnProgramomraader: programomraadesoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnProgramomraader: programomraadesoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentProgramomraadeFraKode input: hentprogramomraadefrakoderequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.tilleggsopplysninger
-* erstatter av typen referanse[] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.erstatter
-* erstattesav av typen referanse[] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.erstattesav
-* utdanningsprogramreferanse av typen referansemedgyldighet[] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.utdanningsprogramreferanse
+* tidspunkt av typen Nullable\`1 i metoden HentProgramomraadeFraKode input: hentprogramomraadefrakoderequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.tilleggsopplysninger
+* erstatter av typen referanse\[\] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.erstatter
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.erstattesav
+* utdanningsprogramreferanse av typen referansemedgyldighet\[\] i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.utdanningsprogramreferanse
 * greptype av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.greptype
 * uri av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.uri
 * spraak av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.kortform.spraak
@@ -676,11 +719,11 @@ Parametere som har blitt lagt til
 * greptype av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.sluttkompetanse.greptype
 * spraak av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.sluttkompetanse.beskrivelse.spraak
 * spraak av typen String i metoden Respons fra metode HentProgramomraadeFraKode: programomraade.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentProgramomraadeFraPsi input: hentprogramomraadefrapsirequest.tidspunkt
-* tilleggsopplysninger av typen spraakversjonert[] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.tilleggsopplysninger
-* erstatter av typen referanse[] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.erstatter
-* erstattesav av typen referanse[] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.erstattesav
-* utdanningsprogramreferanse av typen referansemedgyldighet[] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.utdanningsprogramreferanse
+* tidspunkt av typen Nullable\`1 i metoden HentProgramomraadeFraPsi input: hentprogramomraadefrapsirequest.tidspunkt
+* tilleggsopplysninger av typen spraakversjonert\[\] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.tilleggsopplysninger
+* erstatter av typen referanse\[\] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.erstatter
+* erstattesav av typen referanse\[\] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.erstattesav
+* utdanningsprogramreferanse av typen referansemedgyldighet\[\] i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.utdanningsprogramreferanse
 * greptype av typen String i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.greptype
 * uri av typen String i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.uri
 * spraak av typen String i metoden Respons fra metode HentProgramomraadeFraPsi: programomraade.kortform.spraak
@@ -702,7 +745,7 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnMerknader: merknadsoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnMerknader: merknadsoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnMerknader: merknadsoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentMerknadFraKode input: hentmerknadfrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentMerknadFraKode input: hentmerknadfrakoderequest.tidspunkt
 * gyldighetsperiode av typen gyldighetsperiode i metoden Respons fra metode HentMerknadFraKode: merknad.gyldighetsperiode
 * greptype av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.greptype
 * uri av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.uri
@@ -721,7 +764,7 @@ Parametere som har blitt lagt til
 * greptype av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.relaterteaarstrinn.greptype
 * spraak av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.relaterteaarstrinn.beskrivelse.spraak
 * spraak av typen String i metoden Respons fra metode HentMerknadFraKode: merknad.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentMerknadFraPsi input: hentmerknadfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentMerknadFraPsi input: hentmerknadfrapsirequest.tidspunkt
 * gyldighetsperiode av typen gyldighetsperiode i metoden Respons fra metode HentMerknadFraPsi: merknad.gyldighetsperiode
 * greptype av typen String i metoden Respons fra metode HentMerknadFraPsi: merknad.greptype
 * uri av typen String i metoden Respons fra metode HentMerknadFraPsi: merknad.uri
@@ -744,14 +787,14 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnMerkelapper: merkelappsoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnMerkelapper: merkelappsoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnMerkelapper: merkelappsoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentMerkelappFraKode input: hentmerkelappfrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentMerkelappFraKode input: hentmerkelappfrakoderequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.greptype
 * uri av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.uri
 * uri av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.tilknyttedefag.uri
 * uri av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.tilknyttedelaereplaner.uri
 * uri av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.tilknyttedeprogramomraader.uri
 * spraak av typen String i metoden Respons fra metode HentMerkelappFraKode: merkelapp.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentMerkelappFraPsi input: hentmerkelappfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentMerkelappFraPsi input: hentmerkelappfrapsirequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentMerkelappFraPsi: merkelapp.greptype
 * uri av typen String i metoden Respons fra metode HentMerkelappFraPsi: merkelapp.uri
 * uri av typen String i metoden Respons fra metode HentMerkelappFraPsi: merkelapp.tilknyttedefag.uri
@@ -762,12 +805,12 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnKompetansemaal: kompetansemaalsoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnKompetansemaal: kompetansemaalsoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnKompetansemaal: kompetansemaalsoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentKompetansemaalFraKode input: hentkompetansemaalfrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentKompetansemaalFraKode input: hentkompetansemaalfrakoderequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentKompetansemaalFraKode: kompetansemaal.greptype
 * uri av typen String i metoden Respons fra metode HentKompetansemaalFraKode: kompetansemaal.uri
 * uri av typen String i metoden Respons fra metode HentKompetansemaalFraKode: kompetansemaal.laereplanreferanser.uri
 * spraak av typen String i metoden Respons fra metode HentKompetansemaalFraKode: kompetansemaal.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentKompetansemaalFraPsi input: hentkompetansemaalfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentKompetansemaalFraPsi input: hentkompetansemaalfrapsirequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentKompetansemaalFraPsi: kompetansemaal.greptype
 * uri av typen String i metoden Respons fra metode HentKompetansemaalFraPsi: kompetansemaal.uri
 * uri av typen String i metoden Respons fra metode HentKompetansemaalFraPsi: kompetansemaal.laereplanreferanser.uri
@@ -776,11 +819,11 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnFagomraader: fagomraadersoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnFagomraader: fagomraadersoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnFagomraader: fagomraadersoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentFagomraadeFraKode input: hentfagomraaderfrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentFagomraadeFraKode input: hentfagomraaderfrakoderequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentFagomraadeFraKode: fagomraade.greptype
 * uri av typen String i metoden Respons fra metode HentFagomraadeFraKode: fagomraade.uri
 * spraak av typen String i metoden Respons fra metode HentFagomraadeFraKode: fagomraade.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentFagomraadeFraPsi input: hentfagomraaderfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentFagomraadeFraPsi input: hentfagomraaderfrapsirequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentFagomraadeFraPsi: fagomraade.greptype
 * uri av typen String i metoden Respons fra metode HentFagomraadeFraPsi: fagomraade.uri
 * spraak av typen String i metoden Respons fra metode HentFagomraadeFraPsi: fagomraade.tittel.spraak
@@ -788,25 +831,28 @@ Parametere som har blitt lagt til
 * uri av typen String i metoden Respons fra metode FinnFagkategorier: fagkategorisoekrespons.treff.uri
 * greptype av typen String i metoden Respons fra metode FinnFagkategorier: fagkategorisoekrespons.treff.greptype
 * spraak av typen String i metoden Respons fra metode FinnFagkategorier: fagkategorisoekrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentFagkategoriFraKode input: hentfagkategorifrakoderequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentFagkategoriFraKode input: hentfagkategorifrakoderequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentFagkategoriFraKode: fagkategori.greptype
 * uri av typen String i metoden Respons fra metode HentFagkategoriFraKode: fagkategori.uri
 * spraak av typen String i metoden Respons fra metode HentFagkategoriFraKode: fagkategori.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentFagkategoriFraPsi input: hentfagkategorifrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentFagkategoriFraPsi input: hentfagkategorifrapsirequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentFagkategoriFraPsi: fagkategori.greptype
 * uri av typen String i metoden Respons fra metode HentFagkategoriFraPsi: fagkategori.uri
 * spraak av typen String i metoden Respons fra metode HentFagkategoriFraPsi: fagkategori.tittel.spraak
 * greptype av typen String i metoden Respons fra metode FinnAarstrinn: finnaarstrinnrespons.treff.greptype
 * uri av typen String i metoden Respons fra metode FinnAarstrinn: finnaarstrinnrespons.treff.uri
 * spraak av typen String i metoden Respons fra metode FinnAarstrinn: finnaarstrinnrespons.treff.tittel.spraak
-* tidspunkt av typen Nullable`1 i metoden HentAarstrinnFraPsi input: finnårstrinnfrapsirequest.tidspunkt
+* tidspunkt av typen Nullable\`1 i metoden HentAarstrinnFraPsi input: finnårstrinnfrapsirequest.tidspunkt
 * greptype av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.greptype
 * uri av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.uri
 * spraak av typen String i metoden Respons fra metode HentAarstrinnFraPsi: aarstrinn.tittel.spraak
-________________________________________
-Endringer i soap (v. 2016/04) 14. september:
 
-Metoder som har blitt lagt til 
+---
+
+Endringer i soap \(v. 2016/04\) 14. september:
+
+Metoder som har blitt lagt til
+
 * FinnKompetansemaalsett
 * HentKompetansemaalsettFraKode 
 * FinnHovedomraade
@@ -818,4 +864,8 @@ Parametere som har blitt lagt til
 
 * rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraKode: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge
 * rekkefoelge av typen Int32 i metoden Respons fra metode HentPlanFraPsi: laereplan.kompetansemaalkapittel.kompetansemaalsett.hovedomraaderikontekstavkompetansemaalsett.rekkefoelge
-________________________________________
+
+---
+
+
+
