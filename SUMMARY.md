@@ -29,7 +29,6 @@
   * [URL-syntaks for ontologien og PSI-oppslag](sparql-grensesnittet/url-syntaks_for_ontologien_og_psi-oppslag.md)
   * [SPARQL-endepunkt](sparql-grensesnittet/sparql-endepunkt.md)
     * [Strategi: Hvordan angripe materien](sparql-grensesnittet/strategi-hvordan-angripe-materien.md)
-    * [test](sparql-grensesnittet/test.md)
 * [Eksempler](eksempler/eksempler.md)
   * [REST-grensesnittet](eksempler/rest-grensesnitt.md)
   * [SOAP-grensesnittet](eksempler/soap-grensesnitt.md)
