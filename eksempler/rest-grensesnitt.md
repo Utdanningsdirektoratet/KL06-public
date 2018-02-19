@@ -6,8 +6,7 @@ Følgende html-dokument benytter JQuery og REST-grensesnittet for å liste ut en
 
 Test.html:
 
-{%ace edit=false, check=false%}
-<!DOCTYPE html>
+{%ace edit=false, check=false, lang='xml'%}
 <html>
   <head>
     <title>Test</title>
