@@ -15,17 +15,17 @@ I dette punktet vil vi vise hvordan du kan skaffe deg oversikt over
 ### Hvilke typer finnes i datagrunnlaget?
 Kjør følgende spørring i SPARQL-grensesnittet i Grep (kopier spørringen nedenfor og lim inn i "spørre-feltet" til [endepunktet]
 
-(http://data.udir.no/kl06/sparql)).
+(http://beta-data.udir.no/kl06/sparql)).
 
 {%ace edit=false, check=false, lang='sql'%}
-PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
+PREFIX ontologi: <http://beta-psi.udir.no/ontologi/kl06/>
 SELECT DISTINCT ?type
 WHERE {
 ?s ontologi:grep-type ?type
 }
 {%endace%}
 
-*Legg merke til linje 1:* ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>```*. Denne er med, for at vi skal slippe å skrive hele URLen i f.eks linje 4, men heller skrive* ```ontologi:grep-type```*. Med andre ord - på linje 4 står det egentlig: *```?s <http://psi.udir.no/ontologi/kl06/grep-type> ?type```.
+*Legg merke til linje 1:* ```PREFIX ontologi: <http://beta-psi.udir.no/ontologi/kl06/>```*. Denne er med, for at vi skal slippe å skrive hele URLen i f.eks linje 4, men heller skrive* ```ontologi:grep-type```*. Med andre ord - på linje 4 står det egentlig: *```?s <http://psi.udir.no/ontologi/kl06/grep-type> ?type```.
 *Oversatt til menneskespråk: "Gi meg subjekt (kalt "?s") der predikatet er "grep-type", og gi det navnet "type" i tebellen/resultatet".*
 
 Legg også merke til semantikken i RDF og SPARQL-spørringer. Et statement, en graf eller en spørring består av tripler med følgende syntaks:
@@ -35,24 +35,24 @@ Spørringen over gir følgende resultat (ved valg av HTML som resultat-format):
 
 | **type** |
 | -- |
-| http://psi.udir.no/ontologi/kl06/fagkode |
-| http://psi.udir.no/ontologi/kl06/status |
-| http://psi.udir.no/ontologi/kl06/laereplan |
-| http://psi.udir.no/ontologi/kl06/fagkategori |
-| http://psi.udir.no/ontologi/kl06/fagomraade |
-| http://psi.udir.no/ontologi/kl06/opplaeringsfag |
-| http://psi.udir.no/ontologi/kl06/utdanningsprogram |
-| http://psi.udir.no/ontologi/kl06/programomraade |
-| http://psi.udir.no/ontologi/kl06/merknad |
-| http://psi.udir.no/ontologi/kl06/opplaeringsnivaa |
-| http://psi.udir.no/ontologi/kl06/aarstrinn |
-| http://psi.udir.no/ontologi/kl06/spraak |
-| http://psi.udir.no/ontologi/kl06/fagtype |
-| http://psi.udir.no/ontologi/kl06/merkelapp |
-| http://psi.udir.no/ontologi/kl06/kompetansemaal |
-| http://psi.udir.no/ontologi/kl06/hovedomraade |
-| http://psi.udir.no/ontologi/kl06/kompetansemaalsett |
-| http://psi.udir.no/ontologi/kl06/programfag |
+| http://beta-psi.udir.no/ontologi/kl06/fagkode |
+| http://beta-psi.udir.no/ontologi/kl06/status |
+| http://beta-psi.udir.no/ontologi/kl06/laereplan |
+| http://beta-psi.udir.no/ontologi/kl06/fagkategori |
+| http://beta-psi.udir.no/ontologi/kl06/fagomraade |
+| http://beta-psi.udir.no/ontologi/kl06/opplaeringsfag |
+| http://beta-psi.udir.no/ontologi/kl06/utdanningsprogram |
+| http://beta-psi.udir.no/ontologi/kl06/programomraade |
+| http://beta-psi.udir.no/ontologi/kl06/merknad |
+| http://beta-psi.udir.no/ontologi/kl06/opplaeringsnivaa |
+| http://beta-psi.udir.no/ontologi/kl06/aarstrinn |
+| http://beta-psi.udir.no/ontologi/kl06/spraak |
+| http://beta-psi.udir.no/ontologi/kl06/fagtype |
+| http://beta-psi.udir.no/ontologi/kl06/merkelapp |
+| http://beta-psi.udir.no/ontologi/kl06/kompetansemaal |
+| http://beta-psi.udir.no/ontologi/kl06/hovedomraade |
+| http://beta-psi.udir.no/ontologi/kl06/kompetansemaalsett |
+| http://beta-psi.udir.no/ontologi/kl06/programfag |
 *Spørringen lister opp alle elementer som er "grep-type" i databasen.*
 
 Vi kan også spørre om alle egenskaper/properties i databasen:
@@ -66,7 +66,7 @@ WHERE {
 ...men det hjelper oss kanskje ikke til å finne ut hvilke egenskaper en bestemt type har. Men det gjør følgende spørring, som lister opp alle egenskapene til typen *kompetansemaal*:
 
 {%ace edit=false, check=false, lang='sql'%}
-PREFIX ontologi:<http://psi.udir.no/ontologi/kl06/>
+PREFIX ontologi:<http://beta-psi.udir.no/ontologi/kl06/>
 SELECT DISTINCT ?egenskap
 WHERE {
 ?s a ontologi:kompetansemaal ;
@@ -78,17 +78,17 @@ som gir følgende resultat:
 | **egenskap** |
 | -- |
 | http://www.w3.org/1999/02/22-rdf-syntax-ns#type |
-| http://psi.udir.no/ontologi/kl06/grep-type |
-| http://psi.udir.no/ontologi/kl06/id |
-| http://psi.udir.no/ontologi/kl06/kode |
-| http://psi.udir.no/ontologi/kl06/sist-endret |
-| http://psi.udir.no/ontologi/kl06/status |
-| http://psi.udir.no/ontologi/kl06/tittel |
-| http://psi.udir.no/ontologi/kl06/uri |
-| http://psi.udir.no/ontologi/kl06/url-data |
-| http://psi.udir.no/ontologi/kl06/reversert/har-kompetansemaal |
+| http://beta-psi.udir.no/ontologi/kl06/grep-type |
+| http://beta-psi.udir.no/ontologi/kl06/id |
+| http://beta-psi.udir.no/ontologi/kl06/kode |
+| http://beta-psi.udir.no/ontologi/kl06/sist-endret |
+| http://beta-psi.udir.no/ontologi/kl06/status |
+| http://beta-psi.udir.no/ontologi/kl06/tittel |
+| http://beta-psi.udir.no/ontologi/kl06/uri |
+| http://beta-psi.udir.no/ontologi/kl06/url-data |
+| http://beta-psi.udir.no/ontologi/kl06/reversert/har-kompetansemaal |
 
-Legg spesielt merke til den siste egenskapen i tabellen over. Her har vi en URL som avviker fra ontologien ved å tilføye "/reversert". Denne peker tilbake til en type som har en egenskap som heter "har-kompetansemaal". Hvis vi i ontologien slår opp http://psi.udir.no/ontologi/Kl06/har-kompetansemaal (uten "/reversert"), ser vi at det dreier seg om typen "kompetansemaalsett". Kompetansemålsett består altså av kompetansemål. Vi har lagt på /reversert-koblingen for at det skal være mulig å gå bakover fra kompetansemål til kompetansemålsett der det ikke eksplisitt er med i modellen. 
+Legg spesielt merke til den siste egenskapen i tabellen over. Her har vi en URL som avviker fra ontologien ved å tilføye "/reversert". Denne peker tilbake til en type som har en egenskap som heter "har-kompetansemaal". Hvis vi i ontologien slår opp http://beta-psi.udir.no/ontologi/Kl06/har-kompetansemaal (uten "/reversert"), ser vi at det dreier seg om typen "kompetansemaalsett". Kompetansemålsett består altså av kompetansemål. Vi har lagt på /reversert-koblingen for at det skal være mulig å gå bakover fra kompetansemål til kompetansemålsett der det ikke eksplisitt er med i modellen. 
 
 ## 2: Bruke det du har lært i pkt. 1 til å grave dypere
 Videre kan en gå fra kompetansemålsett til hovedområde (typen "hovedomraade"), og videre il læreplan ("laereplan"), osv. På den måten kan en bygge opp spørringer for å hente ut informasjon fra databasen.
@@ -97,8 +97,8 @@ For eksempel kan det være en utfordring å "finne veien" til læreplanen, fra e
 Denne spørringen gir svaret (vi må gå via opplæringsfag og kompetansemålsett):
 
 {%ace edit=false, check=false, lang='sql'%}
-PREFIX data: <http://psi.udir.no/kl06/>
-PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>
+PREFIX data: <http://beta-psi.udir.no/kl06/>
+PREFIX ontologi: <http://beta-psi.udir.no/ontologi/kl06/>
 SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lptittel WHERE {
 data:NOR0214 ontologi:tittel ?fagkodetittel ;
 ontologi:har-opplaeringsfag ?zkode
@@ -126,7 +126,7 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 
 | **lnr.** | **spørring** | **kommentar** |
 | -- | -- | -- |
-| 1 | ```PREFIX data: <http://psi.udir.no/kl06/>``` | for at vi skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/kl06/NOR0214>``` i linje 5 |
+| 1 | ```PREFIX data: <http://beta-psi.udir.no/kl06/>``` | for at vi skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/kl06/NOR0214>``` i linje 5 |
 | 2 | ```PREFIX ontologi: <http://psi.udir.no/ontologi/kl06/>``` | for at vi f.eks skal kunne skrive ```data:NOR0214``` i stedet for ```<http://psi.udir.no/ontologi/har-opplaeringsfag>``` i linje 6 |
 | 3 | ```SELECT ?fagkodetittel ?zkode ?ztittel ?kms ?lp ?lpittel WHERE { ``` | SELECT: [Se w3.org](https://www.w3.org/TR/sparql11-query/#select); ?[variabelnavn]: Noen av variablene trenger en forklaring: ?zkode; opplæringsfag har koder med "Z", f.eks "NOR1Z56"; ?kms: kompetansemålsett (kode som begynner med "KMS"); ?lp: læreplan; ?lptittel: læreplantittel |
 | 4 | | ekstra linje for oversiktens skyld |
@@ -155,7 +155,7 @@ Nedenfor følger en gjengivelse av spørringen over, denne gangen med kommentare
 
 | **fagkodetittel** | **zkode** | **ztittel** | **kms** | **lp** | **lptittel** |
 | -- | -- | -- | -- | -- | -- |
-| Norsk hovedmål 10. årstrinn, skriftlig | [http://psi.udir.no/](http://psi.udir.no/kl06/NOR1Z56) [kl06/NOR1Z56](http://psi.udir.no/kl06/NOR1Z56) | Norsk 10. årstrinn | [http://psi.udir.no/](http://psi.udir.no/kl06/KMS946) [kl06/KMS946](http://psi.udir.no/kl06/KMS946) | [http://psi.udir.no/](http://psi.udir.no/kl06/NOR1-05) [kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05) | Læreplan i norsk |
+| Norsk hovedmål 10. årstrinn, skriftlig | [http://beta-psi.udir.no/](http://beta-psi.udir.no/kl06/NOR1Z56) [kl06/NOR1Z56](http://beta-psi.udir.no/kl06/NOR1Z56) | Norsk 10. årstrinn | [http://beta-psi.udir.no/](http://beta-psi.udir.no/kl06/KMS946) [kl06/KMS946](http://beta-psi.udir.no/kl06/KMS946) | [http://beta-psi.udir.no/](http://beta-psi.udir.no/kl06/NOR1-05) [kl06/NOR1-05](http://beta-psi.udir.no/kl06/NOR1-05) | Læreplan i norsk |
 
 
 
