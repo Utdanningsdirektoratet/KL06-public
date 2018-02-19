@@ -31,6 +31,7 @@ Greps tjenester tilbyr nå uthenting av følgende typer elementer fra Grep:
 *   Kompetansemålsett
 *   Programfag
 *   Hovedområder
+*   Karakterer
 *   Eksamensform
 *   Eksamenordning
 *   Trekkordning
