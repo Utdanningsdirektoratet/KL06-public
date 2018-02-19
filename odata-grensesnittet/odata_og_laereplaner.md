@@ -1,6 +1,6 @@
 ## OData og læreplaner {#odata-og-l-replaner}
 
-For å spørre etter læreplaner, oppgir du URLen [http://beta-data.udir.no/kl06/odata/Læreplan](http://beta-data.udir.no/kl06/odata/Læreplan).
+For å spørre etter læreplaner, oppgir du URLen [http://data.udir.no/kl06/odata/Læreplan](http://data.udir.no/kl06/odata/Læreplan).
 
 ![](../figurer/figur3.PNG)  
 Figur 3: Læreplaner levert som RSS
