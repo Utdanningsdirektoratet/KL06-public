@@ -16,9 +16,9 @@ Det er i dag støtte for fire ulike varianter
 * Om det ikke finnes fritekst, skal kun overordnede hovedområder listes ut med tittel og beskrivelse
 
 **Eksempler fra KL06:**
-* Variant 1: http://beta-data.udir.no/kl06/MAT1-04.pdf
-* Variant 2: http://beta-data.udir.no/kl06/RLE1-02.pdf
-* Fritekst: http://beta-data.udir.no/kl06/NAT1-03.pdf
+* Variant 1: http://data.udir.no/kl06/MAT1-04.pdf
+* Variant 2: http://data.udir.no/kl06/RLE1-02.pdf
+* Fritekst: http://data.udir.no/kl06/NAT1-03.pdf
 
 **Eksempelkode:**
 
@@ -61,8 +61,8 @@ Det er i dag støtte for fire ulike varianter
 * I tilfeller der det finnes underliggende hovedområder skal disse listes ut under aktuelt programfag
 
 **Eksempler fra KL06:**
-* Variant 3: http://beta-data.udir.no/kl06/POS1-02.pdf
-* Variant 4: http://beta-data.udir.no/kl06/BAT1-01.pdf
+* Variant 3: http://data.udir.no/kl06/POS1-02.pdf
+* Variant 4: http://data.udir.no/kl06/BAT1-01.pdf
 
 **Eksempelkode som dekker begge variantene: **
 
