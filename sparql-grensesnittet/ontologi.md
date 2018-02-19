@@ -4,14 +4,14 @@ Alle typer og egenskaper \(classes and properties\) i datamodellen til Grep er U
 
 ## Ontologi, startside:
 
-Denne oversiktens startside er [http://psi.udir.no/ontologi/kl06/](http://psi.udir.no/ontologi/kl06/). Dette er den "menneskelesbare" delen av ontologien. Engelsk versjon er tilgjengelig på [http://psi.udir.no/ontologi/kl06?culture=en](http://psi.udir.no/ontologi/kl06?culture=en).
+Denne oversiktens startside er [http://beta-psi.udir.no/ontologi/kl06/](http://beta-psi.udir.no/ontologi/kl06/). Dette er den "menneskelesbare" delen av ontologien. Engelsk versjon er tilgjengelig på [http://beta-psi.udir.no/ontologi/kl06?culture=en](http://beta-psi.udir.no/ontologi/kl06?culture=en).
 
 ![](/sparql-grensesnittet/86f9c49f-4ea8-47a4-b555-b9502892b114.png)
 
 Denne siden er delt i tre deler,
 
 * Først en kort introduksjon og informasjon om lisens og våre vilkår for bruk
-  * og lenke til den maskinlesbare [.owl-fila](http://psi.udir.no/Ontologi/kl06.owl) \(enten fra teksten eller høyreklikk på "Sist oppdatert" øverst på siden\)
+  * og lenke til den maskinlesbare [.owl-fila](http://beta-psi.udir.no/Ontologi/kl06.owl) \(enten fra teksten eller høyreklikk på "Sist oppdatert" øverst på siden\)
 * så en liste over typer/"classes"
   * der hver type er gitt en definisjon
   * hvilken url-baserte kode den har i Grep
@@ -27,7 +27,7 @@ _Eksempel: Typen "fagkode" har en egenskap, "naar-kan-man-ta-eksamen-foerste-sem
 _\[alternativ bildetekst: Det er forekomster av typen "semester" som listes opp for å angi egenskapen "naar-kan-man-ta-eksamen-foerste-semester" for en forekomst av typen "fagkode".\]_  
 \*
 
-Man kan navigere opp og ned i dette dokumentet mellom typer og egenskaper og på den måten gjøre seg kjent med hvordan elementene henger sammen. Men legg spesielt merke til den første typen som listes opp: "Base-element" \([http://psi.udir.no/ontologi/Kl06/\#base-element](http://psi.udir.no/ontologi/Kl06/#base-element)\). Dette er en type vi ikke finner i de øvrige grensesnittene for Grep, men som i denne sammenheng er et element som gjør at egenskaper som "kode", "id", "tittel" og "grep-type" kan gjenbrukes som egenskaper for flere typer, som for eksempel "laereplan", "hovedomraade", "fagkode" osv.
+Man kan navigere opp og ned i dette dokumentet mellom typer og egenskaper og på den måten gjøre seg kjent med hvordan elementene henger sammen. Men legg spesielt merke til den første typen som listes opp: "Base-element" \([http://beta-psi.udir.no/ontologi/Kl06/\#base-element](http://beta-psi.udir.no/ontologi/Kl06/#base-element)\). Dette er en type vi ikke finner i de øvrige grensesnittene for Grep, men som i denne sammenheng er et element som gjør at egenskaper som "kode", "id", "tittel" og "grep-type" kan gjenbrukes som egenskaper for flere typer, som for eksempel "laereplan", "hovedomraade", "fagkode" osv.
 
 Den har også en "Superclass" utenfor vårt eget domene, siden vi her refererer til [http://www.w3.org/2002/07/owl\#Thing](http://www.w3.org/2002/07/owl#Thing). Det er en blant annet en RDF-måte å uttrykke at subklassene \(laereplan, fagkoder osv.\) er vårt domenes hoved-typer.
 
