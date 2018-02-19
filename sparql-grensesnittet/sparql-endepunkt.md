@@ -7,7 +7,7 @@ I dette kapittelet vil vi gi noen tips til hvordan du kan bruke Greps SPARQL-end
 
 Vi viser også til dokumentasjonen om SPARQL på [W3C](https://www.w3.org/TR/sparql11-overview/) sine sider.
 
-Greps SPARQL-grensesnitt nås på endepunktet [http://data.udir.no/kl06/sparql/](http://data.udir.no/kl06/sparql/):  
+Greps SPARQL-grensesnitt nås på endepunktet [http://beta-data.udir.no/kl06/sparql/](http://beta-data.udir.no/kl06/sparql/):  
 ![](/sparql-grensesnittet/afa0b18e-1fb2-4bbf-afcc-fa4265703583.png)
 
 _Forsiden til SPARQL-endepunkt med ferdig utfylt spørring: "Vis meg hvilke konsepter du har" \(velg hvilket format du ønsker resultatet i, og klikk "Run Query"\)_
