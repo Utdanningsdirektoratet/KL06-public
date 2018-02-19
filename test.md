@@ -1,5 +1,8 @@
-    # Strategi: Hvordan angripe materien
-    I dette avsnittet vil vi gi noen tips til hvordan du kan skaffe deg oversikt over hvordan du kan ta i bruk dataene via SPARQL-spørringer. 
+```
+# Strategi: Hvordan angripe materien
+I dette avsnittet vil vi gi noen tips til hvordan du kan skaffe deg oversikt over hvordan du kan ta i bruk dataene via SPARQL-spørringer. 
+```
+
     Vi anbefaler følgende strategi:
 
     1. Skaff deg oversikt med "utforskende SPARQL-spørringer"
@@ -156,6 +159,12 @@
     | **fagkodetittel** | **zkode** | **ztittel** | **kms** | **lp** | **lptittel** |
     |  -- | -- | -- | -- | -- | -- |
     | Norsk hovedmål 10. årstrinn, skriftlig | [http://psi.udir.no/](http://psi.udir.no/kl06/NOR1Z56) [kl06/NOR1Z56](http://psi.udir.no/kl06/NOR1Z56) | Norsk 10. årstrinn | [http://psi.udir.no/](http://psi.udir.no/kl06/KMS946) [kl06/KMS946](http://psi.udir.no/kl06/KMS946) | [http://psi.udir.no/](http://psi.udir.no/kl06/NOR1-05) [kl06/NOR1-05](http://psi.udir.no/kl06/NOR1-05) | Læreplan i norsk |
+
+
+
+
+
+
 
 
 
