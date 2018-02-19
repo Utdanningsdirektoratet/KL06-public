@@ -4,12 +4,12 @@ Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnitt
 
 Tilgjengelige versjoner:
 
-* [201604](http://beta-data.udir.no/kl06/soap?wsdl&version=v201604)
-* [201802](http://beta-data.udir.no/kl06/soap?wsdl&version=v201802)
+* [201604](http://data.udir.no/kl06/soap?wsdl&version=v201604)
+* [201802](http://data.udir.no/kl06/soap?wsdl&version=v201802)
 
 [http://beta-data.udir.no/kl06/soap?wsdl](http://beta-data.udir.no/kl06/soap?wsdl) peker på versjon 201604.
 
-Det er mulig å adressere versjonene ved å legge inn versjonsnummer i url. Henholdsvis [http://beta-data.udir.no/kl06/v201604/soap?wsd](http://beta-data.udir.no/kl06/v201604/soap?wsdl)l og [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl).
+Det er mulig å adressere versjonene ved å legge inn versjonsnummer i url. Henholdsvis [http://data.udir.no/kl06/v201604/soap?wsdl](http://data.udir.no/kl06/v201604/soap?wsdl) og [http://data.udir.no/kl06/v201802/soap?wsdl](http://data.udir.no/kl06/v201802/soap?wsdl).
 
 SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep versjon 201604.
 
