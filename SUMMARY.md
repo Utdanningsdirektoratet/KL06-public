@@ -18,6 +18,7 @@
   * [Språkvalg i REST](rest-grensesnittet/sprakvalg_i_rest.md)
   * [Filter på tidspunkt](rest-grensesnittet/filter-pa-tidspunkt.md)
   * [Spesialspørringer](rest-grensesnittet/spesialsporringer.md)
+  * [Liste over siste publiserte endringer](rest-grensesnittet/liste-over-siste-publiserte-endringer.md)
 * [SOAP-grensesnittet](soap-grensesnittet/soap.md)
   * [Språkvalg i SOAP](soap-grensesnittet/sprakvalg_i_soap.md)
 * [OData-grensesnittet](odata-grensesnittet/odata.md)
