@@ -15,7 +15,7 @@ Versjon 201311 er faset ut, og kan ikke lenger nås.
 
 #### Hjelpedata
 
-- Mer info kommer her...
+- Hjelpedatatypene som tidligere lå under Hjelpedata, er nå splittet ut som egne elementtyper. [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
 
 ### Versjonering
 - I tillegg til å tilby versjonering ved bruk av query-string, tilbyr vi nå også versjonering i url og i header.
