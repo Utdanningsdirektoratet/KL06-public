@@ -1,4 +1,4 @@
-# Endringer Beta
+# Endringer 201802
 
 ## Generelt
 
@@ -11,7 +11,7 @@ Versjon 201311 er faset ut, og kan ikke lenger nås.
 
 ####Merkelapper
 
-- Mer info kommer her...
+- Merkelappkoblinger er utvidet med gyldighetsperiode. Mer info finnes [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
 
 #### Hjelpedata
 

@@ -10,5 +10,5 @@ Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut ov
 
 ### Nytt i versjon 2018/02
 
-Versjon 2018/02 har introdusert gyldighet på merkelapp-koblinger. Og lagt til opplæringsnivå på fagtyper. Uten om det har vi "splittet" hjelpedatatypene som lå under Hjelpedata til å være egne elementtyper. Dette for at vi i fremtiden skal kunne utvide hver enkelt type etter behov. Les [her](/introduksjon/endringer_beta.md) for mer informasjon.
+Versjon 2018/02 har introdusert gyldighet på merkelapp-koblinger. Og lagt til opplæringsnivå på fagtyper. I tillegg har vi "splittet" hjelpedatatypene som lå under Hjelpedata til å være egne elementtyper. Dette for at vi i fremtiden skal kunne utvide hver enkelt type etter behov. Les [her](/introduksjon/endringer_beta.md) for mer informasjon.
 

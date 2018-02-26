@@ -1,6 +1,8 @@
 # Appendix B - Endringer i SOAP-kontrakten
 
-Oppsummering av endringer som medfører nytt versjonsnummer.
+Endringer i datagrunnlag knyttet til tidligere versjoner er tilgjengelig [her](https://kl06-doc.gitbooks.io/kl06-public/content/appendix_b.html).
+
+### Oppsummering av endringer som medfører nytt versjonsnummer.
 
 Parametere som har blitt fjernet:
 
