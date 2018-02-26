@@ -39,20 +39,20 @@ Versjon 201311 er faset ut, og kan ikke lenger nås.
       - http://beta-data.udir.no/kl06/soap_/v201604/soap
       - http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKode
       
-     {%ace edit=false, check=false %}
+         {%ace edit=false, check=false %}
  
-          <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"                 xmlns:ns="http://psi.udir.no/kl06/2016/04">
-              <x:Header/>
-              <x:Body>
-                 <ns:HentFagtypeFraKode>
-                    <ns:request>
-                        <ns:kode>fagtype_fellesfag</ns:kode>
-                    </ns:request>
-                 </ns:HentFagtypeFraKode>
-              </x:Body>
-         </x:Envelope>
+              <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"                 xmlns:ns="http://psi.udir.no/kl06/2016/04">
+                  <x:Header/>
+                  <x:Body>
+                     <ns:HentFagtypeFraKode>
+                        <ns:request>
+                            <ns:kode>fagtype_fellesfag</ns:kode>
+                        </ns:request>
+                     </ns:HentFagtypeFraKode>
+                  </x:Body>
+             </x:Envelope>
          
-    {%endace%}
+        {%endace%}
 
    - 201802
       - http://test-data.udir.no/kl06/v201802/soap?wsdl
