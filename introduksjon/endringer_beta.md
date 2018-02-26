@@ -2,27 +2,31 @@
 
 ## Generelt
 
-Denne versjonen av KL06 inneholder en del omstruktureringer på læreplaner og noen endringer på felles elementer.
+Denne versjonen av KL06 inneholder mindre endringer knyttet til merkelapp-koblinger og hjelpedata. I tillegg introduserer vi nye måter å kalle de ulike versjonene på.
+
+Versjon 201311 er faset ut, og kan ikke lenger nås.
 
 
-### Læreplan
+### Kontraktsendringer
 
-- De ulike kapitlene i læreplanen har blitt gruppert sammen med de respektive overskriftene for kapittelet. Eksempelvis *formaal-overskrift* og *formaal* ligger nå som *overskrift* og *tekst* under *formaal-kapittel*
-- Programfag har blitt introdusert som en egen entitet for felles programfag (tidligere versjoner har bakt disse inn i hovedområder). Programfag blir referert til fra kompetansemålsettet
-- Hovedområder kan nå ha underliggende hovedområder.
-- Kompetansemålsett har endret struktur til
-  - Kompetansemålsettkapittel
-    - Overskrift
-    - Innledning
-    - Kompetansemålsett
-      - Etter Årstrinn
-      - Hovedområder brukt i dette kompetansemålsettet, med eventuelle alternativ tittel og beskrivelse i kontekst av det aktuelle kompetansemålsett
-      - Kompetansemål brukt av kompetansemålsettet. Kompetansemålet vil ha en peker *tilhoerer-hovedomraade* som viser til hvilket hovedområde den tilhører
+####Merkelapper
 
-### Generelt
+- Mer info kommer her...
 
-- Status har endret format til *beta-data.udir.no/kl06/{statuskode}*, feks [http://beta-data.udir.no/kl06/status_publisert](http://beta-data.udir.no/kl06/status_publisert). Dette er nå en peker på status-elementet, og man kan hente mer informasjon om status (oversettelser etc)
-- url-psi er fjernet
-- uri er lagt til som en nøkkel for elementer og referanser. Uri peker til ontologien for elementet
-- grep-type er lagt til som nøkkel på typen til elementet eller referansene. Dette feltet er en oppslagbar uri til ontologien for typen.
-- Det har kommet en del endringer i datagrunnlaget, beskrevet i [Appendix A](../appendix_a.html).
+#### Hjelpedata
+
+- Mer info kommer her...
+
+### Versjonering
+- I tillegg til å tilby versjonering ved bruk av query-string, tilbyr vi nå også versjonering i url og i header.
+
+- Eksempler
+  - Rest: 
+  - Soap:
+  
+- Vi tilbyr ikke versjonering på Odata og RDF/sparql
+  
+  
+
+
+
