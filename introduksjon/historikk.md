@@ -15,3 +15,4 @@
 | 0.19 | 26.08.2015 | Stian G-E | Fjernet bruk av jsonp (data-type og callback) |
 | 0.20 | 21.04.2016 | Stian G-E | Ny versjon |
 | 0.21 | 14.09.2016 | Une Haga | Direkteoppslag på underelementer av læreplan: kompetansemålsett (KMS), hovedområde(HO) og programfag(PF), PSI-server, SparQL-endepunkt og Ontologi for grep |
+| 0.22 | 26.02.2018 | Une Haga | Lagt inn oppdateringer knyttet til ny versjon av tjenesten (201802) |
