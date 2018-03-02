@@ -4,7 +4,7 @@
 
 Denne versjonen av KL06 inneholder mindre endringer knyttet til merkelapp-koblinger og hjelpedata. I tillegg introduserer vi nye måter å kalle de ulike versjonene på.
 
-Versjon 201311 er faset ut, og kan ikke lenger nås.
+Versjon 201311 ble faset ut 1. januar 2018, og kan ikke lenger nås.
 
 
 ### Kontraktsendringer
@@ -15,7 +15,7 @@ Versjon 201311 er faset ut, og kan ikke lenger nås.
 
 #### Hjelpedata
 
-- Hjelpedatatypene som tidligere lå under Hjelpedata, er nå splittet ut som egne elementtyper. [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
+- Hjelpedatatypene som tidligere lå under Hjelpedata, er nå splittet ut som egne elementtyper. Mer informasjon finnes [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
 
 ### Versjonering
 - I tillegg til å tilby versjonering ved bruk av query-string, tilbyr vi nå også versjonering i url og i header.
@@ -23,14 +23,14 @@ Versjon 201311 er faset ut, og kan ikke lenger nås.
 - Eksempler
   - Rest:
     - 201604
-      - http://beta-data.udir.no/kl06/201604/fagtype_fellesfag
-      - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=201604
+      - http://beta-data.udir.no/kl06/v201604/fagtype_fellesfag
+      - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=v201604
       - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=http://psi.udir.no/kl06/2016/04
     
     - 201802
       - http://beta-data.udir.no/kl06/fagtype_fellesfag
-      - http://beta-data.udir.no/kl06/201802/fagtype_fellesfag
-      - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=201802
+      - http://beta-data.udir.no/kl06/v201802/fagtype_fellesfag
+      - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=v201802
       - http://beta-data.udir.no/kl06/fagtype_fellesfag?versjon=http://psi.udir.no/kl06/2018/02
 
   - Soap:
