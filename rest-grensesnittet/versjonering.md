@@ -4,6 +4,8 @@ Ved oppgraderinger og endringer i KL06-tjenestene så kan innholdet endre strukt
 
 For å indikere at man ønsker data fra en spesifikk versjon, angir man et query-parameter _versjon_ med et spesifikt versjonsnummer.
 
-Eksempelvis kan man spesifisere [http://beta-data.udir.no/kl06/laereplaner?versjon=http://psi.udir.no/kl06/2016/04](http://beta-data.udir.no/kl06/laereplaner?versjon=http://psi.udir.no/kl06/2016/04) for å være sikker på at man henter ut data med den strukturen som er/var aktuell for den versjonen. Dette parameteret fungerer på alle kall.
+Eksempelvis kan man spesifisere [http://beta-data.udir.no/kl06/laereplaner?versjon=http://psi.udir.no/kl06/2018/02](http://beta-data.udir.no/kl06/laereplaner?versjon=http://psi.udir.no/kl06/2018/02) for å være sikker på at man henter ut data med den strukturen som er/var aktuell for den versjonen. Dette parameteret fungerer på alle kall.
 
-Sammen versjon kan nås via [http://beta-data.udir.no/kl06/v201604/laereplaner](http://beta-data.udir.no/kl06/v201604/laereplaner)
+Alternativt kan en benytte seg av versjonering i url. Da blir kallet [http://beta-data.udir.no/kl06/v201802/laereplaner](http://beta-data.udir.no/kl06/v201802/laereplaner)
+
+De samme kalleme er tilgjengelige for versjon 201604.
