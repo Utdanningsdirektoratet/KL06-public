@@ -15,7 +15,7 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 
 | **Metode** | **Beskrivelse** | **Teknisk dokumentasjon** |
 | --- | --- | --- |
-| FinnPlaner | Finner læreplaner basert på søkekriterier. Se teknisk dokumentasjon for detaljer rundt parametere | [SOAP-grensesnit](http://beta-data.udir.no/kl06/soap)t |
+| FinnPlaner | Finner læreplaner basert på søkekriterier. Se teknisk dokumentasjon for detaljer rundt parametere | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | FinnFagkoder | Finner fagkoder basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | FinnProgramomraader | Finner programområder basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | FinnUtdanningsprogram | Finner utdanningsprogram basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
