@@ -63,6 +63,36 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentProgramfagFraKode | Returnerer et programfag basert på programfagets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | HentHovedomraadeFraKode | Returnerer et hovedområde basert på hovedområdets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
 | HentKarakterFraKode | Returnerer en klarakter basert på karakterens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentEksamensformFraKode | Returnerer en klarakter basert på eksamensformens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentEksamensordningFraKode | Returnerer en klarakter basert på eksamensordningens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentTrekkordningFraKode | Returnerer en klarakter basert på trekkordningens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+| HentVurderingsuttrykkFraKode | Returnerer en klarakter basert på vurderingsuttrykkets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/soap) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
