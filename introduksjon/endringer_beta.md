@@ -13,6 +13,10 @@ Versjon 201311 ble faset ut 1. januar 2018, og kan ikke lenger nås.
 
 - Merkelappkoblinger er utvidet med gyldighetsperiode. Mer info finnes [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
 
+####Merknader
+
+- Merknadens koblinger til relaterte årstrinn og opplæringsnivå har endret type fra hjelpedataverdi til referanse. Mer info finnes [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
+
 #### Hjelpedata
 
 - Hjelpedatatypene som tidligere lå under Hjelpedata, er nå splittet ut som egne elementtyper. Mer informasjon finnes [her](https://www.gitbook.com/book/kl06-doc/kl06-public/edit#/edit/beta/appendix_a.md?_k=xwozmm).
