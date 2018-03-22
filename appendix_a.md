@@ -5,7 +5,7 @@ Endringer i datagrunnlag knyttet til tidligere versjoner er tilgjengelig [her](h
 Koblinger til merkelapper er utvidet til å ha med gyldighetsperiode. Dette blir tilgjengelig på merkelapp-elementet og på tilhørende læreplan, fagkode, opplæringsfag eller programområde.
 
 ## Merknader
-Koblingene til relaterte årstrinn og opplæringsnivå er endret til å være av type referanse.
+Merknadens koblinger til relaterte årstrinn og opplæringsnivå er endret til å være av type referanse.
 
 ## Hjelpedata
 Hjelpedata er i 201604 benyttet som en samleklasse for et sett av hjelpedatatyper. Problemet med denne løsningen var at eventuelle endringer og utvidelser måtte gjøres for alle elmenttype. Noe som ikke var ønskelig når fagtype skulle utvides med kortform.
