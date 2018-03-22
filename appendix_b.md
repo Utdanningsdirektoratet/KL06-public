@@ -58,6 +58,22 @@ Dette gjelder på følgende steder
 - Respons fra metode HentFagkodeFraPsi: fagkode.vurderingsordning
 
 ---
+Parameter opplaeringsnivaa har endret type fra hjelpedataverdi[] til referanse[]
+
+Dette gjelder på følgende steder
+
+- Respons fra metode HentMerknadFraKode: merknad
+- Respons fra metode HentMerknadFraPsi: merknad
+
+---
+Parameter relaterteaarstrinn har endret type fra hjelpedataverdi[] til referanse[]
+
+Dette gjelder på følgende steder
+
+- Respons fra metode HentMerknadFraKode: merknad
+- Respons fra metode HentMerknadFraPsi: merknad
+
+---
 Parameter tilknyttedefag har endret type fra referanse[] til referansemedgyldighet[]
 
 Dette gjelder på følgende steder
