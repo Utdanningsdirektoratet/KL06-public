@@ -11,7 +11,7 @@ Tilgjengelige versjoner:
 
 Det er nå også mulig å adressere versjonene ved å legge inn versjonsnummer i url'en. Henholdsvis [http://beta-data.udir.no/kl06/v201604/soap?wsd](http://beta-data.udir.no/kl06/v201604/soap?wsdl)l og [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl).
 
-SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep versjon 201802. For detaljert oversikt for versjon 201604, set [her](https://kl06-doc.gitbooks.io/kl06-public/content/soap-grensesnittet/soap.html).
+SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep versjon 201802. For detaljert oversikt for versjon 201604, se [her](https://kl06-doc.gitbooks.io/kl06-public/content/soap-grensesnittet/soap.html).
 
 | **Metode** | **Beskrivelse** | **Teknisk dokumentasjon** |
 | --- | --- | --- |
