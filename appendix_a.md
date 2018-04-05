@@ -17,10 +17,7 @@ Et eksempel på dette er [fellsefag](http://beta-data.udir.no/kl06/fagtype_felle
 
 ###Generell effekt av denne endringe
 I Rest og Odata er det i praksis ingen brudd knyttet til denne endringen.
-Men i soap vil disse endringene være mer synlig, og gi kontraktsbrudd. Mer info knyttet til dette finner du [her](https://kl06-doc.gitbooks.io/kl06-public/content/appendix_b.html).
-
-
-
+Men i soap vil disse endringene være mer synlig, og gi kontraktsbrudd. Mer info knyttet til dette finner du [her]https://kl06-doc.gitbooks.io/kl06-public/content/v/beta/appendix_b.html).
 
 
 
