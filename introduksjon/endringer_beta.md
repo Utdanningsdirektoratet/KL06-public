@@ -39,7 +39,7 @@ Versjon 201311 ble faset ut 1. januar 2018, og kan ikke lenger nås.
 
   - Soap:
     - 201604
-      - http://test-data.udir.no/kl06/v201604/soap?wsdl
+      - http://beta-data.udir.no/kl06/v201604/soap?wsdl
       - http://beta-data.udir.no/kl06/soap_/v201604/soap
       - http://psi.udir.no/kl06/2016/04/GrepSoap/HentFagtypeFraKode
       
@@ -59,7 +59,7 @@ Versjon 201311 ble faset ut 1. januar 2018, og kan ikke lenger nås.
         {%endace%}
 
    - 201802
-      - http://test-data.udir.no/kl06/v201802/soap?wsdl
+      - http://beta-data.udir.no/kl06/v201802/soap?wsdl
       - http://beta-data.udir.no/kl06/soap_/v201802/soap
       - http://psi.udir.no/kl06/2018/02/GrepSoap/HentFagtypeFraKode
       
