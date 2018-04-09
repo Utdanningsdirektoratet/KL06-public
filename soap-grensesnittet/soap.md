@@ -1,11 +1,15 @@
 # SOAP-grensesnittet {#soap-grensesnittet}
 
-Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://beta-data.udir.no/kl06/soap](http://beta-data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://beta-data.udir.no/kl06/v201604/soap?wsd](http://beta-data.udir.no/kl06/v201604/soap?wsdl)l og [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl). Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
+Grep tilbyr også et SOAP-grensesnitt.
 
 Tilgjengelige versjoner:
 
 * [201604](http://beta-data.udir.no/kl06/v201604/soap?wsdl)
 * [201802](http://beta-data.udir.no/kl06/v201802/soap?wsdl)
+
+Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
+Tilhørende dokumentasjon finnes [her](http://beta-data.udir.no/kl06/soap).
+
 
 [http://beta-data.udir.no/kl06/soap?wsdl](http://beta-data.udir.no/kl06/soap?wsdl) peker på versjon 201604.
 
