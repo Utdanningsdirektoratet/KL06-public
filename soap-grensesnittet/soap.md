@@ -1,6 +1,6 @@
 # SOAP-grensesnittet {#soap-grensesnittet}
 
-Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://beta-data.udir.no/kl06/soap](http://beta-data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://beta-data.udir.no/kl06/soap?wsdl&version=v201604](http://beta-data.udir.no/kl06/soap?wsdl&version=v201604) og [http://beta-data.udir.no/kl06/soap?wsdl&version=v201802](http://beta-data.udir.no/kl06/soap?wsdl&version=v201802). Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
+Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://beta-data.udir.no/kl06/soap](http://beta-data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://beta-data.udir.no/kl06/v201604/soap?wsd](http://beta-data.udir.no/kl06/v201604/soap?wsdl)l og [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl). Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
 
 Tilgjengelige versjoner:
 
@@ -8,8 +8,6 @@ Tilgjengelige versjoner:
 * [201802](http://beta-data.udir.no/kl06/soap?wsdl&version=v201802)
 
 [http://beta-data.udir.no/kl06/soap?wsdl](http://beta-data.udir.no/kl06/soap?wsdl) peker på versjon 201604.
-
-Det er nå også mulig å adressere versjonene ved å legge inn versjonsnummer i url'en. Henholdsvis [http://beta-data.udir.no/kl06/v201604/soap?wsd](http://beta-data.udir.no/kl06/v201604/soap?wsdl)l og [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl).
 
 SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep versjon 201802. For detaljert oversikt for versjon 201604, se [her](https://kl06-doc.gitbooks.io/kl06-public/content/soap-grensesnittet/soap.html).
 
@@ -67,32 +65,6 @@ SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fr
 | HentEksamensordningFraKode | Returnerer en klarakter basert på eksamensordningens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/doc_/soap) |
 | HentTrekkordningFraKode | Returnerer en klarakter basert på trekkordningens kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/doc_/soap) |
 | HentVurderingsuttrykkFraKode | Returnerer en klarakter basert på vurderingsuttrykkets kode | [SOAP-grensesnitt](http://beta-data.udir.no/kl06/doc_/soap) |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
