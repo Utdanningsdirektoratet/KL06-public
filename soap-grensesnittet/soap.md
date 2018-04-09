@@ -4,8 +4,8 @@ Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnitt
 
 Tilgjengelige versjoner:
 
-* [201604](http://beta-data.udir.no/kl06/soap?wsdl&version=v201604)
-* [201802](http://beta-data.udir.no/kl06/soap?wsdl&version=v201802)
+* [201604](http://beta-data.udir.no/kl06/v201604/soap?wsdl)
+* [201802](http://beta-data.udir.no/kl06/v201802/soap?wsdl)
 
 [http://beta-data.udir.no/kl06/soap?wsdl](http://beta-data.udir.no/kl06/soap?wsdl) peker på versjon 201604.
 
