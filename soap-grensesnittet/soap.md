@@ -4,8 +4,8 @@ Grep tilbyr også et SOAP-grensesnitt.
 
 Tilgjengelige versjoner:
 
-* [201604](http://beta-data.udir.no/kl06/v201604/soap?wsdl)
-* [201802](http://beta-data.udir.no/kl06/v201802/soap?wsdl)
+* [http://beta-data.udir.no/kl06/v201604/soap?wsdl](http://beta-data.udir.no/kl06/v201604/soap?wsdl)
+* [http://beta-data.udir.no/kl06/v201802/soap?wsdl](http://beta-data.udir.no/kl06/v201802/soap?wsdl)
 
 Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
 Tilhørende dokumentasjon finnes [her](http://beta-data.udir.no/kl06/soap).
