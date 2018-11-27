@@ -10,7 +10,7 @@ Utdanningsdirektoratet tilbyr nå et sett med tjenester for å kunne hente ut ov
 
 ### Nytt i versjon 2018/02
 
-I overgangen til versjon 2018/04 har vi valgt å beholde 2016/04 som default versjon. Det vil si, at dersom en ikke angir versjon, så er det 2016/04 versjonen en treffer.
+I overgangen til versjon 2018/04 har vi valgt å beholde 2016/04 som default versjon. Det vil si, at dersom en ikke angir versjon, er det 2016/04 versjonen en treffer.
 
 I tillegg vil RDF/Sparql-grensesnittet basere seg på innoldet i 2016/04. Det vil si at RDF/Spaql ikke vil inneholde de endringen som er angitt under.
 
