@@ -1,12 +1,21 @@
 # SOAP-grensesnittet {#soap-grensesnittet}
 
-Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://data.udir.no/kl06/soap](http://data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL: [http://data.udir.no/kl06/soap?wsdl](http://data.udir.no/kl06/soap?wsdl). Kontrakten inneholder tjenestekontrakten og alle relevante datatyper.
+Grep tilbyr også et SOAP-grensesnitt. URL for endepunktet for dette grensesnittet er [http://beta-data.udir.no/kl06/soap](http://beta-data.udir.no/kl06/soap). Det ligger en online dokumentasjon av soap-endepunktet på denne adressen ved direkte oppslag. Wsdl/kontrakten for denne tjenesten kan hentes ut på følgende URL'er: [http://beta-data.udir.no/kl06/soap?wsdl&version=v201604](http://beta-data.udir.no/kl06/soap?wsdl&version=v201604) og [http://beta-data.udir.no/kl06/soap?wsdl&version=v201802](http://beta-data.udir.no/kl06/soap?wsdl&version=v201802). Kontraktene inneholder tjenestekontrakten og alle relevante datatyper.
 
-SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep.
+Tilgjengelige versjoner:
+
+* [201604](http://data.udir.no/kl06/soap?wsdl&version=v201604)
+* [201802](http://data.udir.no/kl06/soap?wsdl&version=v201802)
+
+[http://beta-data.udir.no/kl06/soap?wsdl](http://beta-data.udir.no/kl06/soap?wsdl) peker på versjon 201604.
+
+Det er mulig å adressere versjonene ved å legge inn versjonsnummer i url. Henholdsvis [http://data.udir.no/kl06/v201604/soap?wsdl](http://data.udir.no/kl06/v201604/soap?wsdl) og [http://data.udir.no/kl06/v201802/soap?wsdl](http://data.udir.no/kl06/v201802/soap?wsdl).
+
+SOAP-grensesnittet tilbyr følgende metoder for å finne og hente informasjon fra Grep versjon 201604.
 
 | **Metode** | **Beskrivelse** | **Teknisk dokumentasjon** |
 | --- | --- | --- |
-| FinnPlaner | Finner læreplaner basert på søkekriterier. Se teknisk dokumentasjon for detaljer rundt parametere | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
+| FinnPlaner | Finner læreplaner basert på søkekriterier. Se teknisk dokumentasjon for detaljer rundt parametere | [SOAP-grensesnit](http://data.udir.no/kl06/soap)t |
 | FinnFagkoder | Finner fagkoder basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnProgramomraader | Finner programområder basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
 | FinnUtdanningsprogram | Finner utdanningsprogram basert på søkekriterier. Se teknisk dokumentasjon for detaljer | [SOAP-grensesnitt](http://data.udir.no/kl06/soap) |
