@@ -12,8 +12,11 @@
 | 0.16 | 27.03.2014 | Une Haga | Lagt til utlisting av årstrinn, uten .atom og detaljertvisning |
 | 0.17 | 19.01.2015 | Une Haga | Lagt inn detaljert visning av årstrinn |
 | 0.18 | 30.06.2015 | Une Haga | Fikset lenker fra udir.data.no til data.udir.no, og soap endepunktet satt til data.udir.no/kl06/soap over alt. |
-| 0.19 | 26.08.2015 | Stian G-E | Fjernet bruk av jsonp (data-type og callback) |
+| 0.19 | 26.08.2015 | Stian G-E | Fjernet bruk av jsonp \(data-type og callback\) |
 | 0.20 | 21.04.2016 | Stian G-E | Ny versjon |
-| 0.21 | 14.09.2016 | Une Haga | Direkteoppslag på underelementer av læreplan: kompetansemålsett (KMS), hovedområde(HO) og programfag(PF), PSI-server, SparQL-endepunkt og Ontologi for grep |
+| 0.21 | 14.09.2016 | Une Haga | Direkteoppslag på underelementer av læreplan: kompetansemålsett \(KMS\), hovedområde\(HO\) og programfag\(PF\), PSI-server, SparQL-endepunkt og Ontologi for grep |
 | 0.22 | 28.11.2018 | Une Haga | Ny versjon, 2018-02 |
+| 0.23 | 31.01.2019 | Une Haga | Justert tilgjengelige format i "Språkvalg i Rest" |
+
+
 
